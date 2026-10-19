@@ -1,0 +1,187 @@
+{
+ "viewer_id": "U-01712",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T09:52:15.983Z",
+  "signup": {
+   "value": "2026-09-20T06:22:45.507Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 121935.983,
+   "refs": [
+    "profile:U-01712@2026-09-29T12:19:08.498Z",
+    "event:51adc336-6c6c-4e40-a426-a4c8d47ca9af"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T12:19:08.498Z",
+   "age_s": 163987.485,
+   "refs": [
+    "profile:U-01712@2026-09-29T12:19:08.498Z",
+    "event:cfd0fdcc-6622-4ef7-bc9d-6844f1998a0b"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-20T08:20:20.661Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:0cc74baa-aaa5-49b3-8b1b-8a27cde4ce14",
+   "conflicts": [],
+   "as_of": "2026-10-01T09:52:15.983Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01712@2026-09-29T12:19:08.498Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 121935.983
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01712@2026-09-29T12:19:08.498Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 121935.983
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 1,
+   "completes": 1,
+   "last_play_at": "2026-09-20T06:25:27.815Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 5,
+   "top_genres": [
+    "Drama",
+    "Family"
+   ],
+   "unfinished_series": []
+  },
+  "events_seen": 17
+ },
+ "active_goal": {
+  "goal_id": "G09",
+  "name": "weekly_habit_14d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "on 3 distinct IST days",
+   "window_hours": 336
+  },
+  "started_at": "2026-10-01T03:30:08.890Z",
+  "deadline": "2026-10-15T03:30:08.890Z",
+  "status": "open",
+  "decision_id": "D-00248",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-01712@2026-09-29T12:19:08.498Z",
+   "event:cfd0fdcc-6622-4ef7-bc9d-6844f1998a0b"
+  ],
+  "reason": "active subscriber with plays on 1 IST day(s) in 14 days",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T03:30:08.890Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event (2 of 3 distinct play days)",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G09",
+  "since": "2026-10-01T03:30:08.890Z",
+  "deadline": "2026-10-15T03:30:08.890Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T09:52:15.983Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00248",
+   "at": "2026-10-01T03:30:08.943Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G09",
+   "reason": null
+  },
+  {
+   "decision_id": "D-00616",
+   "at": "2026-10-01T05:05:08.433Z",
+   "action": "NO_ACTION",
+   "goal_id": "G09",
+   "reason": "nothing to change: personalised page A-00128 still live (TTL): not republished; message: goal G09 is served by the home page only (proportionality)"
+  },
+  {
+   "decision_id": "D-01110",
+   "at": "2026-10-01T08:43:20.131Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G09",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01261",
+   "at": "2026-10-01T09:52:15.985Z",
+   "action": "NO_ACTION",
+   "goal_id": "G09",
+   "reason": "nothing to change: personalised page A-00455 still live (TTL): not republished; message: goal G09 is served by the home page only (proportionality)"
+  }
+ ],
+ "actions": [
+  "A-00128",
+  "A-00455"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G09",
+   "status": "failed",
+   "reason": "window closed without a qualifying event (2 of 3 distinct play days)",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-15T03:30:08.890Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G09",
+   "lesson": "G09 not achieved (1 failure(s) for this goal): 11 app opens and 2 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G09": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "d368d809-c6b0-441f-b079-6f5863301890": "D-00248",
+  "44ebba46-bde7-499f-b48b-677f331177e8": "D-00616",
+  "14f87129-32e1-45d2-b9b1-e3700acc78ba": "D-01110",
+  "0cc74baa-aaa5-49b3-8b1b-8a27cde4ce14": "D-01261"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

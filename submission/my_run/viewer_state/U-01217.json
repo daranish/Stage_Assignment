@@ -1,0 +1,177 @@
+{
+ "viewer_id": "U-01217",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T10:18:54.650Z",
+  "signup": {
+   "value": "2026-09-10T12:02:02.214Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 123534.65,
+   "refs": [
+    "profile:U-01217@2026-09-29T10:04:43.333Z",
+    "event:274ce042-96f9-4564-b566-8f747fc7a2e5"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T10:04:43.333Z",
+   "age_s": 173651.317,
+   "refs": [
+    "profile:U-01217@2026-09-29T10:04:43.333Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:c3f2ecdc-8b4f-4d2e-be30-e6d2e3e0a079",
+   "conflicts": [
+    "profile:"
+   ],
+   "as_of": "2026-10-01T10:18:54.650Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01217@2026-09-29T10:04:43.333Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 123534.65
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01217@2026-09-29T10:04:43.333Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 123534.65
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d2",
+    "others": [
+     "profile:"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 6,
+   "completes": 5,
+   "last_play_at": "2026-09-23T11:35:14.268Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 4,
+   "top_genres": [
+    "Crime",
+    "Thriller",
+    "Action"
+   ],
+   "unfinished_series": [
+    "giba-hane-d2",
+    "molo-d2"
+   ]
+  },
+  "events_seen": 53
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T10:18:54.650Z",
+  "deadline": "2026-10-04T10:18:54.650Z",
+  "status": "open",
+  "decision_id": "D-01310",
+  "slug": "molo-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:975211fc-0bf2-4600-b530-959cb0ed6ad2",
+   "catalogue:T0521"
+  ],
+  "reason": "unfinished series molo-d2 idle 7.9 days, 5 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T10:18:54.650Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T10:18:54.650Z",
+  "deadline": "2026-10-04T10:18:54.650Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T10:18:54.650Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01310",
+   "at": "2026-10-01T10:18:54.703Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00549",
+  "A-00550"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T10:18:54.650Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 3 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "c3f2ecdc-8b4f-4d2e-be30-e6d2e3e0a079": "D-01310"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

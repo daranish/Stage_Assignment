@@ -1,0 +1,176 @@
+{
+ "viewer_id": "U-00334",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:25:09.593Z",
+  "signup": {
+   "value": "2025-05-02T01:26:26.464Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 145509.593,
+   "refs": [
+    "profile:U-00334@2026-09-29T03:10:47.114Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T03:10:47.114Z",
+   "age_s": 220462.479,
+   "refs": [
+    "profile:U-00334@2026-09-29T03:10:47.114Z",
+    "event:8308746e-332f-4577-8b59-6ffda743d7f8"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-07T04:03:12.482Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:4576d77b-db9c-423b-af9d-9a159cf06bfe",
+   "conflicts": [
+    "profile:d6"
+   ],
+   "as_of": "2026-10-01T16:25:09.593Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00334@2026-09-29T03:10:47.114Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 145509.593
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00334@2026-09-29T03:10:47.114Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 145509.593
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:d6"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 8,
+   "completes": 5,
+   "last_play_at": "2026-09-30T17:25:14.743Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Action",
+    "Crime",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "patena-d1"
+   ]
+  },
+  "events_seen": 66
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T16:25:09.593Z",
+  "deadline": "2026-10-08T16:25:09.593Z",
+  "status": "open",
+  "decision_id": "D-02477",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-00334@2026-09-29T03:10:47.114Z",
+   "event:8308746e-332f-4577-8b59-6ffda743d7f8",
+   "catalogue:T0007"
+  ],
+  "reason": "active subscriber; 61 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T16:25:09.593Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T16:25:09.593Z",
+  "deadline": "2026-10-08T16:25:09.593Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T16:25:09.593Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02477",
+   "at": "2026-10-01T16:25:09.648Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G08",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-01077"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T16:25:09.593Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "G08 not achieved (1 failure(s) for this goal): 7 app opens and 3 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "4576d77b-db9c-423b-af9d-9a159cf06bfe": "D-02477"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

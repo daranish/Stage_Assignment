@@ -1,0 +1,179 @@
+{
+ "viewer_id": "U-01296",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T07:35:00.249Z",
+  "signup": {
+   "value": "2025-10-16T04:15:59.323Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 113700.249,
+   "refs": [
+    "profile:U-01296@2026-09-29T00:52:12.083Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T00:52:12.083Z",
+   "age_s": 196968.166,
+   "refs": [
+    "profile:U-01296@2026-09-29T00:52:12.083Z",
+    "event:104e7a26-3ee8-4664-a83b-a175c61c91ad"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-22T20:20:28.520Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:7a2acce5-7882-4dab-82fb-bf600595eb5a",
+   "conflicts": [],
+   "as_of": "2026-10-01T07:35:00.249Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01296@2026-09-29T00:52:12.083Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 113700.249
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01296@2026-09-29T00:52:12.083Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 113700.249
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 18,
+   "completes": 8,
+   "last_play_at": "2026-09-29T10:54:17.863Z",
+   "play_days_14d": 7,
+   "opens_14d_excl_current": 15,
+   "top_genres": [
+    "Thriller",
+    "Comedy",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "gima-bhadaba-d1",
+    "hama-chudibha-d1"
+   ]
+  },
+  "events_seen": 128
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T04:59:55.506Z",
+  "deadline": "2026-10-08T04:59:55.506Z",
+  "status": "open",
+  "decision_id": "D-00605",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-01296@2026-09-29T00:52:12.083Z",
+   "event:104e7a26-3ee8-4664-a83b-a175c61c91ad",
+   "catalogue:T0007"
+  ],
+  "reason": "active subscriber; 62 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T04:59:55.506Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-008733"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T04:59:55.506Z",
+  "deadline": "2026-10-08T04:59:55.506Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T07:35:00.249Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00605",
+   "at": "2026-10-01T04:59:55.562Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G08",
+   "reason": null
+  },
+  {
+   "decision_id": "D-00952",
+   "at": "2026-10-01T07:35:00.253Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G08",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00191",
+  "A-00379"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-008733"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T04:59:55.506Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "achieved G08 after personalised exposure (association only, not proof of cause)",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "722a49fe-93f1-4610-a23c-c6b5452ebe0f": "D-00605",
+  "7a2acce5-7882-4dab-82fb-bf600595eb5a": "D-00952"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

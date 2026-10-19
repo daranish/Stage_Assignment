@@ -1,0 +1,178 @@
+{
+ "viewer_id": "U-01220",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T07:15:05.299Z",
+  "signup": {
+   "value": "2025-11-03T23:33:34.671Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 112505.299,
+   "refs": [
+    "profile:U-01220@2026-09-28T21:41:54.316Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T21:41:54.316Z",
+   "age_s": 207190.983,
+   "refs": [
+    "profile:U-01220@2026-09-28T21:41:54.316Z",
+    "event:de132fd1-277d-4951-8ece-c82742590fcc"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-02T06:59:46.676Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:d763f151-7ec3-4c01-8703-0105c20ddc56",
+   "conflicts": [
+    "profile:d2"
+   ],
+   "as_of": "2026-10-01T07:15:05.299Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01220@2026-09-28T21:41:54.316Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 112505.299
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01220@2026-09-28T21:41:54.316Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 112505.299
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d3",
+    "others": [
+     "profile:d2"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 13,
+   "completes": 6,
+   "last_play_at": "2026-09-27T17:18:19.352Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Romance",
+    "Family",
+    "Action"
+   ],
+   "unfinished_series": [
+    "haja-d3",
+    "pima-pana-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 96
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T07:15:05.299Z",
+  "deadline": "2026-10-04T07:15:05.299Z",
+  "status": "open",
+  "decision_id": "D-00904",
+  "slug": "yatite-roloda-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:8899bb9e-13c3-48c0-b812-d77e64cf0c92",
+   "catalogue:T0901"
+  ],
+  "reason": "unfinished series yatite-roloda-d3 idle 3.6 days, 18 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T07:15:05.299Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T07:15:05.299Z",
+  "deadline": "2026-10-04T07:15:05.299Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T07:15:05.299Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00904",
+   "at": "2026-10-01T07:15:05.351Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00353",
+  "A-00354"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T07:15:05.299Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "d763f151-7ec3-4c01-8703-0105c20ddc56": "D-00904"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

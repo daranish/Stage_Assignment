@@ -1,0 +1,171 @@
+{
+ "viewer_id": "U-03164",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:06:24.830Z",
+  "signup": {
+   "value": "2026-06-17T23:28:41.255Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 140784.83,
+   "refs": [
+    "profile:U-03164@2026-09-29T09:55:15.839Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T09:55:15.839Z",
+   "age_s": 191468.991,
+   "refs": [
+    "profile:U-03164@2026-09-29T09:55:15.839Z",
+    "event:e0e80d4d-c04e-4977-bcc2-feba4989018a"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-02T04:30:59.665Z"
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:8e508d20-5a60-4f3b-a9f3-7d8bd710aced",
+   "conflicts": [],
+   "as_of": "2026-10-01T15:06:24.830Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03164@2026-09-29T09:55:15.839Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140784.83
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03164@2026-09-29T09:55:15.839Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140784.83
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 5,
+   "completes": 3,
+   "last_play_at": "2026-09-24T06:26:50.543Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 10,
+   "top_genres": [
+    "Family",
+    "Drama",
+    "Crime"
+   ],
+   "unfinished_series": []
+  },
+  "events_seen": 56
+ },
+ "active_goal": {
+  "goal_id": "G06",
+  "name": "reactivate_lapsed_14d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "any paid plan",
+   "window_hours": 336
+  },
+  "started_at": "2026-10-01T04:47:10.254Z",
+  "deadline": "2026-10-15T04:47:10.254Z",
+  "status": "open",
+  "decision_id": "D-00525",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-03164@2026-09-29T09:55:15.839Z",
+   "event:e0e80d4d-c04e-4977-bcc2-feba4989018a"
+  ],
+  "reason": "subscription_lapsed event within 30 days",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T04:47:10.254Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G06",
+  "since": "2026-10-01T04:47:10.254Z",
+  "deadline": "2026-10-15T04:47:10.254Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T15:06:24.830Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00525",
+   "at": "2026-10-01T04:47:10.306Z",
+   "action": "NO_ACTION",
+   "goal_id": "G06",
+   "reason": "stale trigger: app_open was buffered offline for 55370s (>600s) - not a live session; recorded as history only"
+  },
+  {
+   "decision_id": "D-02148",
+   "at": "2026-10-01T15:06:24.833Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G06",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00945",
+  "A-00946"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G06",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-15T04:47:10.254Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G06",
+   "lesson": "G06 not achieved (1 failure(s) for this goal): 13 app opens and 6 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G06": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "52ce661c-7e1b-4930-804b-2b1b485d4196": "D-00525",
+  "8e508d20-5a60-4f3b-a9f3-7d8bd710aced": "D-02148"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

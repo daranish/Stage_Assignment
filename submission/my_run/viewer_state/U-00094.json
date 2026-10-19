@@ -1,0 +1,178 @@
+{
+ "viewer_id": "U-00094",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:17:36.673Z",
+  "signup": {
+   "value": "2025-11-30T21:53:51.290Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 137856.673,
+   "refs": [
+    "profile:U-00094@2026-09-29T06:59:54.198Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T06:59:54.198Z",
+   "age_s": 199062.475,
+   "refs": [
+    "profile:U-00094@2026-09-29T06:59:54.198Z",
+    "event:f1c44260-00c6-467f-b9cb-17c391545633"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-13T13:59:40.845Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:d8c12bb7-03fc-44ba-b373-4b7fbbfb761c",
+   "conflicts": [
+    "profile:d2"
+   ],
+   "as_of": "2026-10-01T14:17:36.673Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00094@2026-09-29T06:59:54.198Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 137856.673
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00094@2026-09-29T06:59:54.198Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 137856.673
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:d2"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 7,
+   "completes": 3,
+   "last_play_at": "2026-09-25T09:10:10.206Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 3,
+   "top_genres": [
+    "Romance",
+    "Devotional",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "bagugu-gigupi-d1",
+    "hama-chudibha-d1",
+    "jasuja-d1"
+   ]
+  },
+  "events_seen": 43
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T14:17:36.673Z",
+  "deadline": "2026-10-04T14:17:36.673Z",
+  "status": "open",
+  "decision_id": "D-01884",
+  "slug": "jasuja-d1",
+  "assumptions": [],
+  "evidence": [
+   "event:8bb6f9e2-85f8-4644-8004-d130676e1756",
+   "catalogue:T0067"
+  ],
+  "reason": "unfinished series jasuja-d1 idle 6.2 days, 51 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T14:17:36.673Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T14:17:36.673Z",
+  "deadline": "2026-10-04T14:17:36.673Z",
+  "last_action": "HOME_PAGE+WHATSAPP",
+  "revised_at": "2026-10-01T14:17:36.673Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01884",
+   "at": "2026-10-01T14:17:36.727Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00814",
+  "A-00815"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T14:17:36.673Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 0 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "d8c12bb7-03fc-44ba-b373-4b7fbbfb761c": "D-01884"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

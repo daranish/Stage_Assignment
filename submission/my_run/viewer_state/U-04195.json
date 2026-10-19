@@ -1,0 +1,188 @@
+{
+ "viewer_id": "U-04195",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:08:47.878Z",
+  "signup": {
+   "value": "2025-11-02T17:14:45.448Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 144527.878,
+   "refs": [
+    "profile:U-04195@2026-09-28T21:58:17.558Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-28T21:58:17.558Z",
+   "age_s": 238230.32,
+   "refs": [
+    "profile:U-04195@2026-09-28T21:58:17.558Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:99308320-05b3-41a3-ac57-81dcf9227c3f",
+   "conflicts": [
+    "campaign_link:d5"
+   ],
+   "as_of": "2026-10-01T16:08:47.878Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04195@2026-09-28T21:58:17.558Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 144527.878
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-04195@2026-09-28T21:58:17.558Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 144527.878
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d3",
+    "others": [
+     "campaign_link:d5"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 3,
+   "last_play_at": "2026-09-12T05:17:19.152Z",
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 4,
+   "top_genres": [
+    "Romance",
+    "Crime"
+   ],
+   "unfinished_series": [
+    "jakasa-dapi-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 31
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T01:36:24.867Z",
+  "deadline": "2026-10-04T01:36:24.867Z",
+  "status": "open",
+  "decision_id": "D-00113",
+  "slug": "yatite-roloda-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:8abd8afc-41a3-426f-a8e6-46039cd19fb7",
+   "catalogue:T0901"
+  ],
+  "reason": "unfinished series yatite-roloda-d3 idle 18.8 days, 21 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T01:36:24.867Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T01:36:24.867Z",
+  "deadline": "2026-10-04T01:36:24.867Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T16:08:47.878Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00113",
+   "at": "2026-10-01T01:36:24.919Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-01492",
+   "at": "2026-10-01T11:49:32.591Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02421",
+   "at": "2026-10-01T16:08:47.880Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T01:36:24.867Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 1 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "26438fab-5d0c-4882-beab-c29c5172858a": "D-00113",
+  "302462b4-df51-4689-ad01-66061bff98c3": "D-01492",
+  "99308320-05b3-41a3-ac57-81dcf9227c3f": "D-02421"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

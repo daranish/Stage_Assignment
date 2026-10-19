@@ -1,0 +1,177 @@
+{
+ "viewer_id": "U-02758",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T09:13:22.565Z",
+  "signup": {
+   "value": "2026-01-01T01:40:44.607Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 119602.565,
+   "refs": [
+    "profile:U-02758@2026-09-29T02:03:11.507Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T02:03:11.507Z",
+   "age_s": 198611.058,
+   "refs": [
+    "profile:U-02758@2026-09-29T02:03:11.507Z",
+    "event:26f2fb0e-39c6-477e-a27d-a28c2452e4bd"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-03T16:41:28.171Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:845d059d-d76d-4c61-835c-10f820e15876",
+   "conflicts": [
+    "profile:d1"
+   ],
+   "as_of": "2026-10-01T09:13:22.565Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02758@2026-09-29T02:03:11.507Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 119602.565
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02758@2026-09-29T02:03:11.507Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 119602.565
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d2",
+    "others": [
+     "profile:d1"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 17,
+   "completes": 11,
+   "last_play_at": "2026-09-30T13:13:12.287Z",
+   "play_days_14d": 7,
+   "opens_14d_excl_current": 15,
+   "top_genres": [
+    "Action",
+    "Romance",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "dhapipa-gini-d2",
+    "gibha-bhalomo-d2",
+    "guka-kosusa-d2",
+    "kolani-mari-d2",
+    "molo-d2"
+   ]
+  },
+  "events_seen": 144
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T09:13:22.565Z",
+  "deadline": "2026-10-04T09:13:22.565Z",
+  "status": "open",
+  "decision_id": "D-01179",
+  "slug": "molo-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:0afcb83c-9589-4fcc-82d2-9b1fdc1d0f91",
+   "catalogue:T0521"
+  ],
+  "reason": "unfinished series molo-d2 idle 4.1 days, 1 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T09:13:22.565Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T09:13:22.565Z",
+  "deadline": "2026-10-04T09:13:22.565Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T09:13:22.565Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01179",
+   "at": "2026-10-01T09:13:22.618Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T09:13:22.565Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 2 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "845d059d-d76d-4c61-835c-10f820e15876": "D-01179"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

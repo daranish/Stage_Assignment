@@ -1,0 +1,166 @@
+{
+ "viewer_id": "U-02692",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T09:47:52.636Z",
+  "signup": {
+   "value": "2025-09-12T00:09:11.567Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 121672.636,
+   "refs": [
+    "profile:U-02692@2026-09-28T19:27:40.490Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T19:27:40.490Z",
+   "age_s": 224412.146,
+   "refs": [
+    "profile:U-02692@2026-09-28T19:27:40.490Z",
+    "event:42a11510-56cd-42eb-9b91-481dd4e54bfc"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-27T02:37:00.710Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:ac9fd94e-cae2-4164-b9d0-edf98fb126af",
+   "conflicts": [],
+   "as_of": "2026-10-01T09:47:52.636Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02692@2026-09-28T19:27:40.490Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 121672.636
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02692@2026-09-28T19:27:40.490Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 121672.636
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 7,
+   "completes": 5,
+   "last_play_at": "2026-09-21T15:55:29.823Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Comedy",
+    "Thriller",
+    "Crime"
+   ],
+   "unfinished_series": [
+    "hama-chudibha-d1",
+    "salosa-valo-d1"
+   ]
+  },
+  "events_seen": 65
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T09:47:52.636Z",
+  "deadline": "2026-10-04T09:47:52.636Z",
+  "status": "open",
+  "decision_id": "D-01254",
+  "slug": "salosa-valo-d1",
+  "assumptions": [],
+  "evidence": [
+   "event:5ff01a88-4641-4177-955b-ba7b92115cbe",
+   "catalogue:T0015"
+  ],
+  "reason": "unfinished series salosa-valo-d1 idle 9.7 days, 9 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T09:47:52.636Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T09:47:52.636Z",
+  "deadline": "2026-10-04T09:47:52.636Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T09:47:52.636Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01254",
+   "at": "2026-10-01T09:47:52.690Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00524",
+  "A-00525"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T09:47:52.636Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "ac9fd94e-cae2-4164-b9d0-edf98fb126af": "D-01254"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

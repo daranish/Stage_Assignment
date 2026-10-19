@@ -1,0 +1,182 @@
+{
+ "viewer_id": "U-02703",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T04:58:44.980Z",
+  "signup": {
+   "value": "2025-04-21T05:45:39.875Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 104324.98,
+   "refs": [
+    "profile:U-02703@2026-09-29T11:40:24.225Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T11:40:24.225Z",
+   "age_s": 148700.755,
+   "refs": [
+    "profile:U-02703@2026-09-29T11:40:24.225Z",
+    "event:685da702-d152-4974-8f0c-ea765d712063"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-24T07:15:59.391Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:c13c3bac-575c-4fa1-9710-55f1b159b47f",
+   "conflicts": [
+    "campaign_link:d6"
+   ],
+   "as_of": "2026-10-01T04:58:44.980Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02703@2026-09-29T11:40:24.225Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 104324.98
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02703@2026-09-29T11:40:24.225Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 104324.98
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "campaign_link:d6"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 7,
+   "completes": 3,
+   "last_play_at": "2026-09-30T06:45:01.271Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Comedy",
+    "Devotional",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "hadi-sudha-d1",
+    "hate-d1"
+   ]
+  },
+  "events_seen": 55
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T03:01:43.009Z",
+  "deadline": "2026-10-04T03:01:43.009Z",
+  "status": "open",
+  "decision_id": "D-00207",
+  "slug": "hate-d1",
+  "assumptions": [],
+  "evidence": [
+   "event:13ed8eee-ee1a-429a-941b-daae504dca87",
+   "catalogue:T1503"
+  ],
+  "reason": "unfinished series hate-d1 idle 3.6 days, 33 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T03:01:43.009Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T03:01:43.009Z",
+  "deadline": "2026-10-04T03:01:43.009Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T04:58:44.980Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00207",
+   "at": "2026-10-01T03:01:43.061Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-00604",
+   "at": "2026-10-01T04:58:44.982Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T03:01:43.009Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 1 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "f2d76fcb-7634-4642-a6b6-c0e71382d0c7": "D-00207",
+  "c13c3bac-575c-4fa1-9710-55f1b159b47f": "D-00604"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

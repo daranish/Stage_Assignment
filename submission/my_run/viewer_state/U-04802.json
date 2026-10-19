@@ -1,0 +1,170 @@
+{
+ "viewer_id": "U-04802",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T12:45:45.666Z",
+  "signup": {
+   "value": "2026-09-16T03:41:36.395Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 132345.666,
+   "refs": [
+    "profile:U-04802@2026-09-29T14:18:08.479Z",
+    "event:8f3db486-fe49-4d44-95a3-8d4aa14af4cb"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T14:18:08.479Z",
+   "age_s": 167257.187,
+   "refs": [
+    "profile:U-04802@2026-09-29T14:18:08.479Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:5cd39d83-f7a9-4109-b5b0-aa86d9e8e5bb",
+   "conflicts": [],
+   "as_of": "2026-10-01T12:45:45.666Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04802@2026-09-29T14:18:08.479Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 132345.666
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-04802@2026-09-29T14:18:08.479Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 132345.666
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 1,
+   "completes": 1,
+   "last_play_at": "2026-09-16T03:43:52.086Z",
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 2,
+   "top_genres": [
+    "Romance"
+   ],
+   "unfinished_series": [
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 16
+ },
+ "active_goal": {
+  "goal_id": "G05",
+  "name": "first_paid_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "is_trial = false",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T03:29:12.647Z",
+  "deadline": "2026-10-08T03:29:12.647Z",
+  "status": "open",
+  "decision_id": "D-00247",
+  "slug": null,
+  "assumptions": [
+   "\"never\" rests on the snapshot and a 30-day event window"
+  ],
+  "evidence": [
+   "profile:U-04802@2026-09-29T14:18:08.479Z",
+   "event:e8bf3c0b-15a4-496b-a384-8f938861cc0d"
+  ],
+  "reason": "never paid; purchase-intent signal present",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T03:29:12.647Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G05",
+  "since": "2026-10-01T03:29:12.647Z",
+  "deadline": "2026-10-08T03:29:12.647Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T12:45:45.666Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00247",
+   "at": "2026-10-01T03:29:12.699Z",
+   "action": "NO_ACTION",
+   "goal_id": "G05",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-01622",
+   "at": "2026-10-01T12:45:45.668Z",
+   "action": "NO_ACTION",
+   "goal_id": "G05",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G05",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T03:29:12.647Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G05",
+   "lesson": "G05 not achieved (1 failure(s) for this goal): 2 app opens and 1 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G05": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "78fee346-84b8-457d-9d52-d5ec0eb5d55f": "D-00247",
+  "5cd39d83-f7a9-4109-b5b0-aa86d9e8e5bb": "D-01622"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

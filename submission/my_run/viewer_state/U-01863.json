@@ -1,0 +1,162 @@
+{
+ "viewer_id": "U-01863",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T07:49:22.256Z",
+  "signup": {
+   "value": "2025-11-26T00:55:48.303Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 114562.256,
+   "refs": [
+    "profile:U-01863@2026-09-29T11:01:03.902Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T11:01:03.902Z",
+   "age_s": 161298.354,
+   "refs": [
+    "profile:U-01863@2026-09-29T11:01:03.902Z",
+    "event:32d01fc8-24b7-4340-929f-56e0be694c8b"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-10T09:24:48.678Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:55b61022-11e4-49e2-a5bc-4e4ea9bd7f13",
+   "conflicts": [],
+   "as_of": "2026-10-01T07:49:22.256Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01863@2026-09-29T11:01:03.902Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 114562.256
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01863@2026-09-29T11:01:03.902Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 114562.256
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 5,
+   "completes": 2,
+   "last_play_at": "2026-09-30T13:31:24.472Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 4,
+   "top_genres": [
+    "Romance",
+    "Drama",
+    "Family"
+   ],
+   "unfinished_series": [
+    "bagi-baya-d4"
+   ]
+  },
+  "events_seen": 48
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T07:49:22.256Z",
+  "deadline": "2026-10-04T07:49:22.256Z",
+  "status": "open",
+  "decision_id": "D-00991",
+  "slug": "bagi-baya-d4",
+  "assumptions": [],
+  "evidence": [
+   "event:b48aeee1-4927-47c7-879d-056cb183f1cb",
+   "catalogue:T1811"
+  ],
+  "reason": "unfinished series bagi-baya-d4 idle 19.0 days, 38 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T07:49:22.256Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T07:49:22.256Z",
+  "deadline": "2026-10-04T07:49:22.256Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T07:49:22.256Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00991",
+   "at": "2026-10-01T07:49:22.309Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T07:49:22.256Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 0 app opens and 0 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "55b61022-11e4-49e2-a5bc-4e4ea9bd7f13": "D-00991"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

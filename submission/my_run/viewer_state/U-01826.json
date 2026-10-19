@@ -1,0 +1,174 @@
+{
+ "viewer_id": "U-01826",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T04:46:06.248Z",
+  "signup": {
+   "value": "2026-05-23T04:09:57.929Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 103566.248,
+   "refs": [
+    "profile:U-01826@2026-09-29T05:13:30.905Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T05:13:30.905Z",
+   "age_s": 171155.343,
+   "refs": [
+    "profile:U-01826@2026-09-29T05:13:30.905Z",
+    "event:7a29d065-d9fe-4773-808a-15ab8123c244"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-02T12:04:02.205Z"
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:d9fd1643-47fc-4d96-b791-f82bbd4397ef",
+   "conflicts": [
+    "profile:d1"
+   ],
+   "as_of": "2026-10-01T04:46:06.248Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01826@2026-09-29T05:13:30.905Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 103566.248
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01826@2026-09-29T05:13:30.905Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 103566.248
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d2",
+    "others": [
+     "profile:d1"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 9,
+   "completes": 3,
+   "last_play_at": "2026-09-25T10:21:36.933Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Romance",
+    "Action",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "guka-kosusa-d2",
+    "molo-d2"
+   ]
+  },
+  "events_seen": 83
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T04:46:06.248Z",
+  "deadline": "2026-10-04T04:46:06.248Z",
+  "status": "open",
+  "decision_id": "D-00451",
+  "slug": "molo-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:26835ceb-2e5e-4b69-bb3c-4c7ad7e5c827",
+   "catalogue:T0521"
+  ],
+  "reason": "unfinished series molo-d2 idle 5.8 days, 5 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T04:46:06.248Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T04:46:06.248Z",
+  "deadline": "2026-10-04T04:46:06.248Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T04:46:06.248Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00451",
+   "at": "2026-10-01T04:46:06.300Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T04:46:06.248Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 1 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "d9fd1643-47fc-4d96-b791-f82bbd4397ef": "D-00451"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

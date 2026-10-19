@@ -1,0 +1,105 @@
+{
+ "viewer_id": "U-02386",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T11:38:02.486Z",
+  "signup": {
+   "value": "2025-10-23T23:25:53.826Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 128282.486,
+   "refs": [
+    "profile:U-02386@2026-09-29T09:47:07.925Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T09:47:07.925Z",
+   "age_s": 179454.561,
+   "refs": [
+    "profile:U-02386@2026-09-29T09:47:07.925Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d7",
+   "source": "app_setting",
+   "ref": "event:198bb033-35f9-449f-843d-6b4a1a46e80e",
+   "conflicts": [],
+   "as_of": "2026-10-01T11:38:02.486Z",
+   "supported": false,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02386@2026-09-29T09:47:07.925Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 128282.486
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02386@2026-09-29T09:47:07.925Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 128282.486
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 2,
+   "last_play_at": "2026-09-17T09:06:12.350Z",
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 2,
+   "top_genres": [
+    "Family"
+   ],
+   "unfinished_series": [
+    "dhapipa-gini-d2"
+   ]
+  },
+  "events_seen": 24
+ },
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01464",
+   "at": "2026-10-01T11:38:02.538Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "198bb033-35f9-449f-843d-6b4a1a46e80e": "D-01464"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T11:38:02.486Z"
+}

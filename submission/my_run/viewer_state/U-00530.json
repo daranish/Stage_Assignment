@@ -1,0 +1,117 @@
+{
+ "viewer_id": "U-00530",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:04:34.400Z",
+  "signup": {
+   "value": "2026-04-15T16:21:22.380Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 140674.4,
+   "refs": [
+    "profile:U-00530@2026-09-29T01:35:01.838Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T01:35:01.838Z",
+   "age_s": 221372.562,
+   "refs": [
+    "profile:U-00530@2026-09-29T01:35:01.838Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "profile(fallback; trigger had None)",
+   "ref": "profile:U-00530",
+   "conflicts": [
+    "trigger_app_dialect:None"
+   ],
+   "as_of": "2026-10-01T15:04:34.400Z",
+   "supported": true,
+   "certain": false,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00530@2026-09-29T01:35:01.838Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140674.4
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00530@2026-09-29T01:35:01.838Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140674.4
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d4",
+    "others": [
+     "trigger_app_dialect:None"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 1,
+   "last_play_at": "2026-09-23T17:15:35.490Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 4,
+   "top_genres": [
+    "Devotional",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "guka-kosusa-d2"
+   ]
+  },
+  "events_seen": 31
+ },
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02112",
+   "at": "2026-10-01T15:04:34.452Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "9a900388-e627-4f60-b440-cd76d6f7d9b8": "D-02112"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T15:04:34.400Z"
+}

@@ -1,0 +1,188 @@
+{
+ "viewer_id": "U-04697",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T05:04:53.546Z",
+  "signup": {
+   "value": "2026-01-20T18:55:39.586Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 104693.546,
+   "refs": [
+    "profile:U-04697@2026-09-29T14:44:24.749Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T14:44:24.749Z",
+   "age_s": 138028.797,
+   "refs": [
+    "profile:U-04697@2026-09-29T14:44:24.749Z",
+    "event:958d92ad-1ad1-4495-b535-72e3d5047abe"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-25T19:45:00.647Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:8aebfc45-464f-41d9-a445-a06b889365c4",
+   "conflicts": [
+    "profile:d2"
+   ],
+   "as_of": "2026-10-01T05:04:53.546Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04697@2026-09-29T14:44:24.749Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 104693.546
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-04697@2026-09-29T14:44:24.749Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 104693.546
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d5",
+    "others": [
+     "profile:d2"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 5,
+   "completes": 2,
+   "last_play_at": "2026-09-23T02:32:18.646Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 8,
+   "top_genres": [
+    "Devotional",
+    "Family",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "gubava-gihaya-d5",
+    "kova-sako-d5",
+    "rika-gigusa-d5"
+   ]
+  },
+  "events_seen": 62
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T03:35:09.652Z",
+  "deadline": "2026-10-08T03:35:09.652Z",
+  "status": "open",
+  "decision_id": "D-00257",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-04697@2026-09-29T14:44:24.749Z",
+   "event:958d92ad-1ad1-4495-b535-72e3d5047abe",
+   "catalogue:T1181"
+  ],
+  "reason": "active subscriber; 22 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T03:35:09.652Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-029671"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T03:35:09.652Z",
+  "deadline": "2026-10-08T03:35:09.652Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T05:04:53.546Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00257",
+   "at": "2026-10-01T03:35:09.704Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-00615",
+   "at": "2026-10-01T05:04:53.548Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-029671"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T03:35:09.652Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "achieved G08 with no prior exposure by the agent",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "f319a2f5-46e0-43dd-84a2-11f24241072b": "D-00257",
+  "8aebfc45-464f-41d9-a445-a06b889365c4": "D-00615"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

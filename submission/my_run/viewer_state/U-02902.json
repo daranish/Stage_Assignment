@@ -1,0 +1,177 @@
+{
+ "viewer_id": "U-02902",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:50:39.134Z",
+  "signup": {
+   "value": "2026-09-07T15:35:55.102Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 139839.134,
+   "refs": [
+    "profile:U-02902@2026-09-29T04:40:37.042Z",
+    "event:439ef29a-2ba0-45e0-a621-13f79bc9d2d2"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T04:40:37.042Z",
+   "age_s": 209402.092,
+   "refs": [
+    "profile:U-02902@2026-09-29T04:40:37.042Z",
+    "event:dec7c323-62ae-4708-ba73-98d5d0cd66d8"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-10T15:35:56.211Z"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:7aa5cf49-0fc1-4b3f-833d-3ac5fadfd039",
+   "conflicts": [
+    "profile:d6"
+   ],
+   "as_of": "2026-10-01T14:50:39.134Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02902@2026-09-29T04:40:37.042Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 139839.134
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02902@2026-09-29T04:40:37.042Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 139839.134
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:d6"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 1,
+   "last_play_at": "2026-09-18T13:18:26.820Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 5,
+   "top_genres": [
+    "Comedy",
+    "Devotional",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "hate-d1"
+   ]
+  },
+  "events_seen": 47
+ },
+ "active_goal": {
+  "goal_id": "G06",
+  "name": "reactivate_lapsed_14d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "any paid plan",
+   "window_hours": 336
+  },
+  "started_at": "2026-10-01T14:50:39.134Z",
+  "deadline": "2026-10-15T14:50:39.134Z",
+  "status": "open",
+  "decision_id": "D-02006",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-02902@2026-09-29T04:40:37.042Z",
+   "event:dec7c323-62ae-4708-ba73-98d5d0cd66d8"
+  ],
+  "reason": "subscription_lapsed event within 30 days",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T14:50:39.134Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G06",
+  "since": "2026-10-01T14:50:39.134Z",
+  "deadline": "2026-10-15T14:50:39.134Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T14:50:39.134Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02006",
+   "at": "2026-10-01T14:50:39.187Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G06",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00871",
+  "A-00872"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G06",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-15T14:50:39.134Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G06",
+   "lesson": "G06 not achieved (1 failure(s) for this goal): 4 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G06": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "7aa5cf49-0fc1-4b3f-833d-3ac5fadfd039": "D-02006"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

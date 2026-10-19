@@ -1,0 +1,180 @@
+{
+ "viewer_id": "U-01236",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:57:26.063Z",
+  "signup": {
+   "value": "2026-09-16T14:32:34.175Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 143846.063,
+   "refs": [
+    "profile:U-01236@2026-09-28T22:55:52.589Z",
+    "event:4d198c6c-b637-4d9f-8111-51c484b20f30"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T22:55:52.589Z",
+   "age_s": 234093.474,
+   "refs": [
+    "profile:U-01236@2026-09-28T22:55:52.589Z",
+    "event:9674bb9e-cdc3-4d48-bc6b-35311bfdf7e1"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-19T14:32:37.008Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:9ba049cb-24df-40cc-9d6d-d24284975906",
+   "conflicts": [
+    "campaign_link:d6"
+   ],
+   "as_of": "2026-10-01T15:57:26.063Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01236@2026-09-28T22:55:52.589Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 143846.063
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01236@2026-09-28T22:55:52.589Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 143846.063
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d3",
+    "others": [
+     "campaign_link:d6"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 1,
+   "last_play_at": "2026-09-20T04:03:08.404Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 3,
+   "top_genres": [
+    "Comedy",
+    "Drama",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 22
+ },
+ "active_goal": {
+  "goal_id": "G09",
+  "name": "weekly_habit_14d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "on 3 distinct IST days",
+   "window_hours": 336
+  },
+  "started_at": "2026-10-01T15:57:26.063Z",
+  "deadline": "2026-10-15T15:57:26.063Z",
+  "status": "open",
+  "decision_id": "D-02387",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-01236@2026-09-28T22:55:52.589Z",
+   "event:9674bb9e-cdc3-4d48-bc6b-35311bfdf7e1"
+  ],
+  "reason": "active subscriber with plays on 1 IST day(s) in 14 days",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T15:57:26.063Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-008315"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G09",
+  "since": "2026-10-01T15:57:26.063Z",
+  "deadline": "2026-10-15T15:57:26.063Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T15:57:26.063Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02387",
+   "at": "2026-10-01T15:57:26.115Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G09",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-01042"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G09",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-008315"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-15T15:57:26.063Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G09",
+   "lesson": "achieved G09 after personalised exposure (association only, not proof of cause)",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G09": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "9ba049cb-24df-40cc-9d6d-d24284975906": "D-02387"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

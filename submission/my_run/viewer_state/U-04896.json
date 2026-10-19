@@ -1,0 +1,178 @@
+{
+ "viewer_id": "U-04896",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T01:55:16.273Z",
+  "signup": {
+   "value": "2026-06-11T13:09:14.285Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 93316.273,
+   "refs": [
+    "profile:U-04896@2026-09-29T00:18:53.958Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T00:18:53.958Z",
+   "age_s": 178582.315,
+   "refs": [
+    "profile:U-04896@2026-09-29T00:18:53.958Z",
+    "event:5638bcac-1811-4a27-847c-b4b36c8f397a"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-18T03:52:24.079Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:42c92de5-95c9-4e15-8642-7f59241f8f5f",
+   "conflicts": [
+    "profile:d5"
+   ],
+   "as_of": "2026-10-01T01:55:16.273Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04896@2026-09-29T00:18:53.958Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 93316.273
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04896@2026-09-29T00:18:53.958Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 93316.273
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d6",
+    "others": [
+     "profile:d5"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 16,
+   "completes": 6,
+   "last_play_at": "2026-09-30T15:35:02.652Z",
+   "play_days_14d": 7,
+   "opens_14d_excl_current": 13,
+   "top_genres": [
+    "Devotional",
+    "Thriller",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "rasuya-moni-d6"
+   ]
+  },
+  "events_seen": 112
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T01:55:16.273Z",
+  "deadline": "2026-10-08T01:55:16.273Z",
+  "status": "open",
+  "decision_id": "D-00139",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-04896@2026-09-29T00:18:53.958Z",
+   "event:5638bcac-1811-4a27-847c-b4b36c8f397a",
+   "catalogue:T1393"
+  ],
+  "reason": "active subscriber; 10 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T01:55:16.273Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-031082"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T01:55:16.273Z",
+  "deadline": "2026-10-08T01:55:16.273Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T01:55:16.273Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00139",
+   "at": "2026-10-01T01:55:16.326Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-031082"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T01:55:16.273Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "achieved G08 with no prior exposure by the agent",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "42c92de5-95c9-4e15-8642-7f59241f8f5f": "D-00139"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

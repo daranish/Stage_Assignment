@@ -1,0 +1,178 @@
+{
+ "viewer_id": "U-01930",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:16:42.905Z",
+  "signup": {
+   "value": "2026-06-07T21:38:16.936Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 137802.905,
+   "refs": [
+    "profile:U-01930@2026-09-29T17:27:39.263Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T17:27:39.263Z",
+   "age_s": 161343.642,
+   "refs": [
+    "profile:U-01930@2026-09-29T17:27:39.263Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:4d59c204-84e0-4654-a439-dedbdddffe8e",
+   "conflicts": [
+    "profile:d4"
+   ],
+   "as_of": "2026-10-01T14:16:42.905Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01930@2026-09-29T17:27:39.263Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 137802.905
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01930@2026-09-29T17:27:39.263Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 137802.905
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:d4"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 0,
+   "completes": 0,
+   "last_play_at": null,
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 3,
+   "top_genres": [],
+   "unfinished_series": []
+  },
+  "events_seen": 8
+ },
+ "active_goal": {
+  "goal_id": "G02",
+  "name": "first_full_episode_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T11:02:17.319Z",
+  "deadline": "2026-10-04T11:02:17.319Z",
+  "status": "open",
+  "decision_id": "D-01404",
+  "slug": null,
+  "assumptions": [
+   "history is limited to the 30-day event window; earlier activity is not visible"
+  ],
+  "evidence": [
+   "profile:U-01930@2026-09-29T17:27:39.263Z"
+  ],
+  "reason": "no episode_completed observed",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T11:02:17.319Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G02",
+  "since": "2026-10-01T11:02:17.319Z",
+  "deadline": "2026-10-04T11:02:17.319Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T14:16:42.905Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01404",
+   "at": "2026-10-01T11:02:17.372Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01881",
+   "at": "2026-10-01T14:16:42.908Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00602",
+  "A-00811"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G02",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T11:02:17.319Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G02",
+   "lesson": "G02 not achieved (1 failure(s) for this goal): 2 app opens and 0 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G02": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "54e55b4b-41cc-42ab-94cc-5b7343909770": "D-01404",
+  "4d59c204-84e0-4654-a439-dedbdddffe8e": "D-01881"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

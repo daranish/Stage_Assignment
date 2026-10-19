@@ -1,0 +1,132 @@
+{
+ "viewer_id": "U-01711",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T13:18:21.591Z",
+  "signup": {
+   "value": "2025-07-19T02:53:38.946Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 134301.591,
+   "refs": [
+    "profile:U-01711@2026-09-28T18:53:49.940Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-28T18:53:49.940Z",
+   "age_s": 239071.651,
+   "refs": [
+    "profile:U-01711@2026-09-28T18:53:49.940Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:612ddd34-1b44-478f-8ec0-414b09f159bc",
+   "conflicts": [
+    "profile:d6"
+   ],
+   "as_of": "2026-10-01T13:18:21.591Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01711@2026-09-28T18:53:49.940Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 134301.591
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01711@2026-09-28T18:53:49.940Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 134301.591
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d4",
+    "others": [
+     "profile:d6"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 1,
+   "completes": 1,
+   "last_play_at": "2026-09-05T13:46:13.138Z",
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 4,
+   "top_genres": [
+    "Romance"
+   ],
+   "unfinished_series": [
+    "radi-d4"
+   ]
+  },
+  "events_seen": 20
+ },
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00457",
+   "at": "2026-10-01T04:46:09.345Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "stale trigger: app_open was buffered offline for 83063s (>600s) - not a live session; recorded as history only"
+  },
+  {
+   "decision_id": "D-01389",
+   "at": "2026-10-01T10:55:43.897Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "no goal can be chosen yet: G01: signed up 439.3 days ago (>7); G02: viewer has completed an episode; G05: never-paid but no purchase-intent signal in 14 days (goal would not be proportionate); G06: subscription status is never; G07: no unfinished series idle >= 3 days that is available in the viewer dialect; G12: app_open 1.2 days ago"
+  },
+  {
+   "decision_id": "D-01700",
+   "at": "2026-10-01T13:18:21.593Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "no goal can be chosen yet: G01: signed up 439.4 days ago (>7); G02: viewer has completed an episode; G05: never-paid but no purchase-intent signal in 14 days (goal would not be proportionate); G06: subscription status is never; G07: no unfinished series idle >= 3 days that is available in the viewer dialect; G12: app_open 0.1 days ago"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "81ef6c0f-b6cc-41e4-8f80-351bab240388": "D-00457",
+  "a1303961-3501-4062-8062-235981155227": "D-01389",
+  "612ddd34-1b44-478f-8ec0-414b09f159bc": "D-01700"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T10:55:43.845Z"
+}

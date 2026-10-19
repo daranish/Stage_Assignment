@@ -1,0 +1,187 @@
+{
+ "viewer_id": "U-04429",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T06:25:02.174Z",
+  "signup": {
+   "value": "2025-01-21T08:35:19.513Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 109502.174,
+   "refs": [
+    "profile:U-04429@2026-09-29T14:15:47.669Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T14:15:47.669Z",
+   "age_s": 144554.505,
+   "refs": [
+    "profile:U-04429@2026-09-29T14:15:47.669Z",
+    "event:56628a95-14b4-4667-968f-c34dcd48eecd"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-20T08:07:26.154Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:15d6bbc6-86d8-49b3-9cd0-dc7bf03fa25a",
+   "conflicts": [
+    "profile:d5",
+    "campaign_link:d6"
+   ],
+   "as_of": "2026-10-01T06:25:02.174Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04429@2026-09-29T14:15:47.669Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 109502.174
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-04429@2026-09-29T14:15:47.669Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 109502.174
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:d5",
+     "campaign_link:d6"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 1,
+   "last_play_at": "2026-09-11T15:52:11.153Z",
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Action",
+    "Drama",
+    "Family"
+   ],
+   "unfinished_series": [
+    "bagugu-gigupi-d1",
+    "gidha-sudhako-d1",
+    "tidha-dakachu-d1"
+   ]
+  },
+  "events_seen": 43
+ },
+ "active_goal": {
+  "goal_id": "G09",
+  "name": "weekly_habit_14d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "on 3 distinct IST days",
+   "window_hours": 336
+  },
+  "started_at": "2026-10-01T06:25:02.174Z",
+  "deadline": "2026-10-15T06:25:02.174Z",
+  "status": "open",
+  "decision_id": "D-00794",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-04429@2026-09-29T14:15:47.669Z",
+   "event:56628a95-14b4-4667-968f-c34dcd48eecd"
+  ],
+  "reason": "active subscriber with plays on 0 IST day(s) in 14 days",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T06:25:02.174Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event (2 of 3 distinct play days)",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G09",
+  "since": "2026-10-01T06:25:02.174Z",
+  "deadline": "2026-10-15T06:25:02.174Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T06:25:02.174Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00794",
+   "at": "2026-10-01T06:25:02.228Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G09",
+   "reason": null
+  },
+  {
+   "decision_id": "D-00867",
+   "at": "2026-10-01T07:00:00.000Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G09",
+   "reason": "page repair after title withdrawal"
+  }
+ ],
+ "actions": [
+  "A-00284",
+  "A-00326"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G09",
+   "status": "failed",
+   "reason": "window closed without a qualifying event (2 of 3 distinct play days)",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-15T06:25:02.174Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G09",
+   "lesson": "G09 not achieved (1 failure(s) for this goal): 6 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G09": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "15d6bbc6-86d8-49b3-9cd0-dc7bf03fa25a": "D-00794"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

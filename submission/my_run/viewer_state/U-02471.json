@@ -1,0 +1,108 @@
+{
+ "viewer_id": "U-02471",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T11:02:36.809Z",
+  "signup": {
+   "value": "2026-03-22T19:57:35.195Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 126156.809,
+   "refs": [
+    "profile:U-02471@2026-09-28T18:05:23.971Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-28T18:05:23.971Z",
+   "age_s": 233832.838,
+   "refs": [
+    "profile:U-02471@2026-09-28T18:05:23.971Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:5519a48c-5728-4fd7-bf17-f4760c19979f",
+   "conflicts": [],
+   "as_of": "2026-10-01T11:02:36.809Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02471@2026-09-28T18:05:23.971Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 126156.809
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02471@2026-09-28T18:05:23.971Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 126156.809
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 1,
+   "last_play_at": "2026-09-16T07:05:26.497Z",
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 1,
+   "top_genres": [
+    "Action",
+    "Romance",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "bhaja-moguba-d2",
+    "molo-d2"
+   ]
+  },
+  "events_seen": 19
+ },
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01406",
+   "at": "2026-10-01T11:02:36.861Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "stale trigger: app_open was buffered offline for 170282s (>600s) - not a live session; recorded as history only"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "5519a48c-5728-4fd7-bf17-f4760c19979f": "D-01406"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T11:02:36.809Z"
+}

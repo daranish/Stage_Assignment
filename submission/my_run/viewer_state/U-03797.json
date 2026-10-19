@@ -1,0 +1,163 @@
+{
+ "viewer_id": "U-03797",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T09:03:55.732Z",
+  "signup": {
+   "value": "2025-08-31T22:58:40.712Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 119035.732,
+   "refs": [
+    "profile:U-03797@2026-09-28T21:06:46.809Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-28T21:06:46.809Z",
+   "age_s": 215828.923,
+   "refs": [
+    "profile:U-03797@2026-09-28T21:06:46.809Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:b9ebc1c1-fb51-4ecf-bc42-d1d8066421ad",
+   "conflicts": [],
+   "as_of": "2026-10-01T09:03:55.732Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03797@2026-09-28T21:06:46.809Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 119035.732
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03797@2026-09-28T21:06:46.809Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 119035.732
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 7,
+   "completes": 3,
+   "last_play_at": "2026-09-19T06:59:15.147Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Drama",
+    "Romance",
+    "Action"
+   ],
+   "unfinished_series": [
+    "bagugu-gigupi-d1",
+    "gidha-sudhako-d1",
+    "hama-chudibha-d1"
+   ]
+  },
+  "events_seen": 74
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T09:03:55.732Z",
+  "deadline": "2026-10-04T09:03:55.732Z",
+  "status": "open",
+  "decision_id": "D-01149",
+  "slug": "bagugu-gigupi-d1",
+  "assumptions": [],
+  "evidence": [
+   "event:2164af67-7391-4af7-9547-41cd9f4a9cb8",
+   "catalogue:T0009"
+  ],
+  "reason": "unfinished series bagugu-gigupi-d1 idle 12.1 days, 5 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T09:03:55.732Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T09:03:55.732Z",
+  "deadline": "2026-10-04T09:03:55.732Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T09:03:55.732Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01149",
+   "at": "2026-10-01T09:03:55.784Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T09:03:55.732Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 0 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "b9ebc1c1-fb51-4ecf-bc42-d1d8066421ad": "D-01149"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

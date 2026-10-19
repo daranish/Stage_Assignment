@@ -1,0 +1,138 @@
+{
+ "viewer_id": "U-04619",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:27:43.777Z",
+  "signup": {
+   "value": "2026-04-22T13:10:18.276Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 138463.777,
+   "refs": [
+    "profile:U-04619@2026-09-29T06:07:32.830Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T06:07:32.830Z",
+   "age_s": 202810.947,
+   "refs": [
+    "profile:U-04619@2026-09-29T06:07:32.830Z",
+    "event:e6e82e40-f06e-4073-8e4b-613e4a0b0681"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-06T08:50:15.425Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "",
+   "source": "profile(fallback; trigger had None)",
+   "ref": "profile:U-04619",
+   "conflicts": [
+    "trigger_app_dialect:None"
+   ],
+   "as_of": "2026-10-01T14:27:43.777Z",
+   "supported": false,
+   "certain": false,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04619@2026-09-29T06:07:32.830Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 138463.777
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-04619@2026-09-29T06:07:32.830Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 138463.777
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "",
+    "others": [
+     "trigger_app_dialect:None"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 9,
+   "completes": 4,
+   "last_play_at": "2026-09-28T03:23:41.877Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Family",
+    "Devotional",
+    "Crime"
+   ],
+   "unfinished_series": [
+    "chugu-d2",
+    "dhapipa-gini-d2",
+    "guka-kosusa-d2",
+    "tidha-dakachu-d1"
+   ]
+  },
+  "events_seen": 70
+ },
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01415",
+   "at": "2026-10-01T11:09:37.311Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "dialect  (app setting) has no catalogue content: nothing valid to show or promote"
+  },
+  {
+   "decision_id": "D-01483",
+   "at": "2026-10-01T11:46:21.816Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "dialect  (app setting) has no catalogue content: nothing valid to show or promote"
+  },
+  {
+   "decision_id": "D-01929",
+   "at": "2026-10-01T14:27:43.779Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "dialect  (app setting) has no catalogue content: nothing valid to show or promote"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "7628f9a3-0658-4fb3-b534-7e69cd68710e": "D-01415",
+  "9ef5b8ca-bb7e-48e0-925e-42b33576b222": "D-01483",
+  "2bf9b320-930c-49a6-b2dd-0d3fd75f607d": "D-01929"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T11:09:37.259Z"
+}

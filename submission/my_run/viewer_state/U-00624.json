@@ -1,0 +1,190 @@
+{
+ "viewer_id": "U-00624",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T07:57:37.691Z",
+  "signup": {
+   "value": "2026-01-27T00:17:29.268Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 115057.691,
+   "refs": [
+    "profile:U-00624@2026-09-29T14:48:02.120Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T14:48:02.120Z",
+   "age_s": 148175.571,
+   "refs": [
+    "profile:U-00624@2026-09-29T14:48:02.120Z",
+    "event:2201bc1b-b497-41c1-8b4e-171cc489ad61"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-21T06:35:14.638Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:c892d3a9-44e8-4077-90a0-3373164dfdff",
+   "conflicts": [
+    "profile:d6"
+   ],
+   "as_of": "2026-10-01T07:57:37.691Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00624@2026-09-29T14:48:02.120Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 115057.691
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00624@2026-09-29T14:48:02.120Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 115057.691
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d2",
+    "others": [
+     "profile:d6"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 9,
+   "completes": 5,
+   "last_play_at": "2026-09-21T16:19:31.474Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 4,
+   "top_genres": [
+    "Romance",
+    "Action",
+    "Devotional"
+   ],
+   "unfinished_series": [
+    "guka-kosusa-d2",
+    "guneba-guba-d2",
+    "molo-d2"
+   ]
+  },
+  "events_seen": 79
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T07:57:33.829Z",
+  "deadline": "2026-10-04T07:57:33.829Z",
+  "status": "open",
+  "decision_id": "D-01008",
+  "slug": "molo-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:92d3f3fa-3f5c-40c5-b139-7a404865961a",
+   "catalogue:T0521"
+  ],
+  "reason": "unfinished series molo-d2 idle 9.7 days, 3 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T07:57:33.829Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-004151"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T07:57:33.829Z",
+  "deadline": "2026-10-04T07:57:33.829Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T07:57:37.691Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01008",
+   "at": "2026-10-01T07:57:33.883Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01009",
+   "at": "2026-10-01T07:57:37.693Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "nothing to change: personalised page A-00399 still live (TTL): not republished; message: daily push/WhatsApp cap already used for the IST day of the send slot"
+  }
+ ],
+ "actions": [
+  "A-00399",
+  "A-00400"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-004151"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T07:57:33.829Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "achieved G07 after personalised exposure (association only, not proof of cause)",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "8c8d7a84-d839-46eb-b668-bae91bada029": "D-01008",
+  "c892d3a9-44e8-4077-90a0-3373164dfdff": "D-01009"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

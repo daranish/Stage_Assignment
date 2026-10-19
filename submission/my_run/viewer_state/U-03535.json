@@ -1,0 +1,110 @@
+{
+ "viewer_id": "U-03535",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T06:31:11.115Z",
+  "signup": {
+   "value": "2026-05-08T03:59:31.026Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 109871.115,
+   "refs": [
+    "profile:U-03535@2026-09-28T19:14:51.906Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "event",
+   "as_of": "2026-09-29T02:45:06.710Z",
+   "age_s": 186364.405,
+   "refs": [
+    "profile:U-03535@2026-09-28T19:14:51.906Z",
+    "event:23bb6a50-9007-4e49-a1c0-27d8b4687c62"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:3a079c63-5061-496e-950d-81a8ffc76c9e",
+   "conflicts": [],
+   "as_of": "2026-10-01T06:31:11.115Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03535@2026-09-28T19:14:51.906Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 109871.115
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03535@2026-09-28T19:14:51.906Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 109871.115
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 12,
+   "completes": 8,
+   "last_play_at": "2026-09-30T09:03:07.069Z",
+   "play_days_14d": 6,
+   "opens_14d_excl_current": 13,
+   "top_genres": [
+    "Crime",
+    "Thriller",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "ririgi-d3",
+    "yane-tegi-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 111
+ },
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00806",
+   "at": "2026-10-01T06:31:11.167Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "no goal can be chosen yet: G01: signed up 146.1 days ago (>7); G02: viewer has completed an episode; G05: subscription status is active; G06: subscription status is active; G07: no unfinished series idle >= 3 days that is available in the viewer dialect; G12: app_open 0.9 days ago"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "3a079c63-5061-496e-950d-81a8ffc76c9e": "D-00806"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T06:31:11.115Z"
+}

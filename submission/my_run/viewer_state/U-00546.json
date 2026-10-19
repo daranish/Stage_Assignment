@@ -1,0 +1,171 @@
+{
+ "viewer_id": "U-00546",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:13:28.229Z",
+  "signup": {
+   "value": "2025-01-24T06:07:10.977Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 144808.229,
+   "refs": [
+    "profile:U-00546@2026-09-29T06:48:05.291Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T06:48:05.291Z",
+   "age_s": 206722.938,
+   "refs": [
+    "profile:U-00546@2026-09-29T06:48:05.291Z",
+    "event:e7a8eca5-d1d7-4535-a30d-8ae8a9c30e9f"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-02T13:13:46.393Z"
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:900b3e3c-4d1b-488a-9e96-e0821436e0f2",
+   "conflicts": [],
+   "as_of": "2026-10-01T16:13:28.229Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00546@2026-09-29T06:48:05.291Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 144808.229
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00546@2026-09-29T06:48:05.291Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 144808.229
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 1,
+   "last_play_at": "2026-09-23T10:53:38.102Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 3,
+   "top_genres": [
+    "Family",
+    "Action",
+    "Crime"
+   ],
+   "unfinished_series": []
+  },
+  "events_seen": 46
+ },
+ "active_goal": {
+  "goal_id": "G06",
+  "name": "reactivate_lapsed_14d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "any paid plan",
+   "window_hours": 336
+  },
+  "started_at": "2026-10-01T16:13:25.319Z",
+  "deadline": "2026-10-15T16:13:25.319Z",
+  "status": "open",
+  "decision_id": "D-02441",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-00546@2026-09-29T06:48:05.291Z",
+   "event:e7a8eca5-d1d7-4535-a30d-8ae8a9c30e9f"
+  ],
+  "reason": "subscription_lapsed event within 30 days",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T16:13:25.319Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G06",
+  "since": "2026-10-01T16:13:25.319Z",
+  "deadline": "2026-10-15T16:13:25.319Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T16:13:28.229Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02441",
+   "at": "2026-10-01T16:13:25.372Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G06",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02442",
+   "at": "2026-10-01T16:13:28.231Z",
+   "action": "NO_ACTION",
+   "goal_id": "G06",
+   "reason": "nothing to change: personalised page A-01059 still live (TTL): not republished; message: no valid title for a message in the viewer dialect"
+  }
+ ],
+ "actions": [
+  "A-01059",
+  "A-01060"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G06",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-15T16:13:25.319Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G06",
+   "lesson": "G06 not achieved (1 failure(s) for this goal): 8 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G06": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "2ee4c7e4-e578-4cce-90d5-d35a6582f45a": "D-02441",
+  "900b3e3c-4d1b-488a-9e96-e0821436e0f2": "D-02442"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

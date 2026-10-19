@@ -1,0 +1,181 @@
+{
+ "viewer_id": "U-00035",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:00:10.394Z",
+  "signup": {
+   "value": "2025-12-22T16:48:17.383Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 140410.394,
+   "refs": [
+    "profile:U-00035@2026-09-29T03:46:07.547Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T03:46:07.547Z",
+   "age_s": 213242.847,
+   "refs": [
+    "profile:U-00035@2026-09-29T03:46:07.547Z",
+    "event:7df8d397-915d-4fd0-bb52-b3ae12e6f6bd"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-08T00:44:07.789Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:9b47240c-f85c-4e21-86f1-eba1c399761a",
+   "conflicts": [],
+   "as_of": "2026-10-01T15:00:10.394Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00035@2026-09-29T03:46:07.547Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140410.394
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00035@2026-09-29T03:46:07.547Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140410.394
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 6,
+   "completes": 5,
+   "last_play_at": "2026-09-21T15:16:58.417Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Devotional",
+    "Comedy",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "hate-d1"
+   ]
+  },
+  "events_seen": 64
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T14:07:05.781Z",
+  "deadline": "2026-10-04T14:07:05.781Z",
+  "status": "open",
+  "decision_id": "D-01850",
+  "slug": "hate-d1",
+  "assumptions": [],
+  "evidence": [
+   "event:811da2ed-92a7-44c1-bd61-b62fb48f4336",
+   "catalogue:T0008"
+  ],
+  "reason": "unfinished series hate-d1 idle 10.0 days, 30 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T14:07:05.781Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T14:07:05.781Z",
+  "deadline": "2026-10-04T14:07:05.781Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T15:00:10.394Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01850",
+   "at": "2026-10-01T14:07:05.835Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02013",
+   "at": "2026-10-01T14:53:08.081Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "nothing to change: personalised page A-00789 still live (TTL): not republished; message: daily push/WhatsApp cap already used for the IST day of the send slot"
+  },
+  {
+   "decision_id": "D-02039",
+   "at": "2026-10-01T15:00:10.396Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "nothing to change: personalised page A-00789 still live (TTL): not republished; message: daily push/WhatsApp cap already used for the IST day of the send slot"
+  }
+ ],
+ "actions": [
+  "A-00789",
+  "A-00790"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T14:07:05.781Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 5 app opens and 4 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "58842693-ab6c-4dd1-8153-09d6285b1452": "D-01850",
+  "0166670f-7079-4aa5-ac63-33e3da097c38": "D-02013",
+  "9b47240c-f85c-4e21-86f1-eba1c399761a": "D-02039"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

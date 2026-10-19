@@ -1,0 +1,120 @@
+{
+ "viewer_id": "U-01443",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T10:33:37.287Z",
+  "signup": {
+   "value": "2025-04-19T10:11:50.460Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 124417.287,
+   "refs": [
+    "profile:U-01443@2026-09-29T01:50:36.999Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T01:50:36.999Z",
+   "age_s": 204180.288,
+   "refs": [
+    "profile:U-01443@2026-09-29T01:50:36.999Z",
+    "event:0b4248bf-2f50-4249-884b-ae8bd0a2e8b3"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-23T10:40:15.788Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:8840fe68-c8f5-4e1e-bb1a-477586f23c5b",
+   "conflicts": [
+    "profile:d6"
+   ],
+   "as_of": "2026-10-01T10:33:37.287Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01443@2026-09-29T01:50:36.999Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 124417.287
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01443@2026-09-29T01:50:36.999Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 124417.287
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d3",
+    "others": [
+     "profile:d6"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 12,
+   "completes": 6,
+   "last_play_at": "2026-09-30T18:08:40.858Z",
+   "play_days_14d": 6,
+   "opens_14d_excl_current": 11,
+   "top_genres": [
+    "Drama",
+    "Devotional",
+    "Action"
+   ],
+   "unfinished_series": [
+    "rija-d4",
+    "vapa-kalasa-d4"
+   ]
+  },
+  "events_seen": 92
+ },
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01329",
+   "at": "2026-10-01T10:33:37.339Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "8840fe68-c8f5-4e1e-bb1a-477586f23c5b": "D-01329"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T10:33:37.287Z"
+}

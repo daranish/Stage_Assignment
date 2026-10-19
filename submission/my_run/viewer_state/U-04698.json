@@ -1,0 +1,197 @@
+{
+ "viewer_id": "U-04698",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T12:21:37.324Z",
+  "signup": {
+   "value": "2025-02-17T05:56:37.997Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 130897.324,
+   "refs": [
+    "profile:U-04698@2026-09-29T11:50:10.616Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "event",
+   "as_of": "2026-09-29T15:45:51.775Z",
+   "age_s": 160545.549,
+   "refs": [
+    "profile:U-04698@2026-09-29T11:50:10.616Z",
+    "event:31001ce1-cfda-4a14-949e-27936ad1fb9f"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:a788547c-0db0-4d06-83f7-736896637756",
+   "conflicts": [
+    "profile(dup row):d2"
+   ],
+   "as_of": "2026-10-01T12:21:37.324Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04698@2026-09-25T15:44:51.879Z",
+     "profile:U-04698@2026-09-29T11:50:10.616Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 130897.324
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04698@2026-09-25T15:44:51.879Z",
+     "profile:U-04698@2026-09-29T11:50:10.616Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 130897.324
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "profile_duplicate_row",
+    "other_row_updated_at": "2026-09-25T15:44:51.879Z",
+    "differs": {
+     "subscription_status": {
+      "other": "never",
+      "chosen": "active"
+     },
+     "preferred_dialect": {
+      "other": "d2",
+      "chosen": "d4"
+     }
+    },
+    "resolution": "later updated_at chosen after dropping rows contradicted by purchase evidence"
+   },
+   {
+    "fact": "dialect",
+    "used": "d4",
+    "others": [
+     "profile(dup row):d2"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 2
+  },
+  "watch": {
+   "plays": 16,
+   "completes": 7,
+   "last_play_at": "2026-09-30T07:41:27.577Z",
+   "play_days_14d": 6,
+   "opens_14d_excl_current": 14,
+   "top_genres": [
+    "Romance",
+    "Family",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "bagi-baya-d4",
+    "raja-d4",
+    "subha-gumo-d4"
+   ]
+  },
+  "events_seen": 123
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T12:21:37.324Z",
+  "deadline": "2026-10-08T12:21:37.324Z",
+  "status": "open",
+  "decision_id": "D-01576",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-04698@2026-09-29T11:50:10.616Z",
+   "event:31001ce1-cfda-4a14-949e-27936ad1fb9f",
+   "catalogue:T0915"
+  ],
+  "reason": "active subscriber; 28 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T12:21:37.324Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-029701"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T12:21:37.324Z",
+  "deadline": "2026-10-08T12:21:37.324Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T12:21:37.324Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01576",
+   "at": "2026-10-01T12:21:37.377Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-029701"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T12:21:37.324Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "achieved G08 with no prior exposure by the agent",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "a788547c-0db0-4d06-83f7-736896637756": "D-01576"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

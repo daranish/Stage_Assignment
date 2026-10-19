@@ -1,0 +1,176 @@
+{
+ "viewer_id": "U-01644",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T05:35:29.420Z",
+  "signup": {
+   "value": "2026-03-06T01:32:29.837Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 106529.42,
+   "refs": [
+    "profile:U-01644@2026-09-28T20:44:19.207Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T20:44:19.207Z",
+   "age_s": 204670.213,
+   "refs": [
+    "profile:U-01644@2026-09-28T20:44:19.207Z",
+    "event:4767b555-6895-4713-94ae-119f7c355c9b"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-24T03:03:23.503Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:05a19f1a-cfb1-4cf3-a486-12e93499d2fd",
+   "conflicts": [
+    "profile:d5"
+   ],
+   "as_of": "2026-10-01T05:35:29.420Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01644@2026-09-28T20:44:19.207Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 106529.42
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01644@2026-09-28T20:44:19.207Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 106529.42
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d6",
+    "others": [
+     "profile:d5"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 21,
+   "completes": 13,
+   "last_play_at": "2026-09-30T14:36:27.968Z",
+   "play_days_14d": 9,
+   "opens_14d_excl_current": 15,
+   "top_genres": [
+    "Thriller",
+    "Action",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "chupi-gugi-d6",
+    "kapa-lone-d6",
+    "machu-basu-d6",
+    "rasuya-moni-d6"
+   ]
+  },
+  "events_seen": 160
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T05:35:29.420Z",
+  "deadline": "2026-10-04T05:35:29.420Z",
+  "status": "open",
+  "decision_id": "D-00691",
+  "slug": "chupi-gugi-d6",
+  "assumptions": [],
+  "evidence": [
+   "event:9a84f685-766d-46bf-841f-e4209f01011f",
+   "catalogue:T1978"
+  ],
+  "reason": "unfinished series chupi-gugi-d6 idle 5.9 days, 40 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T05:35:29.420Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T05:35:29.420Z",
+  "deadline": "2026-10-04T05:35:29.420Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T05:35:29.420Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00691",
+   "at": "2026-10-01T05:35:29.472Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T05:35:29.420Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 3 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "05a19f1a-cfb1-4cf3-a486-12e93499d2fd": "D-00691"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

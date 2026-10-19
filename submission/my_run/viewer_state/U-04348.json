@@ -1,0 +1,176 @@
+{
+ "viewer_id": "U-04348",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:09:32.653Z",
+  "signup": {
+   "value": "2026-06-22T04:46:44.209Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 140972.653,
+   "refs": [
+    "profile:U-04348@2026-09-29T04:11:19.486Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T04:11:19.486Z",
+   "age_s": 212293.167,
+   "refs": [
+    "profile:U-04348@2026-09-29T04:11:19.486Z",
+    "event:0eeb4555-f64d-4028-86ce-818be89bbbdd"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-12T02:39:08.015Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:d81677b0-5707-4c57-9482-14efd9a9f359",
+   "conflicts": [],
+   "as_of": "2026-10-01T15:09:32.653Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04348@2026-09-29T04:11:19.486Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140972.653
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-04348@2026-09-29T04:11:19.486Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140972.653
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 12,
+   "completes": 4,
+   "last_play_at": "2026-09-27T14:13:39.759Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 12,
+   "top_genres": [
+    "Devotional",
+    "Drama",
+    "Action"
+   ],
+   "unfinished_series": [
+    "bagugu-gigupi-d1",
+    "gima-bhadaba-d1",
+    "hapibha-d1"
+   ]
+  },
+  "events_seen": 94
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T02:37:24.558Z",
+  "deadline": "2026-10-04T02:37:24.558Z",
+  "status": "open",
+  "decision_id": "D-00171",
+  "slug": "hapibha-d1",
+  "assumptions": [],
+  "evidence": [
+   "event:3ae83395-c9bf-4e4f-8a28-4d6cab485824",
+   "catalogue:T0004"
+  ],
+  "reason": "unfinished series hapibha-d1 idle 3.5 days, 22 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T02:37:24.558Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T02:37:24.558Z",
+  "deadline": "2026-10-04T02:37:24.558Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T15:09:32.653Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00171",
+   "at": "2026-10-01T02:37:24.612Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02197",
+   "at": "2026-10-01T15:09:32.657Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00085",
+  "A-00086",
+  "A-00961"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T02:37:24.558Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 3 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "7a8de9d7-e378-4218-8baa-9c3ae16d2a74": "D-00171",
+  "d81677b0-5707-4c57-9482-14efd9a9f359": "D-02197"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

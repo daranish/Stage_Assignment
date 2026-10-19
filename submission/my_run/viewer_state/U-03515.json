@@ -1,0 +1,164 @@
+{
+ "viewer_id": "U-03515",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:20:01.514Z",
+  "signup": {
+   "value": "2024-11-17T00:50:14.945Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 145201.514,
+   "refs": [
+    "profile:U-03515@2026-09-29T04:22:07.543Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "event",
+   "as_of": "2026-09-29T07:03:46.050Z",
+   "age_s": 206175.464,
+   "refs": [
+    "profile:U-03515@2026-09-29T04:22:07.543Z",
+    "event:6df77f34-9699-4882-be74-e0094ce895e6"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:f6bcfc75-d224-4bd3-970e-909906796188",
+   "conflicts": [],
+   "as_of": "2026-10-01T16:20:01.514Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03515@2026-09-29T04:22:07.543Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 145201.514
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03515@2026-09-29T04:22:07.543Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 145201.514
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 5,
+   "completes": 2,
+   "last_play_at": "2026-09-25T06:34:17.928Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 8,
+   "top_genres": [
+    "Devotional",
+    "Family"
+   ],
+   "unfinished_series": [
+    "kova-sako-d5"
+   ]
+  },
+  "events_seen": 51
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T16:20:01.514Z",
+  "deadline": "2026-10-04T16:20:01.514Z",
+  "status": "open",
+  "decision_id": "D-02461",
+  "slug": "kova-sako-d5",
+  "assumptions": [],
+  "evidence": [
+   "event:29e12890-4c0e-40c8-8b4b-7e3d83392462",
+   "catalogue:T1180"
+  ],
+  "reason": "unfinished series kova-sako-d5 idle 6.4 days, 28 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T16:20:01.514Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T16:20:01.514Z",
+  "deadline": "2026-10-04T16:20:01.514Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T16:20:01.514Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02461",
+   "at": "2026-10-01T16:20:01.567Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-01070",
+  "A-01071"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T16:20:01.514Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "f6bcfc75-d224-4bd3-970e-909906796188": "D-02461"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

@@ -1,0 +1,178 @@
+{
+ "viewer_id": "U-01771",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T04:48:44.139Z",
+  "signup": {
+   "value": "2025-09-23T10:44:01.296Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 103724.139,
+   "refs": [
+    "profile:U-01771@2026-09-29T16:42:13.081Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T16:42:13.081Z",
+   "age_s": 129991.058,
+   "refs": [
+    "profile:U-01771@2026-09-29T16:42:13.081Z",
+    "event:867da5ec-8541-4684-bcfa-48c043a63189"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-27T06:32:59.721Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:b7d680f5-a6e5-4b26-8b16-231bfa85f73a",
+   "conflicts": [
+    "campaign_link:d2"
+   ],
+   "as_of": "2026-10-01T04:48:44.139Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01771@2026-09-29T16:42:13.081Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 103724.139
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01771@2026-09-29T16:42:13.081Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 103724.139
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d4",
+    "others": [
+     "campaign_link:d2"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 9,
+   "completes": 4,
+   "last_play_at": "2026-09-29T02:17:13.014Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Romance"
+   ],
+   "unfinished_series": [
+    "bagi-baya-d4"
+   ]
+  },
+  "events_seen": 76
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T04:48:44.139Z",
+  "deadline": "2026-10-08T04:48:44.139Z",
+  "status": "open",
+  "decision_id": "D-00591",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-01771@2026-09-29T16:42:13.081Z",
+   "event:867da5ec-8541-4684-bcfa-48c043a63189",
+   "catalogue:T0915"
+  ],
+  "reason": "active subscriber; 28 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T04:48:44.139Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-011911"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T04:48:44.139Z",
+  "deadline": "2026-10-08T04:48:44.139Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T04:48:44.139Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00591",
+   "at": "2026-10-01T04:48:44.192Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G08",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00186"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-011911"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T04:48:44.139Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "achieved G08 after personalised exposure (association only, not proof of cause)",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "b7d680f5-a6e5-4b26-8b16-231bfa85f73a": "D-00591"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

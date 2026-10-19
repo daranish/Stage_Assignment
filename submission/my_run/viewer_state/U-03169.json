@@ -1,0 +1,178 @@
+{
+ "viewer_id": "U-03169",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T10:25:25.048Z",
+  "signup": {
+   "value": "2026-03-20T21:25:38.551Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 123925.048,
+   "refs": [
+    "profile:U-03169@2026-09-28T22:28:05.913Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-28T22:28:05.913Z",
+   "age_s": 215839.135,
+   "refs": [
+    "profile:U-03169@2026-09-28T22:28:05.913Z",
+    "event:85c816e3-c7b3-4572-b25a-8c67f1db5e68"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-02T15:07:05.448Z"
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:8cd1f723-0ac1-45e9-8ddc-289a8b1e7486",
+   "conflicts": [
+    "profile:d5"
+   ],
+   "as_of": "2026-10-01T10:25:25.048Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03169@2026-09-28T22:28:05.913Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 123925.048
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03169@2026-09-28T22:28:05.913Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 123925.048
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d6",
+    "others": [
+     "profile:d5"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 5,
+   "completes": 3,
+   "last_play_at": "2026-09-30T14:54:19.641Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 4,
+   "top_genres": [
+    "Devotional",
+    "Thriller",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "gubava-gihaya-d5",
+    "rasuya-moni-d6"
+   ]
+  },
+  "events_seen": 44
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T10:25:25.048Z",
+  "deadline": "2026-10-04T10:25:25.048Z",
+  "status": "open",
+  "decision_id": "D-01321",
+  "slug": "rasuya-moni-d6",
+  "assumptions": [],
+  "evidence": [
+   "event:8d3d58fe-7d39-4016-bac0-7bc0bc3a1f75",
+   "catalogue:T1387"
+  ],
+  "reason": "unfinished series rasuya-moni-d6 idle 3.2 days, 8 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T10:25:25.048Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-020044"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T10:25:25.048Z",
+  "deadline": "2026-10-04T10:25:25.048Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T10:25:25.048Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01321",
+   "at": "2026-10-01T10:25:25.100Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-020044"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T10:25:25.048Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "achieved G07 with no prior exposure by the agent",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "8cd1f723-0ac1-45e9-8ddc-289a8b1e7486": "D-01321"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

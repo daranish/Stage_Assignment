@@ -1,0 +1,173 @@
+{
+ "viewer_id": "U-04158",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T17:47:32.676Z",
+  "signup": {
+   "value": "2025-03-22T00:38:23.463Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 150452.676,
+   "refs": [
+    "profile:U-04158@2026-09-29T08:35:53.890Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T08:35:53.890Z",
+   "age_s": 205898.786,
+   "refs": [
+    "profile:U-04158@2026-09-29T08:35:53.890Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:71448377-b3fc-45aa-a9b2-e1b6a90c2745",
+   "conflicts": [],
+   "as_of": "2026-10-01T17:47:32.676Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-04158@2026-09-29T08:35:53.890Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 150452.676
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04158@2026-09-29T08:35:53.890Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 150452.676
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 2,
+   "last_play_at": "2026-09-23T17:00:50.365Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Family",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "bhari-vagi-d6"
+   ]
+  },
+  "events_seen": 36
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T05:59:53.304Z",
+  "deadline": "2026-10-04T05:59:53.304Z",
+  "status": "open",
+  "decision_id": "D-00750",
+  "slug": "bhari-vagi-d6",
+  "assumptions": [],
+  "evidence": [
+   "event:e7b8cb4e-2388-4f76-b129-e6da5e371280",
+   "catalogue:T1393"
+  ],
+  "reason": "unfinished series bhari-vagi-d6 idle 7.5 days, 24 episodes left",
+  "messages_sent": 2,
+  "committed_at": "2026-10-01T05:59:53.304Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T05:59:53.304Z",
+  "deadline": "2026-10-04T05:59:53.304Z",
+  "last_action": "HOME_PAGE+WHATSAPP",
+  "revised_at": "2026-10-01T17:47:32.676Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00750",
+   "at": "2026-10-01T05:59:53.357Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02728",
+   "at": "2026-10-01T17:47:32.678Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00260",
+  "A-00261",
+  "A-01175",
+  "A-01176"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T05:59:53.304Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 0 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "468a0f67-c2c0-44ff-9f0a-de7f08fdccc8": "D-00750",
+  "71448377-b3fc-45aa-a9b2-e1b6a90c2745": "D-02728"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

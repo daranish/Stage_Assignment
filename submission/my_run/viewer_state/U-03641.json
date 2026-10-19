@@ -1,0 +1,177 @@
+{
+ "viewer_id": "U-03641",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T08:17:30.947Z",
+  "signup": {
+   "value": "2026-06-30T07:30:38.989Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 116250.947,
+   "refs": [
+    "profile:U-03641@2026-09-29T01:51:50.748Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T01:51:50.748Z",
+   "age_s": 195940.199,
+   "refs": [
+    "profile:U-03641@2026-09-29T01:51:50.748Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:5d648fa6-c529-4758-b667-a91f5ce39916",
+   "conflicts": [
+    "profile:d1"
+   ],
+   "as_of": "2026-10-01T08:17:30.947Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03641@2026-09-29T01:51:50.748Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 116250.947
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03641@2026-09-29T01:51:50.748Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 116250.947
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d3",
+    "others": [
+     "profile:d1"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 5,
+   "completes": 2,
+   "last_play_at": "2026-09-23T09:20:03.541Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 5,
+   "top_genres": [
+    "Crime",
+    "Romance",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "jakasa-dapi-d3",
+    "yane-tegi-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 53
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T08:17:30.947Z",
+  "deadline": "2026-10-04T08:17:30.947Z",
+  "status": "open",
+  "decision_id": "D-01049",
+  "slug": "jakasa-dapi-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:e886e768-b111-4416-a982-50ac6e96de93",
+   "catalogue:T0904"
+  ],
+  "reason": "unfinished series jakasa-dapi-d3 idle 8.0 days, 17 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T08:17:30.947Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T08:17:30.947Z",
+  "deadline": "2026-10-04T08:17:30.947Z",
+  "last_action": "HOME_PAGE+WHATSAPP",
+  "revised_at": "2026-10-01T08:17:30.947Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01049",
+   "at": "2026-10-01T08:17:30.999Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00420",
+  "A-00421"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T08:17:30.947Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 0 app opens and 0 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "5d648fa6-c529-4758-b667-a91f5ce39916": "D-01049"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

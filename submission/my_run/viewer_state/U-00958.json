@@ -1,0 +1,213 @@
+{
+ "viewer_id": "U-00958",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:59:09.052Z",
+  "signup": {
+   "value": "2025-11-27T15:16:59.999Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 147549.052,
+   "refs": [
+    "profile:U-00958@2026-09-29T12:19:28.947Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T12:19:28.947Z",
+   "age_s": 189580.105,
+   "refs": [
+    "profile:U-00958@2026-09-29T12:19:28.947Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:2598d94e-d472-4dde-aa93-717f0d77ec18",
+   "conflicts": [],
+   "as_of": "2026-10-01T16:59:09.052Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00958@2026-09-29T12:19:28.947Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 147549.052
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00958@2026-09-29T12:19:28.947Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 147549.052
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 1,
+   "completes": 0,
+   "last_play_at": "2026-09-28T17:25:28.440Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 12,
+   "top_genres": [
+    "Devotional"
+   ],
+   "unfinished_series": [
+    "gubava-gihaya-d5"
+   ]
+  },
+  "events_seen": 27
+ },
+ "active_goal": {
+  "goal_id": "G02",
+  "name": "first_full_episode_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T04:32:38.391Z",
+  "deadline": "2026-10-04T04:32:38.391Z",
+  "status": "open",
+  "decision_id": "D-00338",
+  "slug": null,
+  "assumptions": [
+   "history is limited to the 30-day event window; earlier activity is not visible"
+  ],
+  "evidence": [
+   "profile:U-00958@2026-09-29T12:19:28.947Z"
+  ],
+  "reason": "no episode_completed observed",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T04:32:38.391Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G02",
+  "since": "2026-10-01T04:32:38.391Z",
+  "deadline": "2026-10-04T04:32:38.391Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T16:59:09.052Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00338",
+   "at": "2026-10-01T04:32:38.444Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01086",
+   "at": "2026-10-01T08:32:07.493Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01247",
+   "at": "2026-10-01T09:44:37.561Z",
+   "action": "NO_ACTION",
+   "goal_id": "G02",
+   "reason": "nothing to change: personalised page A-00442 still live (TTL): not republished; message: goal G02 is served by the home page only (proportionality)"
+  },
+  {
+   "decision_id": "D-01283",
+   "at": "2026-10-01T10:06:48.317Z",
+   "action": "NO_ACTION",
+   "goal_id": "G02",
+   "reason": "nothing to change: personalised page A-00442 still live (TTL): not republished; message: goal G02 is served by the home page only (proportionality)"
+  },
+  {
+   "decision_id": "D-01840",
+   "at": "2026-10-01T14:03:28.723Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02338",
+   "at": "2026-10-01T15:44:23.281Z",
+   "action": "NO_ACTION",
+   "goal_id": "G02",
+   "reason": "nothing to change: personalised page A-00783 still live (TTL): not republished; message: goal G02 is served by the home page only (proportionality)"
+  },
+  {
+   "decision_id": "D-02600",
+   "at": "2026-10-01T16:59:09.054Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00170",
+  "A-00442",
+  "A-00783",
+  "A-01128"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G02",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T04:32:38.391Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G02",
+   "lesson": "G02 not achieved (1 failure(s) for this goal): 6 app opens and 0 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G02": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "24d6809b-678f-4478-a2d3-6fbcc4c35830": "D-00338",
+  "f6d8bbf3-d771-46ec-aa61-acb870e6d3af": "D-01086",
+  "652e82d5-81ed-4b99-8975-00e96945ba16": "D-01247",
+  "f1e6643f-d6c4-402e-a46a-64ac38954257": "D-01283",
+  "9e769c96-440f-4ed5-89b5-a9f6ee65df66": "D-01840",
+  "7e4d50d3-1ea0-4edd-b6f6-aed8265e38c8": "D-02338",
+  "2598d94e-d472-4dde-aa93-717f0d77ec18": "D-02600"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

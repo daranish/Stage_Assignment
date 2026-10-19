@@ -1,0 +1,180 @@
+{
+ "viewer_id": "U-00220",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:56:04.303Z",
+  "signup": {
+   "value": "2025-04-19T00:41:42.906Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 140164.303,
+   "refs": [
+    "profile:U-00220@2026-09-29T07:38:28.072Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T07:38:28.072Z",
+   "age_s": 199056.231,
+   "refs": [
+    "profile:U-00220@2026-09-29T07:38:28.072Z",
+    "event:4e8b8a83-8ff7-4fa8-aa01-8f4e5fc01f12"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-24T13:38:13.645Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:9f01406c-315b-4a17-a5b6-f06d36eeb652",
+   "conflicts": [
+    "profile:d1"
+   ],
+   "as_of": "2026-10-01T14:56:04.303Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00220@2026-09-29T07:38:28.072Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140164.303
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00220@2026-09-29T07:38:28.072Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140164.303
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d2",
+    "others": [
+     "profile:d1"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 17,
+   "completes": 11,
+   "last_play_at": "2026-09-27T11:25:55.599Z",
+   "play_days_14d": 5,
+   "opens_14d_excl_current": 14,
+   "top_genres": [
+    "Action",
+    "Family",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "dhapipa-gini-d2",
+    "hama-chudibha-d1",
+    "hate-d1",
+    "molo-d2",
+    "tidha-dakachu-d1"
+   ]
+  },
+  "events_seen": 141
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T14:56:04.303Z",
+  "deadline": "2026-10-04T14:56:04.303Z",
+  "status": "open",
+  "decision_id": "D-02023",
+  "slug": "molo-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:db1f90dd-4068-4b8d-acc6-ce4d58ab51bd",
+   "catalogue:T0521"
+  ],
+  "reason": "unfinished series molo-d2 idle 4.1 days, 4 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T14:56:04.303Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T14:56:04.303Z",
+  "deadline": "2026-10-04T14:56:04.303Z",
+  "last_action": "HOME_PAGE+WHATSAPP",
+  "revised_at": "2026-10-01T14:56:04.303Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02023",
+   "at": "2026-10-01T14:56:04.357Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00882",
+  "A-00883"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T14:56:04.303Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "9f01406c-315b-4a17-a5b6-f06d36eeb652": "D-02023"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

@@ -1,0 +1,164 @@
+{
+ "viewer_id": "U-00779",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:13:09.202Z",
+  "signup": {
+   "value": "2025-11-07T21:04:25.858Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 144789.202,
+   "refs": [
+    "profile:U-00779@2026-09-28T21:01:48.447Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-28T21:01:48.447Z",
+   "age_s": 241880.755,
+   "refs": [
+    "profile:U-00779@2026-09-28T21:01:48.447Z",
+    "event:cedc0be6-5f04-4b50-adb9-62e93c545fe7"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-06T11:09:58.871Z"
+  },
+  "dialect": {
+   "value": "d7",
+   "source": "app_setting",
+   "ref": "event:b69d0d16-ce3e-4ea0-827a-7ae5c52d6b33",
+   "conflicts": [],
+   "as_of": "2026-10-01T16:13:09.202Z",
+   "supported": false,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00779@2026-09-28T21:01:48.447Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 144789.202
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00779@2026-09-28T21:01:48.447Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 144789.202
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 6,
+   "completes": 2,
+   "last_play_at": "2026-09-29T13:50:40.207Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 8,
+   "top_genres": [
+    "Romance",
+    "Action",
+    "Devotional"
+   ],
+   "unfinished_series": [
+    "dhapipa-gini-d2",
+    "guka-kosusa-d2",
+    "molo-d2"
+   ]
+  },
+  "events_seen": 54
+ },
+ "active_goal": {
+  "goal_id": "G06",
+  "name": "reactivate_lapsed_14d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "any paid plan",
+   "window_hours": 336
+  },
+  "started_at": "2026-10-01T16:13:09.202Z",
+  "deadline": "2026-10-15T16:13:09.202Z",
+  "status": "open",
+  "decision_id": "D-02438",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-00779@2026-09-28T21:01:48.447Z",
+   "event:cedc0be6-5f04-4b50-adb9-62e93c545fe7"
+  ],
+  "reason": "subscription_lapsed event within 30 days",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T16:13:09.202Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G06",
+  "since": "2026-10-01T16:13:09.202Z",
+  "deadline": "2026-10-15T16:13:09.202Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T16:13:09.202Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02438",
+   "at": "2026-10-01T16:13:09.254Z",
+   "action": "NO_ACTION",
+   "goal_id": "G06",
+   "reason": "dialect d7 (app setting) has no catalogue content: nothing valid to show or promote"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G06",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-15T16:13:09.202Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G06",
+   "lesson": "G06 not achieved (1 failure(s) for this goal): 9 app opens and 0 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G06": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "b69d0d16-ce3e-4ea0-827a-7ae5c52d6b33": "D-02438"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

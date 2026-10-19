@@ -1,0 +1,162 @@
+{
+ "viewer_id": "U-03007",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T11:34:39.671Z",
+  "signup": {
+   "value": "2025-12-09T21:40:26.760Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 128079.671,
+   "refs": [
+    "profile:U-03007@2026-09-29T06:32:47.661Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T06:32:47.661Z",
+   "age_s": 190912.01,
+   "refs": [
+    "profile:U-03007@2026-09-29T06:32:47.661Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:54577c17-c57b-4e30-a71d-a00365ee4432",
+   "conflicts": [],
+   "as_of": "2026-10-01T11:34:39.671Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03007@2026-09-29T06:32:47.661Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 128079.671
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03007@2026-09-29T06:32:47.661Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 128079.671
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 2,
+   "last_play_at": "2026-09-26T05:35:54.527Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Action",
+    "Romance",
+    "Family"
+   ],
+   "unfinished_series": [
+    "gune-halo-d1",
+    "tidha-dakachu-d1"
+   ]
+  },
+  "events_seen": 43
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T11:34:39.671Z",
+  "deadline": "2026-10-04T11:34:39.671Z",
+  "status": "open",
+  "decision_id": "D-01453",
+  "slug": "gune-halo-d1",
+  "assumptions": [],
+  "evidence": [
+   "event:0cfea6ae-6acb-4a38-96d2-752172796d29",
+   "catalogue:T0016"
+  ],
+  "reason": "unfinished series gune-halo-d1 idle 5.2 days, 45 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T11:34:39.671Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T11:34:39.671Z",
+  "deadline": "2026-10-04T11:34:39.671Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T11:34:39.671Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01453",
+   "at": "2026-10-01T11:34:39.723Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T11:34:39.671Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 4 app opens and 1 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "54577c17-c57b-4e30-a71d-a00365ee4432": "D-01453"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

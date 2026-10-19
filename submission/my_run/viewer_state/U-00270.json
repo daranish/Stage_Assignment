@@ -1,0 +1,179 @@
+{
+ "viewer_id": "U-00270",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T05:13:04.345Z",
+  "signup": {
+   "value": "2025-03-14T10:20:08.374Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 105184.345,
+   "refs": [
+    "profile:U-00270@2026-09-29T14:09:41.709Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T14:09:41.709Z",
+   "age_s": 140602.636,
+   "refs": [
+    "profile:U-00270@2026-09-29T14:09:41.709Z",
+    "event:249961fb-136a-4c82-bbee-a5f99d86e814"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-15T03:10:45.948Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:74052fc8-f8a4-4fec-bf48-5944d7d09833",
+   "conflicts": [
+    "profile:d4"
+   ],
+   "as_of": "2026-10-01T05:13:04.345Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00270@2026-09-29T14:09:41.709Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 105184.345
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00270@2026-09-29T14:09:41.709Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 105184.345
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d5",
+    "others": [
+     "profile:d4"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 5,
+   "completes": 1,
+   "last_play_at": "2026-09-30T06:19:59.523Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Crime",
+    "Romance",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "jamo-hasa-d5",
+    "yaka-naka-d5"
+   ]
+  },
+  "events_seen": 57
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T05:13:04.345Z",
+  "deadline": "2026-10-08T05:13:04.345Z",
+  "status": "open",
+  "decision_id": "D-00646",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-00270@2026-09-29T14:09:41.709Z",
+   "event:249961fb-136a-4c82-bbee-a5f99d86e814",
+   "catalogue:T1181"
+  ],
+  "reason": "active subscriber; 22 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T05:13:04.345Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-001950"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T05:13:04.345Z",
+  "deadline": "2026-10-08T05:13:04.345Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T05:13:04.345Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00646",
+   "at": "2026-10-01T05:13:04.398Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-001950"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T05:13:04.345Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "achieved G08 with no prior exposure by the agent",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "74052fc8-f8a4-4fec-bf48-5944d7d09833": "D-00646"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

@@ -1,0 +1,184 @@
+{
+ "viewer_id": "U-00724",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:24:52.520Z",
+  "signup": {
+   "value": "2026-09-28T04:27:13.984Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 145492.52,
+   "refs": [
+    "profile:U-00724@2026-09-29T05:42:21.882Z",
+    "event:97ce14d0-ae55-4e63-b73e-cfbecc9a0386"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "trial_active",
+   "source": "profile",
+   "as_of": "2026-09-29T05:42:21.882Z",
+   "age_s": 211350.638,
+   "refs": [
+    "profile:U-00724@2026-09-29T05:42:21.882Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:5ec248b7-0cbf-46b1-b148-c6478ea0662c",
+   "conflicts": [],
+   "as_of": "2026-10-01T16:24:52.520Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00724@2026-09-29T05:42:21.882Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 145492.52
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00724@2026-09-29T05:42:21.882Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 145492.52
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 1,
+   "completes": 0,
+   "last_play_at": "2026-09-28T04:29:00.807Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Drama",
+    "Thriller"
+   ],
+   "unfinished_series": []
+  },
+  "events_seen": 17
+ },
+ "active_goal": {
+  "goal_id": "G04",
+  "name": "trial_to_paid_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "is_trial = false",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T15:25:37.353Z",
+  "deadline": "2026-10-08T15:25:37.353Z",
+  "status": "open",
+  "decision_id": "D-02276",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-00724@2026-09-29T05:42:21.882Z"
+  ],
+  "reason": "trial_active per profile",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T15:25:37.353Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G04",
+  "since": "2026-10-01T15:25:37.353Z",
+  "deadline": "2026-10-08T15:25:37.353Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T16:24:52.520Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02276",
+   "at": "2026-10-01T15:25:37.406Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G04",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02277",
+   "at": "2026-10-01T15:25:42.926Z",
+   "action": "NO_ACTION",
+   "goal_id": "G04",
+   "reason": "nothing to change: personalised page A-00996 still live (TTL): not republished; message: no valid title for a message in the viewer dialect"
+  },
+  {
+   "decision_id": "D-02287",
+   "at": "2026-10-01T15:28:20.445Z",
+   "action": "NO_ACTION",
+   "goal_id": "G04",
+   "reason": "nothing to change: personalised page A-00996 still live (TTL): not republished; message: no valid title for a message in the viewer dialect"
+  },
+  {
+   "decision_id": "D-02475",
+   "at": "2026-10-01T16:24:52.522Z",
+   "action": "NO_ACTION",
+   "goal_id": "G04",
+   "reason": "nothing to change: personalised page A-00996 still live (TTL): not republished; message: no valid title for a message in the viewer dialect"
+  }
+ ],
+ "actions": [
+  "A-00996"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G04",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T15:25:37.353Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G04",
+   "lesson": "G04 not achieved (1 failure(s) for this goal): 12 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G04": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "0f3ff973-bb04-4b84-b7dd-197ece681d75": "D-02276",
+  "542f16d2-6a40-4f58-8337-356c52dcc6f5": "D-02277",
+  "1f9928b5-c33b-41ea-b91e-e373e1126348": "D-02287",
+  "5ec248b7-0cbf-46b1-b148-c6478ea0662c": "D-02475"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

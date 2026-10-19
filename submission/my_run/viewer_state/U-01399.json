@@ -1,0 +1,188 @@
+{
+ "viewer_id": "U-01399",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:28:14.759Z",
+  "signup": {
+   "value": "2025-12-02T06:38:02.375Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 138494.759,
+   "refs": [
+    "profile:U-01399@2026-09-29T03:03:18.963Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T03:03:18.963Z",
+   "age_s": 213895.796,
+   "refs": [
+    "profile:U-01399@2026-09-29T03:03:18.963Z",
+    "event:dd9373be-265b-4830-8d95-ec12aab8c72e"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-21T17:58:12.318Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:76f186ab-4c36-49df-92c5-2a4faab76ff0",
+   "conflicts": [],
+   "as_of": "2026-10-01T14:28:14.759Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01399@2026-09-29T03:03:18.963Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 138494.759
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01399@2026-09-29T03:03:18.963Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 138494.759
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 8,
+   "completes": 4,
+   "last_play_at": "2026-09-28T07:14:21.137Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 13,
+   "top_genres": [
+    "Devotional",
+    "Action",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "gubava-gihaya-d5",
+    "jamo-hasa-d5",
+    "yava-teka-d5"
+   ]
+  },
+  "events_seen": 85
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T06:17:48.821Z",
+  "deadline": "2026-10-08T06:17:48.821Z",
+  "status": "open",
+  "decision_id": "D-00781",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-01399@2026-09-29T03:03:18.963Z",
+   "event:dd9373be-265b-4830-8d95-ec12aab8c72e",
+   "catalogue:T1181"
+  ],
+  "reason": "active subscriber; 22 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T06:17:48.821Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-009540"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T06:17:48.821Z",
+  "deadline": "2026-10-08T06:17:48.821Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T14:28:14.759Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00781",
+   "at": "2026-10-01T06:17:48.874Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G08",
+   "reason": null
+  },
+  {
+   "decision_id": "D-00799",
+   "at": "2026-10-01T06:26:59.231Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "nothing to change: personalised page A-00279 still live (TTL): not republished; message: goal G08 is served by the home page only (proportionality)"
+  },
+  {
+   "decision_id": "D-01930",
+   "at": "2026-10-01T14:28:14.762Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G08",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00279",
+  "A-00835"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-009540"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T06:17:48.821Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "achieved G08 after personalised exposure (association only, not proof of cause)",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "5340cde3-671c-4778-82dd-f47520327068": "D-00781",
+  "601a4280-95ba-41c1-8afc-daea91538a1b": "D-00799",
+  "76f186ab-4c36-49df-92c5-2a4faab76ff0": "D-01930"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

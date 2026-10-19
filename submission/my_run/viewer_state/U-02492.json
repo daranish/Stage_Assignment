@@ -1,0 +1,129 @@
+{
+ "viewer_id": "U-02492",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T04:19:42.339Z",
+  "signup": {
+   "value": "2025-09-26T05:39:48.352Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 101982.339,
+   "refs": [
+    "profile:U-02492@2026-09-29T08:48:21.154Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T08:48:21.154Z",
+   "age_s": 156681.185,
+   "refs": [
+    "profile:U-02492@2026-09-29T08:48:21.154Z",
+    "event:b012e833-f7c9-4d72-83b5-a40ecc5ae96c"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-08T05:57:33.914Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "profile(fallback; trigger had None)",
+   "ref": "profile:U-02492",
+   "conflicts": [
+    "trigger_app_dialect:None"
+   ],
+   "as_of": "2026-10-01T04:19:42.339Z",
+   "supported": true,
+   "certain": false,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02492@2026-09-29T08:48:21.154Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 101982.339
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02492@2026-09-29T08:48:21.154Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 101982.339
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d3",
+    "others": [
+     "trigger_app_dialect:None"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 8,
+   "completes": 5,
+   "last_play_at": "2026-09-22T16:47:08.967Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Devotional",
+    "Action",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "gima-bhadaba-d1",
+    "guka-kosusa-d2",
+    "piropa-moguti-d2"
+   ]
+  },
+  "events_seen": 81
+ },
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00218",
+   "at": "2026-10-01T03:08:30.410Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "no goal can be chosen yet: G01: signed up 369.9 days ago (>7); G02: viewer has completed an episode; G05: subscription status is active; G06: subscription status is active; G07: no unfinished series idle >= 3 days that is available in the viewer dialect; G12: app_open 3.4 days ago"
+  },
+  {
+   "decision_id": "D-00313",
+   "at": "2026-10-01T04:19:42.341Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "no goal can be chosen yet: G01: signed up 369.9 days ago (>7); G02: viewer has completed an episode; G05: subscription status is active; G06: subscription status is active; G07: no unfinished series idle >= 3 days that is available in the viewer dialect; G12: app_open 0.0 days ago"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "7c8e767a-9884-4557-a8b9-ddfebbb8b475": "D-00218",
+  "8507e319-9d36-44d5-9f8b-b3f5dba805e9": "D-00313"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T03:08:30.358Z"
+}

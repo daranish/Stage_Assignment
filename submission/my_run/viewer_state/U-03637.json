@@ -1,0 +1,187 @@
+{
+ "viewer_id": "U-03637",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:09:01.256Z",
+  "signup": {
+   "value": "2026-09-06T02:00:04.070Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 140941.256,
+   "refs": [
+    "profile:U-03637@2026-09-29T12:57:54.538Z",
+    "event:8b60173a-8520-42f8-9f85-a538bb69e2e7"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T12:57:54.538Z",
+   "age_s": 180666.718,
+   "refs": [
+    "profile:U-03637@2026-09-29T12:57:54.538Z",
+    "event:04e3323b-6783-41be-bc8d-6e9524261349"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-12T09:18:03.347Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:7cae5afc-deec-4aed-9a6d-5b6d7600e8f3",
+   "conflicts": [
+    "profile:"
+   ],
+   "as_of": "2026-10-01T15:09:01.256Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03637@2026-09-29T12:57:54.538Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140941.256
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03637@2026-09-29T12:57:54.538Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140941.256
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d6",
+    "others": [
+     "profile:"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 12,
+   "completes": 5,
+   "last_play_at": "2026-09-29T14:56:14.522Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Action",
+    "Devotional",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "chupi-gugi-d6",
+    "rasuya-moni-d6"
+   ]
+  },
+  "events_seen": 92
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T00:59:03.573Z",
+  "deadline": "2026-10-08T00:59:03.573Z",
+  "status": "open",
+  "decision_id": "D-00094",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-03637@2026-09-29T12:57:54.538Z",
+   "event:04e3323b-6783-41be-bc8d-6e9524261349",
+   "catalogue:T1393"
+  ],
+  "reason": "active subscriber; 10 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T00:59:03.573Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T00:59:03.573Z",
+  "deadline": "2026-10-08T00:59:03.573Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T15:09:01.256Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00094",
+   "at": "2026-10-01T00:59:03.626Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G08",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02193",
+   "at": "2026-10-01T15:09:01.258Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G08",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00048",
+  "A-00960"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T00:59:03.573Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "G08 not achieved (1 failure(s) for this goal): 7 app opens and 6 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "6e76a5ca-2cd8-403f-af7a-d73c4755a0a2": "D-00094",
+  "7cae5afc-deec-4aed-9a6d-5b6d7600e8f3": "D-02193"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

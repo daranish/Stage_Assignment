@@ -1,0 +1,166 @@
+{
+ "viewer_id": "U-02402",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T12:40:18.085Z",
+  "signup": {
+   "value": "2024-11-27T18:21:23.453Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 132018.085,
+   "refs": [
+    "profile:U-02402@2026-09-28T23:12:55.681Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T23:12:55.681Z",
+   "age_s": 221242.404,
+   "refs": [
+    "profile:U-02402@2026-09-28T23:12:55.681Z",
+    "event:7f928ba4-7f0c-4384-9497-e369b43472b0"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-10T02:26:36.447Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:f63a3793-cbe2-4a60-9445-ca58fbfa3046",
+   "conflicts": [],
+   "as_of": "2026-10-01T12:40:18.085Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02402@2026-09-28T23:12:55.681Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 132018.085
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02402@2026-09-28T23:12:55.681Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 132018.085
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 7,
+   "completes": 3,
+   "last_play_at": "2026-09-27T04:23:37.289Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Crime",
+    "Family",
+    "Devotional"
+   ],
+   "unfinished_series": [
+    "gubava-gihaya-d5",
+    "nina-d5"
+   ]
+  },
+  "events_seen": 69
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T12:40:18.085Z",
+  "deadline": "2026-10-04T12:40:18.085Z",
+  "status": "open",
+  "decision_id": "D-01613",
+  "slug": "nina-d5",
+  "assumptions": [],
+  "evidence": [
+   "event:6980c6ce-7651-4889-8e86-cb4bf3b4b8a5",
+   "catalogue:T1186"
+  ],
+  "reason": "unfinished series nina-d5 idle 10.2 days, 19 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T12:40:18.085Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T12:40:18.085Z",
+  "deadline": "2026-10-04T12:40:18.085Z",
+  "last_action": "HOME_PAGE+WHATSAPP",
+  "revised_at": "2026-10-01T12:40:18.085Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01613",
+   "at": "2026-10-01T12:40:18.138Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00680",
+  "A-00681"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T12:40:18.085Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 0 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "f63a3793-cbe2-4a60-9445-ca58fbfa3046": "D-01613"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

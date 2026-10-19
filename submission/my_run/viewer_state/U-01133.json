@@ -1,0 +1,115 @@
+{
+ "viewer_id": "U-01133",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T13:46:53.082Z",
+  "signup": {
+   "value": "2024-12-30T22:40:14.215Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 136013.082,
+   "refs": [
+    "profile:U-01133@2026-09-29T12:53:53.610Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T12:53:53.610Z",
+   "age_s": 175979.472,
+   "refs": [
+    "profile:U-01133@2026-09-29T12:53:53.610Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d7",
+   "source": "app_setting",
+   "ref": "event:c76beb6f-6e7d-4fb6-a40a-73356d637e26",
+   "conflicts": [
+    "profile:d5"
+   ],
+   "as_of": "2026-10-01T13:46:53.082Z",
+   "supported": false,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01133@2026-09-29T12:53:53.610Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 136013.082
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01133@2026-09-29T12:53:53.610Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 136013.082
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d7",
+    "others": [
+     "profile:d5"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 1,
+   "completes": 1,
+   "last_play_at": "2026-09-06T16:45:37.829Z",
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 1,
+   "top_genres": [
+    "Devotional",
+    "Romance"
+   ],
+   "unfinished_series": []
+  },
+  "events_seen": 14
+ },
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01782",
+   "at": "2026-10-01T13:46:53.134Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "dialect d7 (app setting) has no catalogue content: nothing valid to show or promote"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "c76beb6f-6e7d-4fb6-a40a-73356d637e26": "D-01782"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T13:46:53.082Z"
+}

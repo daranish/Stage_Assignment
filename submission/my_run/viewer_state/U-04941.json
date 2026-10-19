@@ -1,0 +1,186 @@
+{
+ "viewer_id": "U-04941",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:28:14.462Z",
+  "signup": {
+   "value": "2026-09-10T05:33:18.534Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 142094.462,
+   "refs": [
+    "profile:U-04941@2026-09-29T14:46:47.936Z",
+    "event:64ed101d-c637-4982-b2c3-acba163e80d8"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T14:46:47.936Z",
+   "age_s": 175286.526,
+   "refs": [
+    "profile:U-04941@2026-09-29T14:46:47.936Z",
+    "event:212a7125-5df5-433a-a12c-80cf47579436"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-12T15:17:11.140Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:a20c5000-e4ac-45fc-b4ee-a2633bef00e7",
+   "conflicts": [
+    "profile:"
+   ],
+   "as_of": "2026-10-01T15:28:14.462Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04941@2026-09-29T14:46:47.936Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 142094.462
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-04941@2026-09-29T14:46:47.936Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 142094.462
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d2",
+    "others": [
+     "profile:"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 10,
+   "completes": 9,
+   "last_play_at": "2026-09-30T10:57:08.986Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Romance",
+    "Devotional",
+    "Action"
+   ],
+   "unfinished_series": [
+    "guka-kosusa-d2",
+    "molo-d2"
+   ]
+  },
+  "events_seen": 79
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T04:21:04.326Z",
+  "deadline": "2026-10-04T04:21:04.326Z",
+  "status": "open",
+  "decision_id": "D-00318",
+  "slug": "molo-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:7b0b145a-4a8f-428a-a938-07ce71900972",
+   "catalogue:T0521"
+  ],
+  "reason": "unfinished series molo-d2 idle 7.7 days, 5 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T04:21:04.326Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T04:21:04.326Z",
+  "deadline": "2026-10-04T04:21:04.326Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T15:28:14.462Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00318",
+   "at": "2026-10-01T04:21:04.378Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "stale trigger: app_open was buffered offline for 164770s (>600s) - not a live session; recorded as history only"
+  },
+  {
+   "decision_id": "D-02286",
+   "at": "2026-10-01T15:28:14.465Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-01000",
+  "A-01001"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T04:21:04.326Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "678793c9-0225-4a41-ba58-9787db703857": "D-00318",
+  "a20c5000-e4ac-45fc-b4ee-a2633bef00e7": "D-02286"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

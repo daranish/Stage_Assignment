@@ -1,0 +1,186 @@
+{
+ "viewer_id": "U-02722",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:06:10.702Z",
+  "signup": {
+   "value": "2025-07-01T16:43:22.746Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 140770.702,
+   "refs": [
+    "profile:U-02722@2026-09-29T02:21:40.200Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T02:21:40.200Z",
+   "age_s": 218670.502,
+   "refs": [
+    "profile:U-02722@2026-09-29T02:21:40.200Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:9974f3f4-cf53-4aca-850b-447adc4aed29",
+   "conflicts": [
+    "campaign_link:d1"
+   ],
+   "as_of": "2026-10-01T15:06:10.702Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02722@2026-09-29T02:21:40.200Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140770.702
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02722@2026-09-29T02:21:40.200Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140770.702
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d2",
+    "others": [
+     "campaign_link:d1"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 5,
+   "completes": 4,
+   "last_play_at": "2026-09-17T13:27:47.344Z",
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 1,
+   "top_genres": [
+    "Action",
+    "Romance",
+    "Family"
+   ],
+   "unfinished_series": [
+    "dhapipa-gini-d2",
+    "molo-d2"
+   ]
+  },
+  "events_seen": 47
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T10:41:46.793Z",
+  "deadline": "2026-10-04T10:41:46.793Z",
+  "status": "open",
+  "decision_id": "D-01357",
+  "slug": "molo-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:71acb130-db81-4993-a1c3-ccdf90412ff3",
+   "catalogue:T0521"
+  ],
+  "reason": "unfinished series molo-d2 idle 13.9 days, 5 episodes left",
+  "messages_sent": 2,
+  "committed_at": "2026-10-01T10:41:46.793Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T10:41:46.793Z",
+  "deadline": "2026-10-04T10:41:46.793Z",
+  "last_action": "HOME_PAGE+WHATSAPP",
+  "revised_at": "2026-10-01T15:06:10.702Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01357",
+   "at": "2026-10-01T10:41:46.796Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02143",
+   "at": "2026-10-01T15:06:10.705Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00575",
+  "A-00576",
+  "A-00941",
+  "A-00942"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T10:41:46.793Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "aa9f9a0a-77ae-4684-885f-ba9ee4a98f7b": "D-01357",
+  "9974f3f4-cf53-4aca-850b-447adc4aed29": "D-02143"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

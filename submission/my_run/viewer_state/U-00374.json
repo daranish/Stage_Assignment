@@ -1,0 +1,183 @@
+{
+ "viewer_id": "U-00374",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T18:27:47.895Z",
+  "signup": {
+   "value": "2026-09-03T03:29:52.506Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 152867.895,
+   "refs": [
+    "profile:U-00374@2026-09-28T18:50:35.131Z",
+    "event:28b3582b-9249-4485-9dad-fdeda30854b1"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-28T18:50:35.131Z",
+   "age_s": 257832.764,
+   "refs": [
+    "profile:U-00374@2026-09-28T18:50:35.131Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:681620ab-be42-4736-b8a0-091e39a477b9",
+   "conflicts": [],
+   "as_of": "2026-10-01T18:27:47.895Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00374@2026-09-28T18:50:35.131Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 152867.895
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00374@2026-09-28T18:50:35.131Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 152867.895
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 3,
+   "last_play_at": "2026-09-21T06:25:52.836Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 4,
+   "top_genres": [
+    "Romance",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "pate-kari-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 39
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T05:58:29.304Z",
+  "deadline": "2026-10-04T05:58:29.304Z",
+  "status": "open",
+  "decision_id": "D-00746",
+  "slug": "yatite-roloda-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:7d7808c0-30f6-4557-b09b-67de55262b5b",
+   "catalogue:T0901"
+  ],
+  "reason": "unfinished series yatite-roloda-d3 idle 11.7 days, 21 episodes left",
+  "messages_sent": 2,
+  "committed_at": "2026-10-01T05:58:29.304Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T05:58:29.304Z",
+  "deadline": "2026-10-04T05:58:29.304Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T18:27:47.895Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00746",
+   "at": "2026-10-01T05:58:29.356Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02591",
+   "at": "2026-10-01T16:56:31.450Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02792",
+   "at": "2026-10-01T18:27:47.897Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "nothing to change: personalised page A-01123 still live (TTL): not republished; message: daily push/WhatsApp cap already used for the IST day of the send slot"
+  }
+ ],
+ "actions": [
+  "A-00258",
+  "A-00259",
+  "A-01123",
+  "A-01124"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T05:58:29.304Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "945a9820-19de-4d26-ab2a-bb05477cb7d6": "D-00746",
+  "01164be9-bd08-47ed-9963-9110194cffbd": "D-02591",
+  "681620ab-be42-4736-b8a0-091e39a477b9": "D-02792"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

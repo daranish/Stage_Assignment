@@ -1,0 +1,176 @@
+{
+ "viewer_id": "U-02375",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T07:58:29.076Z",
+  "signup": {
+   "value": "2025-01-31T05:15:27.078Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 115109.076,
+   "refs": [
+    "profile:U-02375@2026-09-28T21:29:41.530Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T21:29:41.530Z",
+   "age_s": 210527.546,
+   "refs": [
+    "profile:U-02375@2026-09-28T21:29:41.530Z",
+    "event:7e65d1af-0d8e-47aa-b602-4f83a16cd489"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-02T03:38:55.076Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:b13bff1e-6865-490b-b3a2-8ed87f43643c",
+   "conflicts": [],
+   "as_of": "2026-10-01T07:58:29.076Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02375@2026-09-28T21:29:41.530Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 115109.076
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02375@2026-09-28T21:29:41.530Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 115109.076
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 11,
+   "completes": 9,
+   "last_play_at": "2026-09-26T21:30:18.770Z",
+   "play_days_14d": 5,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Family",
+    "Devotional",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "dhapipa-gini-d2",
+    "guka-kosusa-d2",
+    "molo-d2"
+   ]
+  },
+  "events_seen": 97
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T03:24:56.508Z",
+  "deadline": "2026-10-04T03:24:56.508Z",
+  "status": "open",
+  "decision_id": "D-00235",
+  "slug": "guka-kosusa-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:1d5df104-1253-474b-b604-f5e038a8cb59",
+   "catalogue:T0522"
+  ],
+  "reason": "unfinished series guka-kosusa-d2 idle 4.2 days, 39 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T03:24:56.508Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T03:24:56.508Z",
+  "deadline": "2026-10-04T03:24:56.508Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T07:58:29.076Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00235",
+   "at": "2026-10-01T03:24:56.562Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01010",
+   "at": "2026-10-01T07:58:29.079Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00118",
+  "A-00119",
+  "A-00401"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T03:24:56.508Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "3f878e60-4eaf-46cb-bf60-41b8ea3a6230": "D-00235",
+  "b13bff1e-6865-490b-b3a2-8ed87f43643c": "D-01010"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

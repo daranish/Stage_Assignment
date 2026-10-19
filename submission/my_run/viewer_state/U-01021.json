@@ -1,0 +1,175 @@
+{
+ "viewer_id": "U-01021",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T04:05:47.120Z",
+  "signup": {
+   "value": "2025-02-07T15:05:54.437Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 101147.12,
+   "refs": [
+    "profile:U-01021@2026-09-29T02:08:30.941Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T02:08:30.941Z",
+   "age_s": 179836.179,
+   "refs": [
+    "profile:U-01021@2026-09-29T02:08:30.941Z",
+    "event:52cf7a53-aed3-436b-bc64-f36ea46ded0f"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-20T20:10:34.807Z"
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:0b465f14-ccab-4877-996f-c4112f59772d",
+   "conflicts": [
+    "profile:d5"
+   ],
+   "as_of": "2026-10-01T04:05:47.120Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01021@2026-09-29T02:08:30.941Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 101147.12
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01021@2026-09-29T02:08:30.941Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 101147.12
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d3",
+    "others": [
+     "profile:d5"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 17,
+   "completes": 7,
+   "last_play_at": "2026-09-27T13:48:13.979Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Action",
+    "Thriller",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "jakasa-dapi-d3",
+    "lomobha-moni-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 126
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T04:05:47.120Z",
+  "deadline": "2026-10-04T04:05:47.120Z",
+  "status": "open",
+  "decision_id": "D-00297",
+  "slug": "yatite-roloda-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:2572cba3-f773-4cd5-95a6-7f5ca96cad0a",
+   "catalogue:T0901"
+  ],
+  "reason": "unfinished series yatite-roloda-d3 idle 4.6 days, 21 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T04:05:47.120Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T04:05:47.120Z",
+  "deadline": "2026-10-04T04:05:47.120Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T04:05:47.120Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00297",
+   "at": "2026-10-01T04:05:47.172Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T04:05:47.120Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 0 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "0b465f14-ccab-4877-996f-c4112f59772d": "D-00297"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

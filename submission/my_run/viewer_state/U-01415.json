@@ -1,0 +1,175 @@
+{
+ "viewer_id": "U-01415",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:37:52.063Z",
+  "signup": {
+   "value": "2025-12-15T12:09:00.346Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 142672.063,
+   "refs": [
+    "profile:U-01415@2026-09-28T21:49:41.152Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T21:49:41.152Z",
+   "age_s": 236890.911,
+   "refs": [
+    "profile:U-01415@2026-09-28T21:49:41.152Z",
+    "event:b2e7200f-1687-4a4e-975a-908fdc9d6c5c"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-04T14:49:45.710Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:c42d3611-4bc8-4e91-b271-95b1bf17f6df",
+   "conflicts": [],
+   "as_of": "2026-10-01T15:37:52.063Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01415@2026-09-28T21:49:41.152Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 142672.063
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01415@2026-09-28T21:49:41.152Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 142672.063
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 10,
+   "completes": 4,
+   "last_play_at": "2026-09-23T08:53:52.017Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 13,
+   "top_genres": [
+    "Romance",
+    "Action",
+    "Devotional"
+   ],
+   "unfinished_series": [
+    "molo-d2"
+   ]
+  },
+  "events_seen": 100
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T06:39:52.232Z",
+  "deadline": "2026-10-04T06:39:52.232Z",
+  "status": "open",
+  "decision_id": "D-00827",
+  "slug": "molo-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:2cd051a7-67ca-4f49-9860-345db79324a6",
+   "catalogue:T0521"
+  ],
+  "reason": "unfinished series molo-d2 idle 7.9 days, 3 episodes left",
+  "messages_sent": 2,
+  "committed_at": "2026-10-01T06:39:52.232Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T06:39:52.232Z",
+  "deadline": "2026-10-04T06:39:52.232Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T15:37:52.063Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00827",
+   "at": "2026-10-01T06:39:52.285Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02323",
+   "at": "2026-10-01T15:37:52.066Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00303",
+  "A-00304",
+  "A-01015",
+  "A-01016"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T06:39:52.232Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 0 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "80c0f462-565a-4627-8d22-74957d67ea58": "D-00827",
+  "c42d3611-4bc8-4e91-b271-95b1bf17f6df": "D-02323"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

@@ -1,0 +1,162 @@
+{
+ "viewer_id": "U-00157",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T04:45:09.279Z",
+  "signup": {
+   "value": "2025-03-11T04:04:00.641Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 103509.279,
+   "refs": [
+    "profile:U-00157@2026-09-28T22:17:50.598Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-28T22:17:50.598Z",
+   "age_s": 196038.681,
+   "refs": [
+    "profile:U-00157@2026-09-28T22:17:50.598Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:1d659105-4f7a-4684-a6d9-ae8e9e5d0d68",
+   "conflicts": [],
+   "as_of": "2026-10-01T04:45:09.279Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00157@2026-09-28T22:17:50.598Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 103509.279
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00157@2026-09-28T22:17:50.598Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 103509.279
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 0,
+   "last_play_at": "2026-09-20T10:44:26.315Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 2,
+   "top_genres": [
+    "Romance",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "bagugu-gigupi-d1",
+    "bahana-dhagu-d1"
+   ]
+  },
+  "events_seen": 25
+ },
+ "active_goal": {
+  "goal_id": "G02",
+  "name": "first_full_episode_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T04:45:09.279Z",
+  "deadline": "2026-10-04T04:45:09.279Z",
+  "status": "open",
+  "decision_id": "D-00381",
+  "slug": null,
+  "assumptions": [
+   "history is limited to the 30-day event window; earlier activity is not visible"
+  ],
+  "evidence": [
+   "profile:U-00157@2026-09-28T22:17:50.598Z"
+  ],
+  "reason": "no episode_completed observed",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T04:45:09.279Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G02",
+  "since": "2026-10-01T04:45:09.279Z",
+  "deadline": "2026-10-04T04:45:09.279Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T04:45:09.279Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00381",
+   "at": "2026-10-01T04:45:09.331Z",
+   "action": "NO_ACTION",
+   "goal_id": "G02",
+   "reason": "stale trigger: app_open was buffered offline for 71964s (>600s) - not a live session; recorded as history only"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G02",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T04:45:09.279Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G02",
+   "lesson": "G02 not achieved (1 failure(s) for this goal): 1 app opens and 1 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G02": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "1d659105-4f7a-4684-a6d9-ae8e9e5d0d68": "D-00381"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

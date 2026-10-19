@@ -1,0 +1,190 @@
+{
+ "viewer_id": "U-04962",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:18:13.201Z",
+  "signup": {
+   "value": "2025-08-06T08:32:18.883Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 137893.201,
+   "refs": [
+    "profile:U-04962@2026-09-28T20:47:01.643Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T20:47:01.643Z",
+   "age_s": 235871.558,
+   "refs": [
+    "profile:U-04962@2026-09-28T20:47:01.643Z",
+    "event:6b1ec9f1-ab1a-44f6-90d7-61fa0f4e8b5f"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-17T20:20:23.953Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:35907e8b-15d2-4722-b3df-63b6be0a7a31",
+   "conflicts": [
+    "profile:d1"
+   ],
+   "as_of": "2026-10-01T14:18:13.201Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04962@2026-09-28T20:47:01.643Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 137893.201
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-04962@2026-09-28T20:47:01.643Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 137893.201
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d3",
+    "others": [
+     "profile:d1"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 8,
+   "completes": 2,
+   "last_play_at": "2026-09-28T10:59:55.647Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 10,
+   "top_genres": [
+    "Crime",
+    "Thriller",
+    "Action"
+   ],
+   "unfinished_series": [
+    "pima-pana-d3",
+    "yane-tegi-d3"
+   ]
+  },
+  "events_seen": 66
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T14:18:13.201Z",
+  "deadline": "2026-10-04T14:18:13.201Z",
+  "status": "open",
+  "decision_id": "D-01885",
+  "slug": "yane-tegi-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:286696b1-66e6-4400-90c5-4b801e5d9ae5",
+   "catalogue:T0903"
+  ],
+  "reason": "unfinished series yane-tegi-d3 idle 3.1 days, 18 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T14:18:13.201Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-031677"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T14:18:13.201Z",
+  "deadline": "2026-10-04T14:18:13.201Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T14:18:13.201Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00401",
+   "at": "2026-10-01T04:45:26.631Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "stale trigger: app_open was buffered offline for 752891s (>600s) - not a live session; recorded as history only"
+  },
+  {
+   "decision_id": "D-01885",
+   "at": "2026-10-01T14:18:13.253Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00816",
+  "A-00817"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-031677"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T14:18:13.201Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "achieved G07 after personalised exposure (association only, not proof of cause)",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "450e9b19-f8a4-4ed5-a091-06edab63b35d": "D-00401",
+  "35907e8b-15d2-4722-b3df-63b6be0a7a31": "D-01885"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T04:45:26.579Z"
+}

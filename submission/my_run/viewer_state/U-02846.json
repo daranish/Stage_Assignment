@@ -1,0 +1,188 @@
+{
+ "viewer_id": "U-02846",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T17:53:26.543Z",
+  "signup": {
+   "value": "2025-11-06T23:41:35.212Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 150806.543,
+   "refs": [
+    "profile:U-02846@2026-09-29T11:17:14.193Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T11:17:14.193Z",
+   "age_s": 196572.35,
+   "refs": [
+    "profile:U-02846@2026-09-29T11:17:14.193Z",
+    "event:00ca2d61-b1c2-4a78-af5c-577540a126a9"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-03T13:45:02.435Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:2789ecf2-c792-4eb8-a8e5-1fc7199828ec",
+   "conflicts": [
+    "profile:d1"
+   ],
+   "as_of": "2026-10-01T17:53:26.543Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02846@2026-09-29T11:17:14.193Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 150806.543
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02846@2026-09-29T11:17:14.193Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 150806.543
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d3",
+    "others": [
+     "profile:d1"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 7,
+   "completes": 0,
+   "last_play_at": "2026-09-29T13:19:15.443Z",
+   "play_days_14d": 5,
+   "opens_14d_excl_current": 11,
+   "top_genres": [
+    "Romance",
+    "Comedy",
+    "Action"
+   ],
+   "unfinished_series": [
+    "jakasa-dapi-d3",
+    "pate-kari-d3",
+    "pima-pana-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 47
+ },
+ "active_goal": {
+  "goal_id": "G02",
+  "name": "first_full_episode_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T02:41:36.723Z",
+  "deadline": "2026-10-04T02:41:36.723Z",
+  "status": "open",
+  "decision_id": "D-00178",
+  "slug": null,
+  "assumptions": [
+   "history is limited to the 30-day event window; earlier activity is not visible"
+  ],
+  "evidence": [
+   "profile:U-02846@2026-09-29T11:17:14.193Z"
+  ],
+  "reason": "no episode_completed observed",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T02:41:36.723Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G02",
+  "since": "2026-10-01T02:41:36.723Z",
+  "deadline": "2026-10-04T02:41:36.723Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T17:53:26.543Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00178",
+   "at": "2026-10-01T02:41:36.775Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02743",
+   "at": "2026-10-01T17:53:26.545Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00092",
+  "A-01182"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G02",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T02:41:36.723Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G02",
+   "lesson": "G02 not achieved (1 failure(s) for this goal): 1 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G02": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "98acb314-2d64-44e5-b062-a9ad1829d007": "D-00178",
+  "2789ecf2-c792-4eb8-a8e5-1fc7199828ec": "D-02743"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

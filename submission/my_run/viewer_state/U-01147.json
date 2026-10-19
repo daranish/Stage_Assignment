@@ -1,0 +1,192 @@
+{
+ "viewer_id": "U-01147",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T10:52:40.910Z",
+  "signup": {
+   "value": "2025-11-16T19:18:40.477Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 125560.91,
+   "refs": [
+    "profile:U-01147@2026-09-29T14:10:27.324Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T14:10:27.324Z",
+   "age_s": 160933.586,
+   "refs": [
+    "profile:U-01147@2026-09-29T14:10:27.324Z",
+    "event:576a981c-d112-46df-bb97-096542947675"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-08T08:38:12.381Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:4ad0b71a-076b-4de4-a075-f89d978d9592",
+   "conflicts": [
+    "profile:d5"
+   ],
+   "as_of": "2026-10-01T10:52:40.910Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01147@2026-09-29T14:10:27.324Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 125560.91
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01147@2026-09-29T14:10:27.324Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 125560.91
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d6",
+    "others": [
+     "profile:d5"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 11,
+   "completes": 6,
+   "last_play_at": "2026-09-28T15:38:19.095Z",
+   "play_days_14d": 6,
+   "opens_14d_excl_current": 11,
+   "top_genres": [
+    "Devotional",
+    "Thriller",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "hari-d6",
+    "losubha-rima-d6",
+    "rasuya-moni-d6",
+    "vamapi-gidi-d6"
+   ]
+  },
+  "events_seen": 93
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T07:42:18.646Z",
+  "deadline": "2026-10-04T07:42:18.646Z",
+  "status": "open",
+  "decision_id": "D-00969",
+  "slug": "losubha-rima-d6",
+  "assumptions": [],
+  "evidence": [
+   "event:ea2b49b3-c603-42f2-963a-a8d855f539c0",
+   "catalogue:T1411"
+  ],
+  "reason": "unfinished series losubha-rima-d6 idle 5.3 days, 6 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T07:42:18.646Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T07:42:18.646Z",
+  "deadline": "2026-10-04T07:42:18.646Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T10:52:40.910Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00969",
+   "at": "2026-10-01T07:42:18.698Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-01385",
+   "at": "2026-10-01T10:52:36.750Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-01386",
+   "at": "2026-10-01T10:52:40.912Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T07:42:18.646Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 0 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "6fa7e19c-798d-43df-89fa-a7f7d50033e2": "D-00969",
+  "967902bb-7d42-48e6-b838-180a9020d771": "D-01385",
+  "4ad0b71a-076b-4de4-a075-f89d978d9592": "D-01386"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

@@ -1,0 +1,187 @@
+{
+ "viewer_id": "U-03286",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:32:43.334Z",
+  "signup": {
+   "value": "2026-05-12T22:25:40.843Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 142363.334,
+   "refs": [
+    "profile:U-03286@2026-09-29T11:43:56.980Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T11:43:56.980Z",
+   "age_s": 186526.354,
+   "refs": [
+    "profile:U-03286@2026-09-29T11:43:56.980Z",
+    "event:bfa39850-e87b-4e25-ac95-d0f5300ce097"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-06T20:01:51.395Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:69fc9a9a-25dd-41ed-b2e8-7858b4d7236a",
+   "conflicts": [
+    "profile:d5"
+   ],
+   "as_of": "2026-10-01T15:32:43.334Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03286@2026-09-29T11:43:56.980Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 142363.334
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03286@2026-09-29T11:43:56.980Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 142363.334
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d4",
+    "others": [
+     "profile:d5"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 6,
+   "completes": 1,
+   "last_play_at": "2026-09-30T10:26:58.994Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Action",
+    "Crime",
+    "Family"
+   ],
+   "unfinished_series": [
+    "koha-kagite-d4",
+    "radi-d4"
+   ]
+  },
+  "events_seen": 51
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T11:07:21.291Z",
+  "deadline": "2026-10-08T11:07:21.291Z",
+  "status": "open",
+  "decision_id": "D-01414",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-03286@2026-09-29T11:43:56.980Z",
+   "event:bfa39850-e87b-4e25-ac95-d0f5300ce097",
+   "catalogue:T0915"
+  ],
+  "reason": "active subscriber; 28 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T11:07:21.291Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-021005"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T11:07:21.291Z",
+  "deadline": "2026-10-08T11:07:21.291Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T15:32:43.334Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01414",
+   "at": "2026-10-01T11:07:21.344Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02307",
+   "at": "2026-10-01T15:32:43.336Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-021005"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T11:07:21.291Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "achieved G08 with no prior exposure by the agent",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "060d77a7-81d2-4ae5-a0e4-f98eafc09099": "D-01414",
+  "69fc9a9a-25dd-41ed-b2e8-7858b4d7236a": "D-02307"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

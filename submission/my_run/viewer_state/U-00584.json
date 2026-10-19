@@ -1,0 +1,171 @@
+{
+ "viewer_id": "U-00584",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:53:34.562Z",
+  "signup": {
+   "value": "2026-08-08T11:53:06.296Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 147214.562,
+   "refs": [
+    "profile:U-00584@2026-09-29T05:01:13.200Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "event",
+   "as_of": "2026-09-29T14:54:28.674Z",
+   "age_s": 179945.888,
+   "refs": [
+    "profile:U-00584@2026-09-29T05:01:13.200Z",
+    "event:4324b5cb-b99f-4a8b-a103-fdf339170eb5"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:ff0c7764-8830-45c1-9303-cebed14e4fbb",
+   "conflicts": [],
+   "as_of": "2026-10-01T16:53:34.562Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00584@2026-09-29T05:01:13.200Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 147214.562
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00584@2026-09-29T05:01:13.200Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 147214.562
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 2,
+   "last_play_at": "2026-09-24T13:35:16.910Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "yaka-naka-d5"
+   ]
+  },
+  "events_seen": 47
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T16:44:04.283Z",
+  "deadline": "2026-10-04T16:44:04.283Z",
+  "status": "open",
+  "decision_id": "D-02548",
+  "slug": "yaka-naka-d5",
+  "assumptions": [],
+  "evidence": [
+   "event:2ec371ad-aa17-43fc-8442-212fc279d42e",
+   "catalogue:T1185"
+  ],
+  "reason": "unfinished series yaka-naka-d5 idle 7.1 days, 57 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T16:44:04.283Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T16:44:04.283Z",
+  "deadline": "2026-10-04T16:44:04.283Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T16:53:34.562Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02548",
+   "at": "2026-10-01T16:44:04.336Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02583",
+   "at": "2026-10-01T16:53:34.564Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "nothing to change: personalised page A-01099 still live (TTL): not republished; message: daily push/WhatsApp cap already used for the IST day of the send slot"
+  }
+ ],
+ "actions": [
+  "A-01099",
+  "A-01100"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T16:44:04.283Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "a4e1c504-e25f-4af2-92d4-1b0db1571dac": "D-02548",
+  "ff0c7764-8830-45c1-9303-cebed14e4fbb": "D-02583"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

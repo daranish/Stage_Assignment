@@ -1,0 +1,109 @@
+{
+ "viewer_id": "U-03395",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:18:11.068Z",
+  "signup": {
+   "value": "2026-09-12T10:15:30.347Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 145091.068,
+   "refs": [
+    "profile:U-03395@2026-09-28T18:41:58.951Z",
+    "event:c0d203c6-0a05-4035-8b8e-ca663ab3f6c6"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-28T18:41:58.951Z",
+   "age_s": 250572.117,
+   "refs": [
+    "profile:U-03395@2026-09-28T18:41:58.951Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:41cd3cf7-215a-4d71-a54b-c4b449953dd7",
+   "conflicts": [],
+   "as_of": "2026-10-01T16:18:11.068Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03395@2026-09-28T18:41:58.951Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 145091.068
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03395@2026-09-28T18:41:58.951Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 145091.068
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 2,
+   "last_play_at": "2026-09-24T14:48:52.932Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 3,
+   "top_genres": [
+    "Action",
+    "Family",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "nimo-tima-d5",
+    "yaka-naka-d5"
+   ]
+  },
+  "events_seen": 22
+ },
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02458",
+   "at": "2026-10-01T16:18:11.120Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "41cd3cf7-215a-4d71-a54b-c4b449953dd7": "D-02458"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T16:18:11.068Z"
+}

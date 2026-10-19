@@ -1,0 +1,178 @@
+{
+ "viewer_id": "U-00906",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:21:03.487Z",
+  "signup": {
+   "value": "2026-09-15T11:32:53.061Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 141663.487,
+   "refs": [
+    "profile:U-00906@2026-09-29T03:53:23.894Z",
+    "event:dc692fd3-cd15-4042-8b2c-d3b31309fd20"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T03:53:23.894Z",
+   "age_s": 214059.593,
+   "refs": [
+    "profile:U-00906@2026-09-29T03:53:23.894Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:fe9fa3cc-c4a8-4d9f-bb07-f22bd9301483",
+   "conflicts": [
+    "profile:d4"
+   ],
+   "as_of": "2026-10-01T15:21:03.487Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00906@2026-09-29T03:53:23.894Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 141663.487
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00906@2026-09-29T03:53:23.894Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 141663.487
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d3",
+    "others": [
+     "profile:d4"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 1,
+   "last_play_at": "2026-09-17T01:06:34.157Z",
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 0,
+   "top_genres": [
+    "Crime",
+    "Family",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "haja-d3",
+    "yane-tegi-d3"
+   ]
+  },
+  "events_seen": 30
+ },
+ "active_goal": {
+  "goal_id": "G12",
+  "name": "return_after_absence_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "any title",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T15:21:03.487Z",
+  "deadline": "2026-10-08T15:21:03.487Z",
+  "status": "open",
+  "decision_id": "D-02254",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-00906@2026-09-29T03:53:23.894Z",
+   "event:dc692fd3-cd15-4042-8b2c-d3b31309fd20"
+  ],
+  "reason": "no app_open in the 14 days before this trigger",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T15:21:03.487Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-006141"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G12",
+  "since": "2026-10-01T15:21:03.487Z",
+  "deadline": "2026-10-08T15:21:03.487Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T15:21:03.487Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02254",
+   "at": "2026-10-01T15:21:03.539Z",
+   "action": "NO_ACTION",
+   "goal_id": "G12",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G12",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-006141"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T15:21:03.487Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G12",
+   "lesson": "achieved G12 with no prior exposure by the agent",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G12": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "fe9fa3cc-c4a8-4d9f-bb07-f22bd9301483": "D-02254"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

@@ -1,0 +1,174 @@
+{
+ "viewer_id": "U-00348",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T07:12:11.228Z",
+  "signup": {
+   "value": "2026-09-03T04:20:27.700Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 112331.228,
+   "refs": [
+    "profile:U-00348@2026-09-29T13:36:24.176Z",
+    "event:86907ea1-ab76-492d-be53-30a2ecbb41a5"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T13:36:24.176Z",
+   "age_s": 149747.052,
+   "refs": [
+    "profile:U-00348@2026-09-29T13:36:24.176Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:ee942eba-8b4a-4b55-b89d-f5035ca02cb7",
+   "conflicts": [
+    "profile:"
+   ],
+   "as_of": "2026-10-01T07:12:11.228Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00348@2026-09-29T13:36:24.176Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 112331.228
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00348@2026-09-29T13:36:24.176Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 112331.228
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 1,
+   "completes": 0,
+   "last_play_at": "2026-09-13T18:55:03.775Z",
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 1,
+   "top_genres": [
+    "Action",
+    "Family"
+   ],
+   "unfinished_series": [
+    "tidha-dakachu-d1"
+   ]
+  },
+  "events_seen": 17
+ },
+ "active_goal": {
+  "goal_id": "G02",
+  "name": "first_full_episode_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T07:12:11.228Z",
+  "deadline": "2026-10-04T07:12:11.228Z",
+  "status": "open",
+  "decision_id": "D-00897",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-00348@2026-09-29T13:36:24.176Z",
+   "event:86907ea1-ab76-492d-be53-30a2ecbb41a5"
+  ],
+  "reason": "no episode_completed observed",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T07:12:11.228Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G02",
+  "since": "2026-10-01T07:12:11.228Z",
+  "deadline": "2026-10-04T07:12:11.228Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T07:12:11.228Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00897",
+   "at": "2026-10-01T07:12:11.281Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00345"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G02",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T07:12:11.228Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G02",
+   "lesson": "G02 not achieved (1 failure(s) for this goal): 0 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G02": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "ee942eba-8b4a-4b55-b89d-f5035ca02cb7": "D-00897"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

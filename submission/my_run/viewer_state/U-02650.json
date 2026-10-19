@@ -1,0 +1,180 @@
+{
+ "viewer_id": "U-02650",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T09:45:24.774Z",
+  "signup": {
+   "value": "2026-01-12T16:39:59.618Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 121524.774,
+   "refs": [
+    "profile:U-02650@2026-09-29T16:38:36.523Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T16:38:36.523Z",
+   "age_s": 148008.251,
+   "refs": [
+    "profile:U-02650@2026-09-29T16:38:36.523Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:a5ce1ad3-f232-44db-be7e-32e3c70400d9",
+   "conflicts": [],
+   "as_of": "2026-10-01T09:45:24.774Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02650@2026-09-29T16:38:36.523Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 121524.774
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02650@2026-09-29T16:38:36.523Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 121524.774
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 0,
+   "completes": 0,
+   "last_play_at": null,
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 2,
+   "top_genres": [],
+   "unfinished_series": []
+  },
+  "events_seen": 13
+ },
+ "active_goal": {
+  "goal_id": "G12",
+  "name": "return_after_absence_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "any title",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T04:47:42.970Z",
+  "deadline": "2026-10-08T04:47:42.970Z",
+  "status": "open",
+  "decision_id": "D-00566",
+  "slug": null,
+  "assumptions": [
+   "history is limited to the 30-day event window; earlier activity is not visible"
+  ],
+  "evidence": [
+   "profile:U-02650@2026-09-29T16:38:36.523Z"
+  ],
+  "reason": "no app_open in the 14 days before this trigger",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T04:47:42.970Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G12",
+  "since": "2026-10-01T04:47:42.970Z",
+  "deadline": "2026-10-08T04:47:42.970Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T09:45:24.774Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00566",
+   "at": "2026-10-01T04:47:43.022Z",
+   "action": "NO_ACTION",
+   "goal_id": "G12",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-00766",
+   "at": "2026-10-01T06:10:56.755Z",
+   "action": "NO_ACTION",
+   "goal_id": "G12",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-01248",
+   "at": "2026-10-01T09:45:20.329Z",
+   "action": "NO_ACTION",
+   "goal_id": "G12",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-01250",
+   "at": "2026-10-01T09:45:24.776Z",
+   "action": "NO_ACTION",
+   "goal_id": "G12",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G12",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T04:47:42.970Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G12",
+   "lesson": "G12 not achieved (1 failure(s) for this goal): 2 app opens and 0 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G12": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "03020050-5913-4494-917d-114847c1cf9d": "D-00566",
+  "c256d86e-d6a5-4afc-90c1-91c60f6d8480": "D-00766",
+  "395a047a-42e7-4231-b9d2-ec6a9f45b657": "D-01248",
+  "a5ce1ad3-f232-44db-be7e-32e3c70400d9": "D-01250"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

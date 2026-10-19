@@ -1,0 +1,174 @@
+{
+ "viewer_id": "U-02237",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T12:58:57.782Z",
+  "signup": {
+   "value": "2026-08-06T00:15:22.055Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 133137.782,
+   "refs": [
+    "profile:U-02237@2026-09-29T06:07:16.829Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T06:07:16.829Z",
+   "age_s": 197500.953,
+   "refs": [
+    "profile:U-02237@2026-09-29T06:07:16.829Z",
+    "event:d6381051-830e-44cb-88a8-d917e953fbfa"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-02T21:27:10.873Z"
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:e74fec09-17b9-432b-8f18-fe849689b8c9",
+   "conflicts": [],
+   "as_of": "2026-10-01T12:58:57.782Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02237@2026-09-29T06:07:16.829Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 133137.782
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02237@2026-09-29T06:07:16.829Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 133137.782
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 14,
+   "completes": 11,
+   "last_play_at": "2026-09-30T17:30:24.248Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 8,
+   "top_genres": [
+    "Thriller",
+    "Devotional",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "digu-d6",
+    "rasuya-moni-d6"
+   ]
+  },
+  "events_seen": 126
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T12:01:49.839Z",
+  "deadline": "2026-10-04T12:01:49.839Z",
+  "status": "open",
+  "decision_id": "D-01536",
+  "slug": "rasuya-moni-d6",
+  "assumptions": [],
+  "evidence": [
+   "event:859c8268-07cb-4403-a099-0a1e04df9634",
+   "catalogue:T1387"
+  ],
+  "reason": "unfinished series rasuya-moni-d6 idle 9.2 days, 4 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T12:01:49.839Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T12:01:49.839Z",
+  "deadline": "2026-10-04T12:01:49.839Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T12:58:57.782Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01536",
+   "at": "2026-10-01T12:01:49.892Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01652",
+   "at": "2026-10-01T12:58:57.784Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "nothing to change: personalised page A-00648 still live (TTL): not republished; message: daily push/WhatsApp cap already used for the IST day of the send slot"
+  }
+ ],
+ "actions": [
+  "A-00648",
+  "A-00649"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T12:01:49.839Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 3 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "dbf983b6-b22b-4bd0-a881-c84ef0652cb3": "D-01536",
+  "e74fec09-17b9-432b-8f18-fe849689b8c9": "D-01652"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

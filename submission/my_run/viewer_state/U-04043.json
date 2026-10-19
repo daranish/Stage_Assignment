@@ -1,0 +1,166 @@
+{
+ "viewer_id": "U-04043",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T08:02:45.950Z",
+  "signup": {
+   "value": "2025-05-09T09:40:02.302Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 115365.95,
+   "refs": [
+    "profile:U-04043@2026-09-29T05:33:37.985Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T05:33:37.985Z",
+   "age_s": 181747.965,
+   "refs": [
+    "profile:U-04043@2026-09-29T05:33:37.985Z",
+    "event:49802cb0-6535-4580-bd0b-ca286400af08"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-03T16:54:27.483Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:f2d1e1ab-f6bd-4101-a6d4-e00ee0340b0c",
+   "conflicts": [],
+   "as_of": "2026-10-01T08:02:45.950Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04043@2026-09-29T05:33:37.985Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 115365.95
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-04043@2026-09-29T05:33:37.985Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 115365.95
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 12,
+   "completes": 7,
+   "last_play_at": "2026-09-29T17:54:04.868Z",
+   "play_days_14d": 6,
+   "opens_14d_excl_current": 10,
+   "top_genres": [
+    "Romance",
+    "Comedy",
+    "Devotional"
+   ],
+   "unfinished_series": [
+    "digi-mone-d3",
+    "lomobha-moni-d3",
+    "pate-kari-d3",
+    "pima-pana-d3",
+    "ririgi-d3"
+   ]
+  },
+  "events_seen": 105
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T08:02:45.950Z",
+  "deadline": "2026-10-04T08:02:45.950Z",
+  "status": "open",
+  "decision_id": "D-01021",
+  "slug": "pate-kari-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:e51ebb8a-32fa-4d5e-95e8-e9774c72723e",
+   "catalogue:T0909"
+  ],
+  "reason": "unfinished series pate-kari-d3 idle 6.8 days, 15 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T08:02:45.950Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T08:02:45.950Z",
+  "deadline": "2026-10-04T08:02:45.950Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T08:02:45.950Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01021",
+   "at": "2026-10-01T08:02:46.002Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T08:02:45.950Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 2 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "f2d1e1ab-f6bd-4101-a6d4-e00ee0340b0c": "D-01021"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

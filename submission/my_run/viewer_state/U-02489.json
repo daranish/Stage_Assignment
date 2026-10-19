@@ -1,0 +1,178 @@
+{
+ "viewer_id": "U-02489",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T06:42:18.406Z",
+  "signup": {
+   "value": "2026-09-16T20:41:40.875Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 110538.406,
+   "refs": [
+    "profile:U-02489@2026-09-28T22:40:05.981Z",
+    "event:662ccd3b-fdeb-47d8-b97c-911e3a3f1d08"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-28T22:40:05.981Z",
+   "age_s": 201732.425,
+   "refs": [
+    "profile:U-02489@2026-09-28T22:40:05.981Z",
+    "event:eac0ea43-90dc-407a-b492-39cc6686569b"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-19T20:41:43.483Z"
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:3910798f-e189-4971-b0b6-f4aee011b4ca",
+   "conflicts": [
+    "profile:",
+    "campaign_link:d5"
+   ],
+   "as_of": "2026-10-01T06:42:18.406Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02489@2026-09-28T22:40:05.981Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 110538.406
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02489@2026-09-28T22:40:05.981Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 110538.406
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d4",
+    "others": [
+     "profile:",
+     "campaign_link:d5"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 5,
+   "completes": 1,
+   "last_play_at": "2026-09-29T08:10:52.468Z",
+   "play_days_14d": 5,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Action",
+    "Comedy",
+    "Crime"
+   ],
+   "unfinished_series": [
+    "baguti-gida-d4"
+   ]
+  },
+  "events_seen": 51
+ },
+ "active_goal": {
+  "goal_id": "G06",
+  "name": "reactivate_lapsed_14d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "any paid plan",
+   "window_hours": 336
+  },
+  "started_at": "2026-10-01T06:42:18.406Z",
+  "deadline": "2026-10-15T06:42:18.406Z",
+  "status": "open",
+  "decision_id": "D-00831",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-02489@2026-09-28T22:40:05.981Z",
+   "event:eac0ea43-90dc-407a-b492-39cc6686569b"
+  ],
+  "reason": "subscription_lapsed event within 30 days",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T06:42:18.406Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G06",
+  "since": "2026-10-01T06:42:18.406Z",
+  "deadline": "2026-10-15T06:42:18.406Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T06:42:18.406Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00831",
+   "at": "2026-10-01T06:42:18.459Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G06",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00306"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G06",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-15T06:42:18.406Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G06",
+   "lesson": "G06 not achieved (1 failure(s) for this goal): 10 app opens and 4 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G06": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "3910798f-e189-4971-b0b6-f4aee011b4ca": "D-00831"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

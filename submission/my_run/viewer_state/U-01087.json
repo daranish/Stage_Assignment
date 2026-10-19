@@ -1,0 +1,176 @@
+{
+ "viewer_id": "U-01087",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T10:09:22.970Z",
+  "signup": {
+   "value": "2026-04-27T17:07:44.253Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 122962.97,
+   "refs": [
+    "profile:U-01087@2026-09-29T14:57:24.602Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T14:57:24.602Z",
+   "age_s": 155518.368,
+   "refs": [
+    "profile:U-01087@2026-09-29T14:57:24.602Z",
+    "event:d3b13f63-fb84-4e51-a779-290e1dfddf98"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-27T21:57:14.321Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "profile(fallback; trigger had None)",
+   "ref": "profile:U-01087",
+   "conflicts": [
+    "trigger_app_dialect:None"
+   ],
+   "as_of": "2026-10-01T10:09:22.970Z",
+   "supported": true,
+   "certain": false,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01087@2026-09-29T14:57:24.602Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 122962.97
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01087@2026-09-29T14:57:24.602Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 122962.97
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d5",
+    "others": [
+     "trigger_app_dialect:None"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 19,
+   "completes": 10,
+   "last_play_at": "2026-09-29T11:51:35.513Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Thriller",
+    "Drama",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "bhaja-moguba-d2",
+    "hama-chudibha-d1",
+    "nigi-salo-d1"
+   ]
+  },
+  "events_seen": 135
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T10:09:22.970Z",
+  "deadline": "2026-10-08T10:09:22.970Z",
+  "status": "open",
+  "decision_id": "D-01293",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-01087@2026-09-29T14:57:24.602Z",
+   "event:d3b13f63-fb84-4e51-a779-290e1dfddf98",
+   "catalogue:T1181"
+  ],
+  "reason": "active subscriber; 22 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T10:09:22.970Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T10:09:22.970Z",
+  "deadline": "2026-10-08T10:09:22.970Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T10:09:22.970Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01293",
+   "at": "2026-10-01T10:09:23.023Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T10:09:22.970Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "G08 not achieved (1 failure(s) for this goal): 7 app opens and 1 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "df67910b-f805-49cd-975a-e826496822df": "D-01293"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

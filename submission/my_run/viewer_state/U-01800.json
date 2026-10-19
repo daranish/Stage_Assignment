@@ -1,0 +1,125 @@
+{
+ "viewer_id": "U-01800",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:40:04.851Z",
+  "signup": {
+   "value": "2025-09-07T06:35:07.326Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 146404.851,
+   "refs": [
+    "profile:U-01800@2026-09-29T15:41:49.547Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T15:41:49.547Z",
+   "age_s": 176295.304,
+   "refs": [
+    "profile:U-01800@2026-09-29T15:41:49.547Z",
+    "event:37138944-135f-4d77-bc70-388b23dad1b3"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-07T03:37:11.779Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d7",
+   "source": "app_setting",
+   "ref": "event:4bdf21a4-cbcc-43bc-ae83-6e083e63e521",
+   "conflicts": [],
+   "as_of": "2026-10-01T16:40:04.851Z",
+   "supported": false,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01800@2026-09-29T15:41:49.547Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 146404.851
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01800@2026-09-29T15:41:49.547Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 146404.851
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 13,
+   "completes": 8,
+   "last_play_at": "2026-09-30T15:45:04.229Z",
+   "play_days_14d": 6,
+   "opens_14d_excl_current": 12,
+   "top_genres": [
+    "Action",
+    "Romance",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "dhapipa-gini-d2",
+    "molo-d2"
+   ]
+  },
+  "events_seen": 92
+ },
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00054",
+   "at": "2026-09-30T22:08:05.893Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02469",
+   "at": "2026-10-01T16:22:41.796Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02532",
+   "at": "2026-10-01T16:40:04.853Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "ef87ccdf-6cca-4fa1-ae99-dd056cefbd4a": "D-00054",
+  "4f59ad7c-b33c-47e5-891d-2d3a1c303aaf": "D-02469",
+  "4bdf21a4-cbcc-43bc-ae83-6e083e63e521": "D-02532"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T16:22:41.744Z"
+}

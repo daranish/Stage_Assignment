@@ -1,0 +1,183 @@
+{
+ "viewer_id": "U-00179",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T13:31:46.931Z",
+  "signup": {
+   "value": "2026-03-03T11:39:59.202Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 135106.931,
+   "refs": [
+    "profile:U-00179@2026-09-29T09:05:34.473Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T09:05:34.473Z",
+   "age_s": 188772.458,
+   "refs": [
+    "profile:U-00179@2026-09-29T09:05:34.473Z",
+    "event:e586f53c-4b53-45ec-a9c5-eb456426ba11"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-29T00:08:16.800Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:364d1348-e744-4940-be14-7bb2f367918c",
+   "conflicts": [
+    "profile:d3"
+   ],
+   "as_of": "2026-10-01T13:31:46.931Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00179@2026-09-29T09:05:34.473Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 135106.931
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00179@2026-09-29T09:05:34.473Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 135106.931
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d4",
+    "others": [
+     "profile:d3"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 0,
+   "last_play_at": "2026-09-30T17:55:26.153Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 5,
+   "top_genres": [
+    "Action",
+    "Crime",
+    "Drama"
+   ],
+   "unfinished_series": []
+  },
+  "events_seen": 23
+ },
+ "active_goal": {
+  "goal_id": "G02",
+  "name": "first_full_episode_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T07:32:42.590Z",
+  "deadline": "2026-10-04T07:32:42.590Z",
+  "status": "open",
+  "decision_id": "D-00948",
+  "slug": null,
+  "assumptions": [
+   "history is limited to the 30-day event window; earlier activity is not visible"
+  ],
+  "evidence": [
+   "profile:U-00179@2026-09-29T09:05:34.473Z"
+  ],
+  "reason": "no episode_completed observed",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T07:32:42.590Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G02",
+  "since": "2026-10-01T07:32:42.590Z",
+  "deadline": "2026-10-04T07:32:42.590Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T13:31:46.931Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00948",
+   "at": "2026-10-01T07:32:42.643Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01734",
+   "at": "2026-10-01T13:31:46.934Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00377",
+  "A-00736"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G02",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T07:32:42.590Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G02",
+   "lesson": "G02 not achieved (1 failure(s) for this goal): 1 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G02": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "98c5654a-9205-46a7-838d-14ff7d2bc297": "D-00948",
+  "364d1348-e744-4940-be14-7bb2f367918c": "D-01734"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

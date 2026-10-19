@@ -1,0 +1,163 @@
+{
+ "viewer_id": "U-03733",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:29:20.883Z",
+  "signup": {
+   "value": "2024-10-16T17:26:55.659Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 145760.883,
+   "refs": [
+    "profile:U-03733@2026-09-29T08:38:14.393Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T08:38:14.393Z",
+   "age_s": 201066.49,
+   "refs": [
+    "profile:U-03733@2026-09-29T08:38:14.393Z",
+    "event:7f035053-4061-4aee-a84e-d2b673ff77c6"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-04T00:59:21.902Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:bfda4213-a736-46bd-b952-244f4ff384d9",
+   "conflicts": [],
+   "as_of": "2026-10-01T16:29:20.883Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03733@2026-09-29T08:38:14.393Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 145760.883
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03733@2026-09-29T08:38:14.393Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 145760.883
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 13,
+   "completes": 4,
+   "last_play_at": "2026-09-27T16:46:13.100Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Family",
+    "Action",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "haja-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 88
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T16:29:20.883Z",
+  "deadline": "2026-10-04T16:29:20.883Z",
+  "status": "open",
+  "decision_id": "D-02492",
+  "slug": "haja-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:c09b67b7-b1cd-4e7d-b3e8-a89ec35fd761",
+   "catalogue:T0907"
+  ],
+  "reason": "unfinished series haja-d3 idle 4.0 days, 46 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T16:29:20.883Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T16:29:20.883Z",
+  "deadline": "2026-10-04T16:29:20.883Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T16:29:20.883Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02492",
+   "at": "2026-10-01T16:29:20.935Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T16:29:20.883Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 2 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "bfda4213-a736-46bd-b952-244f4ff384d9": "D-02492"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

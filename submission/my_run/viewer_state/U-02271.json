@@ -1,0 +1,176 @@
+{
+ "viewer_id": "U-02271",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:21:49.495Z",
+  "signup": {
+   "value": "2025-03-03T01:52:44.445Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 138109.495,
+   "refs": [
+    "profile:U-02271@2026-09-29T12:25:11.198Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T12:25:11.198Z",
+   "age_s": 179798.297,
+   "refs": [
+    "profile:U-02271@2026-09-29T12:25:11.198Z",
+    "event:7a4834ea-1788-409d-8030-4c73954b709b"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-25T18:20:48.208Z"
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting(last valid; trigger had 'NA')",
+   "ref": "event:ca83b010-98d8-4993-938b-eb32f6a57775",
+   "conflicts": [
+    "trigger_app_dialect:NA"
+   ],
+   "as_of": "2026-10-01T14:21:49.495Z",
+   "supported": true,
+   "certain": false,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02271@2026-09-29T12:25:11.198Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 138109.495
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02271@2026-09-29T12:25:11.198Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 138109.495
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d2",
+    "others": [
+     "trigger_app_dialect:NA"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 4,
+   "completes": 0,
+   "last_play_at": "2026-09-25T15:29:56.868Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 5,
+   "top_genres": [
+    "Action",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "guneba-guba-d2",
+    "molo-d2"
+   ]
+  },
+  "events_seen": 50
+ },
+ "active_goal": {
+  "goal_id": "G02",
+  "name": "first_full_episode_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T14:21:49.495Z",
+  "deadline": "2026-10-04T14:21:49.495Z",
+  "status": "open",
+  "decision_id": "D-01898",
+  "slug": null,
+  "assumptions": [
+   "history is limited to the 30-day event window; earlier activity is not visible"
+  ],
+  "evidence": [
+   "profile:U-02271@2026-09-29T12:25:11.198Z"
+  ],
+  "reason": "no episode_completed observed",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T14:21:49.495Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G02",
+  "since": "2026-10-01T14:21:49.495Z",
+  "deadline": "2026-10-04T14:21:49.495Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T14:21:49.495Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01898",
+   "at": "2026-10-01T14:21:49.548Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00821"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G02",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T14:21:49.495Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G02",
+   "lesson": "G02 not achieved (1 failure(s) for this goal): 3 app opens and 0 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G02": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "739ebfe3-39fe-4abd-b666-78acc159e9eb": "D-01898"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

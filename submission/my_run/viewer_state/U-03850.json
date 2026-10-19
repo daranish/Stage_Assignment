@@ -1,0 +1,177 @@
+{
+ "viewer_id": "U-03850",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T17:41:12.973Z",
+  "signup": {
+   "value": "2025-01-08T15:06:35.832Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 150072.973,
+   "refs": [
+    "profile:U-03850@2026-09-28T19:20:27.163Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-28T19:20:27.163Z",
+   "age_s": 253245.81,
+   "refs": [
+    "profile:U-03850@2026-09-28T19:20:27.163Z",
+    "event:5afe9d99-2409-44b7-9018-88b6356ac7d0"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-24T16:52:20.654Z"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:a3e7fb3a-b945-4d9f-a74c-a64b51ba7bb5",
+   "conflicts": [],
+   "as_of": "2026-10-01T17:41:12.973Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03850@2026-09-28T19:20:27.163Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 150072.973
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03850@2026-09-28T19:20:27.163Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 150072.973
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 14,
+   "completes": 8,
+   "last_play_at": "2026-09-30T04:43:46.621Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Drama",
+    "Devotional",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "bagugu-gigupi-d1",
+    "hate-d1",
+    "tiya-bhamaro-d1"
+   ]
+  },
+  "events_seen": 109
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T03:01:26.224Z",
+  "deadline": "2026-10-04T03:01:26.224Z",
+  "status": "open",
+  "decision_id": "D-00205",
+  "slug": "hate-d1",
+  "assumptions": [],
+  "evidence": [
+   "event:4812991f-3019-4370-b35e-952ae6956bd1",
+   "catalogue:T0008"
+  ],
+  "reason": "unfinished series hate-d1 idle 15.4 days, 32 episodes left",
+  "messages_sent": 2,
+  "committed_at": "2026-10-01T03:01:26.224Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T03:01:26.224Z",
+  "deadline": "2026-10-04T03:01:26.224Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T17:41:12.973Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00205",
+   "at": "2026-10-01T03:01:26.278Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02717",
+   "at": "2026-10-01T17:41:12.977Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00106",
+  "A-00107",
+  "A-01169",
+  "A-01170"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T03:01:26.224Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "01811775-9d4c-4f72-b91a-1d5ddd706a1a": "D-00205",
+  "a3e7fb3a-b945-4d9f-a74c-a64b51ba7bb5": "D-02717"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

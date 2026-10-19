@@ -1,0 +1,165 @@
+{
+ "viewer_id": "U-03133",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T00:02:45.093Z",
+  "signup": {
+   "value": "2025-06-12T07:46:23.622Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 86565.093,
+   "refs": [
+    "profile:U-03133@2026-09-29T13:15:46.856Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T13:15:46.856Z",
+   "age_s": 125218.237,
+   "refs": [
+    "profile:U-03133@2026-09-29T13:15:46.856Z",
+    "event:b319f4af-fd19-472c-9401-9a1d5a8620ec"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-26T20:46:33.866Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:108d8096-230f-4e24-8aca-ae4da79dc102",
+   "conflicts": [],
+   "as_of": "2026-10-01T00:02:45.093Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03133@2026-09-29T13:15:46.856Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 86565.093
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03133@2026-09-29T13:15:46.856Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 86565.093
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 8,
+   "completes": 6,
+   "last_play_at": "2026-09-26T07:32:59.633Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 8,
+   "top_genres": [
+    "Thriller",
+    "Devotional",
+    "Family"
+   ],
+   "unfinished_series": [
+    "rasuya-moni-d6"
+   ]
+  },
+  "events_seen": 75
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T00:02:45.093Z",
+  "deadline": "2026-10-04T00:02:45.093Z",
+  "status": "open",
+  "decision_id": "D-00072",
+  "slug": "rasuya-moni-d6",
+  "assumptions": [],
+  "evidence": [
+   "event:0b1fc62d-c80d-4330-bfa5-b398f8a696bc",
+   "catalogue:T1976"
+  ],
+  "reason": "unfinished series rasuya-moni-d6 idle 9.3 days, 4 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T00:02:45.093Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T00:02:45.093Z",
+  "deadline": "2026-10-04T00:02:45.093Z",
+  "last_action": "HOME_PAGE+WHATSAPP",
+  "revised_at": "2026-10-01T00:02:45.093Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00072",
+   "at": "2026-10-01T00:02:45.146Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00036",
+  "A-00037"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T00:02:45.093Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 0 app opens and 0 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "108d8096-230f-4e24-8aca-ae4da79dc102": "D-00072"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

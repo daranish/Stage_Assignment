@@ -1,0 +1,211 @@
+{
+ "viewer_id": "U-04907",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T17:16:48.204Z",
+  "signup": {
+   "value": "2026-04-21T20:50:45.091Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 148608.204,
+   "refs": [
+    "profile:U-04907@2026-09-28T20:23:31.884Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-28T20:23:31.884Z",
+   "age_s": 247996.32,
+   "refs": [
+    "profile:U-04907@2026-09-28T20:23:31.884Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:79721469-47e9-457a-b3ee-d05dc3cc4012",
+   "conflicts": [
+    "profile:d3"
+   ],
+   "as_of": "2026-10-01T17:16:48.204Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-04907@2026-09-28T20:23:31.884Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 148608.204
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04907@2026-09-28T20:23:31.884Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 148608.204
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:d3"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 5,
+   "completes": 4,
+   "last_play_at": "2026-09-18T14:35:07.611Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 10,
+   "top_genres": [
+    "Thriller",
+    "Action",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "lomobha-moni-d3",
+    "yane-tegi-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 61
+ },
+ "active_goal": {
+  "goal_id": "G05",
+  "name": "first_paid_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "is_trial = false",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T05:54:06.805Z",
+  "deadline": "2026-10-08T05:54:06.805Z",
+  "status": "open",
+  "decision_id": "D-00738",
+  "slug": null,
+  "assumptions": [
+   "\"never\" rests on the snapshot and a 30-day event window"
+  ],
+  "evidence": [
+   "profile:U-04907@2026-09-28T20:23:31.884Z",
+   "event:bc5609e4-489b-4bdf-a3a4-5a03f9b99ab0"
+  ],
+  "reason": "never paid; purchase-intent signal present",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T05:54:06.805Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G05",
+  "since": "2026-10-01T05:54:06.805Z",
+  "deadline": "2026-10-08T05:54:06.805Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T17:16:48.204Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00738",
+   "at": "2026-10-01T05:54:06.859Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G05",
+   "reason": null
+  },
+  {
+   "decision_id": "D-00850",
+   "at": "2026-10-01T06:55:31.377Z",
+   "action": "NO_ACTION",
+   "goal_id": "G05",
+   "reason": "nothing to change: personalised page A-00254 still live (TTL): not republished; message: goal G05 is served by the home page only (proportionality)"
+  },
+  {
+   "decision_id": "D-00864",
+   "at": "2026-10-01T07:00:00.000Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G05",
+   "reason": "page repair after title withdrawal"
+  },
+  {
+   "decision_id": "D-02645",
+   "at": "2026-10-01T17:13:41.458Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G05",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02656",
+   "at": "2026-10-01T17:16:48.206Z",
+   "action": "NO_ACTION",
+   "goal_id": "G05",
+   "reason": "nothing to change: personalised page A-01149 still live (TTL): not republished; message: goal G05 is served by the home page only (proportionality)"
+  }
+ ],
+ "actions": [
+  "A-00254",
+  "A-00323",
+  "A-01149"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G05",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T05:54:06.805Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G05",
+   "lesson": "G05 not achieved (1 failure(s) for this goal): 6 app opens and 4 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G05": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "087cbe45-b781-4f1c-9e03-51ab0bee8731": "D-00738",
+  "cf63d049-2839-4114-b672-a7a0c2885eae": "D-00850",
+  "b0f1d3b4-f079-4b58-84a8-7c9ec06cf866": "D-02645",
+  "79721469-47e9-457a-b3ee-d05dc3cc4012": "D-02656"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

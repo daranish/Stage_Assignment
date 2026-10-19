@@ -1,0 +1,176 @@
+{
+ "viewer_id": "U-04997",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T07:42:00.341Z",
+  "signup": {
+   "value": "2024-12-28T16:40:15.537Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 114120.341,
+   "refs": [
+    "profile:U-04997@2026-09-28T23:49:18.277Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-28T23:49:18.277Z",
+   "age_s": 201162.064,
+   "refs": [
+    "profile:U-04997@2026-09-28T23:49:18.277Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:2b54085d-d713-463b-905c-e3e0f11c4536",
+   "conflicts": [
+    "profile:d1",
+    "campaign_link:d6"
+   ],
+   "as_of": "2026-10-01T07:42:00.341Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04997@2026-09-28T23:49:18.277Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 114120.341
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-04997@2026-09-28T23:49:18.277Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 114120.341
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d2",
+    "others": [
+     "profile:d1",
+     "campaign_link:d6"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 4,
+   "completes": 2,
+   "last_play_at": "2026-09-17T14:21:13.250Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 2,
+   "top_genres": [
+    "Devotional",
+    "Action",
+    "Crime"
+   ],
+   "unfinished_series": [
+    "dhapipa-gini-d2",
+    "molo-d2"
+   ]
+  },
+  "events_seen": 31
+ },
+ "active_goal": {
+  "goal_id": "G06",
+  "name": "reactivate_lapsed_14d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "any paid plan",
+   "window_hours": 336
+  },
+  "started_at": "2026-10-01T07:42:00.341Z",
+  "deadline": "2026-10-15T07:42:00.341Z",
+  "status": "open",
+  "decision_id": "D-00968",
+  "slug": null,
+  "assumptions": [
+   "profile.updated_at is used as a proxy for the lapse time (no lapse event in the window)"
+  ],
+  "evidence": [
+   "profile:U-04997@2026-09-28T23:49:18.277Z"
+  ],
+  "reason": "profile lapsed, row updated within 30 days",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T07:42:00.341Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G06",
+  "since": "2026-10-01T07:42:00.341Z",
+  "deadline": "2026-10-15T07:42:00.341Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T07:42:00.341Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00968",
+   "at": "2026-10-01T07:42:00.393Z",
+   "action": "NO_ACTION",
+   "goal_id": "G06",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G06",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-15T07:42:00.341Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G06",
+   "lesson": "G06 not achieved (1 failure(s) for this goal): 5 app opens and 4 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G06": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "2b54085d-d713-463b-905c-e3e0f11c4536": "D-00968"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

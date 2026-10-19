@@ -1,0 +1,184 @@
+{
+ "viewer_id": "U-02006",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:48:24.374Z",
+  "signup": {
+   "value": "2025-07-04T23:34:17.453Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 139704.374,
+   "refs": [
+    "profile:U-02006@2026-09-29T02:44:03.103Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T02:44:03.103Z",
+   "age_s": 216261.271,
+   "refs": [
+    "profile:U-02006@2026-09-29T02:44:03.103Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:18232b81-5bd8-4efc-aa08-6597415bd30f",
+   "conflicts": [
+    "profile:d1"
+   ],
+   "as_of": "2026-10-01T14:48:24.374Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02006@2026-09-29T02:44:03.103Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 139704.374
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02006@2026-09-29T02:44:03.103Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 139704.374
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d5",
+    "others": [
+     "profile:d1"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 1,
+   "last_play_at": "2026-09-25T15:09:23.549Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 5,
+   "top_genres": [
+    "Comedy",
+    "Devotional"
+   ],
+   "unfinished_series": [
+    "hate-d1"
+   ]
+  },
+  "events_seen": 35
+ },
+ "active_goal": {
+  "goal_id": "G05",
+  "name": "first_paid_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "is_trial = false",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T10:38:46.584Z",
+  "deadline": "2026-10-08T10:38:46.584Z",
+  "status": "open",
+  "decision_id": "D-01346",
+  "slug": null,
+  "assumptions": [
+   "\"never\" rests on the snapshot and a 30-day event window"
+  ],
+  "evidence": [
+   "profile:U-02006@2026-09-29T02:44:03.103Z",
+   "event:1a74c605-8a8d-41c3-8e95-916eefa6bdbd"
+  ],
+  "reason": "never paid; purchase-intent signal present",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T10:38:46.584Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G05",
+  "since": "2026-10-01T10:38:46.584Z",
+  "deadline": "2026-10-08T10:38:46.584Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T14:48:24.374Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01346",
+   "at": "2026-10-01T10:38:46.836Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G05",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01999",
+   "at": "2026-10-01T14:48:24.376Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G05",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00569",
+  "A-00868"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G05",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T10:38:46.584Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G05",
+   "lesson": "G05 not achieved (1 failure(s) for this goal): 4 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G05": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "990043bd-c462-4bba-8022-8b273181cd02": "D-01346",
+  "18232b81-5bd8-4efc-aa08-6597415bd30f": "D-01999"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

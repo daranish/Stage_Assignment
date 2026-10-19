@@ -1,0 +1,178 @@
+{
+ "viewer_id": "U-01228",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T10:17:39.959Z",
+  "signup": {
+   "value": "2026-05-02T18:05:15.650Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 123459.959,
+   "refs": [
+    "profile:U-01228@2026-09-29T16:54:20.113Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T16:54:20.113Z",
+   "age_s": 148999.846,
+   "refs": [
+    "profile:U-01228@2026-09-29T16:54:20.113Z",
+    "event:d02db685-497f-463c-b65a-da762dba9ccb"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-07T10:31:23.163Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:a682a1aa-90bd-4734-befe-875bd5e503b3",
+   "conflicts": [
+    "profile:d2"
+   ],
+   "as_of": "2026-10-01T10:17:39.959Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01228@2026-09-29T16:54:20.113Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 123459.959
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01228@2026-09-29T16:54:20.113Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 123459.959
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d4",
+    "others": [
+     "profile:d2"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 8,
+   "completes": 4,
+   "last_play_at": "2026-09-30T10:16:22.072Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 8,
+   "top_genres": [
+    "Family",
+    "Romance",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "bagi-baya-d4"
+   ]
+  },
+  "events_seen": 66
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T10:17:39.959Z",
+  "deadline": "2026-10-08T10:17:39.959Z",
+  "status": "open",
+  "decision_id": "D-01309",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-01228@2026-09-29T16:54:20.113Z",
+   "event:d02db685-497f-463c-b65a-da762dba9ccb",
+   "catalogue:T0915"
+  ],
+  "reason": "active subscriber; 28 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T10:17:39.959Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-008202"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T10:17:39.959Z",
+  "deadline": "2026-10-08T10:17:39.959Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T10:17:39.959Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01309",
+   "at": "2026-10-01T10:17:40.012Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-008202"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T10:17:39.959Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "achieved G08 with no prior exposure by the agent",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "a682a1aa-90bd-4734-befe-875bd5e503b3": "D-01309"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

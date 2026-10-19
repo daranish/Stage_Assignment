@@ -1,0 +1,176 @@
+{
+ "viewer_id": "U-03504",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T04:45:31.792Z",
+  "signup": {
+   "value": "2025-10-05T10:57:00.364Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 103531.792,
+   "refs": [
+    "profile:U-03504@2026-09-28T19:55:49.640Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-28T19:55:49.640Z",
+   "age_s": 204582.152,
+   "refs": [
+    "profile:U-03504@2026-09-28T19:55:49.640Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:2c08363d-ef25-433f-af77-0a57274b870f",
+   "conflicts": [
+    "profile:d4"
+   ],
+   "as_of": "2026-10-01T04:45:31.792Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03504@2026-09-28T19:55:49.640Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 103531.792
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03504@2026-09-28T19:55:49.640Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 103531.792
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d3",
+    "others": [
+     "profile:d4"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 1,
+   "last_play_at": "2026-09-30T10:06:50.748Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Crime",
+    "Romance",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "jakasa-dapi-d3",
+    "yane-tegi-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 34
+ },
+ "active_goal": {
+  "goal_id": "G05",
+  "name": "first_paid_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "is_trial = false",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T04:45:31.792Z",
+  "deadline": "2026-10-08T04:45:31.792Z",
+  "status": "open",
+  "decision_id": "D-00408",
+  "slug": null,
+  "assumptions": [
+   "\"never\" rests on the snapshot and a 30-day event window"
+  ],
+  "evidence": [
+   "profile:U-03504@2026-09-28T19:55:49.640Z",
+   "event:ca769534-87fc-4c29-9cac-1d2198fd583b"
+  ],
+  "reason": "never paid; purchase-intent signal present",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T04:45:31.792Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G05",
+  "since": "2026-10-01T04:45:31.792Z",
+  "deadline": "2026-10-08T04:45:31.792Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T04:45:31.792Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00408",
+   "at": "2026-10-01T04:45:31.844Z",
+   "action": "NO_ACTION",
+   "goal_id": "G05",
+   "reason": "stale trigger: app_open was buffered offline for 627369s (>600s) - not a live session; recorded as history only"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G05",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T04:45:31.792Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G05",
+   "lesson": "G05 not achieved (1 failure(s) for this goal): 5 app opens and 4 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G05": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "2c08363d-ef25-433f-af77-0a57274b870f": "D-00408"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

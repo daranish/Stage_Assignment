@@ -1,0 +1,169 @@
+{
+ "viewer_id": "U-00722",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T11:38:48.821Z",
+  "signup": {
+   "value": "2025-11-03T23:23:07.637Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 128328.821,
+   "refs": [
+    "profile:U-00722@2026-09-29T05:21:02.276Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T05:21:02.276Z",
+   "age_s": 195466.545,
+   "refs": [
+    "profile:U-00722@2026-09-29T05:21:02.276Z",
+    "event:6cb43b1b-2972-4fc1-9b3a-459ec3bd577e"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-25T04:55:38.283Z"
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:fae798e6-4f62-4028-bec2-a662d493ed44",
+   "conflicts": [],
+   "as_of": "2026-10-01T11:38:48.821Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00722@2026-09-29T05:21:02.276Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 128328.821
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00722@2026-09-29T05:21:02.276Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 128328.821
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 13,
+   "completes": 7,
+   "last_play_at": "2026-09-28T16:28:13.125Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 10,
+   "top_genres": [
+    "Romance",
+    "Action",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "gula-tete-d3",
+    "lomobha-moni-d3",
+    "pate-kari-d3",
+    "yadha-kopa-d3",
+    "yane-tegi-d3"
+   ]
+  },
+  "events_seen": 119
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T11:38:48.821Z",
+  "deadline": "2026-10-04T11:38:48.821Z",
+  "status": "open",
+  "decision_id": "D-01468",
+  "slug": "yatite-roloda-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:5680b5aa-4942-4137-9b3c-b1701d943099",
+   "catalogue:T0901"
+  ],
+  "reason": "unfinished series yatite-roloda-d3 idle 13.8 days, 21 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T11:38:48.821Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T11:38:48.821Z",
+  "deadline": "2026-10-04T11:38:48.821Z",
+  "last_action": "HOME_PAGE+WHATSAPP",
+  "revised_at": "2026-10-01T11:38:48.821Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01468",
+   "at": "2026-10-01T11:38:48.873Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00622",
+  "A-00623"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T11:38:48.821Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "fae798e6-4f62-4028-bec2-a662d493ed44": "D-01468"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

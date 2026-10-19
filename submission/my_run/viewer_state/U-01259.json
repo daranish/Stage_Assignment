@@ -1,0 +1,158 @@
+{
+ "viewer_id": "U-01259",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T10:48:32.423Z",
+  "signup": {
+   "value": "2026-10-01T10:48:16.795Z",
+   "source": "event(no profile row)",
+   "as_of": "2026-10-01T10:48:16.795Z",
+   "age_s": 15.628,
+   "refs": [
+    "event:dfd90dec-9ef8-45a9-9b44-125d975f52e5"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": null,
+   "source": "none",
+   "as_of": null,
+   "age_s": null,
+   "refs": [],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:8eae5b70-2b68-46ec-b679-f8e6134e72f9",
+   "conflicts": [],
+   "as_of": "2026-10-01T10:48:32.423Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "no profile row: consent unknown",
+    "refs": [],
+    "conflicts": [],
+    "as_of": null,
+    "age_s": null
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "no profile row: consent unknown",
+    "refs": [],
+    "conflicts": [],
+    "as_of": null,
+    "age_s": null
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": false,
+   "rows": 0
+  },
+  "watch": {
+   "plays": 0,
+   "completes": 0,
+   "last_play_at": null,
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 0,
+   "top_genres": [],
+   "unfinished_series": []
+  },
+  "events_seen": 3
+ },
+ "active_goal": {
+  "goal_id": "G01",
+  "name": "first_play_24h",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "any title",
+   "window_hours": 24
+  },
+  "started_at": "2026-10-01T10:48:27.379Z",
+  "deadline": "2026-10-02T10:48:27.379Z",
+  "status": "open",
+  "decision_id": "D-01370",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "event:dfd90dec-9ef8-45a9-9b44-125d975f52e5"
+  ],
+  "reason": "signed up 0.0 days ago and no play_started observed since signup",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T10:48:27.379Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G01",
+  "since": "2026-10-01T10:48:27.379Z",
+  "deadline": "2026-10-02T10:48:27.379Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T10:48:32.423Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01370",
+   "at": "2026-10-01T10:48:27.432Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G01",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01371",
+   "at": "2026-10-01T10:48:32.425Z",
+   "action": "NO_ACTION",
+   "goal_id": "G01",
+   "reason": "nothing to change: personalised page A-00587 still live (TTL): not republished; message: no valid title for a message in the viewer dialect"
+  }
+ ],
+ "actions": [
+  "A-00587"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G01",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-02T10:48:27.379Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G01",
+   "lesson": "G01 not achieved (1 failure(s) for this goal): 0 app opens and 0 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G01": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "e69f06b7-8abe-4f76-8e46-4f3e57666353": "D-01370",
+  "8eae5b70-2b68-46ec-b679-f8e6134e72f9": "D-01371"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

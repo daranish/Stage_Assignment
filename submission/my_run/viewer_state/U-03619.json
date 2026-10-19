@@ -1,0 +1,161 @@
+{
+ "viewer_id": "U-03619",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T13:51:35.177Z",
+  "signup": {
+   "value": "2025-02-08T04:42:51.645Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 136295.177,
+   "refs": [
+    "profile:U-03619@2026-09-29T14:45:58.328Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T14:45:58.328Z",
+   "age_s": 169536.849,
+   "refs": [
+    "profile:U-03619@2026-09-29T14:45:58.328Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:cb96df47-0526-4ff0-95e6-3782fd30661a",
+   "conflicts": [],
+   "as_of": "2026-10-01T13:51:35.177Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03619@2026-09-29T14:45:58.328Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 136295.177
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03619@2026-09-29T14:45:58.328Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 136295.177
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 4,
+   "completes": 4,
+   "last_play_at": "2026-09-30T06:51:27.709Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 11,
+   "top_genres": [
+    "Action",
+    "Family",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "tidha-dakachu-d1"
+   ]
+  },
+  "events_seen": 61
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T13:51:35.177Z",
+  "deadline": "2026-10-04T13:51:35.177Z",
+  "status": "open",
+  "decision_id": "D-01791",
+  "slug": "tidha-dakachu-d1",
+  "assumptions": [],
+  "evidence": [
+   "event:903af644-e48f-4204-ac79-ea7b64b25138",
+   "catalogue:T0005"
+  ],
+  "reason": "unfinished series tidha-dakachu-d1 idle 10.0 days, 14 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T13:51:35.177Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T13:51:35.177Z",
+  "deadline": "2026-10-04T13:51:35.177Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T13:51:35.177Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01791",
+   "at": "2026-10-01T13:51:35.229Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T13:51:35.177Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 1 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "cb96df47-0526-4ff0-95e6-3782fd30661a": "D-01791"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

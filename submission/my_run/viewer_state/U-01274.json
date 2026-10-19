@@ -1,0 +1,175 @@
+{
+ "viewer_id": "U-01274",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:35:39.721Z",
+  "signup": {
+   "value": "2026-01-17T06:33:52.344Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 142539.721,
+   "refs": [
+    "profile:U-01274@2026-09-29T14:04:50.849Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T14:04:50.849Z",
+   "age_s": 178248.872,
+   "refs": [
+    "profile:U-01274@2026-09-29T14:04:50.849Z",
+    "event:f29aa358-51e2-4da5-b81e-c8fd3a3430b3"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-27T06:40:28.564Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:3036b1bf-d692-49bb-870f-1bc120ca6ca3",
+   "conflicts": [],
+   "as_of": "2026-10-01T15:35:39.721Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01274@2026-09-29T14:04:50.849Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 142539.721
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01274@2026-09-29T14:04:50.849Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 142539.721
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 11,
+   "completes": 5,
+   "last_play_at": "2026-09-28T07:20:21.223Z",
+   "play_days_14d": 5,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Family",
+    "Romance",
+    "Devotional"
+   ],
+   "unfinished_series": [
+    "bhari-vagi-d6",
+    "naka-d6",
+    "rasuya-moni-d6"
+   ]
+  },
+  "events_seen": 85
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T13:59:16.536Z",
+  "deadline": "2026-10-04T13:59:16.536Z",
+  "status": "open",
+  "decision_id": "D-01823",
+  "slug": "bhari-vagi-d6",
+  "assumptions": [],
+  "evidence": [
+   "event:c665cc50-2cd3-43a9-9e00-fbc8a52bf312",
+   "catalogue:T1393"
+  ],
+  "reason": "unfinished series bhari-vagi-d6 idle 3.3 days, 25 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T13:59:16.536Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T13:59:16.536Z",
+  "deadline": "2026-10-04T13:59:16.536Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T15:35:39.721Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01823",
+   "at": "2026-10-01T13:59:16.589Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02316",
+   "at": "2026-10-01T15:35:39.723Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "nothing to change: personalised page A-00773 still live (TTL): not republished; message: daily push/WhatsApp cap already used for the IST day of the send slot"
+  }
+ ],
+ "actions": [
+  "A-00773",
+  "A-00774"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T13:59:16.536Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 5 app opens and 4 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "df29eddb-8cd7-467d-ba3f-791d39a93cc9": "D-01823",
+  "3036b1bf-d692-49bb-870f-1bc120ca6ca3": "D-02316"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

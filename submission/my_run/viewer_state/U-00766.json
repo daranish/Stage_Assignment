@@ -1,0 +1,165 @@
+{
+ "viewer_id": "U-00766",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:53:24.397Z",
+  "signup": {
+   "value": null,
+   "source": "none",
+   "as_of": null,
+   "age_s": null,
+   "refs": [],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "event",
+   "as_of": "2026-09-08T13:25:17.601Z",
+   "age_s": 1992486.796,
+   "refs": [
+    "event:e8da2c83-683a-4114-8942-59f1da3cdcb8"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:c328a7a8-11cf-4956-9cef-f1986cd9414f",
+   "conflicts": [],
+   "as_of": "2026-10-01T14:53:24.397Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "no profile row: consent unknown",
+    "refs": [],
+    "conflicts": [],
+    "as_of": null,
+    "age_s": null
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "no profile row: consent unknown",
+    "refs": [],
+    "conflicts": [],
+    "as_of": null,
+    "age_s": null
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": false,
+   "rows": 0
+  },
+  "watch": {
+   "plays": 11,
+   "completes": 8,
+   "last_play_at": "2026-09-25T17:48:48.288Z",
+   "play_days_14d": 5,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Romance",
+    "Family",
+    "Action"
+   ],
+   "unfinished_series": [
+    "haja-d3",
+    "pima-pana-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 87
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T06:33:24.502Z",
+  "deadline": "2026-10-04T06:33:24.502Z",
+  "status": "open",
+  "decision_id": "D-00814",
+  "slug": "pima-pana-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:c217f191-f79e-4dd9-8bf8-e88cdf66e265",
+   "catalogue:T0913"
+  ],
+  "reason": "unfinished series pima-pana-d3 idle 5.5 days, 20 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T06:33:24.502Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T06:33:24.502Z",
+  "deadline": "2026-10-04T06:33:24.502Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T14:53:24.397Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00814",
+   "at": "2026-10-01T06:33:24.554Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02015",
+   "at": "2026-10-01T14:53:24.399Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T06:33:24.502Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 3 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "a57352c3-912b-4136-8818-d449b024576b": "D-00814",
+  "c328a7a8-11cf-4956-9cef-f1986cd9414f": "D-02015"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

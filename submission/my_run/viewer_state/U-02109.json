@@ -1,0 +1,181 @@
+{
+ "viewer_id": "U-02109",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:30:13.600Z",
+  "signup": {
+   "value": "2024-10-07T04:05:10.136Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 145813.6,
+   "refs": [
+    "profile:U-02109@2026-09-28T23:12:34.299Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T23:12:34.299Z",
+   "age_s": 235059.301,
+   "refs": [
+    "profile:U-02109@2026-09-28T23:12:34.299Z",
+    "event:8ff36ef1-8bd2-4f53-9cd7-fb41ccf3d1cd"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-04T00:55:10.343Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:292aea88-a414-4d28-9805-98b91207aa65",
+   "conflicts": [
+    "profile:d2"
+   ],
+   "as_of": "2026-10-01T16:30:13.600Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02109@2026-09-28T23:12:34.299Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 145813.6
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02109@2026-09-28T23:12:34.299Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 145813.6
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d3",
+    "others": [
+     "profile:d2"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 17,
+   "completes": 11,
+   "last_play_at": "2026-09-29T16:36:45.063Z",
+   "play_days_14d": 6,
+   "opens_14d_excl_current": 12,
+   "top_genres": [
+    "Romance",
+    "Crime",
+    "Family"
+   ],
+   "unfinished_series": [
+    "haja-d3",
+    "jakasa-dapi-d3",
+    "pima-pana-d3",
+    "yane-tegi-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 124
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T16:30:13.600Z",
+  "deadline": "2026-10-04T16:30:13.600Z",
+  "status": "open",
+  "decision_id": "D-02499",
+  "slug": "jakasa-dapi-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:6ba36e63-56e9-4a72-8254-99466386201a",
+   "catalogue:T0904"
+  ],
+  "reason": "unfinished series jakasa-dapi-d3 idle 7.0 days, 17 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T16:30:13.600Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-013866"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T16:30:13.600Z",
+  "deadline": "2026-10-04T16:30:13.600Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T16:30:13.600Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02499",
+   "at": "2026-10-01T16:30:13.652Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-013866"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T16:30:13.600Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "achieved G07 with no prior exposure by the agent",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "292aea88-a414-4d28-9805-98b91207aa65": "D-02499"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

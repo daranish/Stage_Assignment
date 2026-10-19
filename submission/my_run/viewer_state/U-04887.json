@@ -1,0 +1,189 @@
+{
+ "viewer_id": "U-04887",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:01:44.395Z",
+  "signup": {
+   "value": "2026-09-14T04:48:10.403Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 140504.395,
+   "refs": [
+    "profile:U-04887@2026-09-28T23:02:53.396Z",
+    "event:36e39b99-567b-42a3-866a-5674b9cfcae7"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T23:02:53.396Z",
+   "age_s": 230330.999,
+   "refs": [
+    "profile:U-04887@2026-09-28T23:02:53.396Z",
+    "event:b97b3f5d-8e82-4ec2-8346-e8d6644caa93"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-25T16:18:37.371Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:e5abe7ab-359a-4972-92ac-5c067361cbf3",
+   "conflicts": [
+    "profile:"
+   ],
+   "as_of": "2026-10-01T15:01:44.395Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04887@2026-09-28T23:02:53.396Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140504.395
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-04887@2026-09-28T23:02:53.396Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140504.395
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 9,
+   "completes": 4,
+   "last_play_at": "2026-09-30T14:01:55.966Z",
+   "play_days_14d": 6,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Thriller",
+    "Drama",
+    "Family"
+   ],
+   "unfinished_series": [
+    "vapi-mara-d1"
+   ]
+  },
+  "events_seen": 61
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T09:12:35.921Z",
+  "deadline": "2026-10-08T09:12:35.921Z",
+  "status": "open",
+  "decision_id": "D-01177",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-04887@2026-09-28T23:02:53.396Z",
+   "event:b97b3f5d-8e82-4ec2-8346-e8d6644caa93",
+   "catalogue:T0007"
+  ],
+  "reason": "active subscriber; 62 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T09:12:35.921Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-030958"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T09:12:35.921Z",
+  "deadline": "2026-10-08T09:12:35.921Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T15:01:44.395Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01177",
+   "at": "2026-10-01T09:12:35.974Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "stale trigger: app_open was buffered offline for 1819s (>600s) - not a live session; recorded as history only"
+  },
+  {
+   "decision_id": "D-02066",
+   "at": "2026-10-01T15:01:44.399Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G08",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00906"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-030958"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T09:12:35.921Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "achieved G08 after personalised exposure (association only, not proof of cause)",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "bc2ebb90-f26d-462a-8466-82e9508453a2": "D-01177",
+  "e5abe7ab-359a-4972-92ac-5c067361cbf3": "D-02066"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

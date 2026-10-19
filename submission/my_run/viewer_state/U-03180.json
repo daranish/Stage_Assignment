@@ -1,0 +1,199 @@
+{
+ "viewer_id": "U-03180",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:35:59.733Z",
+  "signup": {
+   "value": "2026-03-05T13:48:27.994Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 146159.733,
+   "refs": [
+    "profile:U-03180@2026-09-29T13:42:02.392Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T13:42:02.392Z",
+   "age_s": 183237.341,
+   "refs": [
+    "profile:U-03180@2026-09-29T13:42:02.392Z",
+    "event:7f0e0355-135e-433c-82ef-1cfc265da15b"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-07T16:39:51.228Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:45833c77-a9ba-4c95-9989-bb34a4e5e479",
+   "conflicts": [
+    "profile:d2"
+   ],
+   "as_of": "2026-10-01T16:35:59.733Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03180@2026-09-29T13:42:02.392Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 146159.733
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03180@2026-09-29T13:42:02.392Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 146159.733
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d3",
+    "others": [
+     "profile:d2"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 6,
+   "completes": 3,
+   "last_play_at": "2026-09-27T06:19:30.281Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 11,
+   "top_genres": [
+    "Crime",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "yane-tegi-d3"
+   ]
+  },
+  "events_seen": 53
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T08:59:19.300Z",
+  "deadline": "2026-10-04T08:59:19.300Z",
+  "status": "open",
+  "decision_id": "D-01139",
+  "slug": "yane-tegi-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:357a85ce-fc6b-4232-a061-446fb971f6d7",
+   "catalogue:T0903"
+  ],
+  "reason": "unfinished series yane-tegi-d3 idle 4.1 days, 17 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T08:59:19.300Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T08:59:19.300Z",
+  "deadline": "2026-10-04T08:59:19.300Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T16:35:59.733Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01139",
+   "at": "2026-10-01T08:59:19.352Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "stale trigger: app_open was buffered offline for 742534s (>600s) - not a live session; recorded as history only"
+  },
+  {
+   "decision_id": "D-02412",
+   "at": "2026-10-01T16:07:15.345Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02431",
+   "at": "2026-10-01T16:11:05.932Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "nothing to change: personalised page A-01054 still live (TTL): not republished; message: daily push/WhatsApp cap already used for the IST day of the send slot"
+  },
+  {
+   "decision_id": "D-02517",
+   "at": "2026-10-01T16:35:59.735Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "nothing to change: personalised page A-01054 still live (TTL): not republished; message: daily push/WhatsApp cap already used for the IST day of the send slot"
+  }
+ ],
+ "actions": [
+  "A-01054",
+  "A-01055"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T08:59:19.300Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 3 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "a7dd2115-5ba3-4b4d-8845-a4d3054184d4": "D-01139",
+  "3e37c593-ac2f-468e-8f71-bb5563b7711a": "D-02412",
+  "269eb6c5-878c-4285-a4ef-af61c294ffd7": "D-02431",
+  "45833c77-a9ba-4c95-9989-bb34a4e5e479": "D-02517"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

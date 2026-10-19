@@ -1,0 +1,212 @@
+{
+ "viewer_id": "U-01219",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T17:23:09.692Z",
+  "signup": {
+   "value": "2026-01-10T10:07:57.193Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 148989.692,
+   "refs": [
+    "profile:U-01219@2026-09-29T10:43:50.843Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T10:43:50.843Z",
+   "age_s": 196758.849,
+   "refs": [
+    "profile:U-01219@2026-09-29T10:43:50.843Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:bfa34ce0-a308-4607-9ce8-6b835bafbac2",
+   "conflicts": [
+    "profile:d1"
+   ],
+   "as_of": "2026-10-01T17:23:09.692Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01219@2026-09-29T10:43:50.843Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 148989.692
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01219@2026-09-29T10:43:50.843Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 148989.692
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d3",
+    "others": [
+     "profile:d1"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 1,
+   "completes": 0,
+   "last_play_at": "2026-09-26T05:39:40.789Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Crime",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "yane-tegi-d3"
+   ]
+  },
+  "events_seen": 26
+ },
+ "active_goal": {
+  "goal_id": "G02",
+  "name": "first_full_episode_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T04:48:40.880Z",
+  "deadline": "2026-10-04T04:48:40.880Z",
+  "status": "open",
+  "decision_id": "D-00590",
+  "slug": null,
+  "assumptions": [
+   "history is limited to the 30-day event window; earlier activity is not visible"
+  ],
+  "evidence": [
+   "profile:U-01219@2026-09-29T10:43:50.843Z"
+  ],
+  "reason": "no episode_completed observed",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T04:48:40.880Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G02",
+  "since": "2026-10-01T04:48:40.880Z",
+  "deadline": "2026-10-04T04:48:40.880Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T17:23:09.692Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00590",
+   "at": "2026-10-01T04:48:40.932Z",
+   "action": "NO_ACTION",
+   "goal_id": "G02",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-00638",
+   "at": "2026-10-01T05:10:18.405Z",
+   "action": "NO_ACTION",
+   "goal_id": "G02",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-01632",
+   "at": "2026-10-01T12:48:06.591Z",
+   "action": "NO_ACTION",
+   "goal_id": "G02",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02210",
+   "at": "2026-10-01T15:11:16.969Z",
+   "action": "NO_ACTION",
+   "goal_id": "G02",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02586",
+   "at": "2026-10-01T16:54:34.282Z",
+   "action": "NO_ACTION",
+   "goal_id": "G02",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02672",
+   "at": "2026-10-01T17:23:09.694Z",
+   "action": "NO_ACTION",
+   "goal_id": "G02",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G02",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T04:48:40.880Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G02",
+   "lesson": "G02 not achieved (1 failure(s) for this goal): 5 app opens and 2 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G02": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "ba34d7f4-34c6-435c-84db-673393014814": "D-00590",
+  "f278b286-3edb-4b8d-83eb-7ad66c533dc0": "D-00638",
+  "11577cd5-54c8-416c-8ec3-b9899f1e9bfd": "D-01632",
+  "b375ba3b-c612-4b99-ae9b-c82c33d51b7c": "D-02210",
+  "64e0c135-1dd3-4b7a-8daa-ad035f500347": "D-02586",
+  "bfa34ce0-a308-4607-9ce8-6b835bafbac2": "D-02672"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

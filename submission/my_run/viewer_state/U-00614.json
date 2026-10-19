@@ -1,0 +1,120 @@
+{
+ "viewer_id": "U-00614",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:55:36.048Z",
+  "signup": {
+   "value": "2025-02-07T03:10:46.451Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 147336.048,
+   "refs": [
+    "profile:U-00614@2026-09-29T09:43:27.683Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T09:43:27.683Z",
+   "age_s": 198728.365,
+   "refs": [
+    "profile:U-00614@2026-09-29T09:43:27.683Z",
+    "event:fee36bd4-32fa-47f6-8a03-8b27b9ef2ad0"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-13T01:42:36.856Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d7",
+   "source": "app_setting",
+   "ref": "event:af2d6ced-67da-40a5-9b77-1530515e8a9c",
+   "conflicts": [
+    "profile:d4"
+   ],
+   "as_of": "2026-10-01T16:55:36.048Z",
+   "supported": false,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00614@2026-09-29T09:43:27.683Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 147336.048
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00614@2026-09-29T09:43:27.683Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 147336.048
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d7",
+    "others": [
+     "profile:d4"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 16,
+   "completes": 8,
+   "last_play_at": "2026-09-28T14:49:36.140Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 5,
+   "top_genres": [
+    "Family",
+    "Crime",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "dhapipa-gini-d2",
+    "tero-koja-d2"
+   ]
+  },
+  "events_seen": 102
+ },
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02590",
+   "at": "2026-10-01T16:55:36.100Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "dialect d7 (app setting) has no catalogue content: nothing valid to show or promote"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "af2d6ced-67da-40a5-9b77-1530515e8a9c": "D-02590"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T16:55:36.048Z"
+}

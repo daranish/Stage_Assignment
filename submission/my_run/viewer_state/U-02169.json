@@ -1,0 +1,163 @@
+{
+ "viewer_id": "U-02169",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T03:33:50.727Z",
+  "signup": {
+   "value": "2025-02-03T19:53:47.778Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 99230.727,
+   "refs": [
+    "profile:U-02169@2026-09-28T21:36:39.618Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-28T21:36:39.618Z",
+   "age_s": 194231.109,
+   "refs": [
+    "profile:U-02169@2026-09-28T21:36:39.618Z",
+    "event:a259e6ba-0abb-43a2-8e38-5330a6fbba6a"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-03T02:03:01.443Z"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:5ade546f-a9a6-4c1d-90c8-28226da87601",
+   "conflicts": [],
+   "as_of": "2026-10-01T03:33:50.727Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02169@2026-09-28T21:36:39.618Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 99230.727
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02169@2026-09-28T21:36:39.618Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 99230.727
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 6,
+   "completes": 3,
+   "last_play_at": "2026-09-28T12:56:28.688Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Devotional",
+    "Comedy",
+    "Action"
+   ],
+   "unfinished_series": [
+    "gima-bhadaba-d1",
+    "yani-rilana-d1"
+   ]
+  },
+  "events_seen": 51
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T03:33:50.727Z",
+  "deadline": "2026-10-04T03:33:50.727Z",
+  "status": "open",
+  "decision_id": "D-00253",
+  "slug": "yani-rilana-d1",
+  "assumptions": [],
+  "evidence": [
+   "event:7783829a-8e1a-462a-8b36-1596d568dd44",
+   "catalogue:T0127"
+  ],
+  "reason": "unfinished series yani-rilana-d1 idle 14.5 days, 9 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T03:33:50.727Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T03:33:50.727Z",
+  "deadline": "2026-10-04T03:33:50.727Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T03:33:50.727Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00253",
+   "at": "2026-10-01T03:33:50.779Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T03:33:50.727Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 3 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "5ade546f-a9a6-4c1d-90c8-28226da87601": "D-00253"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

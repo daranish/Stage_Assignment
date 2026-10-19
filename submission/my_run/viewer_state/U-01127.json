@@ -1,0 +1,188 @@
+{
+ "viewer_id": "U-01127",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T18:17:35.049Z",
+  "signup": {
+   "value": "2025-09-28T09:09:51.858Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 152255.049,
+   "refs": [
+    "profile:U-01127@2026-09-28T18:51:39.713Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T18:51:39.713Z",
+   "age_s": 257155.336,
+   "refs": [
+    "profile:U-01127@2026-09-28T18:51:39.713Z",
+    "event:4342b7cb-1f53-40c7-830a-d12fc3e84d2b"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-03T18:26:48.351Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:290c082c-29db-405b-859d-9d689b48e6c0",
+   "conflicts": [
+    "profile:d1"
+   ],
+   "as_of": "2026-10-01T18:17:35.049Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01127@2026-09-28T18:51:39.713Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 152255.049
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01127@2026-09-28T18:51:39.713Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 152255.049
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d5",
+    "others": [
+     "profile:d1"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 8,
+   "completes": 3,
+   "last_play_at": "2026-09-28T16:39:32.546Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 14,
+   "top_genres": [
+    "Crime",
+    "Family",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "dhada-bhate-d1",
+    "dida-nesupa-d1",
+    "jamo-hasa-d5"
+   ]
+  },
+  "events_seen": 80
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T05:53:43.706Z",
+  "deadline": "2026-10-08T05:53:43.706Z",
+  "status": "open",
+  "decision_id": "D-00735",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-01127@2026-09-28T18:51:39.713Z",
+   "event:4342b7cb-1f53-40c7-830a-d12fc3e84d2b",
+   "catalogue:T1181"
+  ],
+  "reason": "active subscriber; 22 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T05:53:43.706Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-007671"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T05:53:43.706Z",
+  "deadline": "2026-10-08T05:53:43.706Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T18:17:35.049Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00735",
+   "at": "2026-10-01T05:53:43.759Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02777",
+   "at": "2026-10-01T18:17:35.051Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-007671"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T05:53:43.706Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "achieved G08 with no prior exposure by the agent",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "7ca35781-15db-4f1d-a3f9-493d1ac18ffd": "D-00735",
+  "290c082c-29db-405b-859d-9d689b48e6c0": "D-02777"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

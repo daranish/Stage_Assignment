@@ -1,0 +1,164 @@
+{
+ "viewer_id": "U-03882",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:38:38.924Z",
+  "signup": {
+   "value": "2026-09-05T10:08:20.436Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 139118.924,
+   "refs": [
+    "profile:U-03882@2026-09-29T10:01:02.539Z",
+    "event:27bd59ea-3f36-470c-b355-14e86adccc6d"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T10:01:02.539Z",
+   "age_s": 189456.385,
+   "refs": [
+    "profile:U-03882@2026-09-29T10:01:02.539Z",
+    "event:7dec0c4d-cfd5-460c-a994-ca7fa5bfe263"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-05T10:58:15.407Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:c9bfdad3-8911-4464-bc21-cd934a15fa6b",
+   "conflicts": [],
+   "as_of": "2026-10-01T14:38:38.924Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03882@2026-09-29T10:01:02.539Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 139118.924
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03882@2026-09-29T10:01:02.539Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 139118.924
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 2,
+   "last_play_at": "2026-09-24T10:06:11.473Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 4,
+   "top_genres": [
+    "Romance"
+   ],
+   "unfinished_series": [
+    "raja-d4"
+   ]
+  },
+  "events_seen": 33
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T14:38:38.924Z",
+  "deadline": "2026-10-04T14:38:38.924Z",
+  "status": "open",
+  "decision_id": "D-01966",
+  "slug": "raja-d4",
+  "assumptions": [],
+  "evidence": [
+   "event:d0decffe-32cf-4c95-abb2-6e84e006daff",
+   "catalogue:T0931"
+  ],
+  "reason": "unfinished series raja-d4 idle 7.2 days, 28 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T14:38:38.924Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T14:38:38.924Z",
+  "deadline": "2026-10-04T14:38:38.924Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T14:38:38.924Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01966",
+   "at": "2026-10-01T14:38:38.977Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00852",
+  "A-00853"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T14:38:38.924Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "c9bfdad3-8911-4464-bc21-cd934a15fa6b": "D-01966"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

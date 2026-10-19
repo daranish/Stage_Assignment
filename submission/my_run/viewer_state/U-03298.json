@@ -1,0 +1,192 @@
+{
+ "viewer_id": "U-03298",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T07:25:30.489Z",
+  "signup": {
+   "value": "2025-09-30T10:21:22.373Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 113130.489,
+   "refs": [
+    "profile:U-03298@2026-09-29T01:48:10.311Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T01:48:10.311Z",
+   "age_s": 193040.178,
+   "refs": [
+    "profile:U-03298@2026-09-29T01:48:10.311Z",
+    "event:87c0f454-fbff-46e2-a8de-843e09e1e486"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-23T06:29:32.780Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:1f6bff85-94ee-4fce-8902-0227843b3e7e",
+   "conflicts": [],
+   "as_of": "2026-10-01T07:25:30.489Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03298@2026-09-29T01:48:10.311Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 113130.489
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03298@2026-09-29T01:48:10.311Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 113130.489
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 12,
+   "completes": 6,
+   "last_play_at": "2026-09-29T13:28:00.058Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 15,
+   "top_genres": [
+    "Devotional",
+    "Family",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "bala-naja-d2",
+    "guka-kosusa-d2",
+    "molo-d2"
+   ]
+  },
+  "events_seen": 113
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-09-30T23:38:20.154Z",
+  "deadline": "2026-10-03T23:38:20.154Z",
+  "status": "open",
+  "decision_id": "D-00065",
+  "slug": "bala-naja-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:9f4252b7-d742-458c-9204-08b4c48f1aec",
+   "catalogue:T0581"
+  ],
+  "reason": "unfinished series bala-naja-d2 idle 3.2 days, 10 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-09-30T23:38:20.154Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-09-30T23:38:20.154Z",
+  "deadline": "2026-10-03T23:38:20.154Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T07:25:30.489Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00065",
+   "at": "2026-09-30T23:38:20.208Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-00066",
+   "at": "2026-09-30T23:38:22.212Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "nothing to change: personalised page A-00032 still live (TTL): not republished; message: daily push/WhatsApp cap already used for the IST day of the send slot"
+  },
+  {
+   "decision_id": "D-00929",
+   "at": "2026-10-01T07:25:29.390Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-00930",
+   "at": "2026-10-01T07:25:30.491Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "nothing to change: personalised page A-00362 still live (TTL): not republished; message: daily push/WhatsApp cap already used for the IST day of the send slot"
+  }
+ ],
+ "actions": [
+  "A-00032",
+  "A-00033",
+  "A-00362"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-03T23:38:20.154Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 4 app opens and 3 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "297d70d2-1640-4582-97fd-e7c1f7103588": "D-00065",
+  "c19ed3bf-3434-4d0e-acf2-ac995240d234": "D-00066",
+  "72672287-fda8-475d-be4b-35972387d243": "D-00929",
+  "1f6bff85-94ee-4fce-8902-0227843b3e7e": "D-00930"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

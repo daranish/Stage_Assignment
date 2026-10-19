@@ -1,0 +1,176 @@
+{
+ "viewer_id": "U-02215",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T08:24:02.717Z",
+  "signup": {
+   "value": "2025-08-29T02:12:02.767Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 116642.717,
+   "refs": [
+    "profile:U-02215@2026-09-29T17:41:05.382Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T17:41:05.382Z",
+   "age_s": 139377.335,
+   "refs": [
+    "profile:U-02215@2026-09-29T17:41:05.382Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:b6502f32-1df1-4618-a1f5-91e03da48ae5",
+   "conflicts": [
+    "profile:d3",
+    "campaign_link:d2"
+   ],
+   "as_of": "2026-10-01T08:24:02.717Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02215@2026-09-29T17:41:05.382Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 116642.717
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02215@2026-09-29T17:41:05.382Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 116642.717
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d6",
+    "others": [
+     "profile:d3",
+     "campaign_link:d2"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 1,
+   "completes": 0,
+   "last_play_at": "2026-09-01T16:17:51.141Z",
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 1,
+   "top_genres": [
+    "Comedy",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "pate-kari-d3"
+   ]
+  },
+  "events_seen": 32
+ },
+ "active_goal": {
+  "goal_id": "G02",
+  "name": "first_full_episode_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T08:24:02.717Z",
+  "deadline": "2026-10-04T08:24:02.717Z",
+  "status": "open",
+  "decision_id": "D-01068",
+  "slug": null,
+  "assumptions": [
+   "history is limited to the 30-day event window; earlier activity is not visible"
+  ],
+  "evidence": [
+   "profile:U-02215@2026-09-29T17:41:05.382Z"
+  ],
+  "reason": "no episode_completed observed",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T08:24:02.717Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G02",
+  "since": "2026-10-01T08:24:02.717Z",
+  "deadline": "2026-10-04T08:24:02.717Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T08:24:02.717Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01068",
+   "at": "2026-10-01T08:24:02.769Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00435"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G02",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T08:24:02.717Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G02",
+   "lesson": "G02 not achieved (1 failure(s) for this goal): 0 app opens and 0 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G02": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "b6502f32-1df1-4618-a1f5-91e03da48ae5": "D-01068"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

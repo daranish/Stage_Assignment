@@ -1,0 +1,172 @@
+{
+ "viewer_id": "U-01580",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:47:15.478Z",
+  "signup": {
+   "value": "2025-02-24T16:48:59.017Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 139635.478,
+   "refs": [
+    "profile:U-01580@2026-09-29T03:17:30.087Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T03:17:30.087Z",
+   "age_s": 214185.391,
+   "refs": [
+    "profile:U-01580@2026-09-29T03:17:30.087Z",
+    "event:38cf1ab0-44ad-4586-9f73-f39fb21712f2"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-05T21:21:57.409Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:6585389e-9962-45ba-a245-3c66a2dda494",
+   "conflicts": [],
+   "as_of": "2026-10-01T14:47:15.478Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01580@2026-09-29T03:17:30.087Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 139635.478
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01580@2026-09-29T03:17:30.087Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 139635.478
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 6,
+   "completes": 3,
+   "last_play_at": "2026-09-26T17:24:12.647Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 5,
+   "top_genres": [
+    "Devotional",
+    "Family",
+    "Crime"
+   ],
+   "unfinished_series": [
+    "gubava-gihaya-d5",
+    "kova-sako-d5",
+    "nina-d5"
+   ]
+  },
+  "events_seen": 49
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-09-30T21:15:59.022Z",
+  "deadline": "2026-10-03T21:15:59.022Z",
+  "status": "open",
+  "decision_id": "D-00046",
+  "slug": "kova-sako-d5",
+  "assumptions": [],
+  "evidence": [
+   "event:7d64ba51-d448-48c2-810b-4d8ec9eb806b",
+   "catalogue:T1180"
+  ],
+  "reason": "unfinished series kova-sako-d5 idle 4.2 days, 29 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-09-30T21:15:59.022Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-09-30T21:15:59.022Z",
+  "deadline": "2026-10-03T21:15:59.022Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T14:47:15.478Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00046",
+   "at": "2026-09-30T21:15:59.074Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-01995",
+   "at": "2026-10-01T14:47:15.480Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-03T21:15:59.022Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 0 app opens and 0 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "fd3e091a-344b-4d19-9e52-62a38eb0e013": "D-00046",
+  "6585389e-9962-45ba-a245-3c66a2dda494": "D-01995"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

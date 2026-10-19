@@ -1,0 +1,235 @@
+{
+ "viewer_id": "U-00649",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T07:35:14.802Z",
+  "signup": {
+   "value": "2025-12-13T10:09:45.034Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 113714.802,
+   "refs": [
+    "profile:U-00649@2026-09-29T02:21:02.066Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T02:21:02.066Z",
+   "age_s": 191652.736,
+   "refs": [
+    "profile:U-00649@2026-09-29T02:21:02.066Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:17530592-11e5-4685-9158-04843b924866",
+   "conflicts": [],
+   "as_of": "2026-10-01T07:35:14.802Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00649@2026-09-29T02:21:02.066Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 113714.802
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00649@2026-09-29T02:21:02.066Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 113714.802
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 4,
+   "completes": 2,
+   "last_play_at": "2026-09-26T11:30:52.874Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 8,
+   "top_genres": [
+    "Action",
+    "Crime",
+    "Drama"
+   ],
+   "unfinished_series": []
+  },
+  "events_seen": 42
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T07:37:32.152Z",
+  "deadline": "2026-10-08T07:37:32.152Z",
+  "status": "open",
+  "decision_id": "D-00957",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-00649@2026-09-29T02:21:02.066Z",
+   "event:9b6c3196-4d3b-45cf-8378-78dd0899a0f1",
+   "catalogue:T0915"
+  ],
+  "reason": "active subscriber; 28 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T07:37:32.152Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-004281"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G05",
+  "since": "2026-10-01T07:35:14.802Z",
+  "deadline": "2026-10-08T07:35:14.802Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T07:35:14.802Z"
+ },
+ "goal_history": [
+  {
+   "goal_id": "G05",
+   "name": "first_paid_7d",
+   "rule_version": "v1",
+   "success": {
+    "event": "purchase_completed",
+    "condition": "is_trial = false",
+    "window_hours": 168
+   },
+   "started_at": "2026-10-01T07:35:14.802Z",
+   "deadline": "2026-10-08T07:35:14.802Z",
+   "status": "succeeded",
+   "decision_id": "D-00953",
+   "slug": null,
+   "assumptions": [
+    "\"never\" rests on the snapshot and a 30-day event window"
+   ],
+   "evidence": [
+    "profile:U-00649@2026-09-29T02:21:02.066Z",
+    "event:5869daee-b18a-4990-a851-2c0c16111e44"
+   ],
+   "reason": "never paid; purchase-intent signal present",
+   "messages_sent": 0,
+   "committed_at": "2026-10-01T07:35:14.802Z",
+   "closed_at": "2026-10-01T07:37:32.152Z",
+   "close_info": {
+    "status": "succeeded",
+    "reason": "success event within window",
+    "evidence": [
+     "event:9b6c3196-4d3b-45cf-8378-78dd0899a0f1"
+    ]
+   },
+   "final_judgement": {
+    "status": "succeeded",
+    "reason": "success event within window",
+    "evidence": [
+     "event:9b6c3196-4d3b-45cf-8378-78dd0899a0f1"
+    ]
+   }
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-00953",
+   "at": "2026-10-01T07:35:14.855Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G05",
+   "reason": null
+  },
+  {
+   "decision_id": "D-00957",
+   "at": "2026-10-01T07:37:32.152Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "plan revised after purchase_completed; the next visit will act on the new goal (no unsolicited action)"
+  }
+ ],
+ "actions": [
+  "A-00380"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G05",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:9b6c3196-4d3b-45cf-8378-78dd0899a0f1"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T07:35:14.802Z"
+  },
+  {
+   "goal_id": "G08",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-004281"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T07:37:32.152Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G05",
+   "lesson": "achieved G05 after personalised exposure (association only, not proof of cause)",
+   "status": "succeeded"
+  },
+  {
+   "goal_id": "G08",
+   "lesson": "achieved G08 with no prior exposure by the agent",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G05": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  },
+  "G08": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "17530592-11e5-4685-9158-04843b924866": "D-00953"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

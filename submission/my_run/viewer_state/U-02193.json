@@ -1,0 +1,182 @@
+{
+ "viewer_id": "U-02193",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:45:47.197Z",
+  "signup": {
+   "value": "2026-09-16T12:56:44.021Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 146747.197,
+   "refs": [
+    "profile:U-02193@2026-09-29T16:28:47.288Z",
+    "event:2eb8a75d-9522-4db8-b519-3d9683db5e32"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T16:28:47.288Z",
+   "age_s": 173819.909,
+   "refs": [
+    "profile:U-02193@2026-09-29T16:28:47.288Z",
+    "event:48309c05-b6cf-4faf-ab46-520573a488fe"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-19T12:56:46.764Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:6dd1ec00-5be4-4ff2-a487-5c165469cf87",
+   "conflicts": [
+    "profile:d2"
+   ],
+   "as_of": "2026-10-01T16:45:47.197Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02193@2026-09-29T16:28:47.288Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 146747.197
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02193@2026-09-29T16:28:47.288Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 146747.197
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d5",
+    "others": [
+     "profile:d2"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 4,
+   "completes": 1,
+   "last_play_at": "2026-09-30T16:01:26.200Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Crime",
+    "Romance",
+    "Devotional"
+   ],
+   "unfinished_series": [
+    "jamo-hasa-d5",
+    "kova-sako-d5"
+   ]
+  },
+  "events_seen": 42
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T16:45:47.197Z",
+  "deadline": "2026-10-08T16:45:47.197Z",
+  "status": "open",
+  "decision_id": "D-02554",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-02193@2026-09-29T16:28:47.288Z",
+   "event:48309c05-b6cf-4faf-ab46-520573a488fe",
+   "catalogue:T1181"
+  ],
+  "reason": "active subscriber; 22 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T16:45:47.197Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-014346"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T16:45:47.197Z",
+  "deadline": "2026-10-08T16:45:47.197Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T16:45:47.197Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02554",
+   "at": "2026-10-01T16:45:47.250Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G08",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-01102"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-014346"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T16:45:47.197Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "achieved G08 after personalised exposure (association only, not proof of cause)",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "6dd1ec00-5be4-4ff2-a487-5c165469cf87": "D-02554"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

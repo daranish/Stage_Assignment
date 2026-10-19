@@ -1,0 +1,188 @@
+{
+ "viewer_id": "U-01407",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T17:01:29.851Z",
+  "signup": {
+   "value": "2025-07-23T18:58:12.575Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 147689.851,
+   "refs": [
+    "profile:U-01407@2026-09-29T07:46:03.568Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T07:46:03.568Z",
+   "age_s": 206126.283,
+   "refs": [
+    "profile:U-01407@2026-09-29T07:46:03.568Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:0e3ee020-e285-478b-beee-e9bef09a73d6",
+   "conflicts": [
+    "profile:d3"
+   ],
+   "as_of": "2026-10-01T17:01:29.851Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01407@2026-09-29T07:46:03.568Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 147689.851
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01407@2026-09-29T07:46:03.568Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 147689.851
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d5",
+    "others": [
+     "profile:d3"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 1,
+   "completes": 1,
+   "last_play_at": "2026-09-14T14:36:11.809Z",
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 1,
+   "top_genres": [
+    "Devotional"
+   ],
+   "unfinished_series": [
+    "gubava-gihaya-d5"
+   ]
+  },
+  "events_seen": 10
+ },
+ "active_goal": {
+  "goal_id": "G12",
+  "name": "return_after_absence_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "any title",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T11:54:14.265Z",
+  "deadline": "2026-10-08T11:54:14.265Z",
+  "status": "open",
+  "decision_id": "D-01515",
+  "slug": null,
+  "assumptions": [
+   "history is limited to the 30-day event window; earlier activity is not visible"
+  ],
+  "evidence": [
+   "profile:U-01407@2026-09-29T07:46:03.568Z"
+  ],
+  "reason": "no app_open in the 14 days before this trigger",
+  "messages_sent": 2,
+  "committed_at": "2026-10-01T11:54:14.265Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-009609"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G12",
+  "since": "2026-10-01T11:54:14.265Z",
+  "deadline": "2026-10-08T11:54:14.265Z",
+  "last_action": "HOME_PAGE+WHATSAPP",
+  "revised_at": "2026-10-01T17:01:29.851Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01515",
+   "at": "2026-10-01T11:54:14.317Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G12",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02608",
+   "at": "2026-10-01T17:01:29.853Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G12",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00636",
+  "A-00637",
+  "A-01133",
+  "A-01134"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G12",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-009609"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T11:54:14.265Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G12",
+   "lesson": "achieved G12 after personalised exposure (association only, not proof of cause)",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G12": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "d06fd317-1918-44de-8188-b0c979795061": "D-01515",
+  "0e3ee020-e285-478b-beee-e9bef09a73d6": "D-02608"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

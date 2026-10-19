@@ -1,0 +1,178 @@
+{
+ "viewer_id": "U-03006",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T08:34:49.392Z",
+  "signup": {
+   "value": "2025-12-27T14:50:42.571Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 117289.392,
+   "refs": [
+    "profile:U-03006@2026-09-28T21:52:40.382Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T21:52:40.382Z",
+   "age_s": 211329.01,
+   "refs": [
+    "profile:U-03006@2026-09-28T21:52:40.382Z",
+    "event:6c8ff268-9111-4fa4-a6e1-91713e7e891b"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-09T10:20:39.478Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:e0c0792c-d340-491c-8adb-b55ac3c81c2e",
+   "conflicts": [
+    "profile:d6"
+   ],
+   "as_of": "2026-10-01T08:34:49.392Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03006@2026-09-28T21:52:40.382Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 117289.392
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03006@2026-09-28T21:52:40.382Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 117289.392
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:d6"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 7,
+   "completes": 1,
+   "last_play_at": "2026-09-27T15:06:49.747Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 8,
+   "top_genres": [
+    "Action",
+    "Drama",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "dhada-bhate-d1",
+    "gidha-sudhako-d1",
+    "hama-chudibha-d1"
+   ]
+  },
+  "events_seen": 66
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T08:34:49.392Z",
+  "deadline": "2026-10-04T08:34:49.392Z",
+  "status": "open",
+  "decision_id": "D-01090",
+  "slug": "gidha-sudhako-d1",
+  "assumptions": [],
+  "evidence": [
+   "event:44710ab4-e064-4aa3-a1bb-7e2cb4482bb2",
+   "catalogue:T0010"
+  ],
+  "reason": "unfinished series gidha-sudhako-d1 idle 3.7 days, 58 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T08:34:49.392Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T08:34:49.392Z",
+  "deadline": "2026-10-04T08:34:49.392Z",
+  "last_action": "HOME_PAGE+WHATSAPP",
+  "revised_at": "2026-10-01T08:34:49.392Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01090",
+   "at": "2026-10-01T08:34:49.446Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00445",
+  "A-00446"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T08:34:49.392Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "e0c0792c-d340-491c-8adb-b55ac3c81c2e": "D-01090"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

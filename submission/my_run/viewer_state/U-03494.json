@@ -1,0 +1,184 @@
+{
+ "viewer_id": "U-03494",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:46:02.272Z",
+  "signup": {
+   "value": "2025-02-11T21:09:39.457Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 146762.272,
+   "refs": [
+    "profile:U-03494@2026-09-29T12:47:14.154Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T12:47:14.154Z",
+   "age_s": 187128.118,
+   "refs": [
+    "profile:U-03494@2026-09-29T12:47:14.154Z",
+    "event:eaa45945-1fcf-45c5-af26-83d4587dd438"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-01T13:47:37.958Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:a11bb707-ee90-419f-a134-00452d2b2cd1",
+   "conflicts": [
+    "profile:d3"
+   ],
+   "as_of": "2026-10-01T16:46:02.272Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03494@2026-09-29T12:47:14.154Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 146762.272
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03494@2026-09-29T12:47:14.154Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 146762.272
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d4",
+    "others": [
+     "profile:d3"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 1,
+   "completes": 1,
+   "last_play_at": "2026-09-01T13:36:06.071Z",
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 1,
+   "top_genres": [
+    "Romance"
+   ],
+   "unfinished_series": [
+    "bagi-baya-d4"
+   ]
+  },
+  "events_seen": 15
+ },
+ "active_goal": {
+  "goal_id": "G12",
+  "name": "return_after_absence_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "any title",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T06:48:01.573Z",
+  "deadline": "2026-10-08T06:48:01.573Z",
+  "status": "open",
+  "decision_id": "D-00841",
+  "slug": null,
+  "assumptions": [
+   "history is limited to the 30-day event window; earlier activity is not visible"
+  ],
+  "evidence": [
+   "profile:U-03494@2026-09-29T12:47:14.154Z"
+  ],
+  "reason": "no app_open in the 14 days before this trigger",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T06:48:01.573Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-022286"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G12",
+  "since": "2026-10-01T06:48:01.573Z",
+  "deadline": "2026-10-08T06:48:01.573Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T16:46:02.272Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00841",
+   "at": "2026-10-01T06:48:01.625Z",
+   "action": "NO_ACTION",
+   "goal_id": "G12",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02556",
+   "at": "2026-10-01T16:46:02.274Z",
+   "action": "NO_ACTION",
+   "goal_id": "G12",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G12",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-022286"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T06:48:01.573Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G12",
+   "lesson": "achieved G12 with no prior exposure by the agent",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G12": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "2224eca1-15f2-40c1-b036-3762476c0f21": "D-00841",
+  "a11bb707-ee90-419f-a134-00452d2b2cd1": "D-02556"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

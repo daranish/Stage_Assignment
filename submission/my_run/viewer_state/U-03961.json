@@ -1,0 +1,163 @@
+{
+ "viewer_id": "U-03961",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T10:49:09.868Z",
+  "signup": {
+   "value": "2026-06-29T03:20:17.566Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 125349.868,
+   "refs": [
+    "profile:U-03961@2026-09-28T19:39:20.149Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T19:39:20.149Z",
+   "age_s": 227389.719,
+   "refs": [
+    "profile:U-03961@2026-09-28T19:39:20.149Z",
+    "event:34741b68-8c2e-4209-9720-36676ef331a5"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-14T16:00:31.126Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:8c1368f9-7c4b-44d2-9b71-1ceeb92bbc93",
+   "conflicts": [],
+   "as_of": "2026-10-01T10:49:09.868Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03961@2026-09-28T19:39:20.149Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 125349.868
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03961@2026-09-28T19:39:20.149Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 125349.868
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 11,
+   "completes": 4,
+   "last_play_at": "2026-09-26T05:15:38.000Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 10,
+   "top_genres": [
+    "Action",
+    "Crime",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "chupi-gugi-d6",
+    "mopila-bani-d6"
+   ]
+  },
+  "events_seen": 87
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T10:49:09.868Z",
+  "deadline": "2026-10-04T10:49:09.868Z",
+  "status": "open",
+  "decision_id": "D-01373",
+  "slug": "chupi-gugi-d6",
+  "assumptions": [],
+  "evidence": [
+   "event:e00ef1b4-26a7-4d59-8e59-2006910d0bb0",
+   "catalogue:T1389"
+  ],
+  "reason": "unfinished series chupi-gugi-d6 idle 5.2 days, 37 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T10:49:09.868Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T10:49:09.868Z",
+  "deadline": "2026-10-04T10:49:09.868Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T10:49:09.868Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01373",
+   "at": "2026-10-01T10:49:09.920Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T10:49:09.868Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 2 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "8c1368f9-7c4b-44d2-9b71-1ceeb92bbc93": "D-01373"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

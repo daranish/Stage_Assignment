@@ -1,0 +1,27 @@
+{
+ "viewer_id": "U-02241",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": null,
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01678",
+   "at": "2026-10-01T13:10:42.907Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "8deea5ee-f0ca-4f9a-986b-92d84b05f0e2": "D-01678"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

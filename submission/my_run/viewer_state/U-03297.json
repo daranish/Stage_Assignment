@@ -1,0 +1,176 @@
+{
+ "viewer_id": "U-03297",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T04:58:18.690Z",
+  "signup": {
+   "value": "2026-06-05T09:41:26.540Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 104298.69,
+   "refs": [
+    "profile:U-03297@2026-09-29T14:32:34.453Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T14:32:34.453Z",
+   "age_s": 138344.237,
+   "refs": [
+    "profile:U-03297@2026-09-29T14:32:34.453Z",
+    "event:f7b24936-8b73-4fbe-ba4e-2b76a1b575e7"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-27T01:48:46.910Z"
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:b0fb5fcb-bfc3-49d1-9676-bcd1b809b326",
+   "conflicts": [],
+   "as_of": "2026-10-01T04:58:18.690Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03297@2026-09-29T14:32:34.453Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 104298.69
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03297@2026-09-29T14:32:34.453Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 104298.69
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 6,
+   "completes": 2,
+   "last_play_at": "2026-09-30T11:36:41.237Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 13,
+   "top_genres": [
+    "Romance",
+    "Family",
+    "Action"
+   ],
+   "unfinished_series": [
+    "haja-d3",
+    "lomobha-moni-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 63
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T04:47:38.767Z",
+  "deadline": "2026-10-04T04:47:38.767Z",
+  "status": "open",
+  "decision_id": "D-00558",
+  "slug": "yatite-roloda-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:05441d3b-d41f-477e-af01-20e52f6adcda",
+   "catalogue:T0901"
+  ],
+  "reason": "unfinished series yatite-roloda-d3 idle 7.6 days, 21 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T04:47:38.767Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-021048"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T04:47:38.767Z",
+  "deadline": "2026-10-04T04:47:38.767Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T04:58:18.690Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00558",
+   "at": "2026-10-01T04:47:38.819Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-00601",
+   "at": "2026-10-01T04:58:18.692Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-021048"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T04:47:38.767Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "achieved G07 with no prior exposure by the agent",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "72f30bc5-b2a2-4412-9d14-052fe5408b2e": "D-00558",
+  "b0fb5fcb-bfc3-49d1-9676-bcd1b809b326": "D-00601"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

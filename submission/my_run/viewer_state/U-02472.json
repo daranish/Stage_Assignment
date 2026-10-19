@@ -1,0 +1,171 @@
+{
+ "viewer_id": "U-02472",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:49:05.037Z",
+  "signup": {
+   "value": "2025-02-04T20:57:22.435Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 143345.037,
+   "refs": [
+    "profile:U-02472@2026-09-29T10:58:38.471Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T10:58:38.471Z",
+   "age_s": 190226.566,
+   "refs": [
+    "profile:U-02472@2026-09-29T10:58:38.471Z",
+    "event:a9a5e36d-e864-4672-bf58-c93ecdcf2e3a"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-03T18:50:58.153Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:a3e24423-1faf-48b4-8b4f-f4f8c79abc7b",
+   "conflicts": [],
+   "as_of": "2026-10-01T15:49:05.037Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02472@2026-09-29T10:58:38.471Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 143345.037
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02472@2026-09-29T10:58:38.471Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 143345.037
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 7,
+   "completes": 4,
+   "last_play_at": "2026-09-26T14:40:29.483Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Drama",
+    "Family",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "digi-mone-d3",
+    "haja-d3"
+   ]
+  },
+  "events_seen": 70
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T14:22:49.305Z",
+  "deadline": "2026-10-04T14:22:49.305Z",
+  "status": "open",
+  "decision_id": "D-01908",
+  "slug": "haja-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:46403e3b-8893-4fa6-b8be-c9d442394580",
+   "catalogue:T0907"
+  ],
+  "reason": "unfinished series haja-d3 idle 6.2 days, 47 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T14:22:49.305Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T14:22:49.305Z",
+  "deadline": "2026-10-04T14:22:49.305Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T15:49:05.037Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01908",
+   "at": "2026-10-01T14:22:49.357Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02357",
+   "at": "2026-10-01T15:49:05.039Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T14:22:49.305Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 0 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "906c4e29-ccea-4e2b-904f-1a20cbfe4ecc": "D-01908",
+  "a3e24423-1faf-48b4-8b4f-f4f8c79abc7b": "D-02357"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

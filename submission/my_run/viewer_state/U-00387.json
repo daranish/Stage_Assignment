@@ -1,0 +1,163 @@
+{
+ "viewer_id": "U-00387",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T02:52:32.652Z",
+  "signup": {
+   "value": "2024-10-30T17:06:48.283Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 96752.652,
+   "refs": [
+    "profile:U-00387@2026-09-29T08:54:31.000Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T08:54:31.000Z",
+   "age_s": 151081.652,
+   "refs": [
+    "profile:U-00387@2026-09-29T08:54:31.000Z",
+    "event:fffa10cf-9c3b-49d0-98b4-426ea76d183d"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-16T08:08:28.055Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:6f2b249b-0d9c-47d1-b09c-9f4114808cff",
+   "conflicts": [],
+   "as_of": "2026-10-01T02:52:32.652Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00387@2026-09-29T08:54:31.000Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 96752.652
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00387@2026-09-29T08:54:31.000Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 96752.652
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 13,
+   "completes": 9,
+   "last_play_at": "2026-09-30T04:37:19.046Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Thriller",
+    "Action",
+    "Family"
+   ],
+   "unfinished_series": [
+    "hama-chudibha-d1",
+    "tidha-dakachu-d1"
+   ]
+  },
+  "events_seen": 117
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T02:52:32.652Z",
+  "deadline": "2026-10-04T02:52:32.652Z",
+  "status": "open",
+  "decision_id": "D-00189",
+  "slug": "tidha-dakachu-d1",
+  "assumptions": [],
+  "evidence": [
+   "event:b8c47c32-8cdd-4b64-8939-6354d2992f78",
+   "catalogue:T0005"
+  ],
+  "reason": "unfinished series tidha-dakachu-d1 idle 15.0 days, 12 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T02:52:32.652Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T02:52:32.652Z",
+  "deadline": "2026-10-04T02:52:32.652Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T02:52:32.652Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00189",
+   "at": "2026-10-01T02:52:32.704Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T02:52:32.652Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 0 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "6f2b249b-0d9c-47d1-b09c-9f4114808cff": "D-00189"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

@@ -1,0 +1,160 @@
+{
+ "viewer_id": "U-03787",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T18:23:44.843Z",
+  "signup": {
+   "value": "2025-06-10T21:02:15.684Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 152624.843,
+   "refs": [
+    "profile:U-03787@2026-09-28T23:25:36.419Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-28T23:25:36.419Z",
+   "age_s": 241088.424,
+   "refs": [
+    "profile:U-03787@2026-09-28T23:25:36.419Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:e307d73e-44c3-4389-8092-fb3004e3c81d",
+   "conflicts": [],
+   "as_of": "2026-10-01T18:23:44.843Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03787@2026-09-28T23:25:36.419Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 152624.843
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03787@2026-09-28T23:25:36.419Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 152624.843
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 1,
+   "last_play_at": "2026-09-18T10:37:16.438Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Action",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "rigu-dhadi-d2"
+   ]
+  },
+  "events_seen": 38
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T18:23:44.843Z",
+  "deadline": "2026-10-04T18:23:44.843Z",
+  "status": "open",
+  "decision_id": "D-02784",
+  "slug": "rigu-dhadi-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:a70ef670-768c-4785-82f5-d73595deb64b",
+   "catalogue:T0526"
+  ],
+  "reason": "unfinished series rigu-dhadi-d2 idle 13.3 days, 22 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T18:23:44.843Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T18:23:44.843Z",
+  "deadline": "2026-10-04T18:23:44.843Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T18:23:44.843Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02784",
+   "at": "2026-10-01T18:23:44.895Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T18:23:44.843Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 0 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "e307d73e-44c3-4389-8092-fb3004e3c81d": "D-02784"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

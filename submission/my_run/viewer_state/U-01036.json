@@ -1,0 +1,180 @@
+{
+ "viewer_id": "U-01036",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T13:12:11.181Z",
+  "signup": {
+   "value": "2024-11-08T08:00:29.016Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 133931.181,
+   "refs": [
+    "profile:U-01036@2026-09-29T07:03:42.421Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T07:03:42.421Z",
+   "age_s": 194908.76,
+   "refs": [
+    "profile:U-01036@2026-09-29T07:03:42.421Z",
+    "event:fb94d30f-7c48-4c97-9fc8-a87b174ef28f"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-10T07:55:33.245Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:569a01e8-b74c-452d-9153-3634fef54480",
+   "conflicts": [
+    "profile:d2"
+   ],
+   "as_of": "2026-10-01T13:12:11.181Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01036@2026-09-29T07:03:42.421Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 133931.181
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01036@2026-09-29T07:03:42.421Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 133931.181
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d5",
+    "others": [
+     "profile:d2"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 9,
+   "completes": 3,
+   "last_play_at": "2026-09-28T23:55:24.935Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Action",
+    "Comedy",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "chugu-d2",
+    "molo-d2",
+    "mori-neka-d5"
+   ]
+  },
+  "events_seen": 65
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T13:12:11.181Z",
+  "deadline": "2026-10-08T13:12:11.181Z",
+  "status": "open",
+  "decision_id": "D-01683",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-01036@2026-09-29T07:03:42.421Z",
+   "event:fb94d30f-7c48-4c97-9fc8-a87b174ef28f",
+   "catalogue:T1181"
+  ],
+  "reason": "active subscriber; 22 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T13:12:11.181Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-006974"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T13:12:11.181Z",
+  "deadline": "2026-10-08T13:12:11.181Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T13:12:11.181Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01683",
+   "at": "2026-10-01T13:12:11.543Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "stale trigger: app_open was buffered offline for 493839s (>600s) - not a live session; recorded as history only"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-006974"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T13:12:11.181Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "achieved G08 with no prior exposure by the agent",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "569a01e8-b74c-452d-9153-3634fef54480": "D-01683"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

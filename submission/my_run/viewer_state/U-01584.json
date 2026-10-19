@@ -1,0 +1,181 @@
+{
+ "viewer_id": "U-01584",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T11:53:59.423Z",
+  "signup": {
+   "value": "2025-11-08T07:04:20.684Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 129239.423,
+   "refs": [
+    "profile:U-01584@2026-09-29T06:45:42.921Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T06:45:42.921Z",
+   "age_s": 191296.502,
+   "refs": [
+    "profile:U-01584@2026-09-29T06:45:42.921Z",
+    "event:a512379e-e001-4c33-9650-3494fd1cdbfe"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-10T09:06:24.106Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:5d2e74d3-ca74-4de5-a3b4-861a0b36eb00",
+   "conflicts": [
+    "campaign_link:d4"
+   ],
+   "as_of": "2026-10-01T11:53:59.423Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01584@2026-09-29T06:45:42.921Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 129239.423
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "later notification_opt_out event overrides the snapshot",
+    "refs": [
+     "event:8578c1fa-058b-4886-8087-1040a38da92c"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 129239.423
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d2",
+    "others": [
+     "campaign_link:d4"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 5,
+   "completes": 3,
+   "last_play_at": "2026-09-29T10:36:20.091Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Action",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "molo-d2"
+   ]
+  },
+  "events_seen": 56
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T04:45:58.706Z",
+  "deadline": "2026-10-08T04:45:58.706Z",
+  "status": "open",
+  "decision_id": "D-00438",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-01584@2026-09-29T06:45:42.921Z",
+   "event:a512379e-e001-4c33-9650-3494fd1cdbfe",
+   "catalogue:T0530"
+  ],
+  "reason": "active subscriber; 43 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T04:45:58.706Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T04:45:58.706Z",
+  "deadline": "2026-10-08T04:45:58.706Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T11:53:59.423Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00438",
+   "at": "2026-10-01T04:45:58.759Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-01513",
+   "at": "2026-10-01T11:53:59.425Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T04:45:58.706Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "G08 not achieved (1 failure(s) for this goal): 3 app opens and 2 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "20c51f60-7195-4eca-bee6-b92d6f988d27": "D-00438",
+  "5d2e74d3-ca74-4de5-a3b4-861a0b36eb00": "D-01513"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

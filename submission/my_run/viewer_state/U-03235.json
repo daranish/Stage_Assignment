@@ -1,0 +1,169 @@
+{
+ "viewer_id": "U-03235",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T11:54:29.657Z",
+  "signup": {
+   "value": "2025-11-06T16:17:06.317Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 129269.657,
+   "refs": [
+    "profile:U-03235@2026-09-29T17:31:08.669Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T17:31:08.669Z",
+   "age_s": 152600.988,
+   "refs": [
+    "profile:U-03235@2026-09-29T17:31:08.669Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:2c1f2371-cf61-4906-b6e1-3f17f62852fc",
+   "conflicts": [],
+   "as_of": "2026-10-01T11:54:29.657Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03235@2026-09-29T17:31:08.669Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 129269.657
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03235@2026-09-29T17:31:08.669Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 129269.657
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 2,
+   "last_play_at": "2026-09-28T07:24:59.503Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 3,
+   "top_genres": [
+    "Action",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "molo-d2"
+   ]
+  },
+  "events_seen": 22
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T11:54:29.657Z",
+  "deadline": "2026-10-04T11:54:29.657Z",
+  "status": "open",
+  "decision_id": "D-01518",
+  "slug": "molo-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:e66d0b67-06c0-453d-a34a-bd46f66c89d1",
+   "catalogue:T0521"
+  ],
+  "reason": "unfinished series molo-d2 idle 3.2 days, 5 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T11:54:29.657Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T11:54:29.657Z",
+  "deadline": "2026-10-04T11:54:29.657Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T11:54:29.657Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00544",
+   "at": "2026-10-01T04:47:28.618Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-01518",
+   "at": "2026-10-01T11:54:29.709Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T11:54:29.657Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 0 app opens and 1 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "c63cda7d-9396-4052-a071-e2dafd2ac30b": "D-00544",
+  "2c1f2371-cf61-4906-b6e1-3f17f62852fc": "D-01518"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T04:47:28.566Z"
+}

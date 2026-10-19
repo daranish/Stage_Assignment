@@ -1,0 +1,166 @@
+{
+ "viewer_id": "U-03375",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:21:06.862Z",
+  "signup": {
+   "value": "2025-05-04T01:32:44.728Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 141666.862,
+   "refs": [
+    "profile:U-03375@2026-09-28T22:16:35.069Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T22:16:35.069Z",
+   "age_s": 234271.793,
+   "refs": [
+    "profile:U-03375@2026-09-28T22:16:35.069Z",
+    "event:188b36f3-4d6e-4646-bf11-2a65c98a3968"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-12T15:59:52.709Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:c00bd618-87ff-466e-9b58-6e823cd06d08",
+   "conflicts": [],
+   "as_of": "2026-10-01T15:21:06.862Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03375@2026-09-28T22:16:35.069Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 141666.862
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03375@2026-09-28T22:16:35.069Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 141666.862
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 4,
+   "completes": 1,
+   "last_play_at": "2026-09-22T11:57:28.678Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Crime",
+    "Romance",
+    "Action"
+   ],
+   "unfinished_series": [
+    "jamo-hasa-d5",
+    "kavadha-rilo-d5"
+   ]
+  },
+  "events_seen": 36
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T15:21:06.862Z",
+  "deadline": "2026-10-04T15:21:06.862Z",
+  "status": "open",
+  "decision_id": "D-02255",
+  "slug": "jamo-hasa-d5",
+  "assumptions": [],
+  "evidence": [
+   "event:e2082359-0efd-4e2e-8c69-ff1371237e82",
+   "catalogue:T1179"
+  ],
+  "reason": "unfinished series jamo-hasa-d5 idle 9.1 days, 32 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T15:21:06.862Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T15:21:06.862Z",
+  "deadline": "2026-10-04T15:21:06.862Z",
+  "last_action": "HOME_PAGE+IN_APP_MESSAGE",
+  "revised_at": "2026-10-01T15:21:06.862Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02255",
+   "at": "2026-10-01T15:21:06.915Z",
+   "action": "HOME_PAGE+IN_APP_MESSAGE",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00985",
+  "A-00986"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T15:21:06.862Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "c00bd618-87ff-466e-9b58-6e823cd06d08": "D-02255"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

@@ -1,0 +1,176 @@
+{
+ "viewer_id": "U-03370",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T06:42:54.901Z",
+  "signup": {
+   "value": "2025-01-13T23:33:55.379Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 110574.901,
+   "refs": [
+    "profile:U-03370@2026-09-28T18:08:22.041Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T18:08:22.041Z",
+   "age_s": 218072.86,
+   "refs": [
+    "profile:U-03370@2026-09-28T18:08:22.041Z",
+    "event:7dec4953-5016-47c2-9b4e-874c834ed6b8"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-22T04:09:54.125Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:2e4d680f-bd63-4253-ac23-41027079ddb9",
+   "conflicts": [
+    "profile:d4"
+   ],
+   "as_of": "2026-10-01T06:42:54.901Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03370@2026-09-28T18:08:22.041Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 110574.901
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03370@2026-09-28T18:08:22.041Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 110574.901
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:d4"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 7,
+   "completes": 3,
+   "last_play_at": "2026-09-25T15:55:23.578Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Comedy",
+    "Crime",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "salosa-valo-d1"
+   ]
+  },
+  "events_seen": 65
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T06:42:54.901Z",
+  "deadline": "2026-10-04T06:42:54.901Z",
+  "status": "open",
+  "decision_id": "D-00834",
+  "slug": "salosa-valo-d1",
+  "assumptions": [],
+  "evidence": [
+   "event:4ee55b6b-98f2-4a29-8ba4-7107028936b2",
+   "catalogue:T0015"
+  ],
+  "reason": "unfinished series salosa-valo-d1 idle 5.6 days, 10 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T06:42:54.901Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T06:42:54.901Z",
+  "deadline": "2026-10-04T06:42:54.901Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T06:42:54.901Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00834",
+   "at": "2026-10-01T06:42:54.955Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00309",
+  "A-00310"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T06:42:54.901Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 0 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "2e4d680f-bd63-4253-ac23-41027079ddb9": "D-00834"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

@@ -1,0 +1,183 @@
+{
+ "viewer_id": "U-02290",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:39:22.627Z",
+  "signup": {
+   "value": "2026-09-17T15:45:24.008Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 139162.627,
+   "refs": [
+    "profile:U-02290@2026-09-29T10:26:15.263Z",
+    "event:2cb630fa-8417-4b5a-8e84-eef90a0c365d"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T10:26:15.263Z",
+   "age_s": 187987.364,
+   "refs": [
+    "profile:U-02290@2026-09-29T10:26:15.263Z",
+    "event:3d0e0caa-c661-4002-b0dc-489f78089c9c"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-20T15:45:24.593Z"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:577b9923-e4a7-4a54-b191-fcaec7159c9c",
+   "conflicts": [
+    "profile:"
+   ],
+   "as_of": "2026-10-01T14:39:22.627Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02290@2026-09-29T10:26:15.263Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 139162.627
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02290@2026-09-29T10:26:15.263Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 139162.627
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 0,
+   "last_play_at": "2026-09-21T14:07:17.110Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Drama",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "hapibha-d1"
+   ]
+  },
+  "events_seen": 27
+ },
+ "active_goal": {
+  "goal_id": "G02",
+  "name": "first_full_episode_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T12:21:56.972Z",
+  "deadline": "2026-10-04T12:21:56.972Z",
+  "status": "open",
+  "decision_id": "D-01579",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-02290@2026-09-29T10:26:15.263Z",
+   "event:2cb630fa-8417-4b5a-8e84-eef90a0c365d"
+  ],
+  "reason": "no episode_completed observed",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T12:21:56.972Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G02",
+  "since": "2026-10-01T12:21:56.972Z",
+  "deadline": "2026-10-04T12:21:56.972Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T14:39:22.627Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01579",
+   "at": "2026-10-01T12:21:57.025Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01971",
+   "at": "2026-10-01T14:39:22.629Z",
+   "action": "NO_ACTION",
+   "goal_id": "G02",
+   "reason": "stale trigger: app_open was buffered offline for 586198s (>600s) - not a live session; recorded as history only"
+  }
+ ],
+ "actions": [
+  "A-00667"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G02",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T12:21:56.972Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G02",
+   "lesson": "G02 not achieved (1 failure(s) for this goal): 0 app opens and 0 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G02": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "2a77fc58-0df4-417d-8a75-09d400f9bfd1": "D-01579",
+  "577b9923-e4a7-4a54-b191-fcaec7159c9c": "D-01971"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

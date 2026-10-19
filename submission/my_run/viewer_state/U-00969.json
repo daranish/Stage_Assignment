@@ -1,0 +1,170 @@
+{
+ "viewer_id": "U-00969",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:25:35.975Z",
+  "signup": {
+   "value": "2024-10-21T10:26:52.944Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 145535.975,
+   "refs": [
+    "profile:U-00969@2026-09-29T09:49:57.453Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T09:49:57.453Z",
+   "age_s": 196538.522,
+   "refs": [
+    "profile:U-00969@2026-09-29T09:49:57.453Z",
+    "event:c4f64b40-b636-4c2d-8b46-f598cf6fa810"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-23T21:18:49.675Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d7",
+   "source": "app_setting",
+   "ref": "event:ad92c592-a7ad-4a84-9f46-f4e0c9f1b463",
+   "conflicts": [],
+   "as_of": "2026-10-01T16:25:35.975Z",
+   "supported": false,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00969@2026-09-29T09:49:57.453Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 145535.975
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00969@2026-09-29T09:49:57.453Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 145535.975
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 2,
+   "last_play_at": "2026-09-18T17:25:46.411Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 4,
+   "top_genres": [
+    "Family",
+    "Action"
+   ],
+   "unfinished_series": [
+    "dhapipa-gini-d2",
+    "tidha-dakachu-d1"
+   ]
+  },
+  "events_seen": 38
+ },
+ "active_goal": {
+  "goal_id": "G09",
+  "name": "weekly_habit_14d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "on 3 distinct IST days",
+   "window_hours": 336
+  },
+  "started_at": "2026-09-30T19:23:07.693Z",
+  "deadline": "2026-10-14T19:23:07.693Z",
+  "status": "open",
+  "decision_id": "D-00022",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-00969@2026-09-29T09:49:57.453Z",
+   "event:c4f64b40-b636-4c2d-8b46-f598cf6fa810"
+  ],
+  "reason": "active subscriber with plays on 1 IST day(s) in 14 days",
+  "messages_sent": 0,
+  "committed_at": "2026-09-30T19:23:07.693Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event (0 of 3 distinct play days)",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G09",
+  "since": "2026-09-30T19:23:07.693Z",
+  "deadline": "2026-10-14T19:23:07.693Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T16:25:35.975Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00022",
+   "at": "2026-09-30T19:23:07.745Z",
+   "action": "NO_ACTION",
+   "goal_id": "G09",
+   "reason": "dialect d7 (app setting) has no catalogue content: nothing valid to show or promote"
+  },
+  {
+   "decision_id": "D-02478",
+   "at": "2026-10-01T16:25:35.977Z",
+   "action": "NO_ACTION",
+   "goal_id": "G09",
+   "reason": "dialect d7 (app setting) has no catalogue content: nothing valid to show or promote"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G09",
+   "status": "failed",
+   "reason": "window closed without a qualifying event (0 of 3 distinct play days)",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-14T19:23:07.693Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G09",
+   "lesson": "G09 not achieved (1 failure(s) for this goal): 3 app opens and 0 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G09": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "40513d05-80ea-4085-aedf-4e95ff2f1abe": "D-00022",
+  "ad92c592-a7ad-4a84-9f46-f4e0c9f1b463": "D-02478"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

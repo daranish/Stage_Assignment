@@ -1,0 +1,177 @@
+{
+ "viewer_id": "U-02566",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T12:07:06.061Z",
+  "signup": {
+   "value": "2026-07-16T04:26:04.883Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 130026.061,
+   "refs": [
+    "profile:U-02566@2026-09-28T23:59:47.280Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T23:59:47.280Z",
+   "age_s": 216438.781,
+   "refs": [
+    "profile:U-02566@2026-09-28T23:59:47.280Z",
+    "event:293c2f12-bc07-45a8-b157-79692fd729bf"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-28T19:55:39.724Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:a2b8f4eb-cb7b-4006-a5b5-df1ee241c182",
+   "conflicts": [
+    "profile:d4"
+   ],
+   "as_of": "2026-10-01T12:07:06.061Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02566@2026-09-28T23:59:47.280Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 130026.061
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02566@2026-09-28T23:59:47.280Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 130026.061
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:d4"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 13,
+   "completes": 6,
+   "last_play_at": "2026-09-28T04:04:14.886Z",
+   "play_days_14d": 5,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Family",
+    "Action",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "nini-namoko-d1",
+    "tidha-dakachu-d1"
+   ]
+  },
+  "events_seen": 104
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T12:07:06.061Z",
+  "deadline": "2026-10-04T12:07:06.061Z",
+  "status": "open",
+  "decision_id": "D-01549",
+  "slug": "nini-namoko-d1",
+  "assumptions": [],
+  "evidence": [
+   "event:fcf87d25-7302-43cf-b681-f801be894dae",
+   "catalogue:T0012"
+  ],
+  "reason": "unfinished series nini-namoko-d1 idle 3.3 days, 31 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T12:07:06.061Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T12:07:06.061Z",
+  "deadline": "2026-10-04T12:07:06.061Z",
+  "last_action": "HOME_PAGE+WHATSAPP",
+  "revised_at": "2026-10-01T12:07:06.061Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01549",
+   "at": "2026-10-01T12:07:06.115Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00656",
+  "A-00657"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T12:07:06.061Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "a2b8f4eb-cb7b-4006-a5b5-df1ee241c182": "D-01549"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

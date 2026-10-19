@@ -1,0 +1,185 @@
+{
+ "viewer_id": "U-00667",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:40:08.670Z",
+  "signup": {
+   "value": "2026-03-21T22:58:37.674Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 139208.67,
+   "refs": [
+    "profile:U-00667@2026-09-29T15:59:48.541Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T15:59:48.541Z",
+   "age_s": 168020.129,
+   "refs": [
+    "profile:U-00667@2026-09-29T15:59:48.541Z",
+    "event:73aaa457-7301-4be5-8232-f964e5455eba"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-02T02:25:09.948Z"
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:5879353a-f6ca-46d1-8bd0-7ffa0a629ca3",
+   "conflicts": [],
+   "as_of": "2026-10-01T14:40:08.670Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00667@2026-09-29T15:59:48.541Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 139208.67
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00667@2026-09-29T15:59:48.541Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 139208.67
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 7,
+   "completes": 4,
+   "last_play_at": "2026-09-30T11:48:09.779Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 10,
+   "top_genres": [
+    "Family",
+    "Romance",
+    "Action"
+   ],
+   "unfinished_series": [
+    "dhapipa-gini-d2",
+    "guka-kosusa-d2",
+    "molo-d2"
+   ]
+  },
+  "events_seen": 64
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T00:51:39.136Z",
+  "deadline": "2026-10-04T00:51:39.136Z",
+  "status": "open",
+  "decision_id": "D-00092",
+  "slug": "molo-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:02cc9e41-367c-4842-89c4-155bb97b605b",
+   "catalogue:T0521"
+  ],
+  "reason": "unfinished series molo-d2 idle 4.8 days, 5 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T00:51:39.136Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T00:51:39.136Z",
+  "deadline": "2026-10-04T00:51:39.136Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T14:40:08.670Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00092",
+   "at": "2026-10-01T00:51:39.189Z",
+   "action": "HOME_PAGE+IN_APP_MESSAGE",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01411",
+   "at": "2026-10-01T11:06:52.313Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01973",
+   "at": "2026-10-01T14:40:08.673Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00044",
+  "A-00045",
+  "A-00606",
+  "A-00855"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T00:51:39.136Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "2c09789f-5212-490a-a63a-874b65faa6e9": "D-00092",
+  "54965cdb-724f-4f33-a6bf-faac87e07e2d": "D-01411",
+  "5879353a-f6ca-46d1-8bd0-7ffa0a629ca3": "D-01973"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

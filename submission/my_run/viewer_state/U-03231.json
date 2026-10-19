@@ -1,0 +1,189 @@
+{
+ "viewer_id": "U-03231",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T09:28:21.570Z",
+  "signup": {
+   "value": "2025-07-30T21:50:15.162Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 120501.57,
+   "refs": [
+    "profile:U-03231@2026-09-28T19:19:31.203Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T19:19:31.203Z",
+   "age_s": 223730.367,
+   "refs": [
+    "profile:U-03231@2026-09-28T19:19:31.203Z",
+    "event:e2d28aa4-1f2b-4388-a5fa-a25a2bbf4b7d"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-17T16:55:58.474Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:0acade9f-d6cd-4fb8-a870-ba9ef68051e6",
+   "conflicts": [
+    "profile:d5"
+   ],
+   "as_of": "2026-10-01T09:28:21.570Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03231@2026-09-28T19:19:31.203Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 120501.57
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03231@2026-09-28T19:19:31.203Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 120501.57
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d2",
+    "others": [
+     "profile:d5"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 9,
+   "completes": 4,
+   "last_play_at": "2026-09-28T01:10:18.728Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 12,
+   "top_genres": [
+    "Action",
+    "Romance",
+    "Family"
+   ],
+   "unfinished_series": [
+    "dhapipa-gini-d2",
+    "molo-d2"
+   ]
+  },
+  "events_seen": 89
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T09:23:16.463Z",
+  "deadline": "2026-10-04T09:23:16.463Z",
+  "status": "open",
+  "decision_id": "D-01200",
+  "slug": "molo-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:20397f88-b95b-48fc-90e5-7d01b23c702d",
+   "catalogue:T0521"
+  ],
+  "reason": "unfinished series molo-d2 idle 3.3 days, 3 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T09:23:16.463Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-020595"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T09:23:16.463Z",
+  "deadline": "2026-10-04T09:23:16.463Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T09:28:21.570Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01200",
+   "at": "2026-10-01T09:23:16.516Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01216",
+   "at": "2026-10-01T09:28:21.572Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "nothing to change: personalised page A-00496 still live (TTL): not republished; message: daily push/WhatsApp cap already used for the IST day of the send slot"
+  }
+ ],
+ "actions": [
+  "A-00496",
+  "A-00497"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-020595"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T09:23:16.463Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "achieved G07 after personalised exposure (association only, not proof of cause)",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "27e7829a-5791-42d5-bc1f-96f90c30a4a4": "D-01200",
+  "0acade9f-d6cd-4fb8-a870-ba9ef68051e6": "D-01216"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

@@ -1,0 +1,178 @@
+{
+ "viewer_id": "U-03595",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T18:13:20.558Z",
+  "signup": {
+   "value": "2026-01-22T05:08:30.708Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 152000.558,
+   "refs": [
+    "profile:U-03595@2026-09-29T01:31:24.250Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T01:31:24.250Z",
+   "age_s": 232916.308,
+   "refs": [
+    "profile:U-03595@2026-09-29T01:31:24.250Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:660bbff8-15ae-41f7-b33a-beff3339136d",
+   "conflicts": [],
+   "as_of": "2026-10-01T18:13:20.558Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03595@2026-09-29T01:31:24.250Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 152000.558
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03595@2026-09-29T01:31:24.250Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 152000.558
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 7,
+   "completes": 7,
+   "last_play_at": "2026-09-22T14:18:21.728Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 10,
+   "top_genres": [
+    "Comedy",
+    "Romance",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "lomobha-moni-d3",
+    "pate-kari-d3",
+    "yane-tegi-d3"
+   ]
+  },
+  "events_seen": 82
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T16:52:49.863Z",
+  "deadline": "2026-10-04T16:52:49.863Z",
+  "status": "open",
+  "decision_id": "D-02581",
+  "slug": "pate-kari-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:60bc0f86-e0ad-4775-85bf-d0847cdda493",
+   "catalogue:T0909"
+  ],
+  "reason": "unfinished series pate-kari-d3 idle 9.1 days, 15 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T16:52:49.863Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-022943"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T16:52:49.863Z",
+  "deadline": "2026-10-04T16:52:49.863Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T18:13:20.558Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02581",
+   "at": "2026-10-01T16:52:49.915Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02771",
+   "at": "2026-10-01T18:13:20.560Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "nothing to change: personalised page A-01115 still live (TTL): not republished; message: daily push/WhatsApp cap already used for the IST day of the send slot"
+  }
+ ],
+ "actions": [
+  "A-01115",
+  "A-01116"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-022943"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T16:52:49.863Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "achieved G07 after personalised exposure (association only, not proof of cause)",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "8128a8bd-2b29-4f19-85de-e341527356ea": "D-02581",
+  "660bbff8-15ae-41f7-b33a-beff3339136d": "D-02771"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

@@ -1,0 +1,137 @@
+{
+ "viewer_id": "U-01468",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T05:07:44.260Z",
+  "signup": {
+   "value": "2025-01-26T00:13:29.020Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 104864.26,
+   "refs": [
+    "profile:U-01468@2026-09-29T04:42:10.623Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T04:42:10.623Z",
+   "age_s": 174333.637,
+   "refs": [
+    "profile:U-01468@2026-09-29T04:42:10.623Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:8e9b73b6-0d5b-408e-9aed-ed6470106e52",
+   "conflicts": [
+    "profile(dup row):d4"
+   ],
+   "as_of": "2026-10-01T05:07:44.260Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01468@2026-09-18T00:39:37.533Z",
+     "profile:U-01468@2026-09-29T04:42:10.623Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 104864.26
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01468@2026-09-18T00:39:37.533Z",
+     "profile:U-01468@2026-09-29T04:42:10.623Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 104864.26
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "profile_duplicate_row",
+    "other_row_updated_at": "2026-09-18T00:39:37.533Z",
+    "differs": {
+     "subscription_status": {
+      "other": "lapsed",
+      "chosen": "never"
+     },
+     "preferred_dialect": {
+      "other": "d4",
+      "chosen": "d5"
+     }
+    },
+    "resolution": "later updated_at chosen"
+   },
+   {
+    "fact": "dialect",
+    "used": "d5",
+    "others": [
+     "profile(dup row):d4"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 2
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 1,
+   "last_play_at": "2026-09-29T11:53:41.568Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 4,
+   "top_genres": [
+    "Crime",
+    "Devotional",
+    "Family"
+   ],
+   "unfinished_series": [
+    "gubava-gihaya-d5",
+    "jamo-hasa-d5",
+    "nina-d5"
+   ]
+  },
+  "events_seen": 37
+ },
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00630",
+   "at": "2026-10-01T05:07:44.312Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "no goal can be chosen yet: G01: signed up 613.2 days ago (>7); G02: viewer has completed an episode; G05: never-paid but no purchase-intent signal in 14 days (goal would not be proportionate); G06: subscription status is never; G07: no unfinished series idle >= 3 days that is available in the viewer dialect; G12: app_open 1.7 days ago"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "8e9b73b6-0d5b-408e-9aed-ed6470106e52": "D-00630"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T05:07:44.260Z"
+}

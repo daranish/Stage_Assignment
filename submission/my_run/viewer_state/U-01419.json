@@ -1,0 +1,177 @@
+{
+ "viewer_id": "U-01419",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T09:00:53.645Z",
+  "signup": {
+   "value": "2026-09-10T17:23:42.110Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 118853.645,
+   "refs": [
+    "profile:U-01419@2026-09-29T07:21:05.452Z",
+    "event:2e1319a5-a40c-4f0c-a95f-53682767b08c"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T07:21:05.452Z",
+   "age_s": 178788.193,
+   "refs": [
+    "profile:U-01419@2026-09-29T07:21:05.452Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:bfba1818-0012-405a-a7b5-b0326a95cbb9",
+   "conflicts": [
+    "profile:d2"
+   ],
+   "as_of": "2026-10-01T09:00:53.645Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01419@2026-09-29T07:21:05.452Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 118853.645
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01419@2026-09-29T07:21:05.452Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 118853.645
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:d2"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 4,
+   "completes": 2,
+   "last_play_at": "2026-09-30T16:18:32.688Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 2,
+   "top_genres": [
+    "Devotional",
+    "Action",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "gima-bhadaba-d1"
+   ]
+  },
+  "events_seen": 39
+ },
+ "active_goal": {
+  "goal_id": "G05",
+  "name": "first_paid_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "is_trial = false",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T09:00:53.645Z",
+  "deadline": "2026-10-08T09:00:53.645Z",
+  "status": "open",
+  "decision_id": "D-01142",
+  "slug": null,
+  "assumptions": [
+   "\"never\" rests on the snapshot and a 30-day event window"
+  ],
+  "evidence": [
+   "profile:U-01419@2026-09-29T07:21:05.452Z",
+   "event:ae53dbbb-bd91-4e8e-8173-a634f018d948"
+  ],
+  "reason": "never paid; purchase-intent signal present",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T09:00:53.645Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G05",
+  "since": "2026-10-01T09:00:53.645Z",
+  "deadline": "2026-10-08T09:00:53.645Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T09:00:53.645Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01142",
+   "at": "2026-10-01T09:00:53.698Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G05",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00468"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G05",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T09:00:53.645Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G05",
+   "lesson": "G05 not achieved (1 failure(s) for this goal): 3 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G05": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "bfba1818-0012-405a-a7b5-b0326a95cbb9": "D-01142"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

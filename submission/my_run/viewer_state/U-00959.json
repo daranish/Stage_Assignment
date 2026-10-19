@@ -1,0 +1,168 @@
+{
+ "viewer_id": "U-00959",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:59:16.600Z",
+  "signup": {
+   "value": "2026-09-13T18:29:23.196Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 147556.6,
+   "refs": [
+    "profile:U-00959@2026-09-28T20:00:07.355Z",
+    "event:3b2ff421-228d-4b10-a032-6345fb8d4b40"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-28T20:00:07.355Z",
+   "age_s": 248349.245,
+   "refs": [
+    "profile:U-00959@2026-09-28T20:00:07.355Z",
+    "event:b9905cd4-2c6f-49b6-9ba0-01b2a3e5c3c8"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-16T18:29:24.340Z"
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:de8527d6-ee52-4aa2-ac8d-8bbf8c9e8dc2",
+   "conflicts": [],
+   "as_of": "2026-10-01T16:59:16.600Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00959@2026-09-28T20:00:07.355Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 147556.6
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00959@2026-09-28T20:00:07.355Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 147556.6
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 11,
+   "completes": 7,
+   "last_play_at": "2026-09-30T14:17:54.448Z",
+   "play_days_14d": 8,
+   "opens_14d_excl_current": 11,
+   "top_genres": [
+    "Devotional",
+    "Family",
+    "Crime"
+   ],
+   "unfinished_series": [
+    "jamo-hasa-d5",
+    "kova-sako-d5",
+    "rosako-d5"
+   ]
+  },
+  "events_seen": 78
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T16:59:16.600Z",
+  "deadline": "2026-10-04T16:59:16.600Z",
+  "status": "open",
+  "decision_id": "D-02601",
+  "slug": "jamo-hasa-d5",
+  "assumptions": [],
+  "evidence": [
+   "event:01dac35c-d6d3-4597-98f9-7a23d3fb926b",
+   "catalogue:T1179"
+  ],
+  "reason": "unfinished series jamo-hasa-d5 idle 4.1 days, 30 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T16:59:16.600Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T16:59:16.600Z",
+  "deadline": "2026-10-04T16:59:16.600Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T16:59:16.600Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02601",
+   "at": "2026-10-01T16:59:16.653Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-01129",
+  "A-01130"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T16:59:16.600Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 4 app opens and 5 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "de8527d6-ee52-4aa2-ac8d-8bbf8c9e8dc2": "D-02601"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

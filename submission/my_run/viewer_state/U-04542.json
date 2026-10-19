@@ -1,0 +1,191 @@
+{
+ "viewer_id": "U-04542",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:47:45.225Z",
+  "signup": {
+   "value": "2024-10-16T01:55:55.043Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 146865.225,
+   "refs": [
+    "profile:U-04542@2026-09-29T09:10:46.308Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T09:10:46.308Z",
+   "age_s": 200218.917,
+   "refs": [
+    "profile:U-04542@2026-09-29T09:10:46.308Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:a29afa0f-f651-46de-90ba-fe7ac33ebf79",
+   "conflicts": [],
+   "as_of": "2026-10-01T16:47:45.225Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04542@2026-09-29T09:10:46.308Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 146865.225
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-04542@2026-09-29T09:10:46.308Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 146865.225
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 1,
+   "completes": 1,
+   "last_play_at": "2026-09-03T03:58:09.900Z",
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Action",
+    "Family"
+   ],
+   "unfinished_series": [
+    "kavadha-rilo-d5"
+   ]
+  },
+  "events_seen": 24
+ },
+ "active_goal": {
+  "goal_id": "G05",
+  "name": "first_paid_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "is_trial = false",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T03:47:25.777Z",
+  "deadline": "2026-10-08T03:47:25.777Z",
+  "status": "open",
+  "decision_id": "D-00274",
+  "slug": null,
+  "assumptions": [
+   "\"never\" rests on the snapshot and a 30-day event window"
+  ],
+  "evidence": [
+   "profile:U-04542@2026-09-29T09:10:46.308Z",
+   "event:f2af2445-fdca-44a9-b45b-be1596e657f8"
+  ],
+  "reason": "never paid; purchase-intent signal present",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T03:47:25.777Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G05",
+  "since": "2026-10-01T03:47:25.777Z",
+  "deadline": "2026-10-08T03:47:25.777Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T16:47:45.225Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00274",
+   "at": "2026-10-01T03:47:25.830Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G05",
+   "reason": null
+  },
+  {
+   "decision_id": "D-00820",
+   "at": "2026-10-01T06:38:06.533Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G05",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01825",
+   "at": "2026-10-01T13:59:27.685Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G05",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02561",
+   "at": "2026-10-01T16:47:45.227Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G05",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00140",
+  "A-00298",
+  "A-00775",
+  "A-01107"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G05",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T03:47:25.777Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G05",
+   "lesson": "G05 not achieved (1 failure(s) for this goal): 7 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G05": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "86ce2aaa-3c2f-4962-866f-35a2ec22925c": "D-00274",
+  "9125a46e-cbdf-47de-91a3-9ec8280581b1": "D-00820",
+  "b5c84df7-be32-4472-9573-2fec93fabdce": "D-01825",
+  "a29afa0f-f651-46de-90ba-fe7ac33ebf79": "D-02561"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

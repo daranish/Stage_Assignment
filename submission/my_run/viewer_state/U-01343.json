@@ -1,0 +1,117 @@
+{
+ "viewer_id": "U-01343",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:02:30.477Z",
+  "signup": {
+   "value": "2025-11-25T15:45:11.262Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 140550.477,
+   "refs": [
+    "profile:U-01343@2026-09-29T17:23:51.109Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T17:23:51.109Z",
+   "age_s": 164319.368,
+   "refs": [
+    "profile:U-01343@2026-09-29T17:23:51.109Z",
+    "event:9ebf4c2a-b605-48ea-96c9-a06cfa520fa4"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-02T22:44:50.588Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:472ef509-7f32-4a01-8879-1f60ffad6252",
+   "conflicts": [],
+   "as_of": "2026-10-01T15:02:30.477Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01343@2026-09-29T17:23:51.109Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140550.477
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01343@2026-09-29T17:23:51.109Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140550.477
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 9,
+   "completes": 2,
+   "last_play_at": "2026-09-23T14:37:06.088Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 8,
+   "top_genres": [
+    "Romance",
+    "Comedy",
+    "Crime"
+   ],
+   "unfinished_series": [
+    "yane-tegi-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 62
+ },
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00585",
+   "at": "2026-10-01T04:47:56.064Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02080",
+   "at": "2026-10-01T15:02:30.529Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "e8568552-c636-4f58-97dc-fd6d93251da6": "D-00585",
+  "472ef509-7f32-4a01-8879-1f60ffad6252": "D-02080"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T15:02:30.477Z"
+}

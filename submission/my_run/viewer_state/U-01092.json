@@ -1,0 +1,198 @@
+{
+ "viewer_id": "U-01092",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:28:58.385Z",
+  "signup": {
+   "value": "2024-10-04T18:08:11.907Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 138538.385,
+   "refs": [
+    "profile:U-01092@2026-09-29T03:58:41.775Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T03:58:41.775Z",
+   "age_s": 210616.61,
+   "refs": [
+    "profile:U-01092@2026-09-29T03:58:41.775Z",
+    "event:934c1fe0-b3a5-4ceb-8035-9921135bbd08"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-02T19:15:19.084Z"
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:433a5549-5408-44f6-b747-174f00b32730",
+   "conflicts": [],
+   "as_of": "2026-10-01T14:28:58.385Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01092@2026-09-29T03:58:41.775Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 138538.385
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01092@2026-09-29T03:58:41.775Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 138538.385
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 4,
+   "completes": 0,
+   "last_play_at": "2026-09-30T05:44:20.259Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Action",
+    "Crime",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "bagi-baya-d4"
+   ]
+  },
+  "events_seen": 43
+ },
+ "active_goal": {
+  "goal_id": "G02",
+  "name": "first_full_episode_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T08:08:30.201Z",
+  "deadline": "2026-10-04T08:08:30.201Z",
+  "status": "open",
+  "decision_id": "D-01031",
+  "slug": null,
+  "assumptions": [
+   "history is limited to the 30-day event window; earlier activity is not visible"
+  ],
+  "evidence": [
+   "profile:U-01092@2026-09-29T03:58:41.775Z"
+  ],
+  "reason": "no episode_completed observed",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T08:08:30.201Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G02",
+  "since": "2026-10-01T08:08:30.201Z",
+  "deadline": "2026-10-04T08:08:30.201Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T14:28:58.385Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01031",
+   "at": "2026-10-01T08:08:30.254Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01174",
+   "at": "2026-10-01T09:11:51.511Z",
+   "action": "NO_ACTION",
+   "goal_id": "G02",
+   "reason": "nothing to change: personalised page A-00411 still live (TTL): not republished; message: goal G02 is served by the home page only (proportionality)"
+  },
+  {
+   "decision_id": "D-01175",
+   "at": "2026-10-01T09:11:55.937Z",
+   "action": "NO_ACTION",
+   "goal_id": "G02",
+   "reason": "nothing to change: personalised page A-00411 still live (TTL): not republished; message: goal G02 is served by the home page only (proportionality)"
+  },
+  {
+   "decision_id": "D-01934",
+   "at": "2026-10-01T14:28:57.212Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01935",
+   "at": "2026-10-01T14:28:58.387Z",
+   "action": "NO_ACTION",
+   "goal_id": "G02",
+   "reason": "nothing to change: personalised page A-00837 still live (TTL): not republished; message: goal G02 is served by the home page only (proportionality)"
+  }
+ ],
+ "actions": [
+  "A-00411",
+  "A-00837"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G02",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T08:08:30.201Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G02",
+   "lesson": "G02 not achieved (1 failure(s) for this goal): 4 app opens and 0 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G02": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "50c51b8e-8c51-4029-a01e-9160957d989a": "D-01031",
+  "c93e5ae2-e2e5-4fc5-bfb8-41fbc0221d76": "D-01174",
+  "63296bd1-604d-4902-8442-93ad6df7ff0d": "D-01175",
+  "de149a2c-f0d6-4a30-9871-977fe12186d1": "D-01934",
+  "433a5549-5408-44f6-b747-174f00b32730": "D-01935"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

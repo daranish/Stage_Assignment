@@ -1,0 +1,187 @@
+{
+ "viewer_id": "U-01041",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T13:21:59.679Z",
+  "signup": {
+   "value": "2025-06-14T10:54:45.816Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 134519.679,
+   "refs": [
+    "profile:U-01041@2026-09-28T21:06:56.358Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-28T21:06:56.358Z",
+   "age_s": 231303.321,
+   "refs": [
+    "profile:U-01041@2026-09-28T21:06:56.358Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:beade6d1-221e-4161-88a0-bd67a1dd65a2",
+   "conflicts": [
+    "profile(dup row):d3"
+   ],
+   "as_of": "2026-10-01T13:21:59.679Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01041@2026-09-28T21:06:56.358Z",
+     "profile:U-01041@2026-09-14T20:37:37.897Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 134519.679
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01041@2026-09-28T21:06:56.358Z",
+     "profile:U-01041@2026-09-14T20:37:37.897Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 134519.679
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "profile_duplicate_row",
+    "other_row_updated_at": "2026-09-14T20:37:37.897Z",
+    "differs": {
+     "subscription_status": {
+      "other": "lapsed",
+      "chosen": "never"
+     },
+     "preferred_dialect": {
+      "other": "d3",
+      "chosen": "d5"
+     }
+    },
+    "resolution": "later updated_at chosen"
+   },
+   {
+    "fact": "dialect",
+    "used": "d5",
+    "others": [
+     "profile(dup row):d3"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 2
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 2,
+   "last_play_at": "2026-09-28T00:40:17.587Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 1,
+   "top_genres": [
+    "Comedy"
+   ],
+   "unfinished_series": []
+  },
+  "events_seen": 14
+ },
+ "active_goal": {
+  "goal_id": "G05",
+  "name": "first_paid_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "is_trial = false",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T13:21:59.679Z",
+  "deadline": "2026-10-08T13:21:59.679Z",
+  "status": "open",
+  "decision_id": "D-01705",
+  "slug": null,
+  "assumptions": [
+   "\"never\" rests on the snapshot and a 30-day event window"
+  ],
+  "evidence": [
+   "profile:U-01041@2026-09-28T21:06:56.358Z",
+   "event:0eeee48d-7a32-473a-b677-3ba6dace9d3b"
+  ],
+  "reason": "never paid; purchase-intent signal present",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T13:21:59.679Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G05",
+  "since": "2026-10-01T13:21:59.679Z",
+  "deadline": "2026-10-08T13:21:59.679Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T13:21:59.679Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01705",
+   "at": "2026-10-01T13:21:59.731Z",
+   "action": "NO_ACTION",
+   "goal_id": "G05",
+   "reason": "stale trigger: app_open was buffered offline for 57506s (>600s) - not a live session; recorded as history only"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G05",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T13:21:59.679Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G05",
+   "lesson": "G05 not achieved (1 failure(s) for this goal): 2 app opens and 2 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G05": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "beade6d1-221e-4161-88a0-bd67a1dd65a2": "D-01705"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

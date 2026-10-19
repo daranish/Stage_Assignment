@@ -1,0 +1,172 @@
+{
+ "viewer_id": "U-00260",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T07:11:37.556Z",
+  "signup": {
+   "value": "2026-06-12T09:35:00.399Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 112297.556,
+   "refs": [
+    "profile:U-00260@2026-09-29T13:38:28.449Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T13:38:28.449Z",
+   "age_s": 149589.107,
+   "refs": [
+    "profile:U-00260@2026-09-29T13:38:28.449Z",
+    "event:40e1ce07-a3d3-43c0-abef-1167a370d69b"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-18T02:11:24.003Z"
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:d227fc2a-64f6-4b03-af9d-45fa68ef6937",
+   "conflicts": [],
+   "as_of": "2026-10-01T07:11:37.556Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00260@2026-09-29T13:38:28.449Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 112297.556
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00260@2026-09-29T13:38:28.449Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 112297.556
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 10,
+   "completes": 3,
+   "last_play_at": "2026-09-24T14:10:34.911Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 5,
+   "top_genres": [
+    "Thriller",
+    "Crime",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "digi-mone-d3",
+    "lomobha-moni-d3",
+    "yane-tegi-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 79
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T07:11:37.556Z",
+  "deadline": "2026-10-04T07:11:37.556Z",
+  "status": "open",
+  "decision_id": "D-00893",
+  "slug": "yane-tegi-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:dbe8be11-2b12-4540-92f4-8dba2c91f90e",
+   "catalogue:T0903"
+  ],
+  "reason": "unfinished series yane-tegi-d3 idle 7.8 days, 17 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T07:11:37.556Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-001867"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T07:11:37.556Z",
+  "deadline": "2026-10-04T07:11:37.556Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T07:11:37.556Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00893",
+   "at": "2026-10-01T07:11:37.608Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00341",
+  "A-00342"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-001867"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T07:11:37.556Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "achieved G07 after personalised exposure (association only, not proof of cause)",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "d227fc2a-64f6-4b03-af9d-45fa68ef6937": "D-00893"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

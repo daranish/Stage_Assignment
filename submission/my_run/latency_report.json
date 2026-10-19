@@ -1,0 +1,92 @@
+{
+ "definition": "latency_s = published_at - deliver_at = queue wait + measured compute + simulated dependency waits. Compute is measured with perf_counter on this machine; dependency timeouts/outages are VIRTUAL waits (a 2s model timeout adds 2s without sleeping) so the replay is fast but the accounting is honest.",
+ "decisions_total": 2794,
+ "decisions_timed": 2690,
+ "duplicates_suppressed": 90,
+ "target_s": 60.0,
+ "failure_s": 300.0,
+ "latency_s": {
+  "p50": 0.052,
+  "p95": 0.054,
+  "p99": 0.057,
+  "max": 2.003
+ },
+ "decided_in_ms": {
+  "p50": 50.9,
+  "p95": 53.3,
+  "p99": 232.5,
+  "max": 2001.8
+ },
+ "within_60s": 2690,
+ "over_60s": 0,
+ "over_300s_failures": 0,
+ "published_within_3s_of_trigger": 2690,
+ "max_queue_wait_s": 0.0,
+ "peak_minute": {
+  "minute_utc": "2026-10-01T04:45",
+  "triggers": 79
+ },
+ "budgets": {
+  "max_model_calls_allowed": 8,
+  "max_tool_calls_allowed": 20,
+  "max_model_calls_used": 2,
+  "max_tool_calls_used": 3
+ },
+ "fallbacks": {
+  "model_unavailable:rule_based_goal": 5,
+  "model_skipped_breaker_open:rule_based_goal": 11,
+  "model_timeout:rule_based_goal": 1,
+  "model_malformed:rule_based_goal": 1,
+  "store_unavailable:no_cache": 5,
+  "store_unavailable:cached_facts(age 4s)": 1,
+  "store_unavailable:cached_facts(age 1525s)": 1
+ },
+ "dependency_windows": [
+  {
+   "dependency": "model_provider",
+   "kind": "unavailable",
+   "start": "2026-10-01T10:35:00.000Z",
+   "until": "2026-10-01T10:42:00.000Z",
+   "decisions": 21,
+   "max_latency_s": 0.254,
+   "fallbacks": {
+    "model_unavailable": 5,
+    "model_skipped_breaker_open": 11,
+    "none": 5
+   },
+   "published_within_budget": 21
+  },
+  {
+   "dependency": "user_data_store",
+   "kind": "degraded",
+   "start": "2026-10-01T13:10:00.000Z",
+   "until": "2026-10-01T13:17:00.000Z",
+   "decisions": 16,
+   "max_latency_s": 2.003,
+   "fallbacks": {
+    "store_unavailable": 7,
+    "none": 9
+   },
+   "published_within_budget": 16
+  }
+ ],
+ "store_writes_deferred_then_flushed": 16,
+ "replay_wall_clock_s": 7.54,
+ "workers": 8,
+ "model_provider": {
+  "name": "mock",
+  "live": false,
+  "model": null,
+  "live_calls": 0,
+  "disabled_reason": null,
+  "task_outcomes": {
+   "goal_advice": {
+    "ok": 1749,
+    "unavailable": 5,
+    "skipped_breaker_open": 11,
+    "timeout": 1,
+    "malformed": 1
+   }
+  }
+ }
+}

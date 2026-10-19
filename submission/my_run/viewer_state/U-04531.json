@@ -1,0 +1,196 @@
+{
+ "viewer_id": "U-04531",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T12:15:17.332Z",
+  "signup": {
+   "value": "2025-07-15T00:53:11.350Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 130517.332,
+   "refs": [
+    "profile:U-04531@2026-09-28T22:02:34.147Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-28T22:02:34.147Z",
+   "age_s": 223963.185,
+   "refs": [
+    "profile:U-04531@2026-09-28T22:02:34.147Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:af2e14b9-d9ac-44f3-90db-d4538c46d670",
+   "conflicts": [
+    "profile:d6"
+   ],
+   "as_of": "2026-10-01T12:15:17.332Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04531@2026-09-28T22:02:34.147Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 130517.332
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04531@2026-09-28T22:02:34.147Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 130517.332
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:d6"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 2,
+   "last_play_at": "2026-09-25T14:05:21.889Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 8,
+   "top_genres": [
+    "Drama",
+    "Romance",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "bagugu-gigupi-d1"
+   ]
+  },
+  "events_seen": 41
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T02:58:57.330Z",
+  "deadline": "2026-10-04T02:58:57.330Z",
+  "status": "open",
+  "decision_id": "D-00201",
+  "slug": "bagugu-gigupi-d1",
+  "assumptions": [],
+  "evidence": [
+   "event:a4a6a8d6-bdab-4e7f-8bc3-ef1cea6aa9cd",
+   "catalogue:T1504"
+  ],
+  "reason": "unfinished series bagugu-gigupi-d1 idle 10.2 days, 7 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T02:58:57.330Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T02:58:57.330Z",
+  "deadline": "2026-10-04T02:58:57.330Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T12:15:17.332Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00201",
+   "at": "2026-10-01T02:58:57.382Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-00541",
+   "at": "2026-10-01T04:47:26.697Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-01502",
+   "at": "2026-10-01T11:51:21.609Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-01566",
+   "at": "2026-10-01T12:15:17.334Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T02:58:57.330Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 1 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "b1dcce53-5103-4645-99e9-aa950a09ab56": "D-00201",
+  "0d0227a2-d8cc-448e-bd58-be9a5b0ad830": "D-00541",
+  "6af0f514-bcf4-4d1a-86c5-481c46902d79": "D-01502",
+  "af2e14b9-d9ac-44f3-90db-d4538c46d670": "D-01566"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

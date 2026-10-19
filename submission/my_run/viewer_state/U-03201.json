@@ -1,0 +1,168 @@
+{
+ "viewer_id": "U-03201",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T17:46:07.489Z",
+  "signup": {
+   "value": "2026-08-27T09:07:12.406Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 150367.489,
+   "refs": [
+    "profile:U-03201@2026-09-29T04:53:55.229Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T04:53:55.229Z",
+   "age_s": 219132.26,
+   "refs": [
+    "profile:U-03201@2026-09-29T04:53:55.229Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:65d6a77c-8fc9-4cef-bde1-7d2012381563",
+   "conflicts": [],
+   "as_of": "2026-10-01T17:46:07.489Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03201@2026-09-29T04:53:55.229Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 150367.489
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03201@2026-09-29T04:53:55.229Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 150367.489
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 1,
+   "last_play_at": "2026-09-18T17:46:59.198Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Devotional",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "rasuya-moni-d6"
+   ]
+  },
+  "events_seen": 28
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T15:55:09.819Z",
+  "deadline": "2026-10-04T15:55:09.819Z",
+  "status": "open",
+  "decision_id": "D-02379",
+  "slug": "rasuya-moni-d6",
+  "assumptions": [],
+  "evidence": [
+   "event:0348ea86-1a5c-444f-9c7f-d65dc6646a52",
+   "catalogue:T1387"
+  ],
+  "reason": "unfinished series rasuya-moni-d6 idle 12.9 days, 8 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T15:55:09.819Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T15:55:09.819Z",
+  "deadline": "2026-10-04T15:55:09.819Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T17:46:07.489Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02379",
+   "at": "2026-10-01T15:55:09.871Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02725",
+   "at": "2026-10-01T17:46:07.491Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T15:55:09.819Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 0 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "0b8c4802-f763-4022-af55-a17d909ffe1b": "D-02379",
+  "65d6a77c-8fc9-4cef-bde1-7d2012381563": "D-02725"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

@@ -1,0 +1,176 @@
+{
+ "viewer_id": "U-04423",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T08:29:33.045Z",
+  "signup": {
+   "value": "2025-11-24T11:34:41.368Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 116973.045,
+   "refs": [
+    "profile:U-04423@2026-09-29T13:51:32.585Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T13:51:32.585Z",
+   "age_s": 153480.46,
+   "refs": [
+    "profile:U-04423@2026-09-29T13:51:32.585Z",
+    "event:54e06427-1b96-461d-8baa-614ee5ad2c56"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-05T01:54:38.326Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:e92cb12d-3bcd-46cc-a314-55af69f23410",
+   "conflicts": [],
+   "as_of": "2026-10-01T08:29:33.045Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-04423@2026-09-29T13:51:32.585Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 116973.045
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04423@2026-09-29T13:51:32.585Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 116973.045
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 11,
+   "completes": 5,
+   "last_play_at": "2026-09-25T00:08:44.588Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Thriller",
+    "Devotional",
+    "Crime"
+   ],
+   "unfinished_series": [
+    "bhaja-moguba-d2",
+    "guka-kosusa-d2",
+    "teja-koriri-d2"
+   ]
+  },
+  "events_seen": 77
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T04:51:49.374Z",
+  "deadline": "2026-10-04T04:51:49.374Z",
+  "status": "open",
+  "decision_id": "D-00594",
+  "slug": "bhaja-moguba-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:3ddc6ccb-8717-42bd-9bc3-cbebf214e2f4",
+   "catalogue:T1678"
+  ],
+  "reason": "unfinished series bhaja-moguba-d2 idle 6.2 days, 30 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T04:51:49.374Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-028056"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T04:51:49.374Z",
+  "deadline": "2026-10-04T04:51:49.374Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T08:29:33.045Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00594",
+   "at": "2026-10-01T04:51:49.427Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-01083",
+   "at": "2026-10-01T08:29:33.047Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-028056"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T04:51:49.374Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "achieved G07 with no prior exposure by the agent",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "29433bb1-f51a-4ebf-814b-bda2d9c175dc": "D-00594",
+  "e92cb12d-3bcd-46cc-a314-55af69f23410": "D-01083"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

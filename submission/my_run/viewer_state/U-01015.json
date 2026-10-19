@@ -1,0 +1,187 @@
+{
+ "viewer_id": "U-01015",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:50:02.598Z",
+  "signup": {
+   "value": "2024-10-16T19:02:42.621Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 147002.598,
+   "refs": [
+    "profile:U-01015@2026-09-29T08:11:27.661Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T08:11:27.661Z",
+   "age_s": 203914.937,
+   "refs": [
+    "profile:U-01015@2026-09-29T08:11:27.661Z",
+    "event:58d24288-f0b7-4d25-9aeb-318f33f3b17c"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-02T15:19:06.450Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:2181be86-2db4-4f27-ac61-09c9a2ccc3e6",
+   "conflicts": [],
+   "as_of": "2026-10-01T16:50:02.598Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01015@2026-09-29T08:11:27.661Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 147002.598
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01015@2026-09-29T08:11:27.661Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 147002.598
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 10,
+   "completes": 3,
+   "last_play_at": "2026-09-26T16:11:01.583Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 12,
+   "top_genres": [
+    "Action",
+    "Devotional",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "hama-chudibha-d1"
+   ]
+  },
+  "events_seen": 81
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T06:31:57.887Z",
+  "deadline": "2026-10-08T06:31:57.887Z",
+  "status": "open",
+  "decision_id": "D-00809",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-01015@2026-09-29T08:11:27.661Z",
+   "event:58d24288-f0b7-4d25-9aeb-318f33f3b17c",
+   "catalogue:T0007"
+  ],
+  "reason": "active subscriber; 62 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T06:31:57.887Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T06:31:57.887Z",
+  "deadline": "2026-10-08T06:31:57.887Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T16:50:02.598Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00809",
+   "at": "2026-10-01T06:31:57.941Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-01970",
+   "at": "2026-10-01T14:39:22.367Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02570",
+   "at": "2026-10-01T16:50:00.372Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02572",
+   "at": "2026-10-01T16:50:02.600Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T06:31:57.887Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "G08 not achieved (1 failure(s) for this goal): 5 app opens and 2 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "f2a9a0e2-fd88-4faa-a3b8-657e66ad47f5": "D-00809",
+  "740cbe8a-ef89-4bbf-a6d0-a8b2c61ed992": "D-01970",
+  "a7db9dd1-06e4-48d8-9757-24a06629176f": "D-02570",
+  "2181be86-2db4-4f27-ac61-09c9a2ccc3e6": "D-02572"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

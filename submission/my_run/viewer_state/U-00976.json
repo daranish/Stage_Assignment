@@ -1,0 +1,168 @@
+{
+ "viewer_id": "U-00976",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T11:38:18.667Z",
+  "signup": {
+   "value": "2025-07-16T02:17:39.179Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 128298.667,
+   "refs": [
+    "profile:U-00976@2026-09-29T04:36:06.374Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T04:36:06.374Z",
+   "age_s": 198132.293,
+   "refs": [
+    "profile:U-00976@2026-09-29T04:36:06.374Z",
+    "event:429d6939-f7a8-4a85-9d98-136b2c90b6ea"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-03T18:09:36.858Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:a853ef71-4c51-4171-8b65-a805d654bf07",
+   "conflicts": [],
+   "as_of": "2026-10-01T11:38:18.667Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00976@2026-09-29T04:36:06.374Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 128298.667
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00976@2026-09-29T04:36:06.374Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 128298.667
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 13,
+   "completes": 9,
+   "last_play_at": "2026-09-28T02:54:54.113Z",
+   "play_days_14d": 6,
+   "opens_14d_excl_current": 13,
+   "top_genres": [
+    "Thriller",
+    "Romance",
+    "Action"
+   ],
+   "unfinished_series": [
+    "bhaja-moguba-d2",
+    "dichupi-niha-d2",
+    "molo-d2",
+    "neya-kadhana-d2"
+   ]
+  },
+  "events_seen": 121
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T11:38:18.667Z",
+  "deadline": "2026-10-04T11:38:18.667Z",
+  "status": "open",
+  "decision_id": "D-01466",
+  "slug": "bhaja-moguba-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:e5a35f43-71cd-49db-bd2b-1e4d860152f3",
+   "catalogue:T0524"
+  ],
+  "reason": "unfinished series bhaja-moguba-d2 idle 3.4 days, 32 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T11:38:18.667Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T11:38:18.667Z",
+  "deadline": "2026-10-04T11:38:18.667Z",
+  "last_action": "HOME_PAGE+WHATSAPP",
+  "revised_at": "2026-10-01T11:38:18.667Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01466",
+   "at": "2026-10-01T11:38:18.721Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00620",
+  "A-00621"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T11:38:18.667Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "a853ef71-4c51-4171-8b65-a805d654bf07": "D-01466"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

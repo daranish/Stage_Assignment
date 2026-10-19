@@ -1,0 +1,202 @@
+{
+ "viewer_id": "U-04583",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:52:23.247Z",
+  "signup": {
+   "value": "2025-02-04T07:03:19.895Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 143543.247,
+   "refs": [
+    "profile:U-04583@2026-09-29T06:26:49.523Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "event",
+   "as_of": "2026-10-01T15:39:47.083Z",
+   "age_s": 756.164,
+   "refs": [
+    "profile:U-04583@2026-09-29T06:26:49.523Z",
+    "event:86d4bf9c-196b-46e9-9344-6ad49b22d42c"
+   ],
+   "conflicts": [
+    {
+     "fact": "subscription_status",
+     "profile": "lapsed",
+     "event": "active",
+     "profile_as_of": "2026-09-29T06:26:49.523Z",
+     "event_as_of": "2026-10-01T15:39:47.083Z",
+     "resolution": "event newer than snapshot row"
+    }
+   ],
+   "plan_ends_at": null,
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:6055af50-d678-40b9-a1aa-d101107e1fc7",
+   "conflicts": [
+    "profile:d4"
+   ],
+   "as_of": "2026-10-01T15:52:23.247Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04583@2026-09-29T06:26:49.523Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 143543.247
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04583@2026-09-29T06:26:49.523Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 143543.247
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "subscription_status",
+    "profile": "lapsed",
+    "event": "active",
+    "profile_as_of": "2026-09-29T06:26:49.523Z",
+    "event_as_of": "2026-10-01T15:39:47.083Z",
+    "resolution": "event newer than snapshot row"
+   },
+   {
+    "fact": "dialect",
+    "used": "d6",
+    "others": [
+     "profile:d4"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 27,
+   "completes": 15,
+   "last_play_at": "2026-09-30T14:21:48.427Z",
+   "play_days_14d": 6,
+   "opens_14d_excl_current": 13,
+   "top_genres": [
+    "Romance",
+    "Thriller",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "bhari-vagi-d6",
+    "digi-mone-d3",
+    "gula-tete-d3",
+    "jakasa-dapi-d3",
+    "rasuya-moni-d6"
+   ]
+  },
+  "events_seen": 182
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T15:37:55.556Z",
+  "deadline": "2026-10-04T15:37:55.556Z",
+  "status": "open",
+  "decision_id": "D-02324",
+  "slug": "bhari-vagi-d6",
+  "assumptions": [],
+  "evidence": [
+   "event:619ae88e-8c96-413b-a9ba-91b1187fe556",
+   "catalogue:T1393"
+  ],
+  "reason": "unfinished series bhari-vagi-d6 idle 3.3 days, 24 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T15:37:55.556Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T15:37:55.556Z",
+  "deadline": "2026-10-04T15:37:55.556Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T15:52:23.247Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02324",
+   "at": "2026-10-01T15:37:55.608Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02371",
+   "at": "2026-10-01T15:52:23.249Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T15:37:55.556Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 4 app opens and 2 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "edebebf7-faed-4528-a3c4-0536e741b8b0": "D-02324",
+  "6055af50-d678-40b9-a1aa-d101107e1fc7": "D-02371"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

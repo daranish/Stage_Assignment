@@ -1,0 +1,209 @@
+{
+ "viewer_id": "U-03024",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:16:24.932Z",
+  "signup": {
+   "value": "2026-07-09T10:10:34.259Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 144984.932,
+   "refs": [
+    "profile:U-03024@2026-09-28T22:58:35.064Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-28T22:58:35.064Z",
+   "age_s": 235069.868,
+   "refs": [
+    "profile:U-03024@2026-09-28T22:58:35.064Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:395f2874-e493-4b9d-8166-5681630ea6d6",
+   "conflicts": [
+    "campaign_link:d2"
+   ],
+   "as_of": "2026-10-01T16:16:24.932Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03024@2026-09-28T22:58:35.064Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 144984.932
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03024@2026-09-28T22:58:35.064Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 144984.932
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d4",
+    "others": [
+     "campaign_link:d2"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 4,
+   "completes": 2,
+   "last_play_at": "2026-09-23T15:56:18.907Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Comedy",
+    "Romance",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "baguti-gida-d4"
+   ]
+  },
+  "events_seen": 47
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T04:55:07.876Z",
+  "deadline": "2026-10-04T04:55:07.876Z",
+  "status": "open",
+  "decision_id": "D-00595",
+  "slug": "baguti-gida-d4",
+  "assumptions": [],
+  "evidence": [
+   "event:ef5c612d-00e6-4bc2-8a0e-334a54626f08",
+   "catalogue:T0925"
+  ],
+  "reason": "unfinished series baguti-gida-d4 idle 14.0 days, 40 episodes left",
+  "messages_sent": 2,
+  "committed_at": "2026-10-01T04:55:07.876Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T04:55:07.876Z",
+  "deadline": "2026-10-04T04:55:07.876Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T16:16:24.932Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00595",
+   "at": "2026-10-01T04:55:07.929Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01880",
+   "at": "2026-10-01T14:16:28.965Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02205",
+   "at": "2026-10-01T15:10:00.658Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "nothing to change: personalised page A-00809 still live (TTL): not republished; message: daily push/WhatsApp cap already used for the IST day of the send slot"
+  },
+  {
+   "decision_id": "D-02270",
+   "at": "2026-10-01T15:24:21.866Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "nothing to change: personalised page A-00809 still live (TTL): not republished; message: daily push/WhatsApp cap already used for the IST day of the send slot"
+  },
+  {
+   "decision_id": "D-02453",
+   "at": "2026-10-01T16:16:24.934Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "nothing to change: personalised page A-00809 still live (TTL): not republished; message: daily push/WhatsApp cap already used for the IST day of the send slot"
+  }
+ ],
+ "actions": [
+  "A-00187",
+  "A-00188",
+  "A-00809",
+  "A-00810"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T04:55:07.876Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 4 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "fa47909f-afa7-4567-a80b-bacd14820490": "D-00595",
+  "0e986ebe-8f3d-48c7-9c3c-0869e4d90637": "D-01880",
+  "57975425-7d97-434c-bf26-954fcb006188": "D-02205",
+  "b1d59703-dc6f-4dfe-8708-7855c4cfc96f": "D-02270",
+  "395f2874-e493-4b9d-8166-5681630ea6d6": "D-02453"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

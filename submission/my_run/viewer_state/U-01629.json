@@ -1,0 +1,176 @@
+{
+ "viewer_id": "U-01629",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:19:08.988Z",
+  "signup": {
+   "value": "2025-06-16T19:27:19.323Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 137948.988,
+   "refs": [
+    "profile:U-01629@2026-09-29T04:20:22.756Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T04:20:22.756Z",
+   "age_s": 208726.232,
+   "refs": [
+    "profile:U-01629@2026-09-29T04:20:22.756Z",
+    "event:154adf29-2bb1-4977-a61a-d9347208e08c"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-28T06:40:29.193Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:55472681-9c30-41aa-b8ec-467c315e5fe0",
+   "conflicts": [
+    "profile:d2"
+   ],
+   "as_of": "2026-10-01T14:19:08.988Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01629@2026-09-29T04:20:22.756Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 137948.988
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01629@2026-09-29T04:20:22.756Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 137948.988
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d6",
+    "others": [
+     "profile:d2"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 5,
+   "completes": 1,
+   "last_play_at": "2026-09-27T07:54:14.791Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 5,
+   "top_genres": [
+    "Thriller",
+    "Devotional",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "rasuya-moni-d6"
+   ]
+  },
+  "events_seen": 43
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T14:19:08.988Z",
+  "deadline": "2026-10-04T14:19:08.988Z",
+  "status": "open",
+  "decision_id": "D-01887",
+  "slug": "rasuya-moni-d6",
+  "assumptions": [],
+  "evidence": [
+   "event:74973a22-0529-42cd-aef4-37b99d41967a",
+   "catalogue:T1387"
+  ],
+  "reason": "unfinished series rasuya-moni-d6 idle 4.3 days, 8 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T14:19:08.988Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T14:19:08.988Z",
+  "deadline": "2026-10-04T14:19:08.988Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T14:19:08.988Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01887",
+   "at": "2026-10-01T14:19:09.040Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00818",
+  "A-00819"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T14:19:08.988Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 0 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "55472681-9c30-41aa-b8ec-467c315e5fe0": "D-01887"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

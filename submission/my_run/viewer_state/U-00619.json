@@ -1,0 +1,178 @@
+{
+ "viewer_id": "U-00619",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:47:53.740Z",
+  "signup": {
+   "value": "2025-06-26T19:48:40.213Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 143273.74,
+   "refs": [
+    "profile:U-00619@2026-09-29T02:48:23.015Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T02:48:23.015Z",
+   "age_s": 219570.725,
+   "refs": [
+    "profile:U-00619@2026-09-29T02:48:23.015Z",
+    "event:eb98ba9f-7c9a-4849-8870-091bc2b2f312"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-12T09:58:39.160Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:006f6133-df33-43e6-86da-34b9207b7ef7",
+   "conflicts": [
+    "profile:d5"
+   ],
+   "as_of": "2026-10-01T15:47:53.740Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00619@2026-09-29T02:48:23.015Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 143273.74
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00619@2026-09-29T02:48:23.015Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 143273.74
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d6",
+    "others": [
+     "profile:d5"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 1,
+   "last_play_at": "2026-09-05T09:17:16.508Z",
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 3,
+   "top_genres": [
+    "Action",
+    "Comedy",
+    "Crime"
+   ],
+   "unfinished_series": [
+    "chupi-gugi-d6",
+    "digu-d6"
+   ]
+  },
+  "events_seen": 36
+ },
+ "active_goal": {
+  "goal_id": "G09",
+  "name": "weekly_habit_14d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "on 3 distinct IST days",
+   "window_hours": 336
+  },
+  "started_at": "2026-10-01T15:47:53.740Z",
+  "deadline": "2026-10-15T15:47:53.740Z",
+  "status": "open",
+  "decision_id": "D-02355",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-00619@2026-09-29T02:48:23.015Z",
+   "event:eb98ba9f-7c9a-4849-8870-091bc2b2f312"
+  ],
+  "reason": "active subscriber with plays on 0 IST day(s) in 14 days",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T15:47:53.740Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-004070"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G09",
+  "since": "2026-10-01T15:47:53.740Z",
+  "deadline": "2026-10-15T15:47:53.740Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T15:47:53.740Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02355",
+   "at": "2026-10-01T15:47:53.792Z",
+   "action": "NO_ACTION",
+   "goal_id": "G09",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G09",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-004070"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-15T15:47:53.740Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G09",
+   "lesson": "achieved G09 with no prior exposure by the agent",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G09": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "006f6133-df33-43e6-86da-34b9207b7ef7": "D-02355"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

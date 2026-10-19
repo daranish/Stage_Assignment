@@ -1,0 +1,170 @@
+{
+ "viewer_id": "U-02855",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:14:51.052Z",
+  "signup": {
+   "value": "2024-12-06T03:26:50.451Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 141291.052,
+   "refs": [
+    "profile:U-02855@2026-09-28T23:11:33.064Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T23:11:33.064Z",
+   "age_s": 230597.988,
+   "refs": [
+    "profile:U-02855@2026-09-28T23:11:33.064Z",
+    "event:4cc7b312-0e49-426a-9aec-871e741108fb"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-22T00:54:44.907Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:39b02b33-6b32-4bb1-be6d-4af5e5741a77",
+   "conflicts": [],
+   "as_of": "2026-10-01T15:14:51.052Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02855@2026-09-28T23:11:33.064Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 141291.052
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02855@2026-09-28T23:11:33.064Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 141291.052
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 2,
+   "last_play_at": "2026-09-19T14:07:25.385Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 5,
+   "top_genres": [
+    "Drama",
+    "Thriller"
+   ],
+   "unfinished_series": []
+  },
+  "events_seen": 40
+ },
+ "active_goal": {
+  "goal_id": "G09",
+  "name": "weekly_habit_14d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "on 3 distinct IST days",
+   "window_hours": 336
+  },
+  "started_at": "2026-10-01T12:14:37.080Z",
+  "deadline": "2026-10-15T12:14:37.080Z",
+  "status": "open",
+  "decision_id": "D-01564",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-02855@2026-09-28T23:11:33.064Z",
+   "event:4cc7b312-0e49-426a-9aec-871e741108fb"
+  ],
+  "reason": "active subscriber with plays on 1 IST day(s) in 14 days",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T12:14:37.080Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event (2 of 3 distinct play days)",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G09",
+  "since": "2026-10-01T12:14:37.080Z",
+  "deadline": "2026-10-15T12:14:37.080Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T15:14:51.052Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01564",
+   "at": "2026-10-01T12:14:37.134Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G09",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02229",
+   "at": "2026-10-01T15:14:51.055Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G09",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00661",
+  "A-00975"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G09",
+   "status": "failed",
+   "reason": "window closed without a qualifying event (2 of 3 distinct play days)",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-15T12:14:37.080Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G09",
+   "lesson": "G09 not achieved (1 failure(s) for this goal): 6 app opens and 3 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G09": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "eabf1f03-0d6e-4bed-8ed0-050b1ff5ebcf": "D-01564",
+  "39b02b33-6b32-4bb1-be6d-4af5e5741a77": "D-02229"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

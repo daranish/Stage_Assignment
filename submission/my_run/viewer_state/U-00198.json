@@ -1,0 +1,183 @@
+{
+ "viewer_id": "U-00198",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:59:43.912Z",
+  "signup": {
+   "value": "2024-10-01T16:07:08.575Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 140383.912,
+   "refs": [
+    "profile:U-00198@2026-09-29T17:02:23.993Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T17:02:23.993Z",
+   "age_s": 165439.919,
+   "refs": [
+    "profile:U-00198@2026-09-29T17:02:23.993Z",
+    "event:54944235-c52a-48cb-9c4b-1b85ab705005"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-20T22:47:49.554Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:cc2c0cbc-6a10-4b27-b726-817330993931",
+   "conflicts": [
+    "profile:d1"
+   ],
+   "as_of": "2026-10-01T14:59:43.912Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00198@2026-09-29T17:02:23.993Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140383.912
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00198@2026-09-29T17:02:23.993Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140383.912
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d4",
+    "others": [
+     "profile:d1"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 9,
+   "completes": 3,
+   "last_play_at": "2026-09-29T11:59:08.639Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Romance",
+    "Drama",
+    "Devotional"
+   ],
+   "unfinished_series": [
+    "bagi-baya-d4",
+    "bagugu-gigupi-d1"
+   ]
+  },
+  "events_seen": 57
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T14:59:38.364Z",
+  "deadline": "2026-10-08T14:59:38.364Z",
+  "status": "open",
+  "decision_id": "D-02036",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-00198@2026-09-29T17:02:23.993Z",
+   "event:54944235-c52a-48cb-9c4b-1b85ab705005",
+   "catalogue:T0915"
+  ],
+  "reason": "active subscriber; 28 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T14:59:38.364Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T14:59:38.364Z",
+  "deadline": "2026-10-08T14:59:38.364Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T14:59:43.912Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02036",
+   "at": "2026-10-01T14:59:38.417Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02037",
+   "at": "2026-10-01T14:59:43.914Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T14:59:38.364Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "G08 not achieved (1 failure(s) for this goal): 4 app opens and 5 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "04469527-7a3b-4e7d-9d0d-add068e14d27": "D-02036",
+  "cc2c0cbc-6a10-4b27-b726-817330993931": "D-02037"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

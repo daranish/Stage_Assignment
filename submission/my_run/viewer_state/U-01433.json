@@ -1,0 +1,162 @@
+{
+ "viewer_id": "U-01433",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:06:09.853Z",
+  "signup": {
+   "value": "2025-04-25T22:43:39.482Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 144369.853,
+   "refs": [
+    "profile:U-01433@2026-09-29T01:24:01.576Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T01:24:01.576Z",
+   "age_s": 225728.277,
+   "refs": [
+    "profile:U-01433@2026-09-29T01:24:01.576Z",
+    "event:c972569e-6925-4d31-ad8b-f05e79e0e12e"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-13T13:03:06.984Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:1d5095dd-1a1e-4162-b68c-962504022516",
+   "conflicts": [],
+   "as_of": "2026-10-01T16:06:09.853Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01433@2026-09-29T01:24:01.576Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 144369.853
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01433@2026-09-29T01:24:01.576Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 144369.853
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 1,
+   "last_play_at": "2026-09-23T07:21:38.730Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Comedy",
+    "Thriller",
+    "Action"
+   ],
+   "unfinished_series": [
+    "hama-chudibha-d1"
+   ]
+  },
+  "events_seen": 47
+ },
+ "active_goal": {
+  "goal_id": "G09",
+  "name": "weekly_habit_14d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "on 3 distinct IST days",
+   "window_hours": 336
+  },
+  "started_at": "2026-10-01T16:06:09.853Z",
+  "deadline": "2026-10-15T16:06:09.853Z",
+  "status": "open",
+  "decision_id": "D-02410",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-01433@2026-09-29T01:24:01.576Z",
+   "event:c972569e-6925-4d31-ad8b-f05e79e0e12e"
+  ],
+  "reason": "active subscriber with plays on 1 IST day(s) in 14 days",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T16:06:09.853Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event (2 of 3 distinct play days)",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G09",
+  "since": "2026-10-01T16:06:09.853Z",
+  "deadline": "2026-10-15T16:06:09.853Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T16:06:09.853Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02410",
+   "at": "2026-10-01T16:06:09.905Z",
+   "action": "NO_ACTION",
+   "goal_id": "G09",
+   "reason": "stale trigger: app_open was buffered offline for 1070s (>600s) - not a live session; recorded as history only"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G09",
+   "status": "failed",
+   "reason": "window closed without a qualifying event (2 of 3 distinct play days)",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-15T16:06:09.853Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G09",
+   "lesson": "G09 not achieved (1 failure(s) for this goal): 12 app opens and 2 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G09": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "1d5095dd-1a1e-4162-b68c-962504022516": "D-02410"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

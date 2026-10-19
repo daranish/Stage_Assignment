@@ -1,0 +1,167 @@
+{
+ "viewer_id": "U-00954",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T05:16:48.860Z",
+  "signup": {
+   "value": "2025-05-06T21:53:52.851Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 105408.86,
+   "refs": [
+    "profile:U-00954@2026-09-28T22:22:42.418Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "event",
+   "as_of": "2026-09-29T12:19:09.677Z",
+   "age_s": 147459.183,
+   "refs": [
+    "profile:U-00954@2026-09-28T22:22:42.418Z",
+    "event:8913527f-f307-48bd-bab4-3c4403c63294"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:d095088b-77e1-408b-bfe7-fe2feb762723",
+   "conflicts": [],
+   "as_of": "2026-10-01T05:16:48.860Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00954@2026-09-28T22:22:42.418Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 105408.86
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00954@2026-09-28T22:22:42.418Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 105408.86
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 10,
+   "completes": 5,
+   "last_play_at": "2026-09-28T08:14:09.749Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Devotional",
+    "Romance",
+    "Crime"
+   ],
+   "unfinished_series": [
+    "gubava-gihaya-d5",
+    "jamo-hasa-d5",
+    "kova-sako-d5"
+   ]
+  },
+  "events_seen": 70
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T05:16:48.860Z",
+  "deadline": "2026-10-04T05:16:48.860Z",
+  "status": "open",
+  "decision_id": "D-00658",
+  "slug": "gubava-gihaya-d5",
+  "assumptions": [],
+  "evidence": [
+   "event:842d3252-8e35-4708-8235-0a9aa69c0d74",
+   "catalogue:T1177"
+  ],
+  "reason": "unfinished series gubava-gihaya-d5 idle 5.4 days, 26 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T05:16:48.860Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T05:16:48.860Z",
+  "deadline": "2026-10-04T05:16:48.860Z",
+  "last_action": "HOME_PAGE+WHATSAPP",
+  "revised_at": "2026-10-01T05:16:48.860Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00658",
+   "at": "2026-10-01T05:16:48.913Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00219",
+  "A-00220"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T05:16:48.860Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "d095088b-77e1-408b-bfe7-fe2feb762723": "D-00658"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

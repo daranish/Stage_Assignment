@@ -1,0 +1,172 @@
+{
+ "viewer_id": "U-00548",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T04:46:16.698Z",
+  "signup": {
+   "value": "2025-10-22T23:15:17.061Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 103576.698,
+   "refs": [
+    "profile:U-00548@2026-09-29T09:08:00.528Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T09:08:00.528Z",
+   "age_s": 157096.17,
+   "refs": [
+    "profile:U-00548@2026-09-29T09:08:00.528Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:f059ee32-e785-4c85-aaff-2f50dcc32a16",
+   "conflicts": [],
+   "as_of": "2026-10-01T04:46:16.698Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00548@2026-09-29T09:08:00.528Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 103576.698
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00548@2026-09-29T09:08:00.528Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 103576.698
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 1,
+   "completes": 1,
+   "last_play_at": "2026-09-02T07:21:37.382Z",
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Crime",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "jamo-hasa-d5"
+   ]
+  },
+  "events_seen": 40
+ },
+ "active_goal": {
+  "goal_id": "G05",
+  "name": "first_paid_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "is_trial = false",
+   "window_hours": 168
+  },
+  "started_at": "2026-09-30T18:36:53.265Z",
+  "deadline": "2026-10-07T18:36:53.265Z",
+  "status": "open",
+  "decision_id": "D-00002",
+  "slug": null,
+  "assumptions": [
+   "\"never\" rests on the snapshot and a 30-day event window"
+  ],
+  "evidence": [
+   "profile:U-00548@2026-09-29T09:08:00.528Z",
+   "event:177d9d78-03db-42ec-a3d1-ffecc68c2298"
+  ],
+  "reason": "never paid; purchase-intent signal present",
+  "messages_sent": 0,
+  "committed_at": "2026-09-30T18:36:53.265Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G05",
+  "since": "2026-09-30T18:36:53.265Z",
+  "deadline": "2026-10-07T18:36:53.265Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T04:46:16.698Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00002",
+   "at": "2026-09-30T18:36:53.318Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G05",
+   "reason": null
+  },
+  {
+   "decision_id": "D-00464",
+   "at": "2026-10-01T04:46:16.700Z",
+   "action": "NO_ACTION",
+   "goal_id": "G05",
+   "reason": "stale trigger: app_open was buffered offline for 449348s (>600s) - not a live session; recorded as history only"
+  }
+ ],
+ "actions": [
+  "A-00002"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G05",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-07T18:36:53.265Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G05",
+   "lesson": "G05 not achieved (1 failure(s) for this goal): 0 app opens and 0 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G05": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "a5413e33-1199-45c2-a93b-0d479a068657": "D-00002",
+  "f059ee32-e785-4c85-aaff-2f50dcc32a16": "D-00464"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

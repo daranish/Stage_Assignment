@@ -1,0 +1,172 @@
+{
+ "viewer_id": "U-01572",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T16:40:16.704Z",
+  "signup": {
+   "value": "2025-12-26T17:27:24.296Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 146416.704,
+   "refs": [
+    "profile:U-01572@2026-09-28T23:09:04.359Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T23:09:04.359Z",
+   "age_s": 235872.345,
+   "refs": [
+    "profile:U-01572@2026-09-28T23:09:04.359Z",
+    "event:ef7426db-258e-4d44-a042-5f1446b93da7"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-19T22:47:40.314Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:96c7b751-4c75-4c42-89c9-c2c0239ee143",
+   "conflicts": [],
+   "as_of": "2026-10-01T16:40:16.704Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01572@2026-09-28T23:09:04.359Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 146416.704
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01572@2026-09-28T23:09:04.359Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 146416.704
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 8,
+   "completes": 2,
+   "last_play_at": "2026-09-28T15:26:30.514Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 11,
+   "top_genres": [
+    "Action",
+    "Romance",
+    "Devotional"
+   ],
+   "unfinished_series": [
+    "gibha-bhalomo-d2",
+    "molo-d2",
+    "rigu-dhadi-d2"
+   ]
+  },
+  "events_seen": 62
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T14:54:43.896Z",
+  "deadline": "2026-10-04T14:54:43.896Z",
+  "status": "open",
+  "decision_id": "D-02020",
+  "slug": "gibha-bhalomo-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:df71097d-99f4-4df1-82ff-f671d0d4869f",
+   "catalogue:T0528"
+  ],
+  "reason": "unfinished series gibha-bhalomo-d2 idle 10.1 days, 47 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T14:54:43.896Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T14:54:43.896Z",
+  "deadline": "2026-10-04T14:54:43.896Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T16:40:16.704Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02020",
+   "at": "2026-10-01T14:54:43.948Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02533",
+   "at": "2026-10-01T16:40:16.706Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T14:54:43.896Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 1 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "dc91c8de-8178-4d7d-b8e7-c04bb00ef729": "D-02020",
+  "96c7b751-4c75-4c42-89c9-c2c0239ee143": "D-02533"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

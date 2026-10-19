@@ -1,0 +1,166 @@
+{
+ "viewer_id": "U-01086",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T00:21:46.900Z",
+  "signup": {
+   "value": "2025-01-11T23:02:43.792Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 87706.9,
+   "refs": [
+    "profile:U-01086@2026-09-29T07:49:19.432Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T07:49:19.432Z",
+   "age_s": 145947.468,
+   "refs": [
+    "profile:U-01086@2026-09-29T07:49:19.432Z",
+    "event:87c9e4ad-8068-41f2-b2a5-5f77d7d1e3b6"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-03T17:36:47.064Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:86b70814-6ecc-415e-bf4c-d7e443757dda",
+   "conflicts": [],
+   "as_of": "2026-10-01T00:21:46.900Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01086@2026-09-29T07:49:19.432Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 87706.9
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01086@2026-09-29T07:49:19.432Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 87706.9
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 19,
+   "completes": 14,
+   "last_play_at": "2026-09-29T14:00:57.450Z",
+   "play_days_14d": 7,
+   "opens_14d_excl_current": 19,
+   "top_genres": [
+    "Romance",
+    "Drama",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "digi-mone-d3",
+    "pate-kari-d3",
+    "ririgi-d3",
+    "yane-tegi-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 162
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T00:21:46.900Z",
+  "deadline": "2026-10-04T00:21:46.900Z",
+  "status": "open",
+  "decision_id": "D-00080",
+  "slug": "yatite-roloda-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:b1c55027-3a15-48bd-8e41-e5334ab2ac31",
+   "catalogue:T0901"
+  ],
+  "reason": "unfinished series yatite-roloda-d3 idle 3.3 days, 18 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T00:21:46.900Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T00:21:46.900Z",
+  "deadline": "2026-10-04T00:21:46.900Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T00:21:46.900Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00080",
+   "at": "2026-10-01T00:21:46.952Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T00:21:46.900Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 1 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "86b70814-6ecc-415e-bf4c-d7e443757dda": "D-00080"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

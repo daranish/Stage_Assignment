@@ -1,0 +1,174 @@
+{
+ "viewer_id": "U-00757",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T08:24:02.705Z",
+  "signup": {
+   "value": "2026-09-11T16:41:27.723Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 116642.705,
+   "refs": [
+    "profile:U-00757@2026-09-29T08:10:17.909Z",
+    "event:2d2e9c61-bc0e-4912-8a8e-95598366b1cd"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T08:10:17.909Z",
+   "age_s": 173624.796,
+   "refs": [
+    "profile:U-00757@2026-09-29T08:10:17.909Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:1a600939-1346-4e86-a1e1-8b1fe77b6b96",
+   "conflicts": [
+    "profile:"
+   ],
+   "as_of": "2026-10-01T08:24:02.705Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00757@2026-09-29T08:10:17.909Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 116642.705
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00757@2026-09-29T08:10:17.909Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 116642.705
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 1,
+   "completes": 0,
+   "last_play_at": "2026-09-30T15:09:56.376Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 3,
+   "top_genres": [
+    "Drama",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "bagugu-gigupi-d1"
+   ]
+  },
+  "events_seen": 13
+ },
+ "active_goal": {
+  "goal_id": "G02",
+  "name": "first_full_episode_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T08:24:02.705Z",
+  "deadline": "2026-10-04T08:24:02.705Z",
+  "status": "open",
+  "decision_id": "D-01067",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-00757@2026-09-29T08:10:17.909Z",
+   "event:2d2e9c61-bc0e-4912-8a8e-95598366b1cd"
+  ],
+  "reason": "no episode_completed observed",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T08:24:02.705Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G02",
+  "since": "2026-10-01T08:24:02.705Z",
+  "deadline": "2026-10-04T08:24:02.705Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T08:24:02.705Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01067",
+   "at": "2026-10-01T08:24:02.758Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00434"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G02",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T08:24:02.705Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G02",
+   "lesson": "G02 not achieved (1 failure(s) for this goal): 1 app opens and 0 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G02": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "1a600939-1346-4e86-a1e1-8b1fe77b6b96": "D-01067"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

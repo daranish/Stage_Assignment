@@ -1,0 +1,29 @@
+{
+ "viewer_id": "U-03475",
+ "arm": "agent",
+ "schema": 1,
+ "facts": null,
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01693",
+   "at": "2026-10-01T13:15:06.919Z",
+   "action": "HOME_PAGE",
+   "goal_id": null,
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00715"
+ ],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "e91e7bcc-fcf0-4b0f-ace6-d47e22d75c37": "D-01693"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

@@ -1,0 +1,175 @@
+{
+ "viewer_id": "U-03762",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T06:02:50.978Z",
+  "signup": {
+   "value": "2024-12-24T20:50:11.503Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 108170.978,
+   "refs": [
+    "profile:U-03762@2026-09-29T04:15:57.984Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T04:15:57.984Z",
+   "age_s": 179212.994,
+   "refs": [
+    "profile:U-03762@2026-09-29T04:15:57.984Z",
+    "event:9fe96813-d3ba-4e4f-bff2-68919f953bcb"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-02T03:28:07.328Z"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:3e1f1e72-df13-402d-8f40-3d99ee253f23",
+   "conflicts": [
+    "profile:d6"
+   ],
+   "as_of": "2026-10-01T06:02:50.978Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03762@2026-09-29T04:15:57.984Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 108170.978
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03762@2026-09-29T04:15:57.984Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 108170.978
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:d6"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 8,
+   "completes": 2,
+   "last_play_at": "2026-09-28T13:01:59.680Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Comedy",
+    "Devotional",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "hama-chudibha-d1",
+    "hate-d1",
+    "yalo-nipa-d1"
+   ]
+  },
+  "events_seen": 49
+ },
+ "active_goal": {
+  "goal_id": "G06",
+  "name": "reactivate_lapsed_14d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "any paid plan",
+   "window_hours": 336
+  },
+  "started_at": "2026-10-01T06:02:50.978Z",
+  "deadline": "2026-10-15T06:02:50.978Z",
+  "status": "open",
+  "decision_id": "D-00756",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-03762@2026-09-29T04:15:57.984Z",
+   "event:9fe96813-d3ba-4e4f-bff2-68919f953bcb"
+  ],
+  "reason": "subscription_lapsed event within 30 days",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T06:02:50.978Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G06",
+  "since": "2026-10-01T06:02:50.978Z",
+  "deadline": "2026-10-15T06:02:50.978Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T06:02:50.978Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00756",
+   "at": "2026-10-01T06:02:51.030Z",
+   "action": "NO_ACTION",
+   "goal_id": "G06",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G06",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-15T06:02:50.978Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G06",
+   "lesson": "G06 not achieved (1 failure(s) for this goal): 6 app opens and 7 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G06": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "3e1f1e72-df13-402d-8f40-3d99ee253f23": "D-00756"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

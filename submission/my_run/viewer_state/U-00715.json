@@ -1,0 +1,178 @@
+{
+ "viewer_id": "U-00715",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:38:06.470Z",
+  "signup": {
+   "value": "2025-07-30T00:34:12.004Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 139086.47,
+   "refs": [
+    "profile:U-00715@2026-09-29T09:28:25.951Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T09:28:25.951Z",
+   "age_s": 191380.519,
+   "refs": [
+    "profile:U-00715@2026-09-29T09:28:25.951Z",
+    "event:0f6bc407-e313-4d7b-a38a-66fe20306ead"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-26T07:31:37.738Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:87f64a48-08f2-4db1-9d50-8499cb8e2e4e",
+   "conflicts": [
+    "profile:d1"
+   ],
+   "as_of": "2026-10-01T14:38:06.470Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00715@2026-09-29T09:28:25.951Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 139086.47
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00715@2026-09-29T09:28:25.951Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 139086.47
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d6",
+    "others": [
+     "profile:d1"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 5,
+   "completes": 1,
+   "last_play_at": "2026-09-30T13:12:21.959Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Comedy",
+    "Devotional",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "jama-d6",
+    "loyate-d6",
+    "rasuya-moni-d6"
+   ]
+  },
+  "events_seen": 42
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T14:38:06.470Z",
+  "deadline": "2026-10-08T14:38:06.470Z",
+  "status": "open",
+  "decision_id": "D-01965",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-00715@2026-09-29T09:28:25.951Z",
+   "event:0f6bc407-e313-4d7b-a38a-66fe20306ead",
+   "catalogue:T1393"
+  ],
+  "reason": "active subscriber; 9 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T14:38:06.470Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T14:38:06.470Z",
+  "deadline": "2026-10-08T14:38:06.470Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T14:38:06.470Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01965",
+   "at": "2026-10-01T14:38:06.523Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G08",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00851"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T14:38:06.470Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "G08 not achieved (1 failure(s) for this goal): 2 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "87f64a48-08f2-4db1-9d50-8499cb8e2e4e": "D-01965"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

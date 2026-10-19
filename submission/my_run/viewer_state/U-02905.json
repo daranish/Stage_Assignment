@@ -1,0 +1,176 @@
+{
+ "viewer_id": "U-02905",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-09-30T18:40:57.413Z",
+  "signup": {
+   "value": "2026-08-06T01:21:06.732Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 67257.413,
+   "refs": [
+    "profile:U-02905@2026-09-29T13:11:00.669Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T13:11:00.669Z",
+   "age_s": 106196.744,
+   "refs": [
+    "profile:U-02905@2026-09-29T13:11:00.669Z",
+    "event:8b45e82d-f372-482c-8181-7bff5fa9e7f5"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-29T05:35:49.679Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting(last valid; trigger had 'NA')",
+   "ref": "event:20924d71-5b55-4fc5-a3e0-bfb23faf9484",
+   "conflicts": [
+    "trigger_app_dialect:NA"
+   ],
+   "as_of": "2026-09-30T18:40:57.413Z",
+   "supported": true,
+   "certain": false,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02905@2026-09-29T13:11:00.669Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 67257.413
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02905@2026-09-29T13:11:00.669Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 67257.413
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d3",
+    "others": [
+     "trigger_app_dialect:NA"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 9,
+   "completes": 6,
+   "last_play_at": "2026-09-23T13:53:03.834Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 10,
+   "top_genres": [
+    "Romance",
+    "Crime",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "yane-tegi-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 94
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-09-30T18:40:57.413Z",
+  "deadline": "2026-10-03T18:40:57.413Z",
+  "status": "open",
+  "decision_id": "D-00004",
+  "slug": "yatite-roloda-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:f866e446-c598-48ff-9e1c-e6461a11c2a2",
+   "catalogue:T0901"
+  ],
+  "reason": "unfinished series yatite-roloda-d3 idle 10.5 days, 19 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-09-30T18:40:57.413Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-09-30T18:40:57.413Z",
+  "deadline": "2026-10-03T18:40:57.413Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-09-30T18:40:57.413Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00004",
+   "at": "2026-09-30T18:40:57.465Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00003"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-03T18:40:57.413Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 0 app opens and 0 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "a43ac846-f170-4199-bf07-2c47b3a4b224": "D-00004"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

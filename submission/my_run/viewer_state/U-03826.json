@@ -1,0 +1,198 @@
+{
+ "viewer_id": "U-03826",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:22:03.267Z",
+  "signup": {
+   "value": "2025-03-03T18:36:36.623Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 141723.267,
+   "refs": [
+    "profile:U-03826@2026-09-29T00:30:21.063Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T00:30:21.063Z",
+   "age_s": 226302.204,
+   "refs": [
+    "profile:U-03826@2026-09-29T00:30:21.063Z",
+    "event:0bbd46e1-a35e-4951-9f24-9a4383b5620b"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-02T23:35:20.842Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:05d06169-6f93-4bea-9c8f-4cf9874aad9a",
+   "conflicts": [],
+   "as_of": "2026-10-01T15:22:03.267Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03826@2026-09-29T00:30:21.063Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 141723.267
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03826@2026-09-29T00:30:21.063Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 141723.267
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 10,
+   "completes": 6,
+   "last_play_at": "2026-09-25T15:56:54.447Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Thriller",
+    "Devotional",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "bhaja-moguba-d2",
+    "dhapipa-gini-d2",
+    "gudha-masamo-d2",
+    "guka-kosusa-d2",
+    "molo-d2"
+   ]
+  },
+  "events_seen": 77
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-09-30T19:26:25.661Z",
+  "deadline": "2026-10-03T19:26:25.661Z",
+  "status": "open",
+  "decision_id": "D-00026",
+  "slug": "gudha-masamo-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:34a38ad6-a33e-4075-b38b-67a7ef8b9e28",
+   "catalogue:T0676"
+  ],
+  "reason": "unfinished series gudha-masamo-d2 idle 8.2 days, 5 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-09-30T19:26:25.661Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-09-30T19:26:25.661Z",
+  "deadline": "2026-10-03T19:26:25.661Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T15:22:03.267Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00026",
+   "at": "2026-09-30T19:26:25.714Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-00101",
+   "at": "2026-10-01T01:10:25.551Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-01762",
+   "at": "2026-10-01T13:42:34.281Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-01947",
+   "at": "2026-10-01T14:31:47.444Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-02260",
+   "at": "2026-10-01T15:22:03.269Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-03T19:26:25.661Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 3 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "fb9f89e5-c162-43e7-9910-3b5c03b47e7a": "D-00026",
+  "11673f94-50b8-4748-9f83-d362ad66cafc": "D-00101",
+  "48dbee11-ccc6-43c7-8aaa-9429f4d1c6e4": "D-01762",
+  "00d6130e-5ed6-4432-a289-d0dd5f66a798": "D-01947",
+  "05d06169-6f93-4bea-9c8f-4cf9874aad9a": "D-02260"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

@@ -1,0 +1,186 @@
+{
+ "viewer_id": "U-03052",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T05:16:35.456Z",
+  "signup": {
+   "value": "2025-09-17T06:46:11.295Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 105395.456,
+   "refs": [
+    "profile:U-03052@2026-09-29T12:44:34.818Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T12:44:34.818Z",
+   "age_s": 145920.638,
+   "refs": [
+    "profile:U-03052@2026-09-29T12:44:34.818Z",
+    "event:a6b11a1c-bd61-4353-b0b4-c49af0e6f002"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-02T23:55:18.012Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:1b32a4c3-8c93-4036-a1a5-4bf953c3274b",
+   "conflicts": [
+    "profile:d3"
+   ],
+   "as_of": "2026-10-01T05:16:35.456Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03052@2026-09-29T12:44:34.818Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 105395.456
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03052@2026-09-29T12:44:34.818Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 105395.456
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d2",
+    "others": [
+     "profile:d3"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 7,
+   "completes": 1,
+   "last_play_at": "2026-09-30T13:48:28.852Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 14,
+   "top_genres": [
+    "Romance",
+    "Thriller",
+    "Action"
+   ],
+   "unfinished_series": [
+    "bhaja-moguba-d2",
+    "guka-kosusa-d2",
+    "molo-d2"
+   ]
+  },
+  "events_seen": 59
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T04:27:09.590Z",
+  "deadline": "2026-10-04T04:27:09.590Z",
+  "status": "open",
+  "decision_id": "D-00328",
+  "slug": "guka-kosusa-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:7bcf33a1-35e4-4262-87c3-28f8d4d6f765",
+   "catalogue:T0522"
+  ],
+  "reason": "unfinished series guka-kosusa-d2 idle 7.6 days, 40 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T04:27:09.590Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T04:27:09.590Z",
+  "deadline": "2026-10-04T04:27:09.590Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T05:16:35.456Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00328",
+   "at": "2026-10-01T04:27:09.643Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "stale trigger: app_open was buffered offline for 642950s (>600s) - not a live session; recorded as history only"
+  },
+  {
+   "decision_id": "D-00655",
+   "at": "2026-10-01T05:16:35.459Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00216",
+  "A-00217"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T04:27:09.590Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "2b5922e5-03a6-476e-b012-2918f885c219": "D-00328",
+  "1b32a4c3-8c93-4036-a1a5-4bf953c3274b": "D-00655"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

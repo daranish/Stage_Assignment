@@ -1,0 +1,177 @@
+{
+ "viewer_id": "U-03172",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T04:15:52.356Z",
+  "signup": {
+   "value": "2025-05-15T08:44:27.801Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 101752.356,
+   "refs": [
+    "profile:U-03172@2026-09-29T14:46:02.809Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T14:46:02.809Z",
+   "age_s": 134989.547,
+   "refs": [
+    "profile:U-03172@2026-09-29T14:46:02.809Z",
+    "event:fc092ffc-c81f-4395-ac6c-61218b45bbc7"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-14T03:45:24.901Z"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:c4090ecb-1b05-48b2-aef5-7f6e1a785f34",
+   "conflicts": [
+    "profile:d5"
+   ],
+   "as_of": "2026-10-01T04:15:52.356Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03172@2026-09-29T14:46:02.809Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 101752.356
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03172@2026-09-29T14:46:02.809Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 101752.356
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:d5"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 10,
+   "completes": 4,
+   "last_play_at": "2026-09-30T10:24:39.812Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Drama",
+    "Thriller",
+    "Action"
+   ],
+   "unfinished_series": [
+    "bagugu-gigupi-d1",
+    "hapibha-d1"
+   ]
+  },
+  "events_seen": 68
+ },
+ "active_goal": {
+  "goal_id": "G06",
+  "name": "reactivate_lapsed_14d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "any paid plan",
+   "window_hours": 336
+  },
+  "started_at": "2026-10-01T04:15:52.356Z",
+  "deadline": "2026-10-15T04:15:52.356Z",
+  "status": "open",
+  "decision_id": "D-00309",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-03172@2026-09-29T14:46:02.809Z",
+   "event:fc092ffc-c81f-4395-ac6c-61218b45bbc7"
+  ],
+  "reason": "subscription_lapsed event within 30 days",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T04:15:52.356Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G06",
+  "since": "2026-10-01T04:15:52.356Z",
+  "deadline": "2026-10-15T04:15:52.356Z",
+  "last_action": "HOME_PAGE+WHATSAPP",
+  "revised_at": "2026-10-01T04:15:52.356Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00309",
+   "at": "2026-10-01T04:15:52.410Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G06",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00160",
+  "A-00161"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G06",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-15T04:15:52.356Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G06",
+   "lesson": "G06 not achieved (1 failure(s) for this goal): 10 app opens and 7 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G06": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "c4090ecb-1b05-48b2-aef5-7f6e1a785f34": "D-00309"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

@@ -1,0 +1,169 @@
+{
+ "viewer_id": "U-03101",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:00:51.854Z",
+  "signup": {
+   "value": "2025-07-06T22:49:52.582Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 140451.854,
+   "refs": [
+    "profile:U-03101@2026-09-29T05:34:16.832Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T05:34:16.832Z",
+   "age_s": 206795.022,
+   "refs": [
+    "profile:U-03101@2026-09-29T05:34:16.832Z",
+    "event:130371bc-67f4-4afd-8e11-14e8ca60194f"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-04T00:47:40.118Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:0cf265c7-7c7d-4388-8557-9f99f75d4a54",
+   "conflicts": [],
+   "as_of": "2026-10-01T15:00:51.854Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "later notification_opt_out event overrides the snapshot",
+    "refs": [
+     "event:13470c2c-a549-489b-87bd-e69f68555cfc"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140451.854
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03101@2026-09-29T05:34:16.832Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140451.854
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 16,
+   "completes": 9,
+   "last_play_at": "2026-09-27T18:33:22.796Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 5,
+   "top_genres": [
+    "Romance",
+    "Action",
+    "Devotional"
+   ],
+   "unfinished_series": [
+    "bhaja-moguba-d2",
+    "dachugu-d2",
+    "guka-kosusa-d2",
+    "molo-d2",
+    "sune-lolo-d2"
+   ]
+  },
+  "events_seen": 108
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T15:00:51.854Z",
+  "deadline": "2026-10-04T15:00:51.854Z",
+  "status": "open",
+  "decision_id": "D-02050",
+  "slug": "guka-kosusa-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:8d0b29f4-9818-453c-8b3b-c362254233c2",
+   "catalogue:T0522"
+  ],
+  "reason": "unfinished series guka-kosusa-d2 idle 3.9 days, 38 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T15:00:51.854Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T15:00:51.854Z",
+  "deadline": "2026-10-04T15:00:51.854Z",
+  "last_action": "HOME_PAGE+IN_APP_MESSAGE",
+  "revised_at": "2026-10-01T15:00:51.854Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02050",
+   "at": "2026-10-01T15:00:51.908Z",
+   "action": "HOME_PAGE+IN_APP_MESSAGE",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00898",
+  "A-00899"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T15:00:51.854Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 4 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "0cf265c7-7c7d-4388-8557-9f99f75d4a54": "D-02050"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

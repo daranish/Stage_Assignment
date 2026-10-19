@@ -1,0 +1,167 @@
+{
+ "viewer_id": "U-03772",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T07:11:56.563Z",
+  "signup": {
+   "value": "2024-11-14T15:17:54.521Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 112316.563,
+   "refs": [
+    "profile:U-03772@2026-09-29T14:01:14.872Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T14:01:14.872Z",
+   "age_s": 148241.691,
+   "refs": [
+    "profile:U-03772@2026-09-29T14:01:14.872Z",
+    "event:7433f092-48dd-4c4a-a6fd-779873620208"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-19T00:37:13.978Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:4426e0a0-c8c4-40c5-a54a-979cd0fe449d",
+   "conflicts": [],
+   "as_of": "2026-10-01T07:11:56.563Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03772@2026-09-29T14:01:14.872Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 112316.563
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03772@2026-09-29T14:01:14.872Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 112316.563
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 13,
+   "completes": 6,
+   "last_play_at": "2026-09-30T15:14:53.735Z",
+   "play_days_14d": 5,
+   "opens_14d_excl_current": 10,
+   "top_genres": [
+    "Crime",
+    "Family",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "baguti-gida-d4",
+    "nisu-sapapa-d4",
+    "tiko-subava-d4"
+   ]
+  },
+  "events_seen": 98
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T07:11:56.563Z",
+  "deadline": "2026-10-04T07:11:56.563Z",
+  "status": "open",
+  "decision_id": "D-00895",
+  "slug": "nisu-sapapa-d4",
+  "assumptions": [],
+  "evidence": [
+   "event:87721a7b-c23c-4c4e-9c61-6569afb899d7",
+   "catalogue:T0928"
+  ],
+  "reason": "unfinished series nisu-sapapa-d4 idle 3.0 days, 40 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T07:11:56.563Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T07:11:56.563Z",
+  "deadline": "2026-10-04T07:11:56.563Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T07:11:56.563Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00895",
+   "at": "2026-10-01T07:11:56.616Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00343",
+  "A-00344"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T07:11:56.563Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "4426e0a0-c8c4-40c5-a54a-979cd0fe449d": "D-00895"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

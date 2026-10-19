@@ -1,0 +1,171 @@
+{
+ "viewer_id": "U-01256",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T04:46:57.369Z",
+  "signup": {
+   "value": "2025-03-05T10:51:48.044Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 103617.369,
+   "refs": [
+    "profile:U-01256@2026-09-29T12:30:40.092Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T12:30:40.092Z",
+   "age_s": 144977.277,
+   "refs": [
+    "profile:U-01256@2026-09-29T12:30:40.092Z",
+    "event:8630aec8-3b2b-481b-aca2-090bc389a38c"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-03T10:24:32.268Z"
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:cf8dc454-fb24-4148-b069-8da74cba10dd",
+   "conflicts": [],
+   "as_of": "2026-10-01T04:46:57.369Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01256@2026-09-29T12:30:40.092Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 103617.369
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01256@2026-09-29T12:30:40.092Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 103617.369
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 7,
+   "completes": 4,
+   "last_play_at": "2026-09-21T17:29:29.790Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Family"
+   ],
+   "unfinished_series": [
+    "dhapipa-gini-d2"
+   ]
+  },
+  "events_seen": 60
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-09-30T19:02:07.804Z",
+  "deadline": "2026-10-03T19:02:07.804Z",
+  "status": "open",
+  "decision_id": "D-00013",
+  "slug": "dhapipa-gini-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:a14ca99c-c44d-4a78-88e4-250bfc976ad6",
+   "catalogue:T0523"
+  ],
+  "reason": "unfinished series dhapipa-gini-d2 idle 9.1 days, 51 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-09-30T19:02:07.804Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-09-30T19:02:07.804Z",
+  "deadline": "2026-10-03T19:02:07.804Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T04:46:57.369Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00013",
+   "at": "2026-09-30T19:02:07.858Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-00513",
+   "at": "2026-10-01T04:46:57.371Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "stale trigger: app_open was buffered offline for 753578s (>600s) - not a live session; recorded as history only"
+  }
+ ],
+ "actions": [
+  "A-00009",
+  "A-00010"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-03T19:02:07.804Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "c6dcdc81-89df-45bf-a87f-8083435b2dcb": "D-00013",
+  "cf8dc454-fb24-4148-b069-8da74cba10dd": "D-00513"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

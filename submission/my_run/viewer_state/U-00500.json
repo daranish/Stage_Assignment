@@ -1,0 +1,173 @@
+{
+ "viewer_id": "U-00500",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T09:08:01.492Z",
+  "signup": {
+   "value": "2025-01-04T11:35:40.151Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 119281.492,
+   "refs": [
+    "profile:U-00500@2026-09-29T05:14:10.929Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T05:14:10.929Z",
+   "age_s": 186830.563,
+   "refs": [
+    "profile:U-00500@2026-09-29T05:14:10.929Z",
+    "event:705de1d2-b91f-48b9-96f8-3d977755226c"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-05T10:09:23.043Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:e5c2558f-e0ef-4ee7-a5ec-5fd70d6166fd",
+   "conflicts": [
+    "profile:d6"
+   ],
+   "as_of": "2026-10-01T09:08:01.492Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00500@2026-09-29T05:14:10.929Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 119281.492
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00500@2026-09-29T05:14:10.929Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 119281.492
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:d6"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 5,
+   "completes": 2,
+   "last_play_at": "2026-09-24T17:05:08.729Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 3,
+   "top_genres": [
+    "Action",
+    "Drama",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "gune-halo-d1"
+   ]
+  },
+  "events_seen": 49
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T09:08:01.492Z",
+  "deadline": "2026-10-04T09:08:01.492Z",
+  "status": "open",
+  "decision_id": "D-01169",
+  "slug": "gune-halo-d1",
+  "assumptions": [],
+  "evidence": [
+   "event:f34c3f2b-582c-452b-b05c-170503d626e4",
+   "catalogue:T0016"
+  ],
+  "reason": "unfinished series gune-halo-d1 idle 6.7 days, 45 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T09:08:01.492Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T09:08:01.492Z",
+  "deadline": "2026-10-04T09:08:01.492Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T09:08:01.492Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01169",
+   "at": "2026-10-01T09:08:01.544Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T09:08:01.492Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 0 app opens and 0 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "e5c2558f-e0ef-4ee7-a5ec-5fd70d6166fd": "D-01169"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

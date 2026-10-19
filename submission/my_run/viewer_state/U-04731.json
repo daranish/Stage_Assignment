@@ -1,0 +1,175 @@
+{
+ "viewer_id": "U-04731",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:02:26.365Z",
+  "signup": {
+   "value": "2024-12-08T01:23:48.675Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 136946.365,
+   "refs": [
+    "profile:U-04731@2026-09-29T07:43:40.380Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T07:43:40.380Z",
+   "age_s": 195525.985,
+   "refs": [
+    "profile:U-04731@2026-09-29T07:43:40.380Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:1ceeed82-f22a-4654-8272-9d6c71125db5",
+   "conflicts": [],
+   "as_of": "2026-10-01T14:02:26.365Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-04731@2026-09-29T07:43:40.380Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 136946.365
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-04731@2026-09-29T07:43:40.380Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 136946.365
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 9,
+   "completes": 6,
+   "last_play_at": "2026-09-29T09:50:59.437Z",
+   "play_days_14d": 5,
+   "opens_14d_excl_current": 8,
+   "top_genres": [
+    "Drama",
+    "Comedy",
+    "Family"
+   ],
+   "unfinished_series": [
+    "baguti-gida-d4",
+    "mosamo-d4"
+   ]
+  },
+  "events_seen": 73
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T06:42:19.895Z",
+  "deadline": "2026-10-04T06:42:19.895Z",
+  "status": "open",
+  "decision_id": "D-00832",
+  "slug": "baguti-gida-d4",
+  "assumptions": [],
+  "evidence": [
+   "event:43518532-9b54-4e0b-ae6d-3bedf451f09b",
+   "catalogue:T1814"
+  ],
+  "reason": "unfinished series baguti-gida-d4 idle 10.0 days, 39 episodes left",
+  "messages_sent": 2,
+  "committed_at": "2026-10-01T06:42:19.895Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T06:42:19.895Z",
+  "deadline": "2026-10-04T06:42:19.895Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T14:02:26.365Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00832",
+   "at": "2026-10-01T06:42:19.948Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01836",
+   "at": "2026-10-01T14:02:26.368Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00307",
+  "A-00308",
+  "A-00779",
+  "A-00780"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T06:42:19.895Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "0f30a51e-205e-427b-894c-bfe50aafc5bd": "D-00832",
+  "1ceeed82-f22a-4654-8272-9d6c71125db5": "D-01836"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

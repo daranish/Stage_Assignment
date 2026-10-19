@@ -1,0 +1,200 @@
+{
+ "viewer_id": "U-00629",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T12:34:13.773Z",
+  "signup": {
+   "value": "2026-05-13T03:44:27.427Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 131653.773,
+   "refs": [
+    "profile:U-00629@2026-09-29T05:58:48.326Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T05:58:48.326Z",
+   "age_s": 196525.447,
+   "refs": [
+    "profile:U-00629@2026-09-29T05:58:48.326Z",
+    "event:13d34474-8831-4490-a056-b537e51edfd9"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-15T01:19:21.589Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:0f89e61d-74d6-442e-affe-4133c157853f",
+   "conflicts": [
+    "profile:d1"
+   ],
+   "as_of": "2026-10-01T12:34:13.773Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00629@2026-09-29T05:58:48.326Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 131653.773
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00629@2026-09-29T05:58:48.326Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 131653.773
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d2",
+    "others": [
+     "profile:d1"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 10,
+   "completes": 2,
+   "last_play_at": "2026-09-30T06:34:29.842Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 10,
+   "top_genres": [
+    "Action",
+    "Comedy",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "guka-kosusa-d2",
+    "guneba-guba-d2",
+    "molo-d2",
+    "rigu-dhadi-d2"
+   ]
+  },
+  "events_seen": 84
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T05:31:12.016Z",
+  "deadline": "2026-10-08T05:31:12.016Z",
+  "status": "open",
+  "decision_id": "D-00683",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-00629@2026-09-29T05:58:48.326Z",
+   "event:13d34474-8831-4490-a056-b537e51edfd9",
+   "catalogue:T0530"
+  ],
+  "reason": "active subscriber; 43 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T05:31:12.016Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-004186"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T05:31:12.016Z",
+  "deadline": "2026-10-08T05:31:12.016Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T12:34:13.773Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00683",
+   "at": "2026-10-01T05:31:12.071Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G08",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01494",
+   "at": "2026-10-01T11:49:55.855Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G08",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01599",
+   "at": "2026-10-01T12:34:13.775Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "nothing to change: personalised page A-00630 still live (TTL): not republished; message: goal G08 is served by the home page only (proportionality)"
+  }
+ ],
+ "actions": [
+  "A-00228",
+  "A-00630"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-004186"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T05:31:12.016Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "achieved G08 after personalised exposure (association only, not proof of cause)",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "d5637f0c-3197-46ff-b5ad-da2b89e447f3": "D-00683",
+  "842e3b47-c32a-4499-a056-e126864f0c26": "D-01494",
+  "0f89e61d-74d6-442e-affe-4133c157853f": "D-01599"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

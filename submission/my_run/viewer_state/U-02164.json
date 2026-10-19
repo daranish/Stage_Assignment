@@ -1,0 +1,179 @@
+{
+ "viewer_id": "U-02164",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-09-30T23:42:41.898Z",
+  "signup": {
+   "value": "2025-09-15T10:27:25.807Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 85361.898,
+   "refs": [
+    "profile:U-02164@2026-09-29T16:59:19.776Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T16:59:19.776Z",
+   "age_s": 110602.122,
+   "refs": [
+    "profile:U-02164@2026-09-29T16:59:19.776Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:b11b162d-f2e3-4d6a-9f3f-1ad7ed441c75",
+   "conflicts": [
+    "profile:d3",
+    "campaign_link:d5"
+   ],
+   "as_of": "2026-09-30T23:42:41.898Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02164@2026-09-29T16:59:19.776Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 85361.898
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02164@2026-09-29T16:59:19.776Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 85361.898
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:d3",
+     "campaign_link:d5"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 1,
+   "last_play_at": "2026-09-13T14:47:47.119Z",
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 0,
+   "top_genres": [
+    "Thriller",
+    "Action",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "hama-chudibha-d1"
+   ]
+  },
+  "events_seen": 22
+ },
+ "active_goal": {
+  "goal_id": "G12",
+  "name": "return_after_absence_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "any title",
+   "window_hours": 168
+  },
+  "started_at": "2026-09-30T23:42:41.898Z",
+  "deadline": "2026-10-07T23:42:41.898Z",
+  "status": "open",
+  "decision_id": "D-00067",
+  "slug": null,
+  "assumptions": [
+   "history is limited to the 30-day event window; earlier activity is not visible"
+  ],
+  "evidence": [
+   "profile:U-02164@2026-09-29T16:59:19.776Z"
+  ],
+  "reason": "no app_open in the 14 days before this trigger",
+  "messages_sent": 0,
+  "committed_at": "2026-09-30T23:42:41.898Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-014136"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G12",
+  "since": "2026-09-30T23:42:41.898Z",
+  "deadline": "2026-10-07T23:42:41.898Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-09-30T23:42:41.898Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00067",
+   "at": "2026-09-30T23:42:41.950Z",
+   "action": "NO_ACTION",
+   "goal_id": "G12",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G12",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-014136"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-07T23:42:41.898Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G12",
+   "lesson": "achieved G12 with no prior exposure by the agent",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G12": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "b11b162d-f2e3-4d6a-9f3f-1ad7ed441c75": "D-00067"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

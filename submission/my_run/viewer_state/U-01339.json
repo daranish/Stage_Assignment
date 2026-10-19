@@ -1,0 +1,123 @@
+{
+ "viewer_id": "U-01339",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:05:03.148Z",
+  "signup": {
+   "value": "2025-05-17T14:10:44.963Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 140703.148,
+   "refs": [
+    "profile:U-01339@2026-09-28T18:21:08.594Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T18:21:08.594Z",
+   "age_s": 247434.554,
+   "refs": [
+    "profile:U-01339@2026-09-28T18:21:08.594Z",
+    "event:755e29a2-4e59-4a94-b378-d695b64294b1"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-12T11:38:03.911Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:5064f6d2-63c1-4e1e-b8b7-c85314d567d1",
+   "conflicts": [
+    "profile:d6",
+    "campaign_link:d1"
+   ],
+   "as_of": "2026-10-01T15:05:03.148Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01339@2026-09-28T18:21:08.594Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140703.148
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01339@2026-09-28T18:21:08.594Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140703.148
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d3",
+    "others": [
+     "profile:d6",
+     "campaign_link:d1"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 1,
+   "last_play_at": "2026-09-25T15:26:09.076Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Thriller",
+    "Action",
+    "Crime"
+   ],
+   "unfinished_series": [
+    "bhaja-moguba-d2",
+    "molo-d2",
+    "yane-tegi-d3"
+   ]
+  },
+  "events_seen": 47
+ },
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02120",
+   "at": "2026-10-01T15:05:03.200Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "5064f6d2-63c1-4e1e-b8b7-c85314d567d1": "D-02120"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T15:05:03.148Z"
+}

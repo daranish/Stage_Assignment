@@ -1,0 +1,179 @@
+{
+ "viewer_id": "U-01810",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T06:28:21.549Z",
+  "signup": {
+   "value": "2025-12-12T03:28:05.791Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 109701.549,
+   "refs": [
+    "profile:U-01810@2026-09-29T00:38:38.663Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T00:38:38.663Z",
+   "age_s": 193782.886,
+   "refs": [
+    "profile:U-01810@2026-09-29T00:38:38.663Z",
+    "event:b292a43f-e1c4-4eff-94b4-b5f16b3e00ea"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-19T05:29:09.063Z"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:32f37464-fde4-4ee9-abbc-35bbab32fe31",
+   "conflicts": [
+    "profile:d3"
+   ],
+   "as_of": "2026-10-01T06:28:21.549Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01810@2026-09-29T00:38:38.663Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 109701.549
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01810@2026-09-29T00:38:38.663Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 109701.549
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:d3"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 18,
+   "completes": 7,
+   "last_play_at": "2026-09-30T07:47:45.942Z",
+   "play_days_14d": 6,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Action",
+    "Devotional",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "gidha-sudhako-d1",
+    "gima-bhadaba-d1",
+    "hama-chudibha-d1",
+    "tidha-dakachu-d1"
+   ]
+  },
+  "events_seen": 122
+ },
+ "active_goal": {
+  "goal_id": "G06",
+  "name": "reactivate_lapsed_14d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "any paid plan",
+   "window_hours": 336
+  },
+  "started_at": "2026-10-01T06:28:21.549Z",
+  "deadline": "2026-10-15T06:28:21.549Z",
+  "status": "open",
+  "decision_id": "D-00801",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-01810@2026-09-29T00:38:38.663Z",
+   "event:b292a43f-e1c4-4eff-94b4-b5f16b3e00ea"
+  ],
+  "reason": "subscription_lapsed event within 30 days",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T06:28:21.549Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G06",
+  "since": "2026-10-01T06:28:21.549Z",
+  "deadline": "2026-10-15T06:28:21.549Z",
+  "last_action": "HOME_PAGE+WHATSAPP",
+  "revised_at": "2026-10-01T06:28:21.549Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00801",
+   "at": "2026-10-01T06:28:21.603Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G06",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00287",
+  "A-00288"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G06",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-15T06:28:21.549Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G06",
+   "lesson": "G06 not achieved (1 failure(s) for this goal): 11 app opens and 8 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G06": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "32f37464-fde4-4ee9-abbc-35bbab32fe31": "D-00801"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

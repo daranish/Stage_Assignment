@@ -1,0 +1,130 @@
+{
+ "viewer_id": "U-00773",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T11:52:57.849Z",
+  "signup": {
+   "value": "2026-02-20T15:03:23.600Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 129177.849,
+   "refs": [
+    "profile:U-00773@2026-09-29T09:30:31.321Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T09:30:31.321Z",
+   "age_s": 181346.528,
+   "refs": [
+    "profile:U-00773@2026-09-29T09:30:31.321Z",
+    "event:0e019fa6-dae8-4e9c-8aa3-10ba27871549"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-13T07:01:21.683Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "",
+   "source": "profile(fallback; trigger had None)",
+   "ref": "profile:U-00773",
+   "conflicts": [
+    "trigger_app_dialect:None"
+   ],
+   "as_of": "2026-10-01T11:52:57.849Z",
+   "supported": false,
+   "certain": false,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00773@2026-09-29T09:30:31.321Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 129177.849
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00773@2026-09-29T09:30:31.321Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 129177.849
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "",
+    "others": [
+     "trigger_app_dialect:None"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 19,
+   "completes": 13,
+   "last_play_at": "2026-09-24T06:56:36.914Z",
+   "play_days_14d": 5,
+   "opens_14d_excl_current": 10,
+   "top_genres": [
+    "Action",
+    "Devotional",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "gima-bhadaba-d1",
+    "guka-kosusa-d2",
+    "molo-d2",
+    "rigu-dhadi-d2"
+   ]
+  },
+  "events_seen": 153
+ },
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00717",
+   "at": "2026-10-01T05:47:53.693Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "dialect  (app setting) has no catalogue content: nothing valid to show or promote"
+  },
+  {
+   "decision_id": "D-01509",
+   "at": "2026-10-01T11:52:57.901Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "dialect  (app setting) has no catalogue content: nothing valid to show or promote"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "38641d91-e402-43cf-9405-d6d7e80f643c": "D-00717",
+  "53c636b6-3b35-4dcf-8f65-58535b0b234c": "D-01509"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T11:52:57.849Z"
+}

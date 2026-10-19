@@ -1,0 +1,177 @@
+{
+ "viewer_id": "U-02251",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T15:08:11.968Z",
+  "signup": {
+   "value": "2025-11-16T12:00:02.510Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 140891.968,
+   "refs": [
+    "profile:U-02251@2026-09-29T17:10:12.622Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T17:10:12.622Z",
+   "age_s": 165479.346,
+   "refs": [
+    "profile:U-02251@2026-09-29T17:10:12.622Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:5dd257e4-c22b-44b3-81b5-d08c37452058",
+   "conflicts": [],
+   "as_of": "2026-10-01T15:08:11.968Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02251@2026-09-29T17:10:12.622Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140891.968
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02251@2026-09-29T17:10:12.622Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 140891.968
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 1,
+   "last_play_at": "2026-09-29T02:35:52.626Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 3,
+   "top_genres": [
+    "Devotional",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "rasuya-moni-d6"
+   ]
+  },
+  "events_seen": 36
+ },
+ "active_goal": {
+  "goal_id": "G05",
+  "name": "first_paid_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "is_trial = false",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T03:40:52.538Z",
+  "deadline": "2026-10-08T03:40:52.538Z",
+  "status": "open",
+  "decision_id": "D-00265",
+  "slug": null,
+  "assumptions": [
+   "\"never\" rests on the snapshot and a 30-day event window"
+  ],
+  "evidence": [
+   "profile:U-02251@2026-09-29T17:10:12.622Z",
+   "event:9a44dc5e-7e72-4a6a-86c7-4fa7a9bbae2f"
+  ],
+  "reason": "never paid; purchase-intent signal present",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T03:40:52.538Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-014731"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G05",
+  "since": "2026-10-01T03:40:52.538Z",
+  "deadline": "2026-10-08T03:40:52.538Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T15:08:11.968Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00265",
+   "at": "2026-10-01T03:40:52.590Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G05",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02177",
+   "at": "2026-10-01T15:08:11.970Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G05",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00138",
+  "A-00953"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G05",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-014731"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T03:40:52.538Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G05",
+   "lesson": "achieved G05 after personalised exposure (association only, not proof of cause)",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G05": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "27b8c22c-6499-4199-add3-3999de677962": "D-00265",
+  "5dd257e4-c22b-44b3-81b5-d08c37452058": "D-02177"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

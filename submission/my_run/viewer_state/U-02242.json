@@ -1,0 +1,178 @@
+{
+ "viewer_id": "U-02242",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T12:22:58.562Z",
+  "signup": {
+   "value": "2026-07-10T12:47:46.419Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 130978.562,
+   "refs": [
+    "profile:U-02242@2026-09-29T07:46:03.177Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T07:46:03.177Z",
+   "age_s": 189415.385,
+   "refs": [
+    "profile:U-02242@2026-09-29T07:46:03.177Z",
+    "event:9acb3d68-e914-4399-8e23-6bdcbb477079"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-11T21:26:38.233Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:fd333dac-7475-40dc-82c8-b989c6f1c806",
+   "conflicts": [
+    "profile:d4"
+   ],
+   "as_of": "2026-10-01T12:22:58.562Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02242@2026-09-29T07:46:03.177Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 130978.562
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02242@2026-09-29T07:46:03.177Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 130978.562
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d2",
+    "others": [
+     "profile:d4"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 11,
+   "completes": 4,
+   "last_play_at": "2026-09-28T18:17:49.428Z",
+   "play_days_14d": 6,
+   "opens_14d_excl_current": 10,
+   "top_genres": [
+    "Romance",
+    "Action",
+    "Devotional"
+   ],
+   "unfinished_series": [
+    "bhaja-moguba-d2",
+    "guka-kosusa-d2",
+    "molo-d2"
+   ]
+  },
+  "events_seen": 82
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T12:22:58.562Z",
+  "deadline": "2026-10-04T12:22:58.562Z",
+  "status": "open",
+  "decision_id": "D-01583",
+  "slug": "guka-kosusa-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:2e0ccc8f-f015-42c2-87a8-fb20c79620d4",
+   "catalogue:T0522"
+  ],
+  "reason": "unfinished series guka-kosusa-d2 idle 4.0 days, 40 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T12:22:58.562Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T12:22:58.562Z",
+  "deadline": "2026-10-04T12:22:58.562Z",
+  "last_action": "HOME_PAGE+WHATSAPP",
+  "revised_at": "2026-10-01T12:22:58.562Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01583",
+   "at": "2026-10-01T12:22:58.615Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00669",
+  "A-00670"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T12:22:58.562Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "fd333dac-7475-40dc-82c8-b989c6f1c806": "D-01583"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

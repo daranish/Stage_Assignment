@@ -1,0 +1,161 @@
+{
+ "viewer_id": "U-01438",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T11:28:04.182Z",
+  "signup": {
+   "value": "2026-01-30T20:27:06.837Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 127684.182,
+   "refs": [
+    "profile:U-01438@2026-09-28T19:43:23.556Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T19:43:23.556Z",
+   "age_s": 229480.626,
+   "refs": [
+    "profile:U-01438@2026-09-28T19:43:23.556Z",
+    "event:4b1c02c8-c70b-4d86-9ae7-3c253db4d083"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-03T11:45:47.528Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:156ca8a6-f969-4eb4-9853-d815ab339c70",
+   "conflicts": [],
+   "as_of": "2026-10-01T11:28:04.182Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01438@2026-09-28T19:43:23.556Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 127684.182
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01438@2026-09-28T19:43:23.556Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 127684.182
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 1,
+   "last_play_at": "2026-09-20T07:50:40.647Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 8,
+   "top_genres": [
+    "Action",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "molo-d2"
+   ]
+  },
+  "events_seen": 37
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T11:28:04.182Z",
+  "deadline": "2026-10-04T11:28:04.182Z",
+  "status": "open",
+  "decision_id": "D-01439",
+  "slug": "molo-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:f24dced1-3205-4506-aeb6-31bd0eee8fc6",
+   "catalogue:T0521"
+  ],
+  "reason": "unfinished series molo-d2 idle 11.2 days, 6 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T11:28:04.182Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T11:28:04.182Z",
+  "deadline": "2026-10-04T11:28:04.182Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T11:28:04.182Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01439",
+   "at": "2026-10-01T11:28:04.234Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T11:28:04.182Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 1 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "156ca8a6-f969-4eb4-9853-d815ab339c70": "D-01439"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

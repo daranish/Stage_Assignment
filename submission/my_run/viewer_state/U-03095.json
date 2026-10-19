@@ -1,0 +1,164 @@
+{
+ "viewer_id": "U-03095",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T04:47:37.888Z",
+  "signup": {
+   "value": "2026-08-09T16:30:59.706Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 103657.888,
+   "refs": [
+    "profile:U-03095@2026-09-29T04:24:23.599Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T04:24:23.599Z",
+   "age_s": 174194.289,
+   "refs": [
+    "profile:U-03095@2026-09-29T04:24:23.599Z",
+    "event:1573d889-9ed7-439f-9107-f3659ef5608d"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-12T00:11:51.926Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:d3ca60ef-086b-42bc-befa-a26bbe9b00a0",
+   "conflicts": [],
+   "as_of": "2026-10-01T04:47:37.888Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03095@2026-09-29T04:24:23.599Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 103657.888
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03095@2026-09-29T04:24:23.599Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 103657.888
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 11,
+   "completes": 7,
+   "last_play_at": "2026-09-23T11:01:44.203Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 10,
+   "top_genres": [
+    "Crime",
+    "Comedy",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "haja-d3",
+    "jakasa-dapi-d3",
+    "ririgi-d3"
+   ]
+  },
+  "events_seen": 96
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T04:47:37.888Z",
+  "deadline": "2026-10-04T04:47:37.888Z",
+  "status": "open",
+  "decision_id": "D-00557",
+  "slug": "jakasa-dapi-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:cc3b75e5-dbf9-4425-80bd-bd115eb68d8b",
+   "catalogue:T0904"
+  ],
+  "reason": "unfinished series jakasa-dapi-d3 idle 7.7 days, 15 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T04:47:37.888Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T04:47:37.888Z",
+  "deadline": "2026-10-04T04:47:37.888Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T04:47:37.888Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00557",
+   "at": "2026-10-01T04:47:37.940Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T04:47:37.888Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 1 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "d3ca60ef-086b-42bc-befa-a26bbe9b00a0": "D-00557"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

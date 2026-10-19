@@ -1,0 +1,176 @@
+{
+ "viewer_id": "U-00386",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T13:05:41.272Z",
+  "signup": {
+   "value": "2024-11-07T10:29:57.844Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 133541.272,
+   "refs": [
+    "profile:U-00386@2026-09-28T20:45:59.535Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T20:45:59.535Z",
+   "age_s": 231581.737,
+   "refs": [
+    "profile:U-00386@2026-09-28T20:45:59.535Z",
+    "event:0e4a5ccd-674c-4970-bd5e-6ea1689fb972"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-07T13:02:47.871Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:e812b9fb-7689-45b4-8ff8-5ee86725415e",
+   "conflicts": [
+    "profile:d3"
+   ],
+   "as_of": "2026-10-01T13:05:41.272Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00386@2026-09-28T20:45:59.535Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 133541.272
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00386@2026-09-28T20:45:59.535Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 133541.272
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d4",
+    "others": [
+     "profile:d3"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 16,
+   "completes": 10,
+   "last_play_at": "2026-09-28T09:50:34.917Z",
+   "play_days_14d": 5,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Romance",
+    "Drama",
+    "Family"
+   ],
+   "unfinished_series": [
+    "bagi-baya-d4"
+   ]
+  },
+  "events_seen": 115
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T13:05:41.272Z",
+  "deadline": "2026-10-04T13:05:41.272Z",
+  "status": "open",
+  "decision_id": "D-01667",
+  "slug": "bagi-baya-d4",
+  "assumptions": [],
+  "evidence": [
+   "event:138fa67f-1346-4852-8f10-45c4aa72fbca",
+   "catalogue:T0916"
+  ],
+  "reason": "unfinished series bagi-baya-d4 idle 3.1 days, 35 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T13:05:41.272Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T13:05:41.272Z",
+  "deadline": "2026-10-04T13:05:41.272Z",
+  "last_action": "HOME_PAGE+IN_APP_MESSAGE",
+  "revised_at": "2026-10-01T13:05:41.272Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01667",
+   "at": "2026-10-01T13:05:41.325Z",
+   "action": "HOME_PAGE+IN_APP_MESSAGE",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00704",
+  "A-00705"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T13:05:41.272Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 2 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "e812b9fb-7689-45b4-8ff8-5ee86725415e": "D-01667"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

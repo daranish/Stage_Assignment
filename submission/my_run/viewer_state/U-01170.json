@@ -1,0 +1,173 @@
+{
+ "viewer_id": "U-01170",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T17:10:03.200Z",
+  "signup": {
+   "value": "2025-01-30T09:10:27.974Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 148203.2,
+   "refs": [
+    "profile:U-01170@2026-09-28T23:25:47.278Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-28T23:25:47.278Z",
+   "age_s": 236655.922,
+   "refs": [
+    "profile:U-01170@2026-09-28T23:25:47.278Z",
+    "event:f4e24b55-1196-4ed9-98b2-476c80e59eda"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-27T10:25:36.623Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:97d68d89-9aad-4881-bd9e-bd9986fc9a4d",
+   "conflicts": [],
+   "as_of": "2026-10-01T17:10:03.200Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01170@2026-09-28T23:25:47.278Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 148203.2
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01170@2026-09-28T23:25:47.278Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 148203.2
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 7,
+   "completes": 1,
+   "last_play_at": "2026-09-27T00:53:31.186Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Devotional",
+    "Action",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "gima-bhadaba-d1"
+   ]
+  },
+  "events_seen": 56
+ },
+ "active_goal": {
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "a title released in the 30 days before the goal start",
+   "window_hours": 168
+  },
+  "started_at": "2026-10-01T04:46:08.450Z",
+  "deadline": "2026-10-08T04:46:08.450Z",
+  "status": "open",
+  "decision_id": "D-00456",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-01170@2026-09-28T23:25:47.278Z",
+   "event:f4e24b55-1196-4ed9-98b2-476c80e59eda",
+   "catalogue:T0007"
+  ],
+  "reason": "active subscriber; 62 recent releases available",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T04:46:08.450Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G08",
+  "since": "2026-10-01T04:46:08.450Z",
+  "deadline": "2026-10-08T04:46:08.450Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T17:10:03.200Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00456",
+   "at": "2026-10-01T04:46:08.503Z",
+   "action": "NO_ACTION",
+   "goal_id": "G08",
+   "reason": "stale trigger: app_open was buffered offline for 29943s (>600s) - not a live session; recorded as history only"
+  },
+  {
+   "decision_id": "D-02635",
+   "at": "2026-10-01T17:10:03.204Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G08",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-01142"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G08",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-08T04:46:08.450Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G08",
+   "lesson": "G08 not achieved (1 failure(s) for this goal): 6 app opens and 4 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G08": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "abcd8885-28dc-4319-a969-f48d45c18816": "D-00456",
+  "97d68d89-9aad-4881-bd9e-bd9986fc9a4d": "D-02635"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

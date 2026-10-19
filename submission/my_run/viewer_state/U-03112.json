@@ -1,0 +1,161 @@
+{
+ "viewer_id": "U-03112",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T12:22:25.965Z",
+  "signup": {
+   "value": "2025-03-24T00:26:25.676Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 130945.965,
+   "refs": [
+    "profile:U-03112@2026-09-29T08:12:58.873Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T08:12:58.873Z",
+   "age_s": 187767.092,
+   "refs": [
+    "profile:U-03112@2026-09-29T08:12:58.873Z",
+    "event:b6c1875a-5c37-4d85-bcbe-362582a319b4"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-02T13:03:30.066Z"
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:a10cbafd-5dbe-4cb9-abd4-b3c9318fd267",
+   "conflicts": [],
+   "as_of": "2026-10-01T12:22:25.965Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03112@2026-09-29T08:12:58.873Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 130945.965
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03112@2026-09-29T08:12:58.873Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 130945.965
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 1,
+   "last_play_at": "2026-09-25T06:31:48.784Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Drama",
+    "Romance"
+   ],
+   "unfinished_series": [
+    "digi-mone-d3"
+   ]
+  },
+  "events_seen": 35
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T12:22:25.965Z",
+  "deadline": "2026-10-04T12:22:25.965Z",
+  "status": "open",
+  "decision_id": "D-01580",
+  "slug": "digi-mone-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:b58a86e9-bf8c-49e7-9a46-6cb1317b3fae",
+   "catalogue:T0910"
+  ],
+  "reason": "unfinished series digi-mone-d3 idle 6.2 days, 31 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T12:22:25.965Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T12:22:25.965Z",
+  "deadline": "2026-10-04T12:22:25.965Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T12:22:25.965Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01580",
+   "at": "2026-10-01T12:22:26.017Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T12:22:25.965Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 0 app opens and 0 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "a10cbafd-5dbe-4cb9-abd4-b3c9318fd267": "D-01580"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

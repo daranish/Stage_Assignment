@@ -1,0 +1,175 @@
+{
+ "viewer_id": "U-01720",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T13:27:20.235Z",
+  "signup": {
+   "value": "2024-11-15T06:00:18.481Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 134840.235,
+   "refs": [
+    "profile:U-01720@2026-09-29T08:47:36.083Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T08:47:36.083Z",
+   "age_s": 189584.152,
+   "refs": [
+    "profile:U-01720@2026-09-29T08:47:36.083Z",
+    "event:4ecef6c8-89f8-496e-9839-d5da9d69fa24"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-18T22:56:27.849Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:553789ee-7d84-439d-a103-a3e660aa3cfb",
+   "conflicts": [],
+   "as_of": "2026-10-01T13:27:20.235Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "en",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01720@2026-09-29T08:47:36.083Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 134840.235
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01720@2026-09-29T08:47:36.083Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 134840.235
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 13,
+   "completes": 7,
+   "last_play_at": "2026-09-30T10:19:48.515Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Romance",
+    "Drama",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "bagugu-gigupi-d1",
+    "kopibha-niya-d1"
+   ]
+  },
+  "events_seen": 105
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T07:39:58.213Z",
+  "deadline": "2026-10-04T07:39:58.213Z",
+  "status": "open",
+  "decision_id": "D-00965",
+  "slug": "bagugu-gigupi-d1",
+  "assumptions": [],
+  "evidence": [
+   "event:7c3534c3-5fba-48c6-bce9-2a646473970e",
+   "catalogue:T1504"
+  ],
+  "reason": "unfinished series bagugu-gigupi-d1 idle 9.6 days, 4 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T07:39:58.213Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T07:39:58.213Z",
+  "deadline": "2026-10-04T07:39:58.213Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T13:27:20.235Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00965",
+   "at": "2026-10-01T07:39:58.267Z",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01717",
+   "at": "2026-10-01T13:27:20.238Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00384",
+  "A-00385",
+  "A-00729"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T07:39:58.213Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "b8c2733e-8fee-4d49-b05c-94aa0dba0b94": "D-00965",
+  "553789ee-7d84-439d-a103-a3e660aa3cfb": "D-01717"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

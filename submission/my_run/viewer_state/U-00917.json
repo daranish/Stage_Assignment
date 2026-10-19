@@ -1,0 +1,196 @@
+{
+ "viewer_id": "U-00917",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T14:47:36.229Z",
+  "signup": {
+   "value": "2025-01-03T07:46:31.861Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 139656.229,
+   "refs": [
+    "profile:U-00917@2026-09-29T08:21:04.986Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T08:21:04.986Z",
+   "age_s": 195991.243,
+   "refs": [
+    "profile:U-00917@2026-09-29T08:21:04.986Z",
+    "event:1004df75-04da-43f0-b70f-1cdbe48d94ed"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-24T23:07:09.451Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:8b0d517a-fc5e-4e01-bc68-a2a4bca12eec",
+   "conflicts": [
+    "profile:d6"
+   ],
+   "as_of": "2026-10-01T14:47:36.229Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00917@2026-09-29T08:21:04.986Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 139656.229
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00917@2026-09-29T08:21:04.986Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 139656.229
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d1",
+    "others": [
+     "profile:d6"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 4,
+   "completes": 1,
+   "last_play_at": "2026-09-28T15:43:30.137Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 7,
+   "top_genres": [
+    "Family",
+    "Action",
+    "Drama"
+   ],
+   "unfinished_series": [
+    "hapibha-d1",
+    "nini-namoko-d1",
+    "tidha-dakachu-d1"
+   ]
+  },
+  "events_seen": 45
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T05:03:08.399Z",
+  "deadline": "2026-10-04T05:03:08.399Z",
+  "status": "open",
+  "decision_id": "D-00612",
+  "slug": "tidha-dakachu-d1",
+  "assumptions": [],
+  "evidence": [
+   "event:7ed3ac2e-8f95-44e9-b37a-dcc4ce1280e2",
+   "catalogue:T0005"
+  ],
+  "reason": "unfinished series tidha-dakachu-d1 idle 8.0 days, 16 episodes left",
+  "messages_sent": 2,
+  "committed_at": "2026-10-01T05:03:08.399Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T05:03:08.399Z",
+  "deadline": "2026-10-04T05:03:08.399Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T14:47:36.229Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00612",
+   "at": "2026-10-01T05:03:08.453Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-00859",
+   "at": "2026-10-01T07:00:00.000Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G07",
+   "reason": "page repair after title withdrawal"
+  },
+  {
+   "decision_id": "D-01997",
+   "at": "2026-10-01T14:47:36.232Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00197",
+  "A-00198",
+  "A-00318",
+  "A-00865",
+  "A-00866"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T05:03:08.399Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 1 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "9d07a079-1e4c-4b78-842a-449fd3043635": "D-00612",
+  "8b0d517a-fc5e-4e01-bc68-a2a4bca12eec": "D-01997"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

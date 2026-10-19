@@ -1,0 +1,167 @@
+{
+ "viewer_id": "U-01167",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T10:44:43.640Z",
+  "signup": {
+   "value": "2024-12-01T21:09:00.964Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 125083.64,
+   "refs": [
+    "profile:U-01167@2026-09-29T09:42:23.626Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T09:42:23.626Z",
+   "age_s": 176540.014,
+   "refs": [
+    "profile:U-01167@2026-09-29T09:42:23.626Z",
+    "event:ca81eeee-7061-4ce9-95c0-13f3891139b4"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-03T22:46:56.517Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:979e4c85-ed4b-4280-99f9-2a9d887a1acf",
+   "conflicts": [],
+   "as_of": "2026-10-01T10:44:43.640Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01167@2026-09-29T09:42:23.626Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 125083.64
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01167@2026-09-29T09:42:23.626Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 125083.64
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 7,
+   "completes": 5,
+   "last_play_at": "2026-09-30T09:59:27.968Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Crime",
+    "Thriller",
+    "Devotional"
+   ],
+   "unfinished_series": [
+    "ririgi-d3",
+    "yane-tegi-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 60
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T10:44:43.640Z",
+  "deadline": "2026-10-04T10:44:43.640Z",
+  "status": "open",
+  "decision_id": "D-01359",
+  "slug": "ririgi-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:d892b991-cc5c-4005-ac43-4754d0ca2644",
+   "catalogue:T0914"
+  ],
+  "reason": "unfinished series ririgi-d3 idle 8.8 days, 8 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T10:44:43.640Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T10:44:43.640Z",
+  "deadline": "2026-10-04T10:44:43.640Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T10:44:43.640Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01359",
+   "at": "2026-10-01T10:44:43.692Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00577",
+  "A-00578"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T10:44:43.640Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 1 app opens and 0 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "979e4c85-ed4b-4280-99f9-2a9d887a1acf": "D-01359"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

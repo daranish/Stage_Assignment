@@ -1,0 +1,232 @@
+{
+ "viewer_id": "U-03514",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T17:40:15.823Z",
+  "signup": {
+   "value": "2026-09-21T00:55:16.347Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 150015.823,
+   "refs": [
+    "profile:U-03514@2026-09-29T07:59:14.931Z",
+    "event:c76704a4-e517-4794-a11b-22feed26ebda"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T07:59:14.931Z",
+   "age_s": 207660.892,
+   "refs": [
+    "profile:U-03514@2026-09-29T07:59:14.931Z",
+    "event:778f01cd-a014-4c38-b30d-f936ac5a8549"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-24T00:55:18.184Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:d2f17e59-9589-4e95-9a82-dd31806729bd",
+   "conflicts": [
+    "profile:"
+   ],
+   "as_of": "2026-10-01T17:40:15.823Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03514@2026-09-29T07:59:14.931Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 150015.823
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03514@2026-09-29T07:59:14.931Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 150015.823
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d2",
+    "others": [
+     "profile:"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 0,
+   "last_play_at": "2026-09-26T07:52:45.583Z",
+   "play_days_14d": 2,
+   "opens_14d_excl_current": 9,
+   "top_genres": [
+    "Crime",
+    "Family"
+   ],
+   "unfinished_series": [
+    "chugu-d2",
+    "dhapipa-gini-d2"
+   ]
+  },
+  "events_seen": 22
+ },
+ "active_goal": {
+  "goal_id": "G02",
+  "name": "first_full_episode_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "episode_completed",
+   "condition": "any episode",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T06:13:15.342Z",
+  "deadline": "2026-10-04T06:13:15.342Z",
+  "status": "open",
+  "decision_id": "D-00771",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-03514@2026-09-29T07:59:14.931Z",
+   "event:c76704a4-e517-4794-a11b-22feed26ebda"
+  ],
+  "reason": "no episode_completed observed",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T06:13:15.342Z",
+  "final_judgement": {
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-022478"
+   ]
+  }
+ },
+ "plan": {
+  "goal_id": "G02",
+  "since": "2026-10-01T06:13:15.342Z",
+  "deadline": "2026-10-04T06:13:15.342Z",
+  "last_action": "HOME_PAGE",
+  "revised_at": "2026-10-01T17:40:15.823Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00771",
+   "at": "2026-10-01T06:13:15.395Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01374",
+   "at": "2026-10-01T10:49:13.443Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  },
+  {
+   "decision_id": "D-01606",
+   "at": "2026-10-01T12:37:06.247Z",
+   "action": "NO_ACTION",
+   "goal_id": "G02",
+   "reason": "nothing to change: personalised page A-00588 still live (TTL): not republished; message: goal G02 is served by the home page only (proportionality)"
+  },
+  {
+   "decision_id": "D-01651",
+   "at": "2026-10-01T12:58:19.889Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02318",
+   "at": "2026-10-01T15:36:24.410Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  },
+  {
+   "decision_id": "D-02626",
+   "at": "2026-10-01T17:07:10.823Z",
+   "action": "NO_ACTION",
+   "goal_id": "G02",
+   "reason": "nothing to change: personalised page A-01014 still live (TTL): not republished; message: goal G02 is served by the home page only (proportionality)"
+  },
+  {
+   "decision_id": "D-02710",
+   "at": "2026-10-01T17:40:15.826Z",
+   "action": "HOME_PAGE",
+   "goal_id": "G02",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00272",
+  "A-00588",
+  "A-00698",
+  "A-01014",
+  "A-01168"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G02",
+   "status": "succeeded",
+   "reason": "success event within window",
+   "evidence": [
+    "event:oua-022478"
+   ],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T06:13:15.342Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G02",
+   "lesson": "achieved G02 after personalised exposure (association only, not proof of cause)",
+   "status": "succeeded"
+  }
+ ],
+ "goal_stats": {
+  "G02": {
+   "attempts": 1,
+   "succeeded": 1,
+   "failed": 0,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "70f832d5-635a-4688-aac9-09f87d08e45e": "D-00771",
+  "6aae1217-c282-45fd-b274-726b427c1461": "D-01374",
+  "52e924a4-ccfc-4ff8-8d06-dd0b27240f28": "D-01606",
+  "1e562f40-d914-4b41-b6f4-5e0c5fce2f12": "D-01651",
+  "77d4fa7b-a07f-4098-a3f0-92f0103997ad": "D-02318",
+  "eb379c28-18f1-4f99-ab92-2ee4c18d7a3f": "D-02626",
+  "d2f17e59-9589-4e95-9a82-dd31806729bd": "D-02710"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

@@ -1,0 +1,163 @@
+{
+ "viewer_id": "U-01946",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T04:47:25.365Z",
+  "signup": {
+   "value": "2025-04-14T09:48:50.752Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 103645.365,
+   "refs": [
+    "profile:U-01946@2026-09-29T00:01:35.193Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-29T00:01:35.193Z",
+   "age_s": 189950.172,
+   "refs": [
+    "profile:U-01946@2026-09-29T00:01:35.193Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:c81ab650-514b-4d36-a782-dfbc7058dee0",
+   "conflicts": [],
+   "as_of": "2026-10-01T04:47:25.365Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01946@2026-09-29T00:01:35.193Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 103645.365
+   },
+   "whatsapp": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01946@2026-09-29T00:01:35.193Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 103645.365
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 5,
+   "completes": 3,
+   "last_play_at": "2026-09-25T15:37:14.754Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 1,
+   "top_genres": [
+    "Action",
+    "Drama",
+    "Devotional"
+   ],
+   "unfinished_series": [
+    "chupi-gugi-d6",
+    "kapa-lone-d6",
+    "rasuya-moni-d6"
+   ]
+  },
+  "events_seen": 37
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T04:47:25.365Z",
+  "deadline": "2026-10-04T04:47:25.365Z",
+  "status": "open",
+  "decision_id": "D-00540",
+  "slug": "kapa-lone-d6",
+  "assumptions": [],
+  "evidence": [
+   "event:46450bca-d042-4332-81c6-f8e07da5b4f4",
+   "catalogue:T1406"
+  ],
+  "reason": "unfinished series kapa-lone-d6 idle 18.5 days, 19 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T04:47:25.365Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T04:47:25.365Z",
+  "deadline": "2026-10-04T04:47:25.365Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T04:47:25.365Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00540",
+   "at": "2026-10-01T04:47:25.417Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "stale trigger: app_open was buffered offline for 377793s (>600s) - not a live session; recorded as history only"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T04:47:25.365Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 1 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "c81ab650-514b-4d36-a782-dfbc7058dee0": "D-00540"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

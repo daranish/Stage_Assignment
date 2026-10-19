@@ -1,0 +1,119 @@
+{
+ "viewer_id": "U-03403",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T12:04:30.017Z",
+  "signup": {
+   "value": "2025-02-05T12:43:41.494Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 129870.017,
+   "refs": [
+    "profile:U-03403@2026-09-29T11:14:58.035Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T11:14:58.035Z",
+   "age_s": 175771.982,
+   "refs": [
+    "profile:U-03403@2026-09-29T11:14:58.035Z",
+    "event:eb83b62f-90e2-465e-9796-dfc3c069e9d0"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-29T05:14:02.281Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:a143babf-0afd-4a86-b40f-f35706314c67",
+   "conflicts": [
+    "profile:d1"
+   ],
+   "as_of": "2026-10-01T12:04:30.017Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03403@2026-09-29T11:14:58.035Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 129870.017
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03403@2026-09-29T11:14:58.035Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 129870.017
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d3",
+    "others": [
+     "profile:d1"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 6,
+   "completes": 2,
+   "last_play_at": "2026-09-28T15:59:30.493Z",
+   "play_days_14d": 4,
+   "opens_14d_excl_current": 10,
+   "top_genres": [
+    "Romance",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "pate-kari-d3",
+    "yatite-roloda-d3"
+   ]
+  },
+  "events_seen": 57
+ },
+ "active_goal": null,
+ "plan": null,
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01542",
+   "at": "2026-10-01T12:04:30.069Z",
+   "action": "NO_ACTION",
+   "goal_id": null,
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": [],
+ "goal_stats": {},
+ "seen_triggers": {
+  "a143babf-0afd-4a86-b40f-f35706314c67": "D-01542"
+ },
+ "rule_migrations": [],
+ "notes": [],
+ "model_asked_no_goal_at": "2026-10-01T12:04:30.017Z"
+}

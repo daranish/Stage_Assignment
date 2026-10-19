@@ -1,0 +1,177 @@
+{
+ "viewer_id": "U-02699",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T17:07:27.713Z",
+  "signup": {
+   "value": "2026-06-17T13:20:11.249Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 148047.713,
+   "refs": [
+    "profile:U-02699@2026-09-29T00:46:07.113Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T00:46:07.113Z",
+   "age_s": 231680.6,
+   "refs": [
+    "profile:U-02699@2026-09-29T00:46:07.113Z",
+    "event:0d9bf6f4-24a3-409a-ba04-739fce2c1b7c"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-15T01:15:14.241Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:d6a43b6c-06aa-42ca-9d20-db03d9146de3",
+   "conflicts": [
+    "profile:d3"
+   ],
+   "as_of": "2026-10-01T17:07:27.713Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-02699@2026-09-29T00:46:07.113Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 148047.713
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-02699@2026-09-29T00:46:07.113Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 148047.713
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d2",
+    "others": [
+     "profile:d3"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 16,
+   "completes": 14,
+   "last_play_at": "2026-09-30T11:33:58.199Z",
+   "play_days_14d": 7,
+   "opens_14d_excl_current": 15,
+   "top_genres": [
+    "Action",
+    "Romance",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "guka-kosusa-d2",
+    "rigu-dhadi-d2"
+   ]
+  },
+  "events_seen": 136
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T17:07:27.713Z",
+  "deadline": "2026-10-04T17:07:27.713Z",
+  "status": "open",
+  "decision_id": "D-02629",
+  "slug": "rigu-dhadi-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:5662e6a9-9ecf-4851-8f49-f14bebe39001",
+   "catalogue:T0526"
+  ],
+  "reason": "unfinished series rigu-dhadi-d2 idle 12.0 days, 22 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T17:07:27.713Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T17:07:27.713Z",
+  "deadline": "2026-10-04T17:07:27.713Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T17:07:27.713Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-02629",
+   "at": "2026-10-01T17:07:27.767Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-01139",
+  "A-01140"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T17:07:27.713Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 3 app opens and 2 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "d6a43b6c-06aa-42ca-9d20-db03d9146de3": "D-02629"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

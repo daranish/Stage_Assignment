@@ -1,0 +1,179 @@
+{
+ "viewer_id": "U-01055",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T09:00:11.911Z",
+  "signup": {
+   "value": "2025-06-01T06:58:56.228Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 118811.911,
+   "refs": [
+    "profile:U-01055@2026-09-29T12:32:34.438Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "active",
+   "source": "profile",
+   "as_of": "2026-09-29T12:32:34.438Z",
+   "age_s": 160057.473,
+   "refs": [
+    "profile:U-01055@2026-09-29T12:32:34.438Z",
+    "event:4cd0d34b-4823-4c74-a70a-b062d12fac88"
+   ],
+   "conflicts": [],
+   "plan_ends_at": "2026-10-23T02:05:30.465Z",
+   "paid_evidence": true,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:ed4a4900-918b-431c-9ca9-cbced89e715f",
+   "conflicts": [],
+   "as_of": "2026-10-01T09:00:11.911Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01055@2026-09-29T12:32:34.438Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 118811.911
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01055@2026-09-29T12:32:34.438Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 118811.911
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 14,
+   "completes": 9,
+   "last_play_at": "2026-09-18T16:57:10.765Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 8,
+   "top_genres": [
+    "Action",
+    "Crime",
+    "Devotional"
+   ],
+   "unfinished_series": [
+    "diti-kochu-d5",
+    "gubava-gihaya-d5"
+   ]
+  },
+  "events_seen": 129
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T04:47:43.161Z",
+  "deadline": "2026-10-04T04:47:43.161Z",
+  "status": "open",
+  "decision_id": "D-00567",
+  "slug": "diti-kochu-d5",
+  "assumptions": [],
+  "evidence": [
+   "event:c527a5e9-840c-4cef-b81f-f2919c360a07",
+   "catalogue:T1187"
+  ],
+  "reason": "unfinished series diti-kochu-d5 idle 12.5 days, 25 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T04:47:43.161Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T04:47:43.161Z",
+  "deadline": "2026-10-04T04:47:43.161Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T09:00:11.911Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00567",
+   "at": "2026-10-01T04:47:43.213Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-01122",
+   "at": "2026-10-01T08:49:03.497Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  },
+  {
+   "decision_id": "D-01141",
+   "at": "2026-10-01T09:00:11.913Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T04:47:43.161Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 4 app opens and 2 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "da957053-c50d-4b31-a960-2ec1d48fd83e": "D-00567",
+  "73a9a4f9-02ae-44f6-a812-d261ffa82f3d": "D-01122",
+  "ed4a4900-918b-431c-9ca9-cbced89e715f": "D-01141"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

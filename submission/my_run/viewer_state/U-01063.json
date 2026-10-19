@@ -1,0 +1,160 @@
+{
+ "viewer_id": "U-01063",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T04:47:39.117Z",
+  "signup": {
+   "value": "2024-11-17T11:05:04.436Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 103659.117,
+   "refs": [
+    "profile:U-01063@2026-09-28T18:30:30.518Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-28T18:30:30.518Z",
+   "age_s": 209828.599,
+   "refs": [
+    "profile:U-01063@2026-09-28T18:30:30.518Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:f61f1b73-42f9-4f15-a9d2-2af6487ad308",
+   "conflicts": [],
+   "as_of": "2026-10-01T04:47:39.117Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01063@2026-09-28T18:30:30.518Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 103659.117
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01063@2026-09-28T18:30:30.518Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 103659.117
+   }
+  },
+  "conflicts": [],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 1,
+   "last_play_at": "2026-09-12T09:13:19.852Z",
+   "play_days_14d": 0,
+   "opens_14d_excl_current": 3,
+   "top_genres": [
+    "Action",
+    "Thriller"
+   ],
+   "unfinished_series": [
+    "lomobha-moni-d3"
+   ]
+  },
+  "events_seen": 32
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T04:47:39.117Z",
+  "deadline": "2026-10-04T04:47:39.117Z",
+  "status": "open",
+  "decision_id": "D-00559",
+  "slug": "lomobha-moni-d3",
+  "assumptions": [],
+  "evidence": [
+   "event:90ee4e6c-c8d2-4b59-a439-b1ffeb92653c",
+   "catalogue:T0908"
+  ],
+  "reason": "unfinished series lomobha-moni-d3 idle 18.8 days, 34 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T04:47:39.117Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T04:47:39.117Z",
+  "deadline": "2026-10-04T04:47:39.117Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T04:47:39.117Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00559",
+   "at": "2026-10-01T04:47:39.169Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T04:47:39.117Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 2 app opens and 1 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "f61f1b73-42f9-4f15-a9d2-2af6487ad308": "D-00559"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

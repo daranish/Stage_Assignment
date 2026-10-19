@@ -1,0 +1,175 @@
+{
+ "viewer_id": "U-00267",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T11:52:31.914Z",
+  "signup": {
+   "value": "2025-11-29T00:15:02.576Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 129151.914,
+   "refs": [
+    "profile:U-00267@2026-09-28T20:26:32.124Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile",
+   "as_of": "2026-09-28T20:26:32.124Z",
+   "age_s": 228359.79,
+   "refs": [
+    "profile:U-00267@2026-09-28T20:26:32.124Z",
+    "event:9801829d-44ef-4385-8f51-e9aadec3a98e"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": "2026-09-04T04:35:12.064Z"
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:8986bea0-8164-4808-ae7b-f9b75104cf43",
+   "conflicts": [
+    "profile:d1"
+   ],
+   "as_of": "2026-10-01T11:52:31.914Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-00267@2026-09-28T20:26:32.124Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 129151.914
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-00267@2026-09-28T20:26:32.124Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 129151.914
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d6",
+    "others": [
+     "profile:d1"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 7,
+   "completes": 2,
+   "last_play_at": "2026-09-30T13:29:17.154Z",
+   "play_days_14d": 3,
+   "opens_14d_excl_current": 6,
+   "top_genres": [
+    "Action",
+    "Thriller",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "chupi-gugi-d6",
+    "gune-halo-d1",
+    "hama-chudibha-d1"
+   ]
+  },
+  "events_seen": 64
+ },
+ "active_goal": {
+  "goal_id": "G06",
+  "name": "reactivate_lapsed_14d",
+  "rule_version": "v1",
+  "success": {
+   "event": "purchase_completed",
+   "condition": "any paid plan",
+   "window_hours": 336
+  },
+  "started_at": "2026-10-01T11:52:31.914Z",
+  "deadline": "2026-10-15T11:52:31.914Z",
+  "status": "open",
+  "decision_id": "D-01507",
+  "slug": null,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-00267@2026-09-28T20:26:32.124Z",
+   "event:9801829d-44ef-4385-8f51-e9aadec3a98e"
+  ],
+  "reason": "subscription_lapsed event within 30 days",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T11:52:31.914Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G06",
+  "since": "2026-10-01T11:52:31.914Z",
+  "deadline": "2026-10-15T11:52:31.914Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T11:52:31.914Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01507",
+   "at": "2026-10-01T11:52:31.966Z",
+   "action": "NO_ACTION",
+   "goal_id": "G06",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G06",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-15T11:52:31.914Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G06",
+   "lesson": "G06 not achieved (1 failure(s) for this goal): 5 app opens and 4 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G06": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "8986bea0-8164-4808-ae7b-f9b75104cf43": "D-01507"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

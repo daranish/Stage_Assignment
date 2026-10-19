@@ -1,0 +1,171 @@
+{
+ "viewer_id": "U-03215",
+ "arm": "holdout",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T02:59:09.722Z",
+  "signup": {
+   "value": "2026-09-03T05:08:34.176Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 97149.722,
+   "refs": [
+    "profile:U-03215@2026-09-28T23:37:13.327Z",
+    "event:afa61931-a2ff-4980-8278-b4d6546f2e24"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-28T23:37:13.327Z",
+   "age_s": 184916.395,
+   "refs": [
+    "profile:U-03215@2026-09-28T23:37:13.327Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:0dcb742c-69ed-4bcf-ac19-29b8386c4e50",
+   "conflicts": [
+    "profile:d1"
+   ],
+   "as_of": "2026-10-01T02:59:09.722Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-03215@2026-09-28T23:37:13.327Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 97149.722
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-03215@2026-09-28T23:37:13.327Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 97149.722
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d2",
+    "others": [
+     "profile:d1"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 2,
+   "completes": 1,
+   "last_play_at": "2026-09-24T09:32:18.921Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 3,
+   "top_genres": [
+    "Crime"
+   ],
+   "unfinished_series": [
+    "chugu-d2"
+   ]
+  },
+  "events_seen": 22
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T02:59:09.722Z",
+  "deadline": "2026-10-04T02:59:09.722Z",
+  "status": "open",
+  "decision_id": "D-00202",
+  "slug": "chugu-d2",
+  "assumptions": [],
+  "evidence": [
+   "event:761d28d5-3b5a-4332-b46d-349163d18d62",
+   "catalogue:T0531"
+  ],
+  "reason": "unfinished series chugu-d2 idle 6.7 days, 12 episodes left",
+  "messages_sent": 0,
+  "committed_at": "2026-10-01T02:59:09.722Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T02:59:09.722Z",
+  "deadline": "2026-10-04T02:59:09.722Z",
+  "last_action": "NO_ACTION",
+  "revised_at": "2026-10-01T02:59:09.722Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-00202",
+   "at": "2026-10-01T02:59:09.774Z",
+   "action": "NO_ACTION",
+   "goal_id": "G07",
+   "reason": "holdout arm: zero actions by policy (shadow goal recorded for measurement)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T02:59:09.722Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 0 app opens and 0 plays in window, no exposure",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "0dcb742c-69ed-4bcf-ac19-29b8386c4e50": "D-00202"
+ },
+ "rule_migrations": [],
+ "notes": []
+}

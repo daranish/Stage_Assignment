@@ -1,0 +1,174 @@
+{
+ "viewer_id": "U-01429",
+ "arm": "agent",
+ "schema": 1,
+ "facts": {
+  "as_of": "2026-10-01T09:23:50.303Z",
+  "signup": {
+   "value": "2025-11-26T03:31:23.384Z",
+   "source": "profile",
+   "as_of": "2026-09-30T00:00:00.000Z",
+   "age_s": 120230.303,
+   "refs": [
+    "profile:U-01429@2026-09-29T15:32:58.531Z"
+   ],
+   "conflicts": []
+  },
+  "subscription": {
+   "value": "never",
+   "source": "profile",
+   "as_of": "2026-09-29T15:32:58.531Z",
+   "age_s": 150651.772,
+   "refs": [
+    "profile:U-01429@2026-09-29T15:32:58.531Z"
+   ],
+   "conflicts": [],
+   "plan_ends_at": null,
+   "paid_evidence": false,
+   "lapse_event_at": null
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:aae68f29-bd59-43ee-b970-7bc784b73964",
+   "conflicts": [
+    "profile:d2"
+   ],
+   "as_of": "2026-10-01T09:23:50.303Z",
+   "supported": true,
+   "certain": true,
+   "resolution": "app setting decides: it is the dialect the app will actually request"
+  },
+  "language": "hin",
+  "consent": {
+   "push": {
+    "value": true,
+    "why": "profile opt-in",
+    "refs": [
+     "profile:U-01429@2026-09-29T15:32:58.531Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 120230.303
+   },
+   "whatsapp": {
+    "value": false,
+    "why": "profile opt-out",
+    "refs": [
+     "profile:U-01429@2026-09-29T15:32:58.531Z"
+    ],
+    "conflicts": [],
+    "as_of": "2026-09-30T00:00:00.000Z",
+    "age_s": 120230.303
+   }
+  },
+  "conflicts": [
+   {
+    "fact": "dialect",
+    "used": "d4",
+    "others": [
+     "profile:d2"
+    ],
+    "resolution": "app setting decides: it is the dialect the app will actually request"
+   }
+  ],
+  "profile": {
+   "present": true,
+   "rows": 1
+  },
+  "watch": {
+   "plays": 3,
+   "completes": 3,
+   "last_play_at": "2026-09-25T09:26:25.438Z",
+   "play_days_14d": 1,
+   "opens_14d_excl_current": 1,
+   "top_genres": [
+    "Family",
+    "Comedy"
+   ],
+   "unfinished_series": [
+    "koha-kagite-d4"
+   ]
+  },
+  "events_seen": 28
+ },
+ "active_goal": {
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "rule_version": "v1",
+  "success": {
+   "event": "play_started",
+   "condition": "same content_slug as the unfinished series",
+   "window_hours": 72
+  },
+  "started_at": "2026-10-01T09:23:50.303Z",
+  "deadline": "2026-10-04T09:23:50.303Z",
+  "status": "open",
+  "decision_id": "D-01203",
+  "slug": "koha-kagite-d4",
+  "assumptions": [],
+  "evidence": [
+   "event:d1e0aa56-362e-40ca-bd91-c3c149c89df4",
+   "catalogue:T0926"
+  ],
+  "reason": "unfinished series koha-kagite-d4 idle 6.0 days, 43 episodes left",
+  "messages_sent": 1,
+  "committed_at": "2026-10-01T09:23:50.303Z",
+  "final_judgement": {
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": []
+  }
+ },
+ "plan": {
+  "goal_id": "G07",
+  "since": "2026-10-01T09:23:50.303Z",
+  "deadline": "2026-10-04T09:23:50.303Z",
+  "last_action": "HOME_PAGE+PUSH",
+  "revised_at": "2026-10-01T09:23:50.303Z"
+ },
+ "goal_history": [],
+ "decisions": [
+  {
+   "decision_id": "D-01203",
+   "at": "2026-10-01T09:23:50.356Z",
+   "action": "HOME_PAGE+PUSH",
+   "goal_id": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  "A-00500",
+  "A-00501"
+ ],
+ "outcomes": [
+  {
+   "goal_id": "G07",
+   "status": "failed",
+   "reason": "window closed without a qualifying event",
+   "evidence": [],
+   "rule_version": "v1",
+   "deadline": "2026-10-04T09:23:50.303Z"
+  }
+ ],
+ "learnings": [
+  {
+   "goal_id": "G07",
+   "lesson": "G07 not achieved (1 failure(s) for this goal): 0 app opens and 0 plays in window, exposure delivered",
+   "status": "failed"
+  }
+ ],
+ "goal_stats": {
+  "G07": {
+   "attempts": 1,
+   "succeeded": 0,
+   "failed": 1,
+   "inconclusive": 0
+  }
+ },
+ "seen_triggers": {
+  "aae68f29-bd59-43ee-b970-7bc784b73964": "D-01203"
+ },
+ "rule_migrations": [],
+ "notes": []
+}
